@@ -1,19 +1,35 @@
 import './App.css';
 
+import { useState, useEffect, useLayoutEffect } from "react";
+
+
 function App() {
-  const testFn = () => {
-    console.log('test');
-  }
+
+  const [books, setBooks] = useState([])
+  const getBooks = async () => {
+    const json = await (
+      await fetch(
+        `https://raw.githubusercontent.com/TPLKoreanBook/TPLkoreanbooks/main/tpl_json.json`
+      )
+    ).json();
+
+    setBooks(json.books[0])
+
+  };
+
+  useEffect(() => {
+    getBooks();
+  }, [])
+
+
+
   return (
-    <div className="App">
-      <h1>hello</h1>
-      <h2>xxxxxx</h2>
-      <h3>yyyyyy</h3>
-      <h3>zzzzzzzzz</h3>
-      <h4>adsfads</h4>
-      <h5>hi</h5>
+    <div>
+      {books.map((book) =>
+
+        <h3>{book.title}</h3>)}
     </div>
-  );
-}
+  )
+};
 
 export default App;
