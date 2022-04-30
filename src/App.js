@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, } from "react";
 
 
 function App() {
@@ -31,7 +31,8 @@ function App() {
     <h3>{book.title}</h3>)}
 
    </div>
-  )
+  );
 };
 
 export default App;
+
