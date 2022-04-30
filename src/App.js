@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import { useState, useEffect, useLayoutEffect } from "react";
+
+
 function App() {
+  
+  const [books,setBooks] = useState([])
+  const getBooks = async () => {
+    const json = await (
+      await fetch(
+        `https://raw.githubusercontent.com/TPLKoreanBook/TPLkoreanbooks/main/tpl_json.json`
+      )
+    ).json();
+    
+    setBooks(json.books[0])
+     
+      };
+
+    useEffect(()=> {
+      getBooks();
+    },[])  
+    
+    
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+   <div>
+    {books.map((book)=> 
+    
+    <h3>{book.title}</h3>)}
+   </div>
+  )
+};
 
 export default App;
