@@ -1,20 +1,9 @@
 import { useState } from 'react';
-import axios from 'axios';
-import useAsync from '../hooks/useAsync';
 import style from './BookList.module.css'
 
-async function getBooks() {
-    // Got it working by throwing my tpl_json.json file into the Public folder and calling it by:
-    const response = await axios.get('tpl_json.json');
-    return response.data;
-}
-
-const BookList = () => {
-
-    const [visible, setVisible] = useState(5)
-    const [state] = useAsync(getBooks, []);
-    const { loading, data, error } = state;
-
+const BookList = ({ loading, error, data }) => {
+    const [visible, setVisible] = useState(5);
+    const [userSearch, setUserSearch] = useState('')
     const showMoreBooks = () => {
         setVisible((prev) => prev + 5)
     }
@@ -22,18 +11,34 @@ const BookList = () => {
     const showLessBooks = () => {
         setVisible((prev) => prev - 5)
     }
+
+    const searchHandler = (e) => {
+        const userInput = e.target.value;
+        setUserSearch(userInput)
+    }
+
+    // Error handling.
     if (loading) return <div>Loading...</div>
     if (error) return <div>Error</div>
     if (!data) return null
 
     return (
         <section className={style['book-list']}>
+
+            <input type="text" placeholder='Search...' onChange={searchHandler} />
             <ul className={style['list-container']}>
-                {data.books[0].slice(0, visible).map((book, index) => (
+                {/* Test filtering */}
+                {data.books[0].filter((book) => {
+                    if (userSearch === '') {
+                        return book;
+                    } else if (book.title.includes(userSearch)) {
+                        return book;
+                    }
+                }).slice(0, visible).map((book, index) => (
                     // This part can be List component
                     <li key={book.count_number}>
                         <h3>Title: {book.title}</h3>
-                        <p>Description: ???</p>
+                        {/* <p>Description: ???</p> */}
                     </li>
                 ))}
             </ul>
