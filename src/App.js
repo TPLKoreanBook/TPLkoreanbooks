@@ -1,12 +1,21 @@
-import BookList from './components/BookList';
+import BookList from './components/BookList'
 import './App.css';
 
 
 function App() {
 
+
   return (
     <div>
-      <BookList />
+      <header>
+        <h1>Hello</h1>
+      </header>
+      <main>
+        <BookList />
+      </main>
+      <footer>
+
+      </footer>
     </div>
   )
 };
