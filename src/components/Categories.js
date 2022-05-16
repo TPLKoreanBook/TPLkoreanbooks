@@ -1,18 +1,35 @@
+import React from 'react';
 import styles from './Categories.module.css';
 
-const Categories = () => {
+const Categories = ({ onCategory }) => {
+    const category = [
+        "All",
+        "어린이",
+        "청소년",
+        "좋은부모",
+        "소설/시/희곡",
+        "에세이",
+        "인문학",
+        "사회과학",
+        "역사",
+        "과학",
+        "예술/대중문화",
+        "종교/역학",
+        "경제경영",
+        "자기계발",
+        "외국어",
+        "가정/요리/뷰티",
+        "건강/취미/레저",
+        "기타"];
+
+    const selectedCategory = (tp) => {
+        onCategory(tp);
+    }
     return (
         <div className={styles['categories-container']}>
             <h2>Categories</h2>
-            <ul>
-                <li>소설</li>
-                <li>시/에세이</li>
-                <li>경제/경영</li>
-                <li>자기계발</li>
-                <li>인문</li>
-                <li>역사/문화</li>
-                <li>예술/대중문화</li>
-                <li>과학</li>
+            <ul className={styles['categories-list']}>
+                {category.map((item, index) => <li key={index} className={styles['list']} onClick={() => selectedCategory(item)}>{item}</li>)}
             </ul>
         </div>
     )

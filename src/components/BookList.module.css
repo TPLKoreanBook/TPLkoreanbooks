@@ -1,6 +1,5 @@
 .book-list {
-  width: 80%;
-  display: flex;
+  width: 100%;
 }
 
 .img {
@@ -10,7 +9,7 @@
 }
 .list-container {
   /* list-style: none;; */
-  width: 1200px;
+  width: 80%;
   border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
