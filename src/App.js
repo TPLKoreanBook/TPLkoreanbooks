@@ -21,13 +21,11 @@ function App() {
         <h1>Hello</h1>
       </header>
       <main>
-        <section>
-          <BookList
-            loading={loading}
-            data={data}
-            error={error}
-          />
-        </section>
+        <BookList
+          loading={loading}
+          data={data}
+          error={error}
+        />
       </main>
       <footer>
 

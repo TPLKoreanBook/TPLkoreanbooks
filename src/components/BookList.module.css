@@ -1,8 +1,21 @@
 .book-list {
   width: 80%;
+  display: flex;
 }
 
+.img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
 .list-container {
   /* list-style: none;; */
+  width: 1200px;
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-container li {
+  flex: 1;
 }

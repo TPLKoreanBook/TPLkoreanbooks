@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Categories from './Categories';
 import style from './BookList.module.css'
 
 const BookList = ({ loading, error, data }) => {
@@ -16,7 +17,7 @@ const BookList = ({ loading, error, data }) => {
         const userInput = e.target.value;
         setUserSearch(userInput)
     }
-
+    console.log(data);
     // Error handling.
     if (loading) return <div>Loading...</div>
     if (error) return <div>Error</div>
@@ -24,26 +25,31 @@ const BookList = ({ loading, error, data }) => {
 
     return (
         <section className={style['book-list']}>
-
-            <input type="text" placeholder='Search...' onChange={searchHandler} />
-            <ul className={style['list-container']}>
-                {/* Test filtering */}
-                {data.books[0].filter((book) => {
-                    if (userSearch === '') {
-                        return book;
-                    } else if (book.title.includes(userSearch)) {
-                        return book;
-                    }
-                }).slice(0, visible).map((book, index) => (
-                    // This part can be List component
-                    <li key={book.count_number}>
-                        <h3>Title: {book.title}</h3>
-                        {/* <p>Description: ???</p> */}
-                    </li>
-                ))}
-            </ul>
-            <button onClick={showMoreBooks}>Show More!</button>
-            <button onClick={showLessBooks}>Show Less!</button>
+            <Categories />
+            <div>
+                <input type="text" placeholder='Search...' onChange={searchHandler} />
+                <ul className={style['list-container']}>
+                    {/* Test filtering */}
+                    {data.books[0].filter((book) => {
+                        if (userSearch === '') {
+                            return book;
+                        } else if (book.title.includes(userSearch)) {
+                            return book;
+                        }
+                    }).slice(0, visible).map((book, index) => (
+                        // This part can be List component
+                        <li key={book.count_number} >
+                            <h3>Title: {book.title}</h3>
+                            <div className={style.img}></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facilis veritatis voluptatibus minima reprehenderit temporibus velit, impedit, numquam nemo modi recusandae atque quod mollitia culpa iusto voluptas, nobis rerum repudiandae?</p>
+                            <button>link</button>
+                            {/* <p>Description: ???</p> */}
+                        </li>
+                    ))}
+                </ul>
+                <button onClick={showMoreBooks}>Show More!</button>
+                <button onClick={showLessBooks}>Show Less!</button>
+            </div>
         </section>
     )
 };
