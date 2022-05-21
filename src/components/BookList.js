@@ -42,9 +42,9 @@ const BookList = ({ category }) => {
 
     return (
         <section className={style['book-list']}>
-            <div>
-                <input type="text" placeholder='Search...' onChange={searchHandler} />
-                <h2>{category === '' ? 'All' : category}</h2>
+            <div >
+                <input className={style['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
+                <h2 className={style['category']}>{category === '' ? 'All' : category}</h2>
                 <ul className={style['list-container']}>
                     {/* Test filtering */}
                     {/* Filtered by users' selected category */}
@@ -62,10 +62,13 @@ const BookList = ({ category }) => {
                         }).slice(0, visible).map((book, index) => (
                             // This part can be List component
                             <li key={book.count_number} >
-                                <h3>Title: {book.title}</h3>
-                                <div className={style.img}></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facilis veritatis voluptatibus minima reprehenderit temporibus velit, impedit, numquam nemo modi recusandae atque quod mollitia culpa iusto voluptas, nobis rerum repudiandae?</p>
-                                <button>link</button>
+                                
+                                <div className={style.img}>
+                                    <img src={book.cover} />
+                                </div>
+                                <h4 className={style['booktitle']} >{book.title}</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis rerum repudiandae?</p>
+                                <button className={style['link-btn']}>Link</button>
                             </li>
                         ))}
                 </ul>
