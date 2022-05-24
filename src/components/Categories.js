@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Categories.module.css';
-import searchHandler from './BookList'
-import setSearchTerm from './BookList'
+
 
 const Categories = ({ onCategory }) => {
     const category = [
