@@ -1,16 +1,17 @@
 import React from 'react';
-import style from './Book.module.css';
+import styles from './Book.module.css';
 
 
-function Book({ cover, title }) {
+function Book({ cover, title, address, author }) {
     return (
-        <li >
-            <div className={style.img}>
+        <li className={styles['book-container']}>
+            <div className={styles.img}>
                 <img src={cover} alt="" />
             </div>
-            <h4 className={style['booktitle']} >{title}</h4>
+            <h3 className={styles['booktitle']} >{title}</h3>
+            {/* <h4 className={styles['author']}>{author}</h4> */}
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis rerum repudiandae?</p>
-            <button className={style['link-btn']}>Link</button>
+            <a href={address} className={styles['link-btn']}>Link</a>
         </li>
     )
 }

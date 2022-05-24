@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import style from './BookList.module.css';
+import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
@@ -14,9 +14,9 @@ const BookList = ({ category }) => {
 
     const [state] = useAsync(getBooks, [],);
     const { loading, data, error } = state;
-
     const [visible, setVisible] = useState(6);
     const [searchTerm, setSearchTerm] = useState('');
+
     useEffect(() => {
         if (data && category !== '') {
             data.filter((book) => {
@@ -42,11 +42,11 @@ const BookList = ({ category }) => {
     if (!data) return null
 
     return (
-        <section className={style['book-list']}>
+        <section className={styles['book-list']}>
             <div>
-                <input className={style['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
-                <h2 className={style['category']}>{category === '' ? 'All' : category}</h2>
-                <ul className={style['list-container']}>
+                <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
+                <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2>
+                <ul className={styles['list-container']}>
                     {/* Test filtering
                     {/* Filtered by users' selected category */}
                     {data.filter((book) => {
@@ -66,6 +66,8 @@ const BookList = ({ category }) => {
                                 key={book.count_number}
                                 cover={book.cover}
                                 title={book.title}
+                                author={book.author}
+                                address={book.link}
                             />
                         ))}
                 </ul>
