@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import style from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync'
+import Book from './Book.js'
 
 async function getBooks(category) {
     // Got it working by throwing my tpl_json.json file into the Public folder and calling it by:
@@ -43,10 +44,10 @@ const BookList = ({ category }) => {
     return (
         <section className={style['book-list']}>
             <div>
-                <input type="text" placeholder='Search...' onChange={searchHandler} />
-                <h2>{category === '' ? 'All' : category}</h2>
+                <input className={style['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
+                <h2 className={style['category']}>{category === '' ? 'All' : category}</h2>
                 <ul className={style['list-container']}>
-                    {/* Test filtering */}
+                    {/* Test filtering
                     {/* Filtered by users' selected category */}
                     {data.filter((book) => {
                         if (category === '' || category === 'All') return book;
@@ -61,12 +62,11 @@ const BookList = ({ category }) => {
                             }
                         }).slice(0, visible).map((book, index) => (
                             // This part can be List component
-                            <li key={book.count_number} >
-                                <h3>Title: {book.title}</h3>
-                                <div className={style.img}></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facilis veritatis voluptatibus minima reprehenderit temporibus velit, impedit, numquam nemo modi recusandae atque quod mollitia culpa iusto voluptas, nobis rerum repudiandae?</p>
-                                <button>link</button>
-                            </li>
+                            <Book
+                                key={book.count_number}
+                                cover={book.cover}
+                                title={book.title}
+                            />
                         ))}
                 </ul>
                 <button onClick={showMoreBooks}>Show More!</button>
@@ -75,5 +75,6 @@ const BookList = ({ category }) => {
         </section>
     )
 };
+
 
 export default BookList;

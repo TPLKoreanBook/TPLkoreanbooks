@@ -1,0 +1,15 @@
+.link-btn {
+    width: 100px;
+    height: 35px;
+    margin: 30px auto 0 ;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #934E72;
+    cursor: pointer;
+  }
+  .booktitle {
+    margin-bottom: 40px;
+  }
+  

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
+import Logo from './components/Logo';
 
 
 import './App.css';
@@ -13,7 +14,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Hello</h1>
+      <Logo />
       </header>
       <main>
         <Categories onCategory={setCategory} />
