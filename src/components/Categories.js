@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Categories.module.css';
 
+
 const Categories = ({ onCategory }) => {
     const category = [
         "All",
@@ -25,9 +26,12 @@ const Categories = ({ onCategory }) => {
     const selectedCategory = (tp) => {
         onCategory(tp);
     }
+
+   
     return (
         <div className={styles['categories-container']}>
-            <h2>Categories</h2>
+            
+            {/* <h2>Categories</h2> */}
             <ul className={styles['categories-list']}>
                 {category.map((item, index) => <li key={index} className={styles['list']} onClick={() => selectedCategory(item)}>{item}</li>)}
             </ul>
