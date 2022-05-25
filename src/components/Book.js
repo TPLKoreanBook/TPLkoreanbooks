@@ -9,8 +9,9 @@ function Book({ cover, title, address, author }) {
                 <img src={cover} alt="" />
             </div>
             <h3 className={styles['booktitle']} >{title}</h3>
+            <h4>{author}</h4>
             {/* <h4 className={styles['author']}>{author}</h4> */}
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis rerum repudiandae?</p>
+            {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis rerum repudiandae?</p> */}
             <a href={address} className={styles['link-btn']}>Link</a>
         </li>
     )

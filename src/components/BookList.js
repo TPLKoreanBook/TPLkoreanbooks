@@ -61,7 +61,6 @@ const BookList = ({ category }) => {
                                 return book;
                             }
                         }).slice(0, visible).map((book, index) => (
-                            // This part can be List component
                             <Book
                                 key={book.count_number}
                                 cover={book.cover}
