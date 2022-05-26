@@ -9,7 +9,7 @@ results = []
 count = 0
 
 #Fetching titles from json file
-fileObject = open("tpl_python/data/tpl_json.json", "r")
+fileObject = open("server/tpl_python/data_webcrawling/tpl_json.json", "r")
 jsonContent = fileObject.read()
 aList = json.loads(jsonContent)
 
@@ -20,7 +20,7 @@ for title in titlesBeforeSearch:
     try:
         # Searching title on Google and getting html text into soup
         # Num=40 ... meaning that showing 40 results
-        url = "https://www.google.com/search?q={}&num=40".format(title)
+        url = "https://www.google.com/search?q={}".format(title)
         headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15"}
         res = requests.get(url)
         res.raise_for_status()
@@ -55,10 +55,10 @@ for title in titlesBeforeSearch:
         print("error on %d" %count)
         break
 
-with open("tpl_python/data/googleSearchedTitles.json", "w") as j:
+with open("server/tpl_python/data_webcrawling/googleSearchedTitles.json", "w") as j:
     json.dump(results, j, indent=3, ensure_ascii=False)
 
-with open("tpl_python/data/SecondUnsearchedTitles.json", "w") as j:
+with open("server/tpl_python/data_webcrawling/SecondUnsearchedTitles.json", "w") as j:
     json.dump(unsearched_titles, j, indent=3, ensure_ascii=False)
 
 
