@@ -8,7 +8,7 @@ results = []
 count = 0
 
 #Fetching titles from json file
-fileObject = open("googleSearchedTitles.json", "r")
+fileObject = open("server/tpl_python/data_webcrawling/googleSearchedTitles.json", "r")
 jsonContent = fileObject.read()
 aList = json.loads(jsonContent)
 
