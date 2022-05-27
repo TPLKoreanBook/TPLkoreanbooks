@@ -18,19 +18,19 @@ function App() {
   // useEffect(() => {
   //   fetch("http://127.0.0.1:5000/category/청소년").then(
   //     res => res.json()
-  //     )
+  //   )
   //     .then(data => {
   //       setData(data)
   //     });
 
-  // },[]);
+  // }, []);
   // console.log(data);
 
   /////// To here ///////////////
   return (
     <div>
       <header>
-      <Logo />
+        <Logo />
 
       </header>
       <main>
