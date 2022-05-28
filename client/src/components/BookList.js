@@ -4,7 +4,7 @@ import axios from 'axios';
 import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
 
-async function getBooks(category = 'all') {
+async function getBooks(category) {
     // Got it working by throwing my tpl_json.json file into the Public folder and calling it by:
     const response = await axios.get(`http://127.0.0.1:5000/category/${category}`);
     console.log(response);
@@ -18,7 +18,6 @@ const BookList = ({ category }) => {
     const [visible, setVisible] = useState(6);
     const [searchTerm, setSearchTerm] = useState('');
 
-    console.log(data)
 
     const showMoreBooks = () => {
         setVisible((prev) => prev + 6)

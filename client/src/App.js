@@ -9,7 +9,7 @@ import './App.css';
 
 
 function App() {
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('all');
 
   /////// From here ///////
 
