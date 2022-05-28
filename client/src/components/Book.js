@@ -5,7 +5,7 @@ import styles from './Book.module.css';
 function Book({ cover, title, address, author }) {
     return (
         <li className={styles['book-container']}>
-            <div className={styles.img}>
+            <div className={styles['img-container']}>
                 <img src={cover} alt="" />
             </div>
             <h3 className={styles['booktitle']} >{title}</h3>
