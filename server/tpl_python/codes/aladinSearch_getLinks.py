@@ -55,9 +55,28 @@ for title in titlesBeforeSearch:
         print("error on %d" %count)
         break
 
-linksOfBooks = {"links": linksOfBooks}
-with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'w') as f:
-    json.dump(linksOfBooks, f, indent=3, ensure_ascii=False)
+#update links of books
 
-with open ("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", 'w') as j:
-    json.dump(unsearched_titles, j, indent=3, ensure_ascii=False)
+with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "r") as j:
+    data = json.loads(j.read())
+
+data = data["links"]
+for link in linksOfBooks:
+    data.append(link)
+data = {"links": data}
+
+with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "w") as j:
+    json.dump(data, j, indent=3, ensure_ascii=False)
+
+
+#update unsearched data
+with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "r") as j:
+    data = json.loads(j.read())
+
+data = data["unsearched_title"]
+for title in unsearched_titles:
+    data.append(title)
+data = {"unsearched_title": data}
+
+with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "w") as j:
+    json.dump(data, j, indent=3, ensure_ascii=False)
