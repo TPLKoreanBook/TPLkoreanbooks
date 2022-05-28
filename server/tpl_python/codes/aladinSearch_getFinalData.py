@@ -36,7 +36,17 @@ for link in aList:
         print(e)
         print("error on %d" %count)
         continue
-   
-results = {"books": results}
-with open ("server/tpl_python/data_webcrawling/final_book_data.json", 'w') as f:
-    json.dump(results, f, indent=3, ensure_ascii=False)
+
+
+#update final book data
+#....error handling required!!!.... -> when final_book_data doesn't exist
+with open("server/tpl_python/data_webcrawling/final_book_data.json", "r") as j:
+    data = json.loads(j.read())
+
+data = data["books"]
+for result in results:
+    data.append(result)
+data = {"books": data}
+
+with open("server/tpl_python/data_webcrawling/final_book_data.json", "w") as j:
+    json.dump(data, j, indent=3, ensure_ascii=False)
