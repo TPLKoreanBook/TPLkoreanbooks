@@ -2,21 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import constant
 
-titlesBeforeSearch = []
 unsearched_titles = []
 results = []
-count = 0
+count = constant.CN #Count Number
+booktitle_aladin = ''
+booktitle_kyobo = ''
 
-#Fetching titles from json file
-fileObject = open("server/tpl_python/data_webcrawling/tpl_json.json", "r")
-jsonContent = fileObject.read()
-aList = json.loads(jsonContent)
-
-for i in range(0, 4748):
-    titlesBeforeSearch.append(aList['books'][0][i]['title'])
-
-for title in titlesBeforeSearch:
+for title in constant.TBS:  #TBS= Titles before search
     try:
         # Searching title on Google and getting html text into soup
         # Num=40 ... meaning that showing 40 results
@@ -45,20 +39,25 @@ for title in titlesBeforeSearch:
         if booktitle_aladin == '' and booktitle_kyobo == '':
             unsearched_titles.append(title)
         #Append titles into results
-        results.append([title, booktitle_aladin, booktitle_kyobo])
+        results.append([count, title, booktitle_aladin, booktitle_kyobo])
         booktitle_aladin = ''
         booktitle_kyobo = ''
         print("%d th search" %count)
         count = count + 1
     #Error handling... If google blocks me, then break the for loop and save data into files
-    except:
+    except Exception as e:
+        print(e)
         print("error on %d" %count)
         break
 
+with open("server/tpl_python/data_webcrawling/googleSearchedTitles.json", "r") as j:
+    data = json.loads(j.read())
+
+data = data["books"]
+for result in results:
+    data.append(result)
+data = {"books": data}
+
 with open("server/tpl_python/data_webcrawling/googleSearchedTitles.json", "w") as j:
-    json.dump(results, j, indent=3, ensure_ascii=False)
-
-with open("server/tpl_python/data_webcrawling/SecondUnsearchedTitles.json", "w") as j:
-    json.dump(unsearched_titles, j, indent=3, ensure_ascii=False)
-
+    json.dump(data, j, indent=3, ensure_ascii=False)
 

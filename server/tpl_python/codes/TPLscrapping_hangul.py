@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 book_list = []
-for i in range(0, 102):
+for i in range(0, 1):
     #get HTML files from TPL website... 'NO={50*i}' means pages number
     url = "https://www.torontopubliclibrary.ca/search.jsp?Erp=50&N=38221&No={}&Ntk=Keyword_Anywhere&advancedSearch=true".format(50*i)
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15"}
@@ -19,6 +19,9 @@ for i in range(0, 102):
             book_title = book_title.split("=", 1)
             book_title = book_title[0]
             book_titles_en = book.find_all("span", attrs={"class": "notranslate"})
+            print(book_titles_en[0].get_text())
+
+            #Run below code if you want to get Romanization titles as well
             for book_title_en in book_titles_en:
                 book_title_en_parent = book_title_en.parent.parent
                 if book_title_en_parent.find("div", attrs={"class": "title align-top"}):
