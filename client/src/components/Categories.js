@@ -27,7 +27,6 @@ const Categories = ({ onCategory }) => {
         onCategory(tp);
     }
 
-
     return (
         <div className={styles['categories-container']}>
 

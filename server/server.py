@@ -7,9 +7,9 @@ app = Flask(__name__)
 api = Api(app)
 cors = CORS(app)
 
-with open("/Users/seumgminshin/Desktop/portfolio/lib/TPLkoreanbooks/server/tpl_python/data_webcrawling/tpl_json.json", 'r') as read_file:
+with open("/Users/seumgminshin/Desktop/portfolio/lib/TPLkoreanbooks/server/tpl_python/data_webcrawling/final_book_data.json", 'r') as read_file:
     books = json.load(read_file)
-books = books["books"][0]
+books = books["books"]
 
 def sort_by_category(category):
     if category == 'all':

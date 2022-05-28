@@ -52,7 +52,7 @@ const BookList = ({ category }) => {
                             }
                         }).slice(0, visible).map((book, index) => (
                             <Book
-                                key={book.count_number}
+                                key={book.count}
                                 cover={book.cover}
                                 title={book.title}
                                 author={book.author}
