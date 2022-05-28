@@ -105,7 +105,7 @@ for k in title:
     first_k = first_k.strip()
     first_k = first_k.replace('ǒ', 'ŏ').replace('ǔ', 'ŭ')
 
-    #Only when the title is not English, translate it
+    #Only when the title is not English, translate the title
     if detect(first_k) != "en":
         vari = k.find('=')
         if vari != -1:

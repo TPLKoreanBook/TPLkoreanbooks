@@ -3,17 +3,27 @@ from bs4 import BeautifulSoup
 import json
 
 titlesBeforeSearch = []
+linksOfBooks = []
 unsearched_titles = []
 results = []
 count = 0
+unsearched_count = 0
+searched_count = 0
 
 #Fetching titles from json file
-fileObject = open("server/tpl_python/data_webcrawling/googleSearchedTitles.json", "r")
-jsonContent = fileObject.read()
-aList = json.loads(jsonContent)
+with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/googleSearchedTitles.json", 'r') as f:
+    aList = json.loads(f.read())["books"]
+length_of_aList = len(aList)
 
-for i in range(0, 1):
-    titlesBeforeSearch.append(aList[0][i])
+#Select the best title among three choice; original title, title from aladin, title from kyobo
+for i in range(0, length_of_aList):
+    if aList[i][2]:
+        titlesBeforeSearch.append(aList[i][2])
+    elif aList[i][3]:
+        titlesBeforeSearch.append(aList[i][3])
+    else:
+        titlesBeforeSearch.append(aList[i][1])
+
 
 for title in titlesBeforeSearch:
     try:
@@ -24,47 +34,30 @@ for title in titlesBeforeSearch:
         res.raise_for_status()
         soup = BeautifulSoup(res.text, "lxml")
 
-        #Find all h3 tags and filter with the keyword '알라딘'
         search_result = soup.body.find('div', attrs={"class": "ss_book_box"})
-        link = search_result.find('a', attrs={'class': "bo3"})
-        print(link)
-        link = link.find(href=True)
-        print(link['href'])
-        link = link
-
-
-#If the title is not founded, add the title to the unsearched list
-        if link == '':
-            unsearched_titles.append(title)
-            break
-
-        res2 = requests.get(link)
-        res2.raise_for_status()
-        soup2 = BeautifulSoup(res2.text, "lxml")
-
-        title = soup2.body.find('div', attrs={"class": "ss_book_box"})
-        author = soup2.body.find()
-        genre = soup2.body.find()
-        cover = soup2.body.find()
-
-
-        #Append titles into results
-        results.append([title, author, genre, cover])
-        title = ''
-        author = ''
-        genre = ''
-        cover = ''
-        print("%d th search" %count)
-        count = count + 1
-    #Error handling... If google blocks me, then break the for loop and save data into files
-    except:
+        try: 
+            search_result.find('a', attrs={'class': 'bo3'})
+            link = search_result.find('a', attrs={'class': "bo3"})
+            link = link.get("href")
+            link_data = {"count": searched_count, "link":link}
+            linksOfBooks.append(link_data)
+            searched_count += 1
+            link_data = {}
+        except:
+            link_data2 = {"count": unsearched_count, "title":title}
+            unsearched_titles.append(link_data2)
+            unsearched_count += 1
+            link_data2 = {}
+        print("%dth search is done" %count)
+        count += 1
+    except Exception as e:
+        print(e)
         print("error on %d" %count)
         break
 
-with open("aladinSearchedTitle.json", "w") as j:
-    json.dump(results, j, indent=3)
+linksOfBooks = {"links": linksOfBooks}
+with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'w') as f:
+    json.dump(linksOfBooks, f, indent=3, ensure_ascii=False)
 
-with open("unsearchedTitlesAladin.json", "w") as j:
-    json.dump(unsearched_titles, j, indent=3)
-
-
+with open ("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", 'w') as j:
+    json.dump(unsearched_titles, j, indent=3, ensure_ascii=False)
