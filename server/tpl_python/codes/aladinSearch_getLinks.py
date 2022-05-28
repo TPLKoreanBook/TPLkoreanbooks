@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+startingNumber = 0
 titlesBeforeSearch = []
 linksOfBooks = []
 unsearched_titles = []
@@ -16,7 +17,7 @@ with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcra
 length_of_aList = len(aList)
 
 #Select the best title among three choice; original title, title from aladin, title from kyobo
-for i in range(0, length_of_aList):
+for i in range(startingNumber, 3):
     if aList[i][2]:
         titlesBeforeSearch.append(aList[i][2])
     elif aList[i][3]:

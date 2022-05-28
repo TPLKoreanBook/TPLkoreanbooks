@@ -34,10 +34,8 @@ for link in aList:
 
     except Exception as e:
         print(e)
-        print("error on %d" %count)
+        print("error")
         unsearched_titles.append(link)
-        count = count + 1
-
         continue
 
 
@@ -54,8 +52,9 @@ data = {"books": data}
 with open("server/tpl_python/data_webcrawling/final_book_data.json", "w") as j:
     json.dump(data, j, indent=3, ensure_ascii=False)
 
-#save unsearched data 
-with open("server/tpl_python/data_webcrawling/final_book_data.json", "r") as j:
+
+#update unsearched data 
+with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "r") as j:
     data2 = json.loads(j.read())
 
 data2 = data2["final_unsearched_link"]
@@ -63,5 +62,5 @@ for item in unsearched_titles:
     data2.append(item)
 data2 = {"final_unsearched_link": data}
 
-with open("server/tpl_python/data_webcrawling/final_book_data.json", "w") as j:
+with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "w") as j:
     json.dump(data2, j, indent=3, ensure_ascii=False)
