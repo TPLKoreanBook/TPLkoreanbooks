@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
-import Logo from './components/Logo';
 
 
 import './App.css';
@@ -30,7 +29,6 @@ function App() {
   return (
     <div>
       <header>
-        <Logo />
 
       </header>
       <main>
