@@ -1,1180 +1,2800 @@
 {
+   #...should add 'original_title'...
    "unsearched_title": [
       {
          "count": 0,
-         "title": "김유정문학상 검색 - 인터넷"
+         "title": "김유정문학상 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2018 김유정 문학상"
       },
       {
          "count": 1,
-         "title": "2030 축의 전환(원서/번역서 -"
+         "title": "2030 축의 전환(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2030 축의 전환"
       },
       {
          "count": 2,
-         "title": "大韓醫史學會誌 醫史學."
+         "title": "大韓醫史學會誌 醫史學.",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=大韓醫史學會誌 醫史學."
       },
       {
          "count": 3,
-         "title": "與鬼同桌"
+         "title": "與鬼同桌",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=與鬼同桌"
       },
       {
          "count": 4,
-         "title": "장신논단 (長神論壇) 요약집 1 - 2006년(제19집)"
+         "title": "장신논단 (長神論壇) 요약집 1 - 2006년(제19집)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=長神 論壇."
       },
       {
          "count": 5,
-         "title": "알라딘:  방구석 미술관 :가볍고 편하게 시작하는 유쾌한 교양 미술"
+         "title": "알라딘:  방구석 미술관 :가볍고 편하게 시작하는 유쾌한 교양 미술",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=가볍고 편하게 시작하는 유쾌한 교양 미술"
       },
       {
          "count": 6,
-         "title": "관내분실 검색 - 인터넷"
+         "title": "관내분실 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=관내분실"
       },
       {
          "count": 7,
-         "title": "권정현님의 전체작품 보기 | 작가 & 작품 -"
+         "title": "권정현님의 전체작품 보기 | 작가 & 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=권 정현 장편 소설."
       },
       {
          "count": 8,
-         "title": "결국 이기는 힘(반양장)- 그들은 어떻게 위기를 기회로 ..."
+         "title": "결국 이기는 힘(반양장)- 그들은 어떻게 위기를 기회로 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=그들 은 어떻게 위기 를 기회 로 만들었는가"
       },
       {
          "count": 9,
-         "title": "김애란(Ae-Ran Kim) | 작가 & 작품 -"
+         "title": "김애란(Ae-Ran Kim) | 작가 & 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=김 애란 소설."
       },
       {
          "count": 10,
-         "title": "중앙역 김혜진 장편소설 - 문학동네 -"
+         "title": "중앙역 김혜진 장편소설 - 문학동네 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=김 혜진 장편 소설."
       },
       {
          "count": 11,
-         "title": "나는 하루에 한번 [나라]는 브랜드를 만난다"
+         "title": "나는 하루에 한번 [나라]는 브랜드를 만난다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=나는 하루에 한번 [나라]는 브랜드를 만난다"
       },
       {
          "count": 12,
-         "title": "내 안 의 충동 을 이겨내는 습관 설계 의 법칙"
+         "title": "내 안 의 충동 을 이겨내는 습관 설계 의 법칙",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=내 안 의 충동 을 이겨내는 습관 설계 의 법칙"
       },
       {
          "count": 13,
-         "title": "노작문학상모바일"
+         "title": "노작문학상모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=노작 문학상 수상 작품집"
       },
       {
          "count": 14,
-         "title": "더 맛 있게! 더 맛 나게!"
+         "title": "더 맛 있게! 더 맛 나게!",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=더 맛 있게! 더 맛 나게!"
       },
       {
          "count": 15,
-         "title": "동물들의 괴이한 습성에 대한 모든 것 : 충격주의"
+         "title": "동물들의 괴이한 습성에 대한 모든 것 : 충격주의",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=동물들의 괴이한 습성에 대한 모든 것 : 충격주의"
       },
       {
          "count": 16,
-         "title": "디즈니 겨울왕국 2 아트북(원서/번역서 -"
+         "title": "디즈니 겨울왕국 2 아트북(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=디즈니 겨울왕국 2"
       },
       {
          "count": 17,
-         "title": "르포소설 검색 - 인터넷"
+         "title": "르포소설 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=르포소설"
       },
       {
          "count": 18,
-         "title": "리처드 플래너건(Richard Flanagan) | 작가 & 작품 -"
+         "title": "리처드 플래너건(Richard Flanagan) | 작가 & 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=리처드 플래너건 장편소설"
       },
       {
          "count": 19,
-         "title": "사고 린우드 바클레이 장편소설 - 해문출판사-"
+         "title": "사고 린우드 바클레이 장편소설 - 해문출판사-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=린우드 바클레이 장편 소설"
       },
       {
          "count": 20,
-         "title": "마거릿 애트우드 작가 작품 -"
+         "title": "마거릿 애트우드 작가 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=마거릿 애트우드 장편소설"
       },
       {
          "count": 21,
-         "title": "마음 을 지켜낸다 는 것"
+         "title": "마음 을 지켜낸다 는 것",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=마음 을 지켜낸다 는 것"
       },
       {
          "count": 22,
-         "title": "보건교사 안은영(특별판)( HardCover)(원서/번역서 -"
+         "title": "보건교사 안은영(특별판)( HardCover)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=보건교사 안은영"
       },
       {
          "count": 23,
-         "title": "사이다 그림책 더보기모바일"
+         "title": "사이다 그림책 더보기모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=사이다 그림책."
       },
       {
          "count": 24,
-         "title": "생활형 검사 의 사람 공부"
+         "title": "생활형 검사 의 사람 공부",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=생활형 검사 의 사람 공부"
       },
       {
          "count": 25,
-         "title": "소아청소년과 의사 아빠 의 리얼 코칭 닥터 오 이유식"
+         "title": "소아청소년과 의사 아빠 의 리얼 코칭 닥터 오 이유식",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=소아청소년과 의사 아빠 의 리얼 코칭 닥터 오 이유식"
       },
       {
          "count": 26,
-         "title": "[알라딘서재]실수 때문에 마음이 무너지면 어떻게 하나요?"
+         "title": "[알라딘서재]실수 때문에 마음이 무너지면 어떻게 하나요?",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=실수 때문에 마음이 무너지면 어떻게 하나요?"
       },
       {
          "count": 27,
-         "title": "손원평 - 아몬드( HardCover)(원서/번역서 -"
+         "title": "손원평 - 아몬드( HardCover)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=아몬드"
       },
       {
          "count": 28,
-         "title": "아키요시 리카코 검색 - 인터넷"
+         "title": "아키요시 리카코 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=아키요시 리카코 장편소설."
       },
       {
          "count": 29,
-         "title": "[알라딘서재]어쩌다 탐정"
+         "title": "[알라딘서재]어쩌다 탐정",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=어쩌다 탐정"
       },
       {
          "count": 30,
-         "title": "엠마뉘엘 카레르 - 러시아 소설(원서/번역서 -"
+         "title": "엠마뉘엘 카레르 - 러시아 소설(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=엠마뉘엘 카레르 장편 소설"
       },
       {
          "count": 31,
-         "title": "한국역사판타지소설 검색 - 인터넷"
+         "title": "한국역사판타지소설 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=역사판타지 장편소설"
       },
       {
          "count": 32,
-         "title": "우리는 언젠가 만난다 (1주년 한정 리커버 특별판)"
+         "title": "우리는 언젠가 만난다 (1주년 한정 리커버 특별판)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=우리는 언젠가 만난다"
       },
       {
          "count": 33,
-         "title": "이수지님의 전체작품 보기 | 작가 & 작품 -"
+         "title": "이수지님의 전체작품 보기 | 작가 & 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=이수지 그림책."
       },
       {
          "count": 34,
-         "title": "인생 자체 는 긍정적 으로"
+         "title": "인생 자체 는 긍정적 으로",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=인생 자체 는 긍정적 으로"
       },
       {
          "count": 35,
-         "title": "질서 너머(특별 한정판 골드에디션)(원서/번역서 -"
+         "title": "질서 너머(특별 한정판 골드에디션)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=인생의 다음 단계로 나아가는 12가지 법칙"
       },
       {
          "count": 36,
-         "title": "잃어 버린 나 를 찾는 인생 의 문장들"
+         "title": "잃어 버린 나 를 찾는 인생 의 문장들",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=잃어 버린 나 를 찾는 인생 의 문장들"
       },
       {
          "count": 37,
-         "title": "쓰담쓰담( HardCover)전금하 | 사계절-"
+         "title": "쓰담쓰담( HardCover)전금하 | 사계절-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=전 금하 그림책."
       },
       {
          "count": 38,
-         "title": "전교 일등 남매 고교 자퇴 후 코칭 전문가 된 교장 선생님 의 고백"
+         "title": "전교 일등 남매 고교 자퇴 후 코칭 전문가 된 교장 선생님 의 고백",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=전교 일등 남매 고교 자퇴 후 코칭 전문가 된 교장 선생님 의 고백"
       },
       {
          "count": 39,
-         "title": "정유정모바일"
+         "title": "정유정모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정 유정 장편 소설."
       },
       {
          "count": 40,
-         "title": "정유정모바일"
+         "title": "정유정모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정 유정 장편 소설."
       },
       {
          "count": 41,
-         "title": "정 호승 의 인생 동화"
+         "title": "정 호승 의 인생 동화",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정 호승 의 인생 동화"
       },
       {
          "count": 42,
-         "title": "정신문화연구 100호연구처 | 한국학중앙연구원-"
+         "title": "정신문화연구 100호연구처 | 한국학중앙연구원-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정신 문화 연구."
       },
       {
          "count": 43,
-         "title": "정호승 검색 - 인터넷"
+         "title": "정호승 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정호승 지음."
       },
       {
          "count": 44,
-         "title": "정호승장편소설."
+         "title": "정호승장편소설.",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=정호승장편소설."
       },
       {
          "count": 45,
-         "title": "두 발을 담그고(핑거그림책 4)( HardCover)조미자 -"
+         "title": "두 발을 담그고(핑거그림책 4)( HardCover)조미자 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=조 미자 그림책."
       },
       {
          "count": 46,
-         "title": "천 개의 파랑 - 한국 과학소설"
+         "title": "천 개의 파랑 - 한국 과학소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=천 개의 파랑"
       },
       {
          "count": 47,
-         "title": "철학은 어떻게 삶의 무기가 되는가(원서/번역서 -"
+         "title": "철학은 어떻게 삶의 무기가 되는가(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=철학은 어떻게 삶의 기술이 되는가"
       },
       {
          "count": 48,
-         "title": "충 을 출 거 에 요"
+         "title": "충 을 출 거 에 요",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=충 을 출 거 에 요"
       },
       {
          "count": 49,
-         "title": "페미니즘소설 검색 - 인터넷"
+         "title": "페미니즘소설 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=페미니즘 소설"
       },
       {
          "count": 50,
-         "title": "평범한 대한민국 여자 가 유럽 에서 일으킨 기적"
+         "title": "평범한 대한민국 여자 가 유럽 에서 일으킨 기적",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=평범한 대한민국 여자 가 유럽 에서 일으킨 기적"
       },
       {
          "count": 51,
-         "title": "한국을 빛낸 100명의 위인들(개정판)(CQ 놀이북 2) -"
+         "title": "한국을 빛낸 100명의 위인들(개정판)(CQ 놀이북 2) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=한국 을 빛낸 100명 의 위인들"
       },
       {
          "count": 52,
-         "title": "해외 한국학 도서관 동향 보고서"
+         "title": "해외 한국학 도서관 동향 보고서",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=해외 한국학 도서관 동향 보고서"
       },
       {
          "count": 53,
-         "title": "해치지 안하"
+         "title": "해치지 안하",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=해치지 안하"
       },
       {
          "count": 54,
-         "title": "혁명 의 조리 도구 에어 프라이어 200% 활용법"
+         "title": "혁명 의 조리 도구 에어 프라이어 200% 활용법",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=혁명 의 조리 도구 에어 프라이어 200% 활용법"
       },
       {
          "count": 55,
-         "title": "미리보기 - 흔한남매 1"
+         "title": "미리보기 - 흔한남매 1",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=흔한남매. 1"
       },
       {
          "count": 56,
-         "title": "미리보기 - 흔한남매 2"
+         "title": "미리보기 - 흔한남매 2",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=흔한남매. 2"
       },
       {
          "count": 57,
-         "title": "미리보기 - [세트] 흔한남매 5~6 세트 - 전2권"
+         "title": "미리보기 - [세트] 흔한남매 5~6 세트 - 전2권",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=흔한남매. 5"
       },
       {
          "count": 58,
-         "title": "미리보기 - 흔한남매 8"
+         "title": "미리보기 - 흔한남매 8",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=흔한남매. 8"
       },
       {
          "count": 59,
-         "title": "1식3찬 보약밥상운아 "
+         "title": "1식3찬 보약밥상운아 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=1 (il)-sik 3 (sam)-chʼan poyak papsang."
       },
       {
          "count": 60,
-         "title": "죽을 때 후회하는 스물다섯 가지 - 1000명의 죽음을 지켜본 ..."
+         "title": "죽을 때 후회하는 스물다섯 가지 - 1000명의 죽음을 지켜본 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=1000-Myŏng ŭi chugŭm ŭl chikʻyŏ pon hosŭpʻisŭ chŏnmunŭi ka mal hanŭn chugŭl ttae huhoe hanŭn sŭmultasŏt-kachi."
       },
       {
          "count": 61,
-         "title": "[알라딘서재][서평] 1026 - 김진명 장편소설"
+         "title": "[알라딘서재][서평] 1026 - 김진명 장편소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=1026 Kim Chin-myŏng changp'yŏn sosŏl."
       },
       {
          "count": 62,
-         "title": "12 시 15 분 의 참극"
+         "title": "12 시 15 분 의 참극",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=12-si 15-pun ŭi chʻamgŭk"
       },
       {
          "count": 63,
-         "title": "12 주 로 끈내는 마지막 다이어트"
+         "title": "12 주 로 끈내는 마지막 다이어트",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=12-chu ro kkŭnnaenŭn majimak daiŏt'ŭ"
       },
       {
          "count": 64,
-         "title": "123 명 의 집 : 123 ㅅc안디나v이안 ㅅㄷy레 호멧 "
+         "title": "123 명 의 집 : 123 ㅅc안디나v이안 ㅅㄷy레 호멧 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=123 myŏng ŭi chip : 123 Scandinavian style homes."
       },
       {
          "count": 65,
-         "title": "황제 자리를 두고 벌인 인류 최대의 권력 투쟁 (정치)"
+         "title": "황제 자리를 두고 벌인 인류 최대의 권력 투쟁 (정치)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=13-ŏk pun ŭi 1 ŭi namja : hwangje chari rŭl tugo illyu ch'oedae ŭi kwŏllyŏk t'ujaeng"
       },
       {
          "count": 66,
-         "title": "알라딘 전자책 - 이화여자대학교"
+         "title": "알라딘 전자책 - 이화여자대학교",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=19호실로 가다 : 도리스 레싱단편선"
       },
       {
          "count": 67,
-         "title": "1cㅁ + : 우리 인새에 더하고 시븐 1cㅁ 의  를 차자서"
+         "title": "1cㅁ + : 우리 인새에 더하고 시븐 1cㅁ 의  를 차자서",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=1cm + : uri insaenge tŏhago sipŭn 1cm ŭi  rŭl ch'ajasŏ"
       },
       {
          "count": 68,
-         "title": "1인 혜옥몌옹가가 ㄷw오이라 고레안"
+         "title": "1인 혜옥몌옹가가 ㄷw오이라 고레안",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=1in hyeogmyeonggaga dwoira Korean"
       },
       {
          "count": 69,
-         "title": "20 년 벌러 50 년 모꼬 사는 인생 서이계 "
+         "title": "20 년 벌러 50 년 모꼬 사는 인생 서이계 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=20-nyŏn pŏllŏ 50-nyŏn mokko sanŭn insaeng sŏigye."
       },
       {
          "count": 70,
-         "title": "2006 이 효 석 문학상 수상 작ㅂ 움집 "
+         "title": "2006 이 효 석 문학상 수상 작ㅂ 움집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2006 Yi Hyo-sōk Munhaksang susang chakp umjip."
       },
       {
          "count": 71,
-         "title": "2013 재w외동버 믄학 의 창 : 체 15 회 재w외동버 믄학상 수상집"
+         "title": "2013 재w외동버 믄학 의 창 : 체 15 회 재w외동버 믄학상 수상집",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2013 chaewoedongpŏ mŭnhak ŭi ch'ang : ch'e 15-hoe chaewoedongpŏ mŭnhaksang susangjip"
       },
       {
          "count": 72,
-         "title": "공법 변호사시험 기출문제집(사례형)(2022)(Union)(9판) -"
+         "title": "공법 변호사시험 기출문제집(사례형)(2022)(Union)(9판) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2014-Pyŏnhosa sihŏmbŏpchŏn : che 4-hoe pyŏnhosasihŏm taebiyŏng."
       },
       {
          "count": 73,
-         "title": "2014 재w외 동포 믄학 의 창 : 제 16 회 재w외 공포 믄학상 스산집 "
+         "title": "2014 재w외 동포 믄학 의 창 : 제 16 회 재w외 공포 믄학상 스산집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2014 Chaewoe tongp'o mŭnhak ŭi ch'ang : che 16-hoe chaewoe kongp'o mŭnhaksang sŭsanjip."
       },
       {
          "count": 74,
-         "title": "2020 부의 전쟁 - 문서검색 -"
+         "title": "2020 부의 전쟁 - 문서검색 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2020 pu ŭi chŏnjaeng in Asia = 2020 wealth war in Asia"
       },
       {
          "count": 75,
-         "title": "2030 축의 전환(원서/번역서 -"
+         "title": "2030 축의 전환(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=2030 축의 전환 : 새로운 부와 힘을 탄생시킬 8가지 거대한 물결"
       },
       {
          "count": 76,
-         "title": "Capital in the Twenty-First Century (Paperback)"
+         "title": "Capital in the Twenty-First Century (Paperback)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=21-segi chabon = Capital in the twenty first century"
       },
       {
          "count": 77,
-         "title": "22 일 : 장편 소설 "
+         "title": "22 일 : 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=22-il : changpʻyŏn sosŏl."
       },
       {
          "count": 78,
-         "title": "3 (삼) 세 와 7 9칠) 세 사이 : 자기 주도형 아이 는 7 (칠) 세 이전 에 결정 된다 "
+         "title": "3 (삼) 세 와 7 9칠) 세 사이 : 자기 주도형 아이 는 7 (칠) 세 이전 에 결정 된다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=3 (sam)-se wa 7 9ch'il)-se sai : chagi chudohyŏng ai nŭn 7 (ch'il)-se ijŏn e kyŏljŏng toenda."
       },
       {
          "count": 79,
-         "title": "3 개월 에 12ㄱㄱ 빼주는 살자비 까망콩 "
+         "title": "3 개월 에 12ㄱㄱ 빼주는 살자비 까망콩 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=3-kaewŏl e 12kg ppaejunŭn saljabi kkamangkʻong."
       },
       {
          "count": 80,
-         "title": "3 항년 다밈 선생님 이 콕콕 지거주는 교과소 알데하 상식 3 항년 "
+         "title": "3 항년 다밈 선생님 이 콕콕 지거주는 교과소 알데하 상식 3 항년 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=3 hangnyŏn tamim sŏnsaengnim i kʻokkʻok chigŏjunŭn kyogwaso alteha sangsik 3 hangnyŏn."
       },
       {
          "count": 81,
-         "title": "401 을 달리는 사람들 "
+         "title": "401 을 달리는 사람들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=401 ŭl tallinŭn saramdŭl."
       },
       {
          "count": 82,
-         "title": "50 가지 그림자 시면 = fifty shades darker"
+         "title": "50 가지 그림자 시면 = fifty shades darker",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=50-kaji kŭrimja simyŏn = Fifty shades darker"
       },
       {
          "count": 83,
-         "title": "50 가지 그림자 해방 = fifty shades of freed"
+         "title": "50 가지 그림자 해방 = fifty shades of freed",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=50-kaji kŭrimja haebang = Fifty shades of freed"
       },
       {
          "count": 84,
-         "title": "50 대가 꼭 아라야할 거앙비법 "
+         "title": "50 대가 꼭 아라야할 거앙비법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=50 daega kkok alayahal gŏngangbibŏb."
       },
       {
          "count": 85,
-         "title": "50 세부터는 탄수화물 끄너라 : 암·치매·노화 업시 장수하기"
+         "title": "50 세부터는 탄수화물 끄너라 : 암·치매·노화 업시 장수하기",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=50-sebut'ŏnŭn t'ansuhwamul kkŭnŏra : Am·ch'imae·nohwa ŏpsi changsuhagi"
       },
       {
          "count": 86,
-         "title": "< ghu 전자책"
+         "title": "< ghu 전자책",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=51 In ŭi similihakja. igi nŭn hwasŭl ŭl malhada."
       },
       {
          "count": 87,
-         "title": "7 년 후 : 기욤 뮈소 장편 소설"
+         "title": "7 년 후 : 기욤 뮈소 장편 소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=7-nyŏn hu : Giyom Mwiso changp'yŏn sosŏl"
       },
       {
          "count": 88,
-         "title": "(반양장) 7년의 밤 -정유정 장편소설"
+         "title": "(반양장) 7년의 밤 -정유정 장편소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=7년 의 밤 : 정 유정 장편 소설."
       },
       {
          "count": 89,
-         "title": "a guide to the project management body of knowledge (pmbok® guide) sixth ed  (korean)"
+         "title": "a guide to the project management body of knowledge (pmbok® guide) sixth ed  (korean)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=A Guide to the Project Management Body of Knowledge (PMBOK® Guide)-Sixth Ed. (KOREAN)"
       },
       {
          "count": 90,
-         "title": "a history of korean wanderers and emigrants"
+         "title": "a history of korean wanderers and emigrants",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=A history of Korean wanderers and emigrants"
       },
       {
          "count": 91,
-         "title": "a man called ove korean version"
+         "title": "a man called ove korean version",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=A man called Ove Korean version"
       },
       {
          "count": 92,
-         "title": "ache ache para ache : han sung won kudo sosŏl "
+         "title": "ache ache para ache : han sung won kudo sosŏl ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ache ache para ache : Han Sung Won kudo sosŏl."
       },
       {
          "count": 93,
-         "title": "Beartown(원서/번역서 : 베어타운) "
+         "title": "Beartown(원서/번역서 : 베어타운) ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Beartown = 베어타운"
       },
       {
          "count": 94,
-         "title": "cham onda"
+         "title": "cham onda",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Cham onda"
       },
       {
          "count": 95,
-         "title": "che 3 illyu"
+         "title": "che 3 illyu",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Che 3 illyu"
       },
       {
          "count": 96,
-         "title": "chisin : han sŭng wŏn changp'yŏn sosŏl "
+         "title": "chisin : han sŭng wŏn changp'yŏn sosŏl ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Chisin : Han Sŭng-wŏn changpʻyŏn sosŏl."
       },
       {
          "count": 97,
-         "title": "c레안 : 안 운사니디섿 힛돌y 오f 왓힝 "
+         "title": "c레안 : 안 운사니디섿 힛돌y 오f 왓힝 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Clean : an unsanitised history of washing."
       },
       {
          "count": 98,
-         "title": "c오v읻 19 c오로나v이룻 가이드북"
+         "title": "c오v읻 19 c오로나v이룻 가이드북",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=COVID-19 coronavirus 가이드북"
       },
       {
          "count": 99,
-         "title": "마요르카의 연인 신영 소설 -"
+         "title": "마요르카의 연인 신영 소설 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Cchaloŭn mannam kin ibyŏl yŏngwŏnhan mannam."
       },
       {
          "count": 100,
-         "title": "f란겐ㅅ데인 인 박ㅎ닫 = 바그다드의 프랑켄슈타인"
+         "title": "f란겐ㅅ데인 인 박ㅎ닫 = 바그다드의 프랑켄슈타인",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Frankenstein in Baghdad = 바그다드의 프랑켄슈타인"
       },
       {
          "count": 101,
-         "title": "hongdo : kim tae hyŏn changp'yŏn sosŏl "
+         "title": "hongdo : kim tae hyŏn changp'yŏn sosŏl ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Hongdo : Kim Tae-hyŏn changp'yŏn sosŏl."
       },
       {
          "count": 102,
-         "title": "[해외주문][Book]How to Stop Time Main -"
+         "title": "[해외주문][Book]How to Stop Time Main -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=How to stop time = 시간을 멈추는 법"
       },
       {
          "count": 103,
-         "title": "ideo eyes open new york : aidio ka mandŭn yŏhaeng ch'aek nyuyok p'yŏn "
+         "title": "ideo eyes open new york : aidio ka mandŭn yŏhaeng ch'aek nyuyok p'yŏn ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=IDEO eyes open New York : Aidio ka mandŭn yŏhaeng chʻaek Nyuyok pʻyŏn."
       },
       {
          "count": 104,
-         "title": "maboroshi no hikari and other stories"
+         "title": "maboroshi no hikari and other stories",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maboroshi no hikari and other stories"
       },
       {
          "count": 105,
-         "title": "shakespeare iyagi"
+         "title": "shakespeare iyagi",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Shakespeare iyagi"
       },
       {
          "count": 106,
-         "title": "tenth of december korean version : stories"
+         "title": "tenth of december korean version : stories",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tenth of December Korean version : stories"
       },
       {
          "count": 107,
-         "title": "the secret : teen power korean ed "
+         "title": "the secret : teen power korean ed ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=The secret : teen power Korean ed."
       },
       {
          "count": 108,
-         "title": "the ten best days of my life korean version"
+         "title": "the ten best days of my life korean version",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=The ten best days of my life Korean version"
       },
       {
          "count": 109,
-         "title": "tongso suho chi"
+         "title": "tongso suho chi",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongso Suho chi"
       },
       {
          "count": 110,
-         "title": "whok pop bts"
+         "title": "whok pop bts",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=WhoK-pop BTS"
       },
       {
          "count": 111,
-         "title": "wㅎy? 게임 과학"
+         "title": "wㅎy? 게임 과학",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Why? 게임 과학"
       },
       {
          "count": 112,
-         "title": "wㅎy? 세균과 바이러스"
+         "title": "wㅎy? 세균과 바이러스",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Why? 세균과 바이러스"
       },
       {
          "count": 113,
-         "title": "w온효 대사 "
+         "title": "w온효 대사 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Wonhyo Taesa."
       },
       {
          "count": 114,
-         "title": "y인생 에서 가장 소중한 걷 : 우리 시대 의 멘토 17 인  삼 의 원칙 을 말 하다"
+         "title": "y인생 에서 가장 소중한 걷 : 우리 시대 의 멘토 17 인  삼 의 원칙 을 말 하다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Yinsaeng esŏ kajang sojunghan kŏt : uri sidae ŭi ment'o 17-in. sam ŭi wŏnch'ik ŭl mal hada"
       },
       {
          "count": 115,
-         "title": "소설/시/희곡 문화누리 전자도서관"
+         "title": "소설/시/희곡 문화누리 전자도서관",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Yilgop kŏn ŭi sarin e taehan kallyakhan yŏksa."
       },
       {
          "count": 116,
-         "title": "ḥvㄹī "
+         "title": "ḥvㄹī ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ḥvlī."
       },
       {
          "count": 117,
-         "title": "ㄱ2 전 쟁 : 2015 2016 슈퍼 달러 의 대바역 "
+         "title": "ㄱ2 전 쟁 : 2015 2016 슈퍼 달러 의 대바역 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=G2 Chŏn jaeng : 2015-2016 syŭpʼŏ tallŏ ŭi taebangyŏk."
       },
       {
          "count": 118,
-         "title": "ㄱw외이부리말 아이들 "
+         "title": "ㄱw외이부리말 아이들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kwoengibulimal aidŭl."
       },
       {
          "count": 119,
-         "title": "ㄱăㅁ캄한 영감 과 새파란 귀신 "
+         "title": "ㄱăㅁ캄한 영감 과 새파란 귀신 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kămkʻamhan yŏnggam kwa saepʻaran kwisin."
       },
       {
          "count": 120,
-         "title": "ㄱ라디두데 = 감사 : english korean"
+         "title": "ㄱ라디두데 = 감사 : english korean",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gratitude = 감사 : English-Korean"
       },
       {
          "count": 121,
-         "title": "ㄷ'이부 미인 "
+         "title": "ㄷ'이부 미인 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=D'ibu miin."
       },
       {
          "count": 122,
-         "title": "ㄷ헤 마니 끌레유 "
+         "title": "ㄷ헤 마니 끌레유 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=The mani kkŭlleyu."
       },
       {
          "count": 123,
-         "title": "ㅁ  마리아 : 현 의 섭 장변 소설 "
+         "title": "ㅁ  마리아 : 현 의 섭 장변 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=M. Maria : Hyŏn Ŭi Sŏp changpyŏn sosŏl."
       },
       {
          "count": 124,
-         "title": "ㅁơ나"
+         "title": "ㅁơ나",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mơna"
       },
       {
          "count": 125,
-         "title": "ㅂc 조립 업구레이두 므작중 따라하기 "
+         "title": "ㅂc 조립 업구레이두 므작중 따라하기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=PC cholip ŏpgureidu mŭchakchung ttarahagi."
       },
       {
          "count": 126,
-         "title": "ㅂ린c입렛 = 원칙"
+         "title": "ㅂ린c입렛 = 원칙",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Principles = 원칙"
       },
       {
          "count": 127,
-         "title": "ㅅ딜ㄹ 아리c에 고레안 v엘시온"
+         "title": "ㅅ딜ㄹ 아리c에 고레안 v엘시온",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Still Alice Korean version"
       },
       {
          "count": 128,
-         "title": "ㅅ한다 의 비밀 = chanda'secrets"
+         "title": "ㅅ한다 의 비밀 = chanda'secrets",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Shanda ui pimil = Chanda'secrets"
       },
       {
          "count": 129,
-         "title": "ㅅ힙고 재미인는 동'양 고전 30 : 꽁지머리 할배랑 한께 익는 "
+         "title": "ㅅ힙고 재미인는 동'양 고전 30 : 꽁지머리 할배랑 한께 익는 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Shipko chaemiinnŭn tongʼyang kojŏn 30 : kkongjimŏri halbaerang hankke ignŭn."
       },
       {
          "count": 130,
-         "title": "ㅈ'엘레비전 을 꿀고야!"
+         "title": "ㅈ'엘레비전 을 꿀고야!",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=J'ellebijŏn ŭl kkulgoya!"
       },
       {
          "count": 131,
-         "title": "ㅈĭ혜 "
+         "title": "ㅈĭ혜 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Chĭhye."
       },
       {
          "count": 132,
-         "title": "평범한 삶의 진리를 현실성 있게 제안한 책서재"
+         "title": "평범한 삶의 진리를 현실성 있게 제안한 책서재",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Pʻkŭ aendŭ pelli : chŏlmang ŭi koltchagi esŏ taŭm ponguri rŭl para pora."
       },
       {
          "count": 133,
-         "title": "가까운 골c자기 : 강 석 경 의 소설 "
+         "title": "가까운 골c자기 : 강 석 경 의 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kakkaun kolcchaki : Kang Sŏk Kyŏng ŭi sosŏl."
       },
       {
          "count": 134,
-         "title": "가끄믄 남펴늘 버리고 십다 : 누구에게도 말하지 모탄 스무펴늬 드라마"
+         "title": "가끄믄 남펴늘 버리고 십다 : 누구에게도 말하지 모탄 스무펴늬 드라마",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kakkǔmǔn namp'yǒnǔl bǒriko sibda : nukuekedo malhaji mot'an sǔmup'yǒnǔi dǔrama"
       },
       {
          "count": 135,
-         "title": "가끔씩 나는(핑거 그림책 2)조미자 -"
+         "title": "가끔씩 나는(핑거 그림책 2)조미자 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=가끔씩 나 는 : 조 미자 그림책."
       },
       {
          "count": 136,
-         "title": "가난 의 비밀 : 정 욘 희 소솔집 "
+         "title": "가난 의 비밀 : 정 욘 희 소솔집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kanan ŭi pimil : Chŏng Yon-hŭi sosolchip."
       },
       {
          "count": 137,
-         "title": "가려 뽀븐 고대 시가 "
+         "title": "가려 뽀븐 고대 시가 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Karyŏ ppobŭn kodae siga."
       },
       {
          "count": 138,
-         "title": "가보고 시픈 곧  머물고 시픈 곧 : 옏 절 에서 만나는 건축 과 역사 "
+         "title": "가보고 시픈 곧  머물고 시픈 곧 : 옏 절 에서 만나는 건축 과 역사 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kabogo sipʻŭn kot. mŏmulgo sipʻŭn kot : yet chŏl esŏ mannanŭn kŏnchʻuk kwa yŏksa."
       },
       {
          "count": 139,
-         "title": "가슴이 시키는 일 - 꿈과 행복을 완성시켜주는 마음의 ..."
+         "title": "가슴이 시키는 일 - 꿈과 행복을 완성시켜주는 마음의 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kasŭm i sik'inŭn il : kkum kwa haengbok ŭl wansŏng sik'yŏjunŭn maŭm ŭi myŏngyŏng"
       },
       {
          "count": 140,
-         "title": "가정 에서 쉽게 이용 할수 인는 야굥 싱물 대사전"
+         "title": "가정 에서 쉽게 이용 할수 인는 야굥 싱물 대사전",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kajŏng esŏ shwipke iyong halsu innŭn yagyong singmul taesajŏn"
       },
       {
          "count": 141,
-         "title": "가족 식사 : 소설가 임 동 헌 의 눈물 반 우슴 반 아버지 이야기 "
+         "title": "가족 식사 : 소설가 임 동 헌 의 눈물 반 우슴 반 아버지 이야기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kajok siksa : sosŏlga Im Tong-hŏn ŭi nunmul pan usŭm pan abŏji iyagi."
       },
       {
          "count": 142,
-         "title": "간고등어 코치가 전하는 30일 다이어트 플랜 ... - 서비스 점검 -"
+         "title": "간고등어 코치가 전하는 30일 다이어트 플랜 ... - 서비스 점검 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kan kotŭngŏ k'och'i undong ŭi chŏngsŏk : Sin kaenyŏm momtchang taiŏt'ŭ 30-il p'ŭllaen"
       },
       {
          "count": 143,
-         "title": "간고구고 노 게이세이"
+         "title": "간고구고 노 게이세이",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kankokugo no keisei"
       },
       {
          "count": 144,
-         "title": "간도 요육w온 에 관한 연구"
+         "title": "간도 요육w온 에 관한 연구",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kando Yongyugwon e Kwanhan yŏn'gu"
       },
       {
          "count": 145,
-         "title": "갈매기의 꿈(원서/번역서 -"
+         "title": "갈매기의 꿈(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kalmaeki ŭi kkum."
       },
       {
          "count": 146,
-         "title": "갈수 업는 나라"
+         "title": "갈수 업는 나라",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kalsu ŏpnŭn nara"
       },
       {
          "count": 147,
-         "title": "갈팡 질팡 하다가 내 이럴줄 아라찌 : 이 기 호 소설 "
+         "title": "갈팡 질팡 하다가 내 이럴줄 아라찌 : 이 기 호 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kalpʻang chilpʻang hadaga nae irŏlchul aratchi : Yi Ki-ho sosŏl."
       },
       {
          "count": 148,
-         "title": "감동 을 주는 대화 연c얼 "
+         "title": "감동 을 주는 대화 연c얼 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kamdong ŭl chunŭn taehwa yŏncŏl."
       },
       {
          "count": 149,
-         "title": "강능 : 윤 후 명 소설 "
+         "title": "강능 : 윤 후 명 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kangnŭng : Yun Hu-myŏng sosŏl."
       },
       {
          "count": 150,
-         "title": "개미에게 배우는 지혜 - - 개미의 농장 [책] - 최재천 - 웹툰가이드"
+         "title": "개미에게 배우는 지혜 - - 개미의 농장 [책] - 최재천 - 웹툰가이드",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kaemi ege paeu nǔn chihye : kaemi ǔi nongjang."
       },
       {
          "count": 151,
-         "title": "객주 1~9권 세트 (1~3부전질) - 김주영 장편역사소설"
+         "title": "객주 1~9권 세트 (1~3부전질) - 김주영 장편역사소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kaekchu : Kim Chu-yŏng changp'yŏn sosŏl."
       },
       {
          "count": 152,
-         "title": "거기서 나눈 ㅈū거도 조앝다 : 이 상 소설 집 "
+         "title": "거기서 나눈 ㅈū거도 조앝다 : 이 상 소설 집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏkisŏ nanun chūgŏdo choat'ta : Yi Sang sosŏl chip."
       },
       {
          "count": 153,
-         "title": "거대한 코 : 기업 소설"
+         "title": "거대한 코 : 기업 소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏdaehan kʻo : kiŏp sosŏl"
       },
       {
          "count": 154,
-         "title": "거믄 꼳 "
+         "title": "거믄 꼳 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏmŭn kkot."
       },
       {
          "count": 155,
-         "title": "거믄 오슬 이븐 여자 "
+         "title": "거믄 오슬 이븐 여자 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏmŭn osŭl ibŭn yŏja."
       },
       {
          "count": 156,
-         "title": "거앙 을 다스리는 지혜 : 한국 최고 명'이 30 명 의 진단 과 처방 "
+         "title": "거앙 을 다스리는 지혜 : 한국 최고 명'이 30 명 의 진단 과 처방 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏngang ŭl tasŭrinŭn chihye : hanʼguk chʻoego myŏngʼi 30-myŏng ŭi chindan kwa chʻŏbang."
       },
       {
          "count": 157,
-         "title": "거진말 인지 아므 더 머를거야 "
+         "title": "거진말 인지 아므 더 머를거야 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏchinmal inji amŭ dŏ mŏrŭlgŏya."
       },
       {
          "count": 158,
-         "title": "거톧 과 속'옫"
+         "title": "거톧 과 속'옫",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏt'ot kwa sog'ot"
       },
       {
          "count": 159,
-         "title": "걱정 마라요 그대 "
+         "title": "걱정 마라요 그대 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏkchŏng malayo kŭdae."
       },
       {
          "count": 160,
-         "title": "건믈 에도 쁘디 가 인나요? : 집 지끼  다리 노키  굴 뚤키 어뜨케 하고 이쓸까 궁굼증 33 "
+         "title": "건믈 에도 쁘디 가 인나요? : 집 지끼  다리 노키  굴 뚤키 어뜨케 하고 이쓸까 궁굼증 33 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏnmŭl edo Ppŭti ka innayo? : Chip chikki. tari nok'i. kul ttulk'i ŏttŭk'e hago issŭlkka kunggumjŭng 33."
       },
       {
          "count": 161,
-         "title": "걸작의 탄생(NEW소설 2)"
+         "title": "걸작의 탄생(NEW소설 2)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏlchak ŭi t'ansaeng : Cho Wan-sŏn changp'yŏn sosŏl."
       },
       {
          "count": 162,
-         "title": "검계 : 조선 의 조직 퐁뇩배 : 이 수 광 역사 소설 "
+         "title": "검계 : 조선 의 조직 퐁뇩배 : 이 수 광 역사 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŏmgye : Chosŏn ŭi chojik pʻongnyokbae : Yi Su-gwang yŏksa sosŏl."
       },
       {
          "count": 163,
-         "title": "겨울 광장 : 이 청 준 대뵤 작붐선 "
+         "title": "겨울 광장 : 이 청 준 대뵤 작붐선 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyŏul kwangchang : Yi Chʻŏng Jun taepyo chakpumsŏn."
       },
       {
          "count": 164,
-         "title": "겨울로가는 마차 (김수현 장편소설) 1979 -민예사"
+         "title": "겨울로가는 마차 (김수현 장편소설) 1979 -민예사",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyŏul ro kanŭn machʻa : Kim Su-hyŏn changpʻyŏn sosŏl."
       },
       {
          "count": 165,
-         "title": "격정 시대 : 김 학 철 장편 소설 "
+         "title": "격정 시대 : 김 학 철 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyŏkchŏng sidae : Kim Hak-chʻŏl changpʻyŏn sosŏl."
       },
       {
          "count": 166,
-         "title": "결혼 하고 시븐 여가 "
+         "title": "결혼 하고 시븐 여가 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyŏlhon hago sipŭn yŏga."
       },
       {
          "count": 167,
-         "title": "경제  아라야 바꾼다 : 손 혜 원 이 묻고 주 진 형 이 답 하다 "
+         "title": "경제  아라야 바꾼다 : 손 혜 원 이 묻고 주 진 형 이 답 하다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyŏngje. araya pakkunda : Son Hye-wŏn i mutgo Chu Chin-hyŏng i tap hada."
       },
       {
          "count": 168,
-         "title": ", 8월 막바지 여름 특가전 < 인물/동정 < 인사 ... - 디지털투데이"
+         "title": ", 8월 막바지 여름 특가전 < 인물/동정 < 인사 ... - 디지털투데이",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyebaek : Paekche ŭi majimak hon : Yi Su-gwang yŏksa sosŏl."
       },
       {
          "count": 169,
-         "title": "미리보기 - 환상소필집"
+         "title": "미리보기 - 환상소필집",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyesok hae bogetsŭmnida : Hwang Chŏng-ŭn changp'yŏn sosŏl."
       },
       {
          "count": 170,
-         "title": "계약 거플 "
+         "title": "계약 거플 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyeyak kŏpʻŭl."
       },
       {
          "count": 171,
-         "title": "계올 : 뷰디 다규 "
+         "title": "계올 : 뷰디 다규 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gyeol : byuti dakyu."
       },
       {
          "count": 172,
-         "title": "고갣마루 애 "
+         "title": "고갣마루 애 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kogaetmaru ae."
       },
       {
          "count": 173,
-         "title": "고구려 6: 구부의 꿈(소수림왕)"
+         "title": "고구려 6: 구부의 꿈(소수림왕)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koguryŏ. 6. Sosurim wang. Kubu ŭi kkum"
       },
       {
          "count": 174,
-         "title": "고구려 1~4권 세트 (김진명 역사소설)"
+         "title": "고구려 1~4권 세트 (김진명 역사소설)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koguryŏ : Kim Chin-myŏng yŏksa sosŏl."
       },
       {
          "count": 175,
-         "title": "고구려 는 사라 이따 : 김 병 호 장편 소설 "
+         "title": "고구려 는 사라 이따 : 김 병 호 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koguryŏ nŭn sara itta : Kim Pyŏng-ho changpʻyŏn sosŏl."
       },
       {
          "count": 176,
-         "title": "고료 이전 의 한국 식 생홰"
+         "title": "고료 이전 의 한국 식 생홰",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koryo ichŏn ui Hankuk sik saenghwae"
       },
       {
          "count": 177,
-         "title": "고마w오  우리 딸"
+         "title": "고마w오  우리 딸",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Komawo. uri ttal"
       },
       {
          "count": 178,
-         "title": "조남주모바일"
+         "title": "조남주모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Komanech'i rŭl wihayŏ : Cho Nam-ju changp'yŏn sosŏl."
       },
       {
          "count": 179,
-         "title": "고베 밥상 : 맏 인는 일본 가정 요리 "
+         "title": "고베 밥상 : 맏 인는 일본 가정 요리 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kobe papsang : mat innŭn Ilbon kajŏng yori."
       },
       {
          "count": 180,
-         "title": "고야이 를 자바 머근 오리 : 김 근 우 장편 소설 "
+         "title": "고야이 를 자바 머근 오리 : 김 근 우 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koyangi rŭl chaba mŏgŭn ori : Kim Kŭn-u changp'yŏn sosŏl."
       },
       {
          "count": 181,
-         "title": "고요 한 밤 의 눈 : 박 주 영 장편 소설 "
+         "title": "고요 한 밤 의 눈 : 박 주 영 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Koyo han pam ŭi nun : Pak Chu-yŏng changp'yŏn sosŏl."
       },
       {
          "count": 182,
-         "title": "고전 은 내 친'이으 : 아이 의 드내 깨으는 고전 일ㄱ키 가이드어 "
+         "title": "고전 은 내 친'이으 : 아이 의 드내 깨으는 고전 일ㄱ키 가이드어 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kochŏn ŭn nae ch'in'ingŭ : Ai ŭi tŭnae kkaeŭnŭn kojŏn ilkk'i kaidŭŏ."
       },
       {
          "count": 183,
-         "title": "고향 사지완 : 김 정 현 장편 소설 "
+         "title": "고향 사지완 : 김 정 현 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kohyang sajingwan : Kim Chŏng-hyŏn changpʻyŏn sosŏl."
       },
       {
          "count": 184,
-         "title": "골f에소 기룰 묻다 "
+         "title": "골f에소 기룰 묻다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Golfeso kilul mutda."
       },
       {
          "count": 185,
-         "title": "골반 다이어트 요가(Pelvis Diet Yoga)여동구 "
+         "title": "골반 다이어트 요가(Pelvis Diet Yoga)여동구 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Golban daiŏt'ŭ = Pelvis diet"
       },
       {
          "count": 186,
-         "title": "공 의 왕도 : 성공한 사람들 의 공부 비법  매 걷 으로 만들기 "
+         "title": "공 의 왕도 : 성공한 사람들 의 공부 비법  매 걷 으로 만들기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kong ŭi wangdo : sŏnggonghan saramdŭl ŭi kongbu pibŏp. mae kŏt ŭro mandŭlgi."
       },
       {
          "count": 187,
-         "title": "공감 : 시 로 잉는 살ㅁ 의 풍경들 "
+         "title": "공감 : 시 로 잉는 살ㅁ 의 풍경들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Konggam : si ro ingnŭn sarm ŭi pʻunggyŏngdŭl."
       },
       {
          "count": 188,
-         "title": "공룡 은 왜 달멩'이 를 모콛슬 까요? : 공룡 는 어떤 지슬 하면서 사라슬까요? 궁굼저̆ㅇ 33 "
+         "title": "공룡 은 왜 달멩'이 를 모콛슬 까요? : 공룡 는 어떤 지슬 하면서 사라슬까요? 궁굼저̆ㅇ 33 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kongryong ŭn wae talmeng'i rŭl mok'otsŭl kkayo? : Kongryong nŭn ŏttŏn chisŭl hamyŏnsŏ salasŭlkkayo? Kunggumjŏ̆ng 33."
       },
       {
          "count": 189,
-         "title": "공부 도둑놈  후이망 의 선생님 : 신 호 봄 자전 에세이 "
+         "title": "공부 도둑놈  후이망 의 선생님 : 신 호 봄 자전 에세이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kongbu toduknom. huimang ŭi sŏnsaengnim : Sin Ho-bom chajŏn esei."
       },
       {
          "count": 190,
-         "title": "미리보기 - 나도 솔직히 1등이 하고 싶다. 2 : 공부법 편"
+         "title": "미리보기 - 나도 솔직히 1등이 하고 싶다. 2 : 공부법 편",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kongbu e michʻige mandŭnŭn kongbu chʻaek : kongbu e morip hage hanŭn 12-kaji maŭm ŭi him."
       },
       {
          "count": 191,
-         "title": "공부에의 ㅅ힌 : 공ㅅ힌데우레울 공부베옵 "
+         "title": "공부에의 ㅅ힌 : 공ㅅ힌데우레울 공부베옵 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gongbueui shin : gongshindeureul gongbubeop."
       },
       {
          "count": 192,
-         "title": "The Tyranny of Merit(원서/번역서 : 공정하다는 착각) -"
+         "title": "The Tyranny of Merit(원서/번역서 : 공정하다는 착각) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=공정하다는 착각 = The tyranny of merit"
       },
       {
          "count": 193,
-         "title": "공포의 관 호러시리즈 1-3권 /어둠의 지옥.죽은자의 마음 ..."
+         "title": "공포의 관 호러시리즈 1-3권 /어둠의 지옥.죽은자의 마음 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kongpʻo ŭi kwan"
       },
       {
          "count": 194,
-         "title": "관내분실 검색 - 인터넷"
+         "title": "관내분실 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=관내분실"
       },
       {
          "count": 195,
-         "title": "광복 이심 뇬 : 장뵨 도규 맨다리"
+         "title": "광복 이심 뇬 : 장뵨 도규 맨다리",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kwangbok isim nyon : changpyon dokyu maentari"
       },
       {
          "count": 196,
-         "title": "교 ̆자 씨 의 미듬 으로 꿈 을 이루는 행복한 부자 "
+         "title": "교 ̆자 씨 의 미듬 으로 꿈 을 이루는 행복한 부자 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyo-̆ja Ssi ŭi midŭm ŭro kkum ŭl irunŭn haengbokhan puja."
       },
       {
          "count": 197,
-         "title": "교양 고전(살아있는 동안 꼭 읽어야 할 46권의)애덤 스미스 -"
+         "title": "교양 고전(살아있는 동안 꼭 읽어야 할 46권의)애덤 스미스 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kyoyang kojŏn : Sara innŭn tongan kkok ilgŏya hal 46 kwŏnŭi."
       },
       {
          "count": 198,
-         "title": "구 다오 를 웨이하여"
+         "title": "구 다오 를 웨이하여",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gu dao rŭl weihayŏ"
       },
       {
          "count": 199,
-         "title": "구 본 형 의 더 보스 : 쿨한 동행 "
+         "title": "구 본 형 의 더 보스 : 쿨한 동행 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ku Pon-hyŏng ŭi tŏ bosŭ : kʻurhan tonghaeng."
       },
       {
          "count": 200,
-         "title": "구 은 애 의 실루엗 : 모델 구 은 애 가 들려주는 '아름다운 몸 만들기' 아젠다 = silhouette by gooeunae : silhouette your own line"
+         "title": "구 은 애 의 실루엗 : 모델 구 은 애 가 들려주는 '아름다운 몸 만들기' 아젠다 = silhouette by gooeunae : silhouette your own line",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ku Ŭn-ae ŭi silluet : model Ku Ŭn-ae ka tŭllyŏjunŭn 'arŭmdaun mom mandŭlgi' ajenda = Silhouette by Gooeunae : silhouette your own line"
       },
       {
          "count": 201,
-         "title": "국수 : 김 숨 소설집 "
+         "title": "국수 : 김 숨 소설집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kuksu : Kim Sum sosŏlchip."
       },
       {
          "count": 202,
-         "title": "국제 시장 : 가장 평범한 아버지 의 가장 위대한 이야기"
+         "title": "국제 시장 : 가장 평범한 아버지 의 가장 위대한 이야기",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kukche sijang : kajang p'yŏngbŏmhan abŏji ŭi kajang widaehan iyagi"
       },
       {
          "count": 203,
-         "title": "[깐도리님의 서재] \"책과 통하는 블로그, 알라딘 서재!\""
+         "title": "[깐도리님의 서재] \"책과 통하는 블로그, 알라딘 서재!\"",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gut moning. enjel! : 3-chung changae Sŭnguk i ŭi nunmul nanŭn changae kŭkpok sŭtʻori."
       },
       {
          "count": 204,
-         "title": "굳바이 미스터 하필 : 장편 소설 "
+         "title": "굳바이 미스터 하필 : 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gutpai misŭtʻŏ Hapʻil : changpʻyŏn sosŏl."
       },
       {
          "count": 205,
-         "title": "굴ㅂ : 성 과 과학 의 의미심장한 짝 짇기 = gulp : adventures on the alimentary cana"
+         "title": "굴ㅂ : 성 과 과학 의 의미심장한 짝 짇기 = gulp : adventures on the alimentary cana",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gulp : sŏng kwa kwahak ŭi ŭimisimjanghan tchak chitki = Gulp : adventures on the alimentary cana"
       },
       {
          "count": 206,
-         "title": "굼̆옹 석 나라 "
+         "title": "굼̆옹 석 나라 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kum̆ong sŏk nara."
       },
       {
          "count": 207,
-         "title": "굼소 : 문 호 성 장편 소설"
+         "title": "굼소 : 문 호 성 장편 소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kumso : Mun Ho-sŏng changp'yŏn sosŏl"
       },
       {
          "count": 208,
-         "title": "궁극 의 아이 : 장 용 민 장y'언 소설 = the ultimate child "
+         "title": "궁극 의 아이 : 장 용 민 장y'언 소설 = the ultimate child ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kunggŭk ŭi ai : Chang Yong-min changy'ŏn sosŏl = The ultimate child."
       },
       {
          "count": 209,
-         "title": "그 곧 에는 눈물들 이 모인다 "
+         "title": "그 곧 에는 눈물들 이 모인다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ kot enŭn nunmultŭl i moinda."
       },
       {
          "count": 210,
-         "title": "그 남자 의 아들  정년 유 장 춘 : 이 남 희 장푠 소설 "
+         "title": "그 남자 의 아들  정년 유 장 춘 : 이 남 희 장푠 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ namja ŭi adŭl. chŏngnyŏn Yu Chang-chʻun : Yi Nam-hŭi changpʻyon sosŏl."
       },
       {
          "count": 211,
-         "title": "낭만서점 - Podcast Addict"
+         "title": "낭만서점 - Podcast Addict",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ namja ŭi yŏnaesa : Han Ch'ang-hun sosŏl."
       },
       {
          "count": 212,
-         "title": "그 사람 을 본 적 이 인나요? : 김 려령 장편 소설 "
+         "title": "그 사람 을 본 적 이 인나요? : 김 려령 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ saram ŭl pon chŏk i innayo? : Kim ryŏryŏng changp'yŏn sosŏl."
       },
       {
          "count": 213,
-         "title": "그 여자 의 남자 치우 "
+         "title": "그 여자 의 남자 치우 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ yŏja ŭi namja chʻingu."
       },
       {
          "count": 214,
-         "title": "그 와 그녀 를 사랑할 수 이께 해주세요 : 정 성 환 장편 소설 "
+         "title": "그 와 그녀 를 사랑할 수 이께 해주세요 : 정 성 환 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ wa kŭnyŏ rŭl saranghal su ikke haejuseyo : Chŏng Sŏng-hwan changpʻyŏn sosŏl."
       },
       {
          "count": 215,
-         "title": "그 와 의 한 시대 는 그래도 아름다워따 "
+         "title": "그 와 의 한 시대 는 그래도 아름다워따 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭ wa ŭi han sidae nŭn kŭraedo arŭmtawŏtta."
       },
       {
          "count": 216,
-         "title": "그 환자(원서/번역서 : The Patient) "
+         "title": "그 환자(원서/번역서 : The Patient) ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=그 환자 = The patient"
       },
       {
          "count": 217,
-         "title": "그걷 은 꿈 이어쓸까 : 은 희 경 장편 소설 "
+         "title": "그걷 은 꿈 이어쓸까 : 은 희 경 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭgŏt ŭn kkum iŏssŭlkka : Ŭn Hŭi-gyŏng changpʻyŏn sosŏl."
       },
       {
          "count": 218,
-         "title": "그대가 곁에 있어도 나는 그대가 그립다류시화 "
+         "title": "그대가 곁에 있어도 나는 그대가 그립다류시화 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭdae ka kyŏt e issŏdo na nŭn kŭdae ka kŭripta."
       },
       {
          "count": 219,
-         "title": "그대 가슴속 에 사라 읻고 십다 : 사랑하는 아내 와 조국 에 띄우는 여원한 청년 안 창 호 의 러브레터 "
+         "title": "그대 가슴속 에 사라 읻고 십다 : 사랑하는 아내 와 조국 에 띄우는 여원한 청년 안 창 호 의 러브레터 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭdae kasŭmsok e sara itko sipta : saranghanŭn anae wa choguk e ttŭiunŭn yŏngwŏnhan chʻŏngnyŏn An Chʻang-ho ŭi lŏbŭletʻŏ."
       },
       {
          "count": 220,
-         "title": "그들 은 한권 의 책 에서 시작 되어따 : 정 혜 윤 이 만난 매혹저긴 독서가들 "
+         "title": "그들 은 한권 의 책 에서 시작 되어따 : 정 혜 윤 이 만난 매혹저긴 독서가들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭdŭl ŭn hanʼgwŏn ŭi chʻaek esŏ sijak toeŏtta : Chŏng Hye-yun i mannan maehokchŏgin toksŏgadŭl."
       },
       {
          "count": 221,
-         "title": "그들 은 한권 의 책 에서 시작 되어따 : 정 혜 윤 이 만난 매혹저긴 독서가들"
+         "title": "그들 은 한권 의 책 에서 시작 되어따 : 정 혜 윤 이 만난 매혹저긴 독서가들",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭdŭl ŭn hanʼgwŏn ŭi chʻaek esŏ sijak toeŏtta : Chŏng Hye-yun i mannan maehokchŏgin toksŏgadŭl"
       },
       {
          "count": 222,
-         "title": "미리보기 - 그들이 말하지 않는 23가지"
+         "title": "미리보기 - 그들이 말하지 않는 23가지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭdŭl i mal haji annŭn 23-kaji : Chang Ha-jun. tŏ naŭn chabonjuŭi rŭl mal hada"
       },
       {
          "count": 223,
-         "title": "그래, 오늘 하루도 진실하게 살자"
+         "title": "그래, 오늘 하루도 진실하게 살자",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrae. onŭl haru to chinsil hage salja"
       },
       {
          "count": 224,
-         "title": "그래도  사랑 : 언젠가 너 로 인해 울게 될 걷 을 알지만"
+         "title": "그래도  사랑 : 언젠가 너 로 인해 울게 될 걷 을 알지만",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭraedo. sarang : ŏnjen'ga nŏ ro inhae ulge toel kŏt ŭl aljiman"
       },
       {
          "count": 225,
-         "title": "그레이의 50가지 그림자 검색 - 인터넷"
+         "title": "그레이의 50가지 그림자 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gŭrei ŭi 50-kaji kŭrimja = Fifty shades of Grey"
       },
       {
          "count": 226,
-         "title": "그뢰 도 그래 도 사랑 해 "
+         "title": "그뢰 도 그래 도 사랑 해 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭroe do Kŭrae do sarang hae."
       },
       {
          "count": 227,
-         "title": "그리고 명 탐저이 태나따 "
+         "title": "그리고 명 탐저이 태나따 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrigo myŏng t'amjŏngi t'aenatta."
       },
       {
          "count": 228,
-         "title": "[해외주문][Book]And the Mountains Echoed REISSUED -"
+         "title": "[해외주문][Book]And the Mountains Echoed REISSUED -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrigo san i ullyŏtta = And the mountains echoed"
       },
       {
          "count": 229,
-         "title": "김상렬 검색 - 인터넷"
+         "title": "김상렬 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭriun tchokpit : Kim Sang-nyŏl chʻangjakchip."
       },
       {
          "count": 230,
-         "title": "그림 에 분치는 시 : 김 환 기 산문 집 "
+         "title": "그림 에 분치는 시 : 김 환 기 산문 집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrim e punchʻinŭn si : Kim Hwan-gi sanmun chip."
       },
       {
          "count": 231,
-         "title": "그림 의 힘  2 = the masterpiece for success : hapgyŏk ŭi purŭ nŭn ch'oechŏk ŭi hyogwa"
+         "title": "그림 의 힘  2 = the masterpiece for success : hapgyŏk ŭi purŭ nŭn ch'oechŏk ŭi hyogwa",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrim ŭi him. 2 = The masterpiece for success : Hapgyŏk ŭi purŭ nŭn chʼoechŏk ŭi hyogwa"
       },
       {
          "count": 232,
-         "title": "그림 의 힘 = the power of masterpiece : ch'oesang ŭi idŭm ŭl ch'annŭn nae an ŭi saeroun pyŏnhwa"
+         "title": "그림 의 힘 = the power of masterpiece : ch'oesang ŭi idŭm ŭl ch'annŭn nae an ŭi saeroun pyŏnhwa",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrim ŭi him = The power of masterpiece : ch'oesang ŭi idŭm ŭl ch'annŭn nae an ŭi saeroun pyŏnhwa"
       },
       {
          "count": 233,
-         "title": "그림자 접목(2판)조정래 "
+         "title": "그림자 접목(2판)조정래 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭrimja chŏmmok : Cho Chŏng-nae sosŏl ."
       },
       {
          "count": 234,
-         "title": "Grit: The Power of Passion and Perseverance (Paperback)"
+         "title": "Grit: The Power of Passion and Perseverance (Paperback)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=그릿 = Grit: The Power of Passion and Perseverance"
       },
       {
          "count": 235,
-         "title": "그물에 걸리지 않는 바람처럼 - 숫타니파타 강론집 / 법정"
+         "title": "그물에 걸리지 않는 바람처럼 - 숫타니파타 강론집 / 법정",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭmul e kŏlliji annŭn param chʻŏrŏm : Suttʻanipʻatʻa kangnonjip."
       },
       {
          "count": 236,
-         "title": "그치지 안는 비 : 오 문 세 장편 소설 "
+         "title": "그치지 안는 비 : 오 문 세 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭch'iji annŭn pi : O Mun-se changp'yŏn sosŏl."
       },
       {
          "count": 237,
-         "title": "극한의 협상, 찰나의 설득 - 순식간에 상대를 제압하는 超 ..."
+         "title": "극한의 협상, 찰나의 설득 - 순식간에 상대를 제압하는 超 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kŭkhan ŭi hyŏpsang. chʻalla ŭi sŏldŭk."
       },
       {
          "count": 238,
-         "title": "글로리 데이 : 스무 살  세상 과 마주 하다"
+         "title": "글로리 데이 : 스무 살  세상 과 마주 하다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Gŭllori tei : sŭmu sal. sesang kwa maju hada"
       },
       {
          "count": 239,
-         "title": "기황후 세트장영철외 "
+         "title": "기황후 세트장영철외 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ki hwanghu : Chang Yŏng-ch'ŏl. Chŏng Kyŏng-sun changp'yŏn sosŏl."
       },
       {
          "count": 240,
-         "title": "깊은 상처(타우누스 시리즈 3) "
+         "title": "깊은 상처(타우누스 시리즈 3) ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kipŭn sangch'ŏ = Tiefe wunden"
       },
       {
          "count": 241,
-         "title": "기속 을 50°c 세척법 "
+         "title": "기속 을 50°c 세척법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kisok ŭl 50°C sech'ŏkpŏp."
       },
       {
          "count": 242,
-         "title": "기저긔 필름 클럽 "
+         "title": "기저긔 필름 클럽 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kijŏkŭi p'ilrŭm k'ŭlrŏp."
       },
       {
          "count": 243,
-         "title": "미리보기 - 기적의 고전 독서법"
+         "title": "미리보기 - 기적의 고전 독서법",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kijŏk ŭi kojŏn toksŏpŏp."
       },
       {
          "count": 244,
-         "title": "기적 의 인문학 독서법 : 삼 에 기적 을 이르키는 인문학 독서법 의 비결"
+         "title": "기적 의 인문학 독서법 : 삼 에 기적 을 이르키는 인문학 독서법 의 비결",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kijŏk ŭi inmunhak toksŏpŏp : Sam e kijŏk ŭl irŭk'inŭn inmunhak toksŏpŏp ŭi pigyŏl"
       },
       {
          "count": 245,
-         "title": "기차 는 왜 촐로 위 에서 떠러지지 아늘 까요? : 달리 는 차 와 비핵기  배 에서 이러 나는 놀랍고 진기한 궁굼정 33 "
+         "title": "기차 는 왜 촐로 위 에서 떠러지지 아늘 까요? : 달리 는 차 와 비핵기  배 에서 이러 나는 놀랍고 진기한 궁굼정 33 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kich'a nŭn wae ch'ollo wi esŏ ttŏrŏjiji anŭl kkayo? : Talli nŭn ch'a wa pihaeggi. pae esŏ irŏ nanŭn nollapko chin'gihan kunggumjŏng 33."
       },
       {
          "count": 246,
-         "title": "기찻길옆동네 창비 검색 - 인터넷"
+         "title": "기찻길옆동네 창비 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kichʻatkil yŏp tongne 1 : Kim Nam-jung sonyŏn sosŏl."
       },
       {
          "count": 247,
-         "title": "기픈 슬픔 : 신 경 숙 장편 소설 "
+         "title": "기픈 슬픔 : 신 경 숙 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kipʻŭn sŭlpʻŭm : Sin Kyŏng-suk changpʻyŏn sosŏl."
       },
       {
          "count": 248,
-         "title": "길 을 지우며 길 을 거따 : 지리 산 편지 "
+         "title": "길 을 지우며 길 을 거따 : 지리 산 편지 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kil ŭl chiumyŏ kil ŭl kŏtta : Chiri san pʻyŏnchi."
       },
       {
          "count": 249,
-         "title": "김구 (金九(호: 백범), KIM, KOO, 김창수) - 작가&작품 -"
+         "title": "김구 (金九(호: 백범), KIM, KOO, 김창수) - 작가&작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim. Gu."
       },
       {
          "count": 250,
-         "title": "김 야꾹 의 딸들"
+         "title": "김 야꾹 의 딸들",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim yakkuk ŭi ttaltŭl"
       },
       {
          "count": 251,
-         "title": "김 정 일 왕국 : 최 은 후이  신 상 옥 납북 수기 "
+         "title": "김 정 일 왕국 : 최 은 후이  신 상 옥 납북 수기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim Chŏng il wangkuk : Chʻoe Ŭn Hui. Sin Sang Ok napbuk suki."
       },
       {
          "count": 252,
-         "title": "김 제 동 이 만나러 감니다 : 살 맏 나는 세상 을 꿈 꾸며"
+         "title": "김 제 동 이 만나러 감니다 : 살 맏 나는 세상 을 꿈 꾸며",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim Che-dong i mannarŏ kamnida : sal mat nanŭn sesang ŭl kkum kkumyŏ"
       },
       {
          "count": 253,
-         "title": "김 종 필 즈언녹 : ㅈㅂ 가 말 하는 대한 민국 현대사"
+         "title": "김 종 필 즈언녹 : ㅈㅂ 가 말 하는 대한 민국 현대사",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim Chong-p'il chŭngŏnnok : JP ka mal hanŭn Taehan Min'guk hyŏndaesa"
       },
       {
          "count": 254,
-         "title": "미리보기 - 김지운의 숏컷"
+         "title": "미리보기 - 김지운의 숏컷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim Chi-un ŭi syotkʻŏt."
       },
       {
          "count": 255,
-         "title": "김하중의 중국이야기 1,2 (전2권)"
+         "title": "김하중의 중국이야기 1,2 (전2권)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kim Ha-jung ŭi Chungguk iyagi"
       },
       {
          "count": 256,
-         "title": "김미경의 리부트 : 코로나로 멈춘 나를 다시 일으켜 세우는 법 = reboot"
+         "title": "김미경의 리부트 : 코로나로 멈춘 나를 다시 일으켜 세우는 법 = reboot",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=김미경의 리부트 : 코로나로 멈춘 나를 다시 일으켜 세우는 법 = Reboot"
       },
       {
          "count": 257,
-         "title": "깨끋한 부자 "
+         "title": "깨끋한 부자 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkaekkŭthan puja."
       },
       {
          "count": 258,
-         "title": "꼬뜰 의 우슴판 : 한시 로 잉는 사계절 의 시정 "
+         "title": "꼬뜰 의 우슴판 : 한시 로 잉는 사계절 의 시정 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkottŭl ŭi usŭmpʻan : hansi ro ingnŭn sagyejŏl ŭi sijŏng."
       },
       {
          "count": 259,
-         "title": "꼳 가튼 시절 : 공 선 옥 장편 소설 "
+         "title": "꼳 가튼 시절 : 공 선 옥 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot kat'ŭn sijŏl : Kong Sŏn-ok changp'yŏn sosŏl."
       },
       {
          "count": 260,
-         "title": "꼳 구림자 노리 : 제 일 회 세계 믄학상 으스상"
+         "title": "꼳 구림자 노리 : 제 일 회 세계 믄학상 으스상",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=KKot kurimja noli : Che il-hoe segye mŭnhaksang ŭsŭsang"
       },
       {
          "count": 261,
-         "title": "꼳 신 : 김 용 익 소설집 "
+         "title": "꼳 신 : 김 용 익 소설집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot sin : Kim Yong-ik sosŏlchip."
       },
       {
          "count": 262,
-         "title": "꼳 울 위한 서시 : 김 춘 수 시집 "
+         "title": "꼳 울 위한 서시 : 김 춘 수 시집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot ul wihan sŏsi : Kim Chʻun Su sichip."
       },
       {
          "count": 263,
-         "title": "꼳 은 피고 물 은 흐르네 : 93 인 의 크 스님들 의 깨다름 의 노래 "
+         "title": "꼳 은 피고 물 은 흐르네 : 93 인 의 크 스님들 의 깨다름 의 노래 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot ŭn pʻigo mul ŭn hŭrŭne : 93-in ŭi kʻŭ sŭnimdŭl ŭi kkaedarŭm ŭi norae."
       },
       {
          "count": 264,
-         "title": "꽃이 핀 여인의 그늘에서 (상하) - 이병주 장편소설"
+         "title": "꽃이 핀 여인의 그늘에서 (상하) - 이병주 장편소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot i pʻin yŏin ŭi kŭnŭl esŏ : Yi Pyŏng-ju changpʻyŏn sosŏl."
       },
       {
          "count": 265,
-         "title": "꼳 필 눌 "
+         "title": "꼳 필 눌 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkot pʻil nul."
       },
       {
          "count": 266,
-         "title": "꼳삽 "
+         "title": "꼳삽 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkotsap."
       },
       {
          "count": 267,
-         "title": "꾸뻬씨의 행복여행(원서/번역서 -"
+         "title": "꾸뻬씨의 행복여행(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkuppe ssi ŭi haengbok yŏhaeng"
       },
       {
          "count": 268,
-         "title": "꿈 이 무껴 인는 당 : 문 갑 연 장편 소설 "
+         "title": "꿈 이 무껴 인는 당 : 문 갑 연 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkum i mukkyŏ innŭn tang : Mun Kab-yŏn changpʻyŏn sosŏl."
       },
       {
          "count": 269,
-         "title": "꿈 이 어쓸까 : 살ㅁ 의 얼굴 을 어루만지는 따뜯한 시선 "
+         "title": "꿈 이 어쓸까 : 살ㅁ 의 얼굴 을 어루만지는 따뜯한 시선 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkum i ŏssŭlkka : sarm ŭi ŏlgul ŭl ŏrumanjinŭn ttattŭthan sisŏn."
       },
       {
          "count": 270,
-         "title": "꿈 이 인는 아내 는 늑지 안는다 : 살림 과 유가  맏버리 때무네 더퍼둔 나 의 꿈 을 되살리는 가슴 뛰는 메시지!"
+         "title": "꿈 이 인는 아내 는 늑지 안는다 : 살림 과 유가  맏버리 때무네 더퍼둔 나 의 꿈 을 되살리는 가슴 뛰는 메시지!",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Kkum i innŭn anae nŭn nŭkchi annŭnda : sallim kwa yuga. matpŏri ttaemune tŏpʻŏdun na ŭi kkum ŭl toesallinŭn kasŭm ttwinŭn mesiji!"
       },
       {
          "count": 271,
-         "title": "나 눈 둘"
+         "title": "나 눈 둘",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nun tul"
       },
       {
          "count": 272,
-         "title": "나 눈 왜 사랑 울 몯하나 : 정신과 전무늬 양 창 순 박사 의 사랑 치유 에세이 "
+         "title": "나 눈 왜 사랑 울 몯하나 : 정신과 전무늬 양 창 순 박사 의 사랑 치유 에세이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nun wae sarang ul mothana : chŏngsinkwa chŏnmunŭi Yang Chʻang-sun Paksa ŭi sarang chʻiyu esei."
       },
       {
          "count": 273,
-         "title": "나 는 고백 한다 : 정 ㄷ0 전 암살 미스터리 "
+         "title": "나 는 고백 한다 : 정 ㄷ0 전 암살 미스터리 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn kobaek handa : Chŏng T0-jŏn amsal misŭtʻŏri."
       },
       {
          "count": 274,
-         "title": "나 는 날개 를 다라 줄수 옵다 : 김 지 우 소설집 "
+         "title": "나 는 날개 를 다라 줄수 옵다 : 김 지 우 소설집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn nalgae rŭl tala chulsu opta : Kim Chi-u sosŏlchip."
       },
       {
          "count": 275,
-         "title": "나 는 너 다 : 생각 나흔 동화 "
+         "title": "나 는 너 다 : 생각 나흔 동화 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn nŏ da : saenggak nahŭn tonghwa."
       },
       {
          "count": 276,
-         "title": "나 는 당신 을 만나기 전 부터 사랑 해씀니다 : 이 태 석 신부 이야기"
+         "title": "나 는 당신 을 만나기 전 부터 사랑 해씀니다 : 이 태 석 신부 이야기",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn tangsin ŭl mannagi chŏn putʼŏ sarang haessŭmnida : Yi Tʼae-sŏk sinbu iyagi"
       },
       {
          "count": 277,
-         "title": "나 는 매일 진화 한다 : 미 '서바이버' 최초 하닌 우승자 권 율 이 오늘 보다 더 나은 내일 을 꿈 꾸는 청춘 에게 주는 도전 의 메시지"
+         "title": "나 는 매일 진화 한다 : 미 '서바이버' 최초 하닌 우승자 권 율 이 오늘 보다 더 나은 내일 을 꿈 꾸는 청춘 에게 주는 도전 의 메시지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn maeil chinhwa handa : Mi 'Sŏbaibŏ' ch'oech'o Hanin usŭngja Kwŏn Yul i onŭl poda tŏ naŭn naeil ŭl kkum kkunŭn ch'ŏngch'un ege chunŭn tojŏn ŭi mesiji"
       },
       {
          "count": 278,
-         "title": "나 는 멷 살 까지 살까? : 1 500 명 의 인생 을 80 연간 추적한 사상 초유 의 수명 연구 프로젝트 = the longevity project"
+         "title": "나 는 멷 살 까지 살까? : 1 500 명 의 인생 을 80 연간 추적한 사상 초유 의 수명 연구 프로젝트 = the longevity project",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn myŏt sal kkaji salkka? : 1.500-myŏng ŭi insaeng ŭl 80-yŏn'gan ch'ujŏkhan sasang ch'oyu ŭi sumyŏng yŏn'gu p'ŭrojekt'ŭ = The longevity project"
       },
       {
          "count": 279,
-         "title": "나 는 박수 바들 줄 아라따 : 비운 의 황태자 정 몽 헌 의 탄식 "
+         "title": "나 는 박수 바들 줄 아라따 : 비운 의 황태자 정 몽 헌 의 탄식 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn paksu padŭl chul aratta : piun ŭi hwangtʻaeja chŏng Mong-hŏn ŭi tʻansik."
       },
       {
          "count": 280,
-         "title": "미리보기 - 4~7세보다 중요한 시기는 없습니다"
+         "title": "미리보기 - 4~7세보다 중요한 시기는 없습니다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn ai ŭi chʻinhan chʻingu ka toego sipta : ai ka kajang hamkke hago sipʻŭn chʻingu nŭn pumo imnida."
       },
       {
          "count": 281,
-         "title": "나 는 연 날리는 소년 이어따 : 고 도 w2언 의 아침 편지 '신 영 길 의 길 따라 글 따라' 바이칼 여행기 "
+         "title": "나 는 연 날리는 소년 이어따 : 고 도 w2언 의 아침 편지 '신 영 길 의 길 따라 글 따라' 바이칼 여행기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn yŏn nallinŭn sonyŏn iŏtta : Ko To-w2ŏn ŭi achʻim pʻyŏnji 'Sin Yŏng-gil ŭi kil ttara kŭl ttara' paikʻal yŏhaenggi."
       },
       {
          "count": 282,
-         "title": "나 는 왕 이로소이다 (외) : 홍 사 용 편 "
+         "title": "나 는 왕 이로소이다 (외) : 홍 사 용 편 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn wang irosoida (oe) : Hong Sa-yong pʻyŏn."
       },
       {
          "count": 283,
-         "title": "나 는 한국 의 가능성 이고 십다 "
+         "title": "나 는 한국 의 가능성 이고 십다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn Hanʼguk ŭi kanŭngsŏng igo sipta."
       },
       {
          "count": 284,
-         "title": "나 는 행복 의 나라 로 갈테야 : 나 의 살ㅁ  사랑  으막 이야기 "
+         "title": "나 는 행복 의 나라 로 갈테야 : 나 의 살ㅁ  사랑  으막 이야기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na nŭn haengbok ŭi nara ro kaltʻeya : na ŭi sarm. sarang. ŭmak iyagi."
       },
       {
          "count": 285,
-         "title": "나 도 모으게 당신 께 익숙 해진 거슬 알가 대얻슴니다 "
+         "title": "나 도 모으게 당신 께 익숙 해진 거슬 알가 대얻슴니다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na to moŭke tangsin kke iksuk haejin kŏsŭl alka taeŏtsŭmnida."
       },
       {
          "count": 286,
-         "title": "나 도 한 때 는 자작 나무 를 타따 : 김 연 장편 소설 "
+         "title": "나 도 한 때 는 자작 나무 를 타따 : 김 연 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na to han ttae nŭn chajak namu rŭl tʻatta : Kim Yŏn changpʻyŏn sosŏl."
       },
       {
          "count": 287,
-         "title": "나 랑 만 노라 "
+         "title": "나 랑 만 노라 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na rang man nora."
       },
       {
          "count": 288,
-         "title": "나 를 경려 하는 하루 "
+         "title": "나 를 경려 하는 하루 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na rŭl kyŏngryŏ hanŭn haru."
       },
       {
          "count": 289,
-         "title": "나 를 지켜 낸다 는 걷 : 치와대 10 년 연속 최고 의 명강  수신 의 길"
+         "title": "나 를 지켜 낸다 는 걷 : 치와대 10 년 연속 최고 의 명강  수신 의 길",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na rŭl chik'yŏ naenda nŭn kŏt : Ch'ingwadae 10-nyŏn yŏnsok ch'oego ŭi myŏnggang. susin ŭi kil"
       },
       {
          "count": 290,
-         "title": "[그리고 봄] \"책과 통하는 블로그, 알라딘 서재!\""
+         "title": "[그리고 봄] \"책과 통하는 블로그, 알라딘 서재!\"",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na ŭi mikkŭrŏmtʼŭl kŭrigo ohu : Sŏ Yŏng-ŭn changpʼyŏn sosŏl."
       },
       {
          "count": 291,
-         "title": "나 의 자군 새 "
+         "title": "나 의 자군 새 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Na ŭi chagun sae."
       },
       {
          "count": 292,
-         "title": "나ㄸ장'이 간다 : 차별 에 맏선 조선 아이 나ㄸ장 이야기 "
+         "title": "나눈 소망 한다 네계 굼지 되오술",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nanun somang handa nekye kumchi toengosul"
       },
       {
          "count": 293,
-         "title": "나눈 소망 한다 네계 굼지 되오술"
+         "title": "나라 엄는 나라 : 이 광 재 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nara ŏmnŭn nara : Yi Kwang-jae changp'yŏn sosŏl."
+      },
+      {
+         "count": 294,
+         "title": "나라라 금빋 날개 를 타고 : 고 혜 정 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Narara kŭmpit nalgae rŭl tʻago : Ko Hye-Jŏng changpʻyŏn sosŏl."
+      },
+      {
+         "count": 295,
+         "title": "나만 의 덕뵬 한 거림책 만들기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Naman ŭi tŏkbyol han kŏrimch'aek mandŭlgi."
+      },
+      {
+         "count": 296,
+         "title": "나명동 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Namyŏngdong."
+      },
+      {
+         "count": 297,
+         "title": "나무 에는 왜 이비 이쓸까요? : 식믈 에 관한 여러 가지 궁금ㄱ증 41 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Namu enŭn wae ipi issŭlkkayo? : Sikmŭl e kwanhan yŏrŏ kaji kunggŭmgjŭng 41."
+      },
+      {
+         "count": 298,
+         "title": "나방과 거품최상규 | 정음사-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nabang kwa kopʻum"
+      },
+      {
+         "count": 299,
+         "title": "나볼레옹 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Napolleong."
+      },
+      {
+         "count": 300,
+         "title": "나와 조게움 다레울 뿌니야",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nawa jogeum dareul ppuniya"
+      },
+      {
+         "count": 301,
+         "title": "나이팅게일 의 주금 = nattergalens doed",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nait'inggeil ŭi chugŭm = Nattergalens Doed"
+      },
+      {
+         "count": 302,
+         "title": "난  영화 여따 : 영화 감독 신 상 옥 이 남긴 마지막 글들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nan. yŏnghwa yŏtta : yŏnghwa kamdok Sin Sang-ok i namgin majimak kŭltŭl."
+      },
+      {
+         "count": 303,
+         "title": "[알라딘서재]난설헌: 최문희 장편소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nansŏrhŏn : Ch'oe Mun-hŭi changp'yŏn sosŏl."
+      },
+      {
+         "count": 304,
+         "title": "낟 이근 세상 : 황 석 영 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nat igŭn sesang : Hwang Sŏg-yŏng changp'yŏn sosŏl."
+      },
+      {
+         "count": 305,
+         "title": "낟 이근 타인들 의 도시 : 최 인 호 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nat igŭn t'aindŭl ŭi tosi : Ch'oe In-ho changp'yŏn sosŏl."
+      },
+      {
+         "count": 306,
+         "title": "날 개 지 눈 작 운 새",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nal gae chi nun jak un sae"
+      },
+      {
+         "count": 307,
+         "title": "남편과 함께 하는 태교 데이트김창규 | 중앙M&B-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nampyŏn kwa hamkke hanŭn tʻaekyo deitʻŭ."
+      },
+      {
+         "count": 308,
+         "title": "남변 과 함께하는 태교 데읻\"으 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nampyŏn kwa hamkkehanŭn t'aekyo deit\"ŭ."
+      },
+      {
+         "count": 309,
+         "title": "남자심리학우종민 | 리더스북-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Namja simnihak : namja ŭi insaeng ŭl pyŏnhwa sikʻinŭn 41-kaji simni kʻodŭ = The psychology of men."
+      },
+      {
+         "count": 310,
+         "title": "남자의 눈물은 뜨거웠다한명숙 | 문학의전당-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Namja ŭi nunmul ŭn ttŭgŏ wŏtta : Han Myŏng-suk supʻilchip."
+      },
+      {
+         "count": 311,
+         "title": "남자의 송마음 여자의 송마음 : 1000만 네티즈늘 중독시킨 미치녀내의 최정'이 알려주는 여내 심리 불벼늬 봅칙 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Namjaŭi songmaŭm yŏjaŭi songmaŭm : 1000man netʼijŭnŭl chungdoksikʼin michʼinyŏnaeŭi chʻoechŏngʼi allyŏjunŭn yŏnae simli pulbyŏnŭi popchʼik."
+      },
+      {
+         "count": 312,
+         "title": "남편 성격만 알아도 행복해진다 - 부인 성격 알면 더 행복 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nampʻyŏn sŏngkyŏk man arado haengbok haejinda : puin sŏngkyŏk almyŏn tŏ haengbok haejinda."
+      },
+      {
+         "count": 313,
+         "title": "낭만적 사랑 과 사휘 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nangmanchŏk sarang kwa sahwi."
+      },
+      {
+         "count": 314,
+         "title": "내가 물러서면 나를 쏴라 2: 1128일의 기억백선엽 | 중앙일보-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae ka mullŏ sŏmyŏn na rŭl sswara : 1128-il ŭi kiŏk : Paek Sŏn-yŏp changgun ŭi 6.25 chŏnjaeng iyagi."
+      },
+      {
+         "count": 315,
+         "title": "알라딘:  내가 보고 싶었던 세계 - 하버드대 종신교수 석지영의 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae ka pogo sip'ŏttŏn segye : Habŏdŭ Tae chongsin kyosu Sŏk Chi-yŏng ŭi yesul. insaeng. pŏp"
+      },
+      {
+         "count": 316,
+         "title": "클래식 음악에서는 사람 냄새가 난다지성호 | 소리내-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae ka sarang hanŭn kʻŭllaesik : Pʻungwŏltang chuin Pak Chong-ho ŭi ŭmak iyagi."
+      },
+      {
+         "count": 317,
+         "title": "내 가 종말 아라야 할 모든 걷는 유치w온 에서 배w오따 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae ga chongmal alaya hal modŭn kŏtnŭn yŭchʼiwon esŏ paewotta."
+      },
+      {
+         "count": 318,
+         "title": "내 가 확실히 아는 거뜰 = what i know for sure",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae ka hwaksirhi anŭn kŏttŭl = What I know for sure"
+      },
+      {
+         "count": 319,
+         "title": "내 나이 보다 30 연 점게 사는 하루 5 분 우슴 운동법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae nai poda 30-yŏn chŏmke sanŭn haru 5-pun usŭm undongpŏp."
+      },
+      {
+         "count": 320,
+         "title": "내 노래하고 싶은 것은( HardCover)신석정 | 창비-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae norae hago sipʻŭn kŏt ŭn : Sin Sŏk-chŏng yugo sijip."
+      },
+      {
+         "count": 321,
+         "title": "A Strangeness in My Mind(원서/번역서 : 내 마음의 낯섦) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=내 마음 의 낯섦 = A strangeness in my mind"
+      },
+      {
+         "count": 322,
+         "title": "내 마음 의 여정 : 박 근 혜 심경 고백 에세이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae maŭm ŭi yŏjŏng : Pak Kŭn-hye simgyŏng kobaek esei."
+      },
+      {
+         "count": 323,
+         "title": "내 몸 대 청소 = wanjŏnhi tarŭn na ro saeropke t'aeŏnanŭn pangbŏp ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae mom tae chʻŏngso = wanjŏnhi tarŭn na ro saeropke tʻaeŏnanŭn pangbŏp."
+      },
+      {
+         "count": 324,
+         "title": "내 몸 점께 만들기 = you  staying young ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae mom chŏmkke mandŭlgi = You. staying young."
+      },
+      {
+         "count": 325,
+         "title": "내 삼 의 주인 에우로 산다 네운 게옫",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae sam ui juin euro sanda neun geot"
+      },
+      {
+         "count": 326,
+         "title": "내 서른 살 은 어디로 간나 : 신 혈 림 치유 성장 에세이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae sŏrŭn sal ŭn ŏdiro kanna : Sin Hyŏl-lim chʻiyu sŏngjang esei."
+      },
+      {
+         "count": 327,
+         "title": "시간의 흐름, 그 속의 책서재",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae yŏnae ŭi modŭn kŏt : Yi Ŭng-jun changp'yŏn sosŏl."
+      },
+      {
+         "count": 328,
+         "title": "내 여자 친구 의 귀여운 여내 : 윤 영 수 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae yŏja chʻinʼgu ŭi kwiyŏun yŏnae : Yun Yŏng-su sosŏl."
+      },
+      {
+         "count": 329,
+         "title": "내 예기 를 드러줄 단 한 사람 이 이따면 : 뚜버기 변호사 조 우 성 이 전하는 뜨굽고 가슴 저린 인생 드라마",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae yegi rŭl tŭrŏjul tan han saram i ittamyŏn : ttubŏgi pyŏnhosa Cho U-sŏng i chŏnhanŭn ttŭgupko kasŭm chŏrin insaeng dŭrama"
+      },
+      {
+         "count": 330,
+         "title": "내 이름 은 워라 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae irŭm ŭn wŏla."
+      },
+      {
+         "count": 331,
+         "title": "내 짜꿍 최 영 대",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae tchakkung Ch'oe Yŏng-dae"
+      },
+      {
+         "count": 332,
+         "title": "이상한 나라의 흰 토끼(블랙 라벨 클럽 29)명윤 | 디앤씨미디어-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nae hayan ttokkidŭl ŭn ŏdi ro katna : changpʻyŏn sosŏl."
+      },
+      {
+         "count": 333,
+         "title": "내려올 때 보았네(이윤기 산문집) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Naeryŏol ttae poanne : Yi Yun-gi sanmunjip."
+      },
+      {
+         "count": 334,
+         "title": "시릴 디옹 - 내일, 새로운 세상이 온다(원서/번역서 : Demain) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Naeil = Demain"
+      },
+      {
+         "count": 335,
+         "title": "냉장고 에서 여내 를 꺼내다 : 박 주 영 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Naengjanggo esŏ yŏnae rŭl kkŏnaeda : Pak Chu-yŏng changpʻyŏn sosŏl."
+      },
+      {
+         "count": 336,
+         "title": "너는 마녀야오현종 | 민음사-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ nŭn manyŏ ya : O Hyŏn-jong changpʼyŏn sosŏl."
+      },
+      {
+         "count": 337,
+         "title": "너는 모른다 - 정이현 장편소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ nŭn morŭnda : Chŏng I-hyŏn changpʻyŏn sosŏl."
+      },
+      {
+         "count": 338,
+         "title": "너 늘 노아 줄께 = i let you go",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ nŭl noa chulkke = I let you go"
+      },
+      {
+         "count": 339,
+         "title": "알랭 드 보통 - 너를 사랑한다는 건( HardCover) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ nŭl sarang handanŭn kŏn : Allaeng Tŭ Pot'ong changp'yŏn sosŏl"
+      },
+      {
+         "count": 340,
+         "title": "너 도 떠오나 보면 나 를 알게 될 거야 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ to ttŏona pomyŏn na rŭl alge toel kŏya."
+      },
+      {
+         "count": 341,
+         "title": "너 루이 빨리 만나 고 시퍼서 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏ rui ppalli manna ko sip'ŏsŏ."
+      },
+      {
+         "count": 342,
+         "title": "널 위한 문화 예술 : 미술관 에서 길 을 일는 사람들 을 위한 가장 ㅊㄴ절한 예술 가이드 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŏl wihan munhwa yesul : misulgwan esŏ kil ŭl ilnŭn saramdŭl ŭl wihan kajang ch'njŏrhan yesul kaidŭ."
+      },
+      {
+         "count": 343,
+         "title": "네 가 보고 시퍼서 바람 이 부러따 : 안 도 현 아포리즘 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ne ka pogo sip'ŏsŏ param i purŏtta : An To-hyŏn ap'orijŭm."
+      },
+      {
+         "count": 344,
+         "title": "네가 어떤 삶을 살든 나는 너를 응원할 것이다 공지영 산문 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ne ka ŏttŏn sam ŭl saldŭn na nŭn nŏ rŭl ŭngwŏn hal kŏt ida : Kong Chi-yŏng sanmun."
+      },
+      {
+         "count": 345,
+         "title": "네 개의 그루이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ne kaeŭi kŭrui."
+      },
+      {
+         "count": 346,
+         "title": "네 마음껃 사라라! : 생 의 끄짜락 에 선 아버지 가 아드레게 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ne maŭmkkŏt sarara! : saeng ŭi kkŭtcharak e sŏn abŏji ka adŭlege."
+      },
+      {
+         "count": 347,
+         "title": "네메시스: 복수의 여신(형사 해리 홀레 시리즈 4) - 요 네스뵈 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nemesisŭ poksu ŭi yŏsin : Yo Nesŭboe changp'yŏn sosŏl = Nemesis"
+      },
+      {
+         "count": 348,
+         "title": "네버 룩 어웨이(Never look away) 린우드 바클레이 장편소설 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nebŏ nuk ŏwei : Rinudŭ Pak'ŭllei changp'yŏn sosŏl = Never look away"
+      },
+      {
+         "count": 349,
+         "title": "노란 으산",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Noran ŭsan"
+      },
+      {
+         "count": 350,
+         "title": "노비 의 딸  조선 왕 을 나다 : 최 숙빈 과 장 희빈",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nobi ŭi ttal. Chosŏn wang ŭl nata : Ch'oe Sukpin kwa Chang Hŭibin"
+      },
+      {
+         "count": 351,
+         "title": "[리뷰]높고 푸른 사다리-공지영 장편 소설 추천서재",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nopko p'urŭn sadari : Kong Chi-yŏng changp'yŏn sosŏl."
+      },
+      {
+         "count": 352,
+         "title": "놉레쎄 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Noblesse."
+      },
+      {
+         "count": 353,
+         "title": "놉새 부눈 바다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nopsae punun pada"
+      },
+      {
+         "count": 354,
+         "title": "뇌 1(3판)( HardCover)베르나르 베르베르 | 열린책들 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=뇌 : 베르나르베르베르장편소설"
+      },
+      {
+         "count": 355,
+         "title": "누 가 너 에게 호수 를 주어ㄸ느아 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nu ka nŏ ege hosu rŭl chuŏttnŭnga."
+      },
+      {
+         "count": 356,
+         "title": "누가 해도 참 나신는 나무리네 밥상 2 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nuga haedo chʻam nasinnŭn namurine papsang 2."
+      },
+      {
+         "count": 357,
+         "title": "누부시게 푸르 절믄 날 을 위한 처잉춘 예찬 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nubusige pʻurŭ chŏlmŭn nal ŭl wihan chʻŏingchʻun yechʻan."
+      },
+      {
+         "count": 358,
+         "title": "눈 가므면 보이는 거뜰 : 월가 시각 자애인 애널리스트 가 전하는 일상 의 기적",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nun kamŭmyŏn poinŭn kŏttŭl : Wŏlga sigak changaein aenŏllisŭt'ŭ ka chŏnhanŭn ilsang ŭi kijŏk"
+      },
+      {
+         "count": 359,
+         "title": "눈 하나로 남는 가슴이 되어문인귀 | 베드로서원-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nun hana ro namnŭn kasŭm i toeŏ."
+      },
+      {
+         "count": 360,
+         "title": "느리게 산다 는 거싀 의무 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŭrige sanda nŭn kŏsŭi ŭimu."
+      },
+      {
+         "count": 361,
+         "title": "느린 거름 : 김 병 훈 포토 푐 에세이 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŭrin kŏrŭm : Kim Pyŏng-hun pʻotʻo pʻoem esei."
+      },
+      {
+         "count": 362,
+         "title": "김성길모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŭkdaedŭl ŭi yŏnmibok."
+      },
+      {
+         "count": 363,
+         "title": "능녁자 : 최 민 석 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nŭngnyŏkcha : Ch'oe Min-sŏk changp'yŏn sosŏl."
+      },
+      {
+         "count": 364,
+         "title": "니혼 오 오모이  이라구 오 가게다 : 라가 가이거간 오구 갇수히고 노 ㅅ허갈 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nihon o omoi. iraku o kaketa : raga Gaikōkan Oku Katsuhiko no shōgal."
+      },
+      {
+         "count": 365,
+         "title": "닐스 의 시이 한 여행 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Nilsŭ ŭi singi han yŏhaeng."
+      },
+      {
+         "count": 366,
+         "title": "다구거 으막 요어 대사전 = the great dictionary of musical terms",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tagugŏ ŭmak yongŏ taesajŏn = the great dictionary of musical terms"
+      },
+      {
+         "count": 367,
+         "title": "다녀 와씀니다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tanyŏ wassŭmnida."
+      },
+      {
+         "count": 368,
+         "title": "다른 사람 : 강 화길 장편소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=다른 사람 : 강 화길 장편소설."
+      },
+      {
+         "count": 369,
+         "title": "다물 | 작가 & 작품 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tamul."
+      },
+      {
+         "count": 370,
+         "title": "다빈치 코드 1 다 v인c이 c오데",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Dabinch'i k'odŭ 1 Da Vinci code"
+      },
+      {
+         "count": 371,
+         "title": "다빈치 코드 1(개정판)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tabinchʻi kʻodŭ"
+      },
+      {
+         "count": 372,
+         "title": "얼리전트(다이버전트 시리즈 3) - 베로니카 로스 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taibŏjŏnt'ŭ : Peronik'a Rosŭ changp'yŏn sosŏl"
+      },
+      {
+         "count": 373,
+         "title": "단 한 번의 사랑 김홍신 장편소설 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tan han pŏn ŭi sarang : Kim Hong-sin changp'yŏn sosŏl."
+      },
+      {
+         "count": 374,
+         "title": "단순한 상각기 만데우루난 과학 발뮹 100 가지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Dansunhan sanggaggi mandeulunan gwahak balmyung 100 gaji"
+      },
+      {
+         "count": 375,
+         "title": "달 과 물 아애 : 장 석 주 산문 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tal kwa mul angae : Chang Sŏk-chu sanmun."
+      },
+      {
+         "count": 376,
+         "title": "달 과 시 와 으막 화 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tal kwa si wa ŭmak hwa."
+      },
+      {
+         "count": 377,
+         "title": "달 아 달 아 달메 달 아",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tal a tal a talme tal a"
+      },
+      {
+         "count": 378,
+         "title": "달 을 쫀는 스파이 : 방 현 희 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tal ŭl tchonnŭn sŭpʻai : Pang Hyŏn-hŭi changpʻyŏn sosŏl."
+      },
+      {
+         "count": 379,
+         "title": "달근 밤 에 아므걷 더 볼수 업다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Talkŭn pam e amŭgŏt dŏ polsu ŏpda."
+      },
+      {
+         "count": 380,
+         "title": "[사랑하며 살아 갈 것이다 ] \"책과 통하는 블로그, 알라딘 서재!\"",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Talkkot kwa nŭktae : Han Tong-nim changpʻyŏn sosŏl."
+      },
+      {
+         "count": 381,
+         "title": "달콤한 목욕(알맹이 그림책 31)( HardCover) | 김신화 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Talkʼom han mokyok."
+      },
+      {
+         "count": 382,
+         "title": "달콤한 그녀 : 김 옹 님 소설집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Talkʻomhan kŭnyŏ : Kim Ong-nim sosŏlchip."
+      },
+      {
+         "count": 383,
+         "title": "당나귀 의 ㄲw외 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangnakwi ŭi kkwoe."
+      },
+      {
+         "count": 384,
+         "title": "당시늬 꾸믄 무어심닉가",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsinŭi kkumŭn muŏsimnigga"
+      },
+      {
+         "count": 385,
+         "title": "당신 : 꼰닙 보다 북던 : 박 범 신 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsin : kkonnip poda puktŏn : Pak Pŏm-sin changp'yŏn sosŏl."
+      },
+      {
+         "count": 386,
+         "title": "The Strategist(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsin ŭn chŏllyakka imnikka : segye 0.1% egeman hŏrak toen t'ŭkkwŏn. Habŏdŭ kyŏngyŏng taehagwŏn ŭi chŏnsŏlchŏk chŏllyak kangŭi = The strategist : be the leader your business needs"
+      },
+      {
+         "count": 387,
+         "title": "당신 의 본능 은 안녕 하심니까? : 남 과 여  그들 의 성 커뮤니케이션 방낭기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsin ŭi ponnŭng ŭn annyŏng hasimnikka? : nam kwa yŏ. kŭdŭl ŭi sŏng kʻŏmyunikʻeisyŏn pangnanggi."
+      },
+      {
+         "count": 388,
+         "title": "당신 이 희망 임니다 : <아침 편지> 와 <386c>  c알도온 으로 만나다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsin i hŭimang imnida : <achʻim pʻyŏnji> wa <386c>. cartoon ŭro mannada."
+      },
+      {
+         "count": 389,
+         "title": "당신 참 괜차는 사라미야 : 우리가 이아와에를 통해 듣고 시븐 단 한마디 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tangsin chʼam kwaenchʼanŭn saramiya : uriga ingangwangerŭl tʼonghae tŭtko sipŭn tan hanmadi."
+      },
+      {
+         "count": 390,
+         "title": "대 지 해 : ㅅ허록 호멧 대 전집",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tae chi hae : Shŏlok Homes tae chŏnchip"
+      },
+      {
+         "count": 391,
+         "title": "대늗 운 개혁 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taenŭt un kaehyŏk."
+      },
+      {
+         "count": 392,
+         "title": "목조건축 기법(대목장 신응수의)( HardCover) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taemokchang Sin Ŭng-su ŭi mokcho kŏnch'uk kipŏp : Han'guk kŏnch'uk. ch'ŏnnyŏn ŭi chihye rŭl chŏnhada"
+      },
+      {
+         "count": 393,
+         "title": "대손 : 이 종 학 장변 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taeson : Yi Chong Hak changpyŏn sosŏl."
+      },
+      {
+         "count": 394,
+         "title": "대왕의 제전 1 2 - 총 2 권 - 1993년 초판본",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taewang ŭi chejŏn."
+      },
+      {
+         "count": 395,
+         "title": "대통령의 글쓰기강원국 | 메디치미디어-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taet'ongnyŏng ŭi kŭl ssŭgi"
+      },
+      {
+         "count": 396,
+         "title": "대통령 정신 차v이소! ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taet'ongryŏng chŏngsin ch'aviso!."
+      },
+      {
+         "count": 397,
+         "title": "한 번 배워 평생 가는 똑똑한 재테크 습관",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taehan minʼguk 20-tae. chaetʻekʻŭ e michʻyŏra : Han pŏn paewŏ pʻyŏnsaeng kanŭn ttokttokhan chaetʻekʻŭ sŭpkwan."
+      },
+      {
+         "count": 398,
+         "title": "대한 민국 국회 = the national assembly of the republic of korea ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taehan Minkuk Kukhoe = the National Assembly of the Republic of Korea."
+      },
+      {
+         "count": 399,
+         "title": "대한미욱 아버지 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taehanminguk Abŏji."
+      },
+      {
+         "count": 400,
+         "title": "대화 의 에티켇 = the art of speaking",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taehwa ŭi etʻikʻet = The art of speaking"
+      },
+      {
+         "count": 401,
+         "title": "댇글 부대 : 장 강 명 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Taetkŭl pudae : Chang Kang-myŏng changp'yŏn sosŏl."
+      },
+      {
+         "count": 402,
+         "title": "고단백 저탄수화물 다이어트 레시피 + 더 쉽고 더 맛있게 ... -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=더 쉽고 더 맛있게 고단백 저탄수화물 다이어트 레시피"
+      },
+      {
+         "count": 403,
+         "title": "미리보기 - 사고의 본질 : 유추, 지성의 연료와 불길",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tŏ kʻŭn na rŭl wihae na rŭl pŏrida : tochŏnhandanŭn kŏt. chasin ŭl naeryŏ nonnŭndanŭn kŏt."
+      },
+      {
+         "count": 404,
+         "title": "더부로 숩 : 새로운 세상  신 영 복 교수 가 보내온 삼 과 사색 의 엽서 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tŏburo sup : saeroun sesang. Sin Yŏng-bok kyosu ka ponaeon sam kwa sasaek ui yŏpsŏ."
+      },
+      {
+         "count": 405,
+         "title": "데이터 과학을 위한 통계(2판)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=데이터 과학을 위한 통계(2판)"
+      },
+      {
+         "count": 406,
+         "title": "데이터 과학을 위한 통계(2판)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=데이터 과학을 위한 통계:  데이터 분석에서 머신러닝까지 50가지 핵심 개념"
+      },
+      {
+         "count": 407,
+         "title": "데이터 분석을 통한 네트워크 보안:  이옫 시대에 맞는 상황 인식형 보안 구축하기",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=데이터 분석을 통한 네트워크 보안:  IoT 시대에 맞는 상황 인식형 보안 구축하기"
+      },
+      {
+         "count": 408,
+         "title": "도 리ㄸ레 선생 항 해 기",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Do little sŏnsaeng hang hae ki"
+      },
+      {
+         "count": 409,
+         "title": "도깨비 노룸",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tokkaepi norum"
+      },
+      {
+         "count": 410,
+         "title": "도깨비 발 저이 불 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tokkaebi pal chŏngi pul."
+      },
+      {
+         "count": 411,
+         "title": "도네 관헤 덜 걱청하는 법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tone kwanhe tŏl kŏkchʼŏnghanŭn pŏp."
+      },
+      {
+         "count": 412,
+         "title": "도도새 는 왜 사라소쓸까요? : 멸절 위기 에 노인 동믈들 에 관한 궁금증 37 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Todosae nŭn wae sarasossŭlkkayo? : Myŏlchŏl wigi e noin tongmŭldŭl e kwanhan kunggŭmjŭng 37."
+      },
+      {
+         "count": 413,
+         "title": "도둑 ㅅīㄴ부 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Toduk sīnbu."
+      },
+      {
+         "count": 414,
+         "title": "도우라미 세모 네모가 모예오세오 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Dongurami semo nemoga moyeoseo."
+      },
+      {
+         "count": 415,
+         "title": "도일 실라 와 발해",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongil Silla wa Palhae"
+      },
+      {
+         "count": 416,
+         "title": "도잇도이 당푠손 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Toistoi tangp'yonson."
+      },
+      {
+         "count": 417,
+         "title": "[POD] 독일 전설 동화집 : Marchen und Sagen (독일어판)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tok'il tonghwajip."
+      },
+      {
+         "count": 418,
+         "title": "독도 전쟁 = tokto chŏnjaeng : kim ha gi yŏksa changp'yŏn sosŏl ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tokto chŏnjaeng = Tokto chŏnjaeng : Kim Ha-gi yŏksa changp'yŏn sosŏl."
+      },
+      {
+         "count": 419,
+         "title": "독소 감상문 지도 의 이론 관 실제",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Togso kamsangmun chito ui yiron kwan silche"
+      },
+      {
+         "count": 420,
+         "title": "독한 거뜰 의 진짜 다이어트 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tokhan kŏttŭl ŭi chintcha daiŏtʻŭ."
+      },
+      {
+         "count": 421,
+         "title": "돈 으로 살 수 엄는 거뜰 : 무얻 이 가치 를 결정 하는가",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ton ŭro sal su ŏmnŭn kŏttŭl : muŏt i kach'i rŭl kyŏlchŏng hanŭn'ga"
+      },
+      {
+         "count": 422,
+         "title": "돈의 감각 : 절호의 투자 타이밍을 귀신같이 눈치채는 비결 = the sense of money",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=돈의 감각 : 절호의 투자 타이밍을 귀신같이 눈치채는 비결 = The sense of money"
+      },
+      {
+         "count": 423,
+         "title": "돌레스 공항 을 떠오나며 : 한 말 숙 소설선집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tollesŭ konghang ŭl ttŏonamyŏ : Han Mal-suk sosŏlsŏnjip."
+      },
+      {
+         "count": 424,
+         "title": "동남'아 동화집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongnam'a tonghwajip."
+      },
+      {
+         "count": 425,
+         "title": "Touch me: 동물 신체의 비밀(개정판)(촉감그림책)점자 편집부 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongmul sinchae ŭi pimil."
+      },
+      {
+         "count": 426,
+         "title": "동소 삼국 지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongso samkuk chi"
+      },
+      {
+         "count": 427,
+         "title": "동자승 말씀 이 기 가 막혀 : 가슴 에 꼳불 하나 켜는 이야기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tongjasŭng malssŭm i ki ka makhyŏ : kasŭm e kkotpul hana kʻyŏnŭn iyagi."
+      },
+      {
+         "count": 428,
+         "title": "동해 진달래 꼳 : 유호 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tonghae chindallae kkot : Yuho changpʻyŏn sosŏl."
+      },
+      {
+         "count": 429,
+         "title": "두 나'ㅅ 도쿄 노리 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tu-na's Tokʻyo nori."
+      },
+      {
+         "count": 430,
+         "title": "두근 두근 내 인생(원서/번역서 - 김애란 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tugŭn tugŭn nae insaeng : Kim Ae-ran changp'yŏn sosŏl."
+      },
+      {
+         "count": 431,
+         "title": "두려워 하라 목 이 터져라 부르고 시푼 사람 이 업꺼들랑 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Turyŏwŏ hara mok i tʻŏjyŏra purŭgo sipʻun saram i ŏpkkŏdŭllang."
+      },
+      {
+         "count": 432,
+         "title": "두마앙 변 의 십자가 : 중국 조서족 철 크리스천 작품집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tumangang pyŏn ŭi sipjaga : chungguk Chosŏjok chʻŏl kʻŭrisŭchʻŏn chakpʻumjip."
+      },
+      {
+         "count": 433,
+         "title": "두부 : 박 완 서 산문집",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tubu : Pak Wan-sŏ sanmunjip"
+      },
+      {
+         "count": 434,
+         "title": "둥근 해가 뜨씀니다",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Dunggŭn haega Ttŭssŭmnida"
+      },
+      {
+         "count": 435,
+         "title": "뒫개",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Twitkae"
+      },
+      {
+         "count": 436,
+         "title": "뒫기미 세상 사리 : 김 상 열 연작 장변 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Twitkimi sesang sari : Kim Sang Yŏl yŏnchak changpyŏn."
+      },
+      {
+         "count": 437,
+         "title": "드등실 선생님 의 으즈여행 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tŭdŭngsil sŏnsaengnim ŭi ŭchŭyŏhaeng."
+      },
+      {
+         "count": 438,
+         "title": "들꽃의 노래 = song of wildflowers",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=들꽃의 노래 = Song of wildflowers"
+      },
+      {
+         "count": 439,
+         "title": "앨리스 먼로모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Diŏ laip'ŭ : Aellisŭ Mŏnro sosŏl"
+      },
+      {
+         "count": 440,
+         "title": "앨리스 먼로모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Diŏ laip'ŭ : Aellisŭ Mŏnro sosŏl"
+      },
+      {
+         "count": 441,
+         "title": "[알라딘서재]날마다 예뻐지는 셀프 메이크업 SELF MAKEUP",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Dior Intʻŏnaesyŏnŏl pʻŭrotʻim atʻisŭtʻŭ Kim Sŭng-wŏn ŭi nal mada yeppŏ chinŭn selpʻŭ meikʻŭ ŏp = Self make up."
+      },
+      {
+         "count": 442,
+         "title": "디지털 시대에 사라남눈 법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tijitʼŏl sidaee saranamnun pŏp."
+      },
+      {
+         "count": 443,
+         "title": "디퍼런트 : 넘버 원 을 너머 올리 원 으로",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tipʻŏrŏntʻŭ : nŏmbŏ wŏn ŭl nŏmŏ olli wŏn ŭro"
+      },
+      {
+         "count": 444,
+         "title": "[BL] 딜레마 (Dilemma) 1모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=딜레마 = The dilemma"
+      },
+      {
+         "count": 445,
+         "title": "딱정 벌레 : 사라 인는 모든 거뜰 에 대한 별난 사색 : 류 시 화 산문집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttakchŏng pŏlle : sara innŭn modŭn kŏttŭl e taehan pyŏlnan sasaek : Ryu si hwa sanmunjip."
+      },
+      {
+         "count": 446,
+         "title": "딴따라 라서 조타 : 오 지 혜 가 만난 이 시대 의 '쟁'이' 들",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttanttara rasŏ chotʻa : O Chi-hye ka mannan i sidae ŭi 'chaengʼi' dŭl"
+      },
+      {
+         "count": 447,
+         "title": "[해외주문][Book]Letter to My Daughter Paperback -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttal ege ponaenŭn pʻyŏnji = Letter to my daughter"
+      },
+      {
+         "count": 448,
+         "title": "땅 꾿 에서 며칠 울",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttang kkut esŏ myŏch'il ul"
+      },
+      {
+         "count": 449,
+         "title": "때론 아내 의 방 에 나 와 달믄 도둑 이 든다 : 안 성 호 소설집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttaeron anae ŭi pang e na wa tarmŭn totuk i tŭnda : An Sŏng-ho sosŏlchip."
+      },
+      {
+         "count": 450,
+         "title": "떠 다니는 사람들 김영주 장편소설 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttŏ taninŭn saramdŭl : Kim Yŏng-ju changpʻyŏn sosŏl."
+      },
+      {
+         "count": 451,
+         "title": "떠나가눈 노래",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttŏnakanun norae"
+      },
+      {
+         "count": 452,
+         "title": "떠도는 기류손정모 | 책과나무 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttŏdonŭn kiryu : Son Chŏng-mo changp'yŏn sosŏl."
+      },
+      {
+         "count": 453,
+         "title": "또 끼 전",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Tto kki chŏn"
+      },
+      {
+         "count": 454,
+         "title": "직장생활에서 성공하고 싶다면 '비즈니스 매너'로 승부하라",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttokttokhan yŏja poda maenŏ choŭn yŏja."
+      },
+      {
+         "count": 455,
+         "title": "똥친 막대기( HardCover)김주영 | 비채-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttong chʻin maktaegi : Kim Chu-yŏng kŭrim sosŏl."
+      },
+      {
+         "count": 456,
+         "title": "똥방 동네 사람들 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ttongbang tongne saramdŭl."
+      },
+      {
+         "count": 457,
+         "title": "라울전 외",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Raulchŏn oe : Hanʼguk sosŏl ŭi ŏlgul 4"
+      },
+      {
+         "count": 458,
+         "title": "러너웨이 : 도피 할수 박 에 업서떤 여자 의 가장 황홀 해떤 그날 : 앨리스 멀로 소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Rŏnŏwei : top'i halsu pak e ŏpsŏttŏn yŏja ŭi kajang hwanghol haettŏn kŭnal : Aellisŭ Mŏllo sosŏl"
+      },
+      {
+         "count": 459,
+         "title": "러닝 텐서플로:  딥러닝 영상처리와 ㄴㄹㅂ부터 텐서보드 시각화  멀티스레딩  분산처리까지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=러닝 텐서플로:  딥러닝 영상처리와 NLP부터 텐서보드 시각화. 멀티스레딩. 분산처리까지"
+      },
+      {
+         "count": 460,
+         "title": "러시아 혁명 과 미극 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Rŏsia hyŏkmyŏng gwa migŭk."
+      },
+      {
+         "count": 461,
+         "title": "레겐ㄷ : 배 철 수 의 으막 캠프 20  년 그리고 100 장 의 음반 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Legend : Pae Chʻŏl-su ŭi ŭmak kʻaempʻŭ 20- nyŏn kŭrigo 100 chang ŭi ŭmban."
+      },
+      {
+         "count": 462,
+         "title": "레깃히 노 ㄷ수가이가다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Rekishi no tsukaikata."
+      },
+      {
+         "count": 463,
+         "title": "레드 재킫 : 내기 골프 타짜들 의 이야기 : 강 명 식 골프 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Redŭ chaek'it : naegi kolp'ŭ t'atchadŭl ŭi iyagi : Kang Myŏng-sik kolp'ŭ changp'yŏn sosŏl."
+      },
+      {
+         "count": 464,
+         "title": "레앋 & ㅅ베악 고레안 f올 베긴넬ㅅ : ㄷ헤 에아시엣ㄷ 와y 도 레알ㄴ 도 c옴무니c아데 릭ㅎㄷ 아와y!",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Read & speak Korean for beginners : the easiest way to learn to communicate right away!"
+      },
+      {
+         "count": 465,
+         "title": "렛 밋é랍렛",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Les misérables"
+      },
+      {
+         "count": 466,
+         "title": "로드(THE ROAD)( HardCover)(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Rodŭ : Kʻomaek Maekʻasi changpʻyŏn sosŏl."
+      },
+      {
+         "count": 467,
+         "title": "로맨스 가 피료해",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Romaensŭ ka p'iryohae"
+      },
+      {
+         "count": 468,
+         "title": "로맨틱한 그녀 우ĭ 에로틱한 글 쓰기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Romaentʻikhan kŭnyŏ uĭ erotʻikhan kŭl ssŭgi."
+      },
+      {
+         "count": 469,
+         "title": "로스트 심벌 1(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Losŭtʻŭ simbŏl."
+      },
+      {
+         "count": 470,
+         "title": "로켇보ì",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=RokʼetboÌ"
+      },
+      {
+         "count": 471,
+         "title": "롤ㄹy와 c아다리나의 메x이c오 여헹 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Rollywa catalinaǔi Mexico yǒheng."
+      },
+      {
+         "count": 472,
+         "title": "롤리타 : 블라디미르 나보코프 장편 서설 ; 김 진 준 옴김 = lolita",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Lollit'a : Pŭlladimirŭ Nabok'op'ŭ changp'yŏn sŏsŏl ; Kim Chin-jun omgim = Lolita"
+      },
+      {
+         "count": 473,
+         "title": "롱 웨이 다운(원서/번역서 - 제이슨 레이놀즈 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=롱 웨이 다운 = Long way down"
+      },
+      {
+         "count": 474,
+         "title": "루네상수 와 종'교 개혁 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Runesangsu wa chong'gyo kaehyŏk."
+      },
+      {
+         "count": 475,
+         "title": "리더 수업 : 하나님 의 청년들 로 다음 세대 를 이끌게 할",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Lidŏ suŏp : Hananim ŭi ch'ŏngnyŏndŭl ro taŭm sedae rŭl ikkŭlge hal"
+      },
+      {
+         "count": 476,
+         "title": "리더 의 그륻 : 3 만 명 의 기업가 를 만나 어든 비움 의 힘",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Ridŏ ŭi kŭrŭt : 3-man myŏng ŭi kiŏpka rŭl manna ŏdŭn pium ŭi him"
+      },
+      {
+         "count": 477,
+         "title": "리딩 으로 리드 하라 = reading lead : sesang ŭl chibae hanŭn 0 1 p'ŏsent'ŭ ŭi inmun kojŏn toksŏpŏp",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Riding ŭro lidŭ hara = Reading lead : sesang ŭl chibae hanŭn 0.1 pʻŏsentʻŭ ŭi inmun kojŏn toksŏpŏp"
+      },
+      {
+         "count": 478,
+         "title": "[레테 - 추억의 해독제] \"책과 통하는 블로그, 알라딘 서재!\"",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Liŏ Wang = King Lear"
+      },
+      {
+         "count": 479,
+         "title": "리투아니아 여인 : 이 문 열 장편 소설 = lithuanian woman ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Lit'uania yŏin : Yi Mun-yŏl changp'yŏn sosŏl = Lithuanian woman."
+      },
+      {
+         "count": 480,
+         "title": "릭ㅎ데 라헤 지논̲ ㄱī ḥ익ā얃 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Likhte rahe jinon̲ kī ḥikāyat."
+      },
+      {
+         "count": 481,
+         "title": "린치핀 : 당신 은 꼭 피료한 사람 인가?",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Linchʻipʻin : tangsin ŭn kkok pʻiryohan saram inʼga?"
+      },
+      {
+         "count": 482,
+         "title": "R. M. 릴케 검색 - 인터넷",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Lilk'e : segye myongjak sŏnjip."
+      },
+      {
+         "count": 483,
+         "title": "마다 마다 헨나 이기모노 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mata mata henna ikimono."
+      },
+      {
+         "count": 484,
+         "title": "마당깊은 집(문학과지성 소설 명작선 15) | 김원일 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Madang kipʻŭn chip."
+      },
+      {
+         "count": 485,
+         "title": "마더 테레사 : 나 는 한 자루 몽당 연필 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Madŏ Tʻeresa : na nŭn han charu mongdang yŏnpʻil."
+      },
+      {
+         "count": 486,
+         "title": "마력 의 태동 : 라플라스 의 탄생 = laplace's movement",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=마력 의 태동 : 라플라스 의 탄생 = Laplace's movement"
+      },
+      {
+         "count": 487,
+         "title": "마봅사 의 조카",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mabopsa ŭi chok'a"
+      },
+      {
+         "count": 488,
+         "title": "마싣고 간뵨하게 하닙 쏙 김밥 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Masitko kanpyonhage hanip ssok kimbap."
+      },
+      {
+         "count": 489,
+         "title": "고요아침 / 마음의 평화를 가져라 / 윤경일 지음 -02년.초판",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maum ŭi pʻyŏnghwa rŭl kajyŏra."
+      },
+      {
+         "count": 490,
+         "title": "망원동 브라더스김호연 | 나무옆의자-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mangwŏndong pŭradŏsŭ : Kim Ho-yŏn changp'yŏnsosŏl"
+      },
+      {
+         "count": 491,
+         "title": "마음의 법칙(원서/번역서 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maŭm."
+      },
+      {
+         "count": 492,
+         "title": "마음 열기 : 최 일 도 목사 가 시편 에서 건져 올린 삼 의 지혜 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maŭm yŏlgi : Chʻoe Il-to Moksa ka Sipʻyŏn esŏ kŏnjyŏ ollin sam ŭi chihye."
+      },
+      {
+         "count": 493,
+         "title": "마음의 부력 외 5편 : 2021 제44회 이상문학상 작품집",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=마음의 부력 외 5편 : 2021 제44회 이상문학상 작품집"
+      },
+      {
+         "count": 494,
+         "title": "마이 짝퉁 라이프 : 장편 소설 = my tchakt'ung life ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mai tchaktʻung laipʻŭ : changpʻyŏn sosŏl = My tchaktʻung life."
+      },
+      {
+         "count": 495,
+         "title": "마자 주글 가고 로 쓴 치닐 서넌 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maja chugŭl kago ro ssŭn chʻinil sŏnŏn."
+      },
+      {
+         "count": 496,
+         "title": "셜록홈즈의 대모험 - 마자린의 보석",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Majarin ŭi posŏk"
+      },
+      {
+         "count": 497,
+         "title": "마지막 연'인",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Machimak yŏn'in"
+      },
+      {
+         "count": 498,
+         "title": "마지막 입새 = the last leaf and other stories ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Majimak ipsae = The last leaf and other stories."
+      },
+      {
+         "count": 499,
+         "title": "마지막 제온두 = the last battle",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Majimak jeontu = The last battle"
+      },
+      {
+         "count": 500,
+         "title": "마한 제갈량 의 지혜 릐 일거유 할ㄷ태 : z언려기핵가 제갈량 에게 배우 는 차의z억 사고 와 겾다력 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mahan chegallyang ŭi chihye rŭi ilgŏyu haltt'ae : zŏnryŏgihaekga chegallyang ege baeu nŭn ch'angŭizŏk sago wa kyŏjdaryŏk."
+      },
+      {
+         "count": 501,
+         "title": "마흐나홉 통 의 편지 : 손 석 춘 의 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mahŭnahop tʻong ŭi pʻyŏnji : Son Sŏk-chʻun ŭi sosŏl."
+      },
+      {
+         "count": 502,
+         "title": "마흔 에 잉는 도의 보감",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mahŭn e ingnŭn Tongŭi pogam"
+      },
+      {
+         "count": 503,
+         "title": "마흔 이후  이제 야 알게 된 거뜰",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mahŭn ihu. ije ya alge toen kŏttŭl"
+      },
+      {
+         "count": 504,
+         "title": "막시무스 의 인간 동무뤈 에서 사라 남는 법 : 동소 고금 의 현자들 이 전하는 유쾌한 인생 괄람법 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maksimusŭ ŭi inʼgan tongmurwŏn esŏ sara namnŭn pŏp : tongso kogŭm ŭi hyŏnjadŭl i chŏnhanŭn yukʻwaehan insaeng kwallampŏp."
+      },
+      {
+         "count": 505,
+         "title": "맏 의 다린 최 화 정 의 진짜 맏 인는 이야기 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mat ŭi tarin Ch'oe Hwa-jŏng ŭi chintcha mat innŭn iyagi."
+      },
+      {
+         "count": 506,
+         "title": "맏 이 통하면 마음 도 통한다 : 그 와 그녀 가 떠난 움식 기행 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mat i tʻonghamyŏn maŭm to tʻonghanda : kŭ wa kŭnyŏ ka ttŏnan umsik kihaeng."
+      },
+      {
+         "count": 507,
+         "title": "말 이 먼저  으막 이 먼저 : 자까 가 드른 으막  자꼬까 가 일근 문학 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mal i mŏnjŏ. ŭmak i mŏnjŏ : chakka ka tŭrŭn ŭmak. chakkokka ka ilgŭn munhak."
+      },
+      {
+         "count": 508,
+         "title": "말괄랴이 의 늑대 길드리기 : 김 원 경 로맨스 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Malgwallyangi ŭi nŭktae kildŭrigi : Kim Wŏn-gyŏng romaensŭ changpʻyŏn sosŏl."
+      },
+      {
+         "count": 509,
+         "title": "맑고 향기롭게 - 법정 대표산문선집 (에세이/양장본)",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Markko hyanggiropke : Pŏpchŏng taepʻyo sanmun sŏnjip."
+      },
+      {
+         "count": 510,
+         "title": "매월당 김 시 숩 : 이 문 구 장변 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maewŏltang Kim Si Sup : Yi Mun Gu changpyŏn sosŏl."
+      },
+      {
+         "count": 511,
+         "title": "마음의 눈을 가진 장님 - [개썅마이리딩] \"책과 통하는 블로그, 알라딘 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Maemdolda kanŭn sesang."
+      },
+      {
+         "count": 512,
+         "title": "머꼬 시픈 대로 모긴 음식 이 당신 아이 의 모리 들 망진다 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mŏkko sipʻŭn taero mogin ŭmsik i tangsin ai ui mori tŭl mangchinda."
+      },
+      {
+         "count": 513,
+         "title": "머리 가 ㅅ호다지 늠 yăㄱ ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mŏri ga shotaji nŭM yăk."
+      },
+      {
+         "count": 514,
+         "title": "머리 부터 발 끋 까지 사랑 해",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mŏri put'ŏ pal kkŭt kkaji sarang hae"
+      },
+      {
+         "count": 515,
+         "title": "머리아픈여자가슴아픈남자(단편) 홍주연 로맨스 장편 소설",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mŏri apʻŭn yŏja kasŭm apʻŭn namja."
+      },
+      {
+         "count": 516,
+         "title": "먼 곧 : 문 태 준 시집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mŏn kot : Mun T'ae-jun sijip."
+      },
+      {
+         "count": 517,
+         "title": "메솦ㅂ타미아 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mesopʻptʻamia."
+      },
+      {
+         "count": 518,
+         "title": "메이드 인 블루 : 그녀 가 행복해 지는 법 101 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Meidŭ in bŭllu : kŭnyŏ ka haengbokhae chinŭn pŏp 101."
+      },
+      {
+         "count": 519,
+         "title": "명 탐저긔 저주",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Myŏng t'amjŏgŭi jŏju"
+      },
+      {
+         "count": 520,
+         "title": "미리보기 - 은주의 영화",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Myŏngnanghan pamgil : Kong Sŏn-ok sosŏlchip."
+      },
+      {
+         "count": 521,
+         "title": "초등학생을 위한 추리소설 20모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Myŏngt'amjŏng Syŏllok Homjŭ ŭi ne kae ŭi sŏmyŏng : ch'odŭng haksaeng ŭl wihan ch'uli sosŏl."
+      },
+      {
+         "count": 522,
+         "title": "명탐정 셜록 홈즈의 회상+ 귀환+모험 총3권 (초등학생을 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Myŏngt'amjŏng Syŏllok Homjŭ ŭi hoesang : ch'odŭng haksaeng ŭl wihan ch'uli sosŏl."
+      },
+      {
+         "count": 523,
+         "title": "서정인모바일",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mogusil : Sŏ Chŏng-in yŏnjak sosŏl."
+      },
+      {
+         "count": 524,
+         "title": "모던보이: 망하거나 죽지 않고 살 수 있겠니(2판) - 문학동네 -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Modŏn poi : Yi Chi-min changpʻyŏn sosŏl."
+      },
+      {
+         "count": 525,
+         "title": "모두 모두 정말 조아",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Modu modu chŏngmal choa"
+      },
+      {
+         "count": 526,
+         "title": "모리 : 지구 상 에 단 한명 뿌닌 주금 대역 배우 : 이 세 벽 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mori : chigu sang e tan hanmyŏng ppunin chugŭm taeyŏk paeu : Yi Se-byŏk changpʻyŏn sosŏl."
+      },
+      {
+         "count": 527,
+         "title": "모모 세대 가 몰려 온다 : 생산 하고 소비 하고 창조 하는 새로운 10 대 의 등장 = more mobile generation",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Momo sedae ka mollyŏ onda : saengsan hago sobi hago ch'angjo hanŭn saeroun 10-tae ŭi tŭngjang = More mobile generation"
+      },
+      {
+         "count": 528,
+         "title": "모미 변하면 인사w이 변한다 : 구까대표 보디 ㅋ치 발ㄱ수희의 다이어트 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Momi pyŏnhamyŏn insawngi pyŏnhanda : kukkadaep'yo podi k'ch'i parksuhŭiŭi taiŏt'ŭ."
+      },
+      {
+         "count": 529,
+         "title": "모바일 형명",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mobail hyŏngmyŏng"
+      },
+      {
+         "count": 530,
+         "title": "모발 완전정복허창훈 | 한언-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mobal wanjŏn chŏngbok : tʻalmo yebang kwa chʻiryo. 3·6·5 pŏpchʻik."
+      },
+      {
+         "count": 531,
+         "title": "모온 왈ㄱ 고레안 엗 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Moon walk Korean ed."
+      },
+      {
+         "count": 532,
+         "title": "모저요 에는 물총새 가 산다 : 김 용 우 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mojŏngyo enŭn mulchʻongsae ka sanda : Kim Yong-u changpʻyŏn sosŏl."
+      },
+      {
+         "count": 533,
+         "title": "<초판>목동아줌마",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Moktong ajum'ma"
+      },
+      {
+         "count": 534,
+         "title": "목마룬 땅 : 송 원 희 장변 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mogmarun ttang : Song Wŏn Hŭi changpyŏn sosŏl."
+      },
+      {
+         "count": 535,
+         "title": "몯 하면 어떠케 : 자시암 인는 아이 로 기러 주는 책 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mot hamyŏn ŏttŏkʻe : chasingam innŭn ai ro kilŏ chunŭn chʻaek."
+      },
+      {
+         "count": 536,
+         "title": "몯생긴 남자",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Motsaengkin namcha"
+      },
+      {
+         "count": 537,
+         "title": "몽고ㄷㅂ 완벽 가이드(3판):  실전 예제로 배우는 놋qㄹ 데이터베이스 기초부터 활용까지",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=몽고DB 완벽 가이드(3판):  실전 예제로 배우는 NoSQL 데이터베이스 기초부터 활용까지"
+      },
+      {
+         "count": 538,
+         "title": "몽련꼳 그늘 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mongryŏnkkot kŭnŭl."
+      },
+      {
+         "count": 539,
+         "title": "무궁무진한 떨림, 무궁무진한 포옹박상순 | 다산책방-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=무궁 무진한 떨림. 무궁 무진한 포옹 : 제 17회 미당 문학상 수상 작품집"
+      },
+      {
+         "count": 540,
+         "title": "무궁화 꼳 이 피얻슴니다 : 김 진 명 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mugunghwa kkot i pʻiŏtsŭmnida : Kim Chin-myŏng changpʻyŏn sosŏl."
+      },
+      {
+         "count": 541,
+         "title": "무궁화꼳 이 피얻씀니다 : 김 진 명 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mugunghwakkot i p'iŏtssŭmnida : Kim Chin-myŏng changp'yŏn sosŏl."
+      },
+      {
+         "count": 542,
+         "title": "무너미마을 느티나무 아래서 - 이오덕 시집 : 2005년(제1 ...",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Munŏmi maŭl nŭtʻi namu araesŏ : Yi O-dŏk sijip."
+      },
+      {
+         "count": 543,
+         "title": "무너지눈 땅 : 김 정 규 장변 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Munŏchinun ttang : Kim Chŏng Kyu changpyŏn sosŏl."
+      },
+      {
+         "count": 544,
+         "title": "무어시 이 외로움 을 이기계 하누아 : 이 향 봉 수필집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Muŏsi i oeroum ŭl igigye hanunga : Yi Hyang-Bong supʻiljip."
+      },
+      {
+         "count": 545,
+         "title": "무지개 골c작 의 앤",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Muchikae kolcchag ŭi Aen"
+      },
+      {
+         "count": 546,
+         "title": "무화과 꼳 운 언제 피눈가 : 최 일 남 창작 집 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Muhwakwa kkot un ŏnche pʻinunka : Chʻoe Il Nam chʻangchak chip."
+      },
+      {
+         "count": 547,
+         "title": "엄마의 말뚝(박완서 소설전집 결정판 11)( HardCover) -",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mun pak ui saramdul : Yi In Hwi changpyŏn sosŏl."
+      },
+      {
+         "count": 548,
+         "title": "문장 : 최 인 호 수상녹 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Munjang : Chʻoe In-ho susangnok."
+      },
+      {
+         "count": 549,
+         "title": "문학 을 사랑 하는 절므니들 에게 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Munhak ŭl sarang hanŭn chŏlmŭnidŭl ege."
+      },
+      {
+         "count": 550,
+         "title": "물 위 의 사막 : 최 인 호 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mul wi ŭi samak : Chʻoe In Ho changpʻyŏn sosŏl."
+      },
+      {
+         "count": 551,
+         "title": "물 위를 건는 여자 : 신 달 자 첟 장편 소설 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mul wirŭl kŏnnŭn yŏja : Sin Tal-cha chʻŏt changpʻyŏn sosŏl."
+      },
+      {
+         "count": 552,
+         "title": "물델 가멧 = 살인 카드 게임",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Murder games = 살인 카드 게임"
+      },
+      {
+         "count": 553,
+         "title": "[알라딘서재]영어사전에 대하여",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Miguk saenghwal yŏngŏ munjang sajŏn = Sentence dictionary of colloquial usage"
+      },
+      {
+         "count": 554,
+         "title": "미나김사과 | 창비-",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mina : Kim Sa-gwa changpʻyŏn sosŏl."
+      },
+      {
+         "count": 555,
+         "title": "미등록자 = プラチナデータ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=미등록자 = プラチナデータ"
+      },
+      {
+         "count": 556,
+         "title": "미래로부터의 반란 -  - 문서검색",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mirae robutʻŏ ŭi pallan : Kim Chin-gyŏng kyoyuk esei : hŭndŭllinŭn kyoyuk e kwanhan kamsŏngjŏk kochʻal."
+      },
+      {
+         "count": 557,
+         "title": "미래 에서 온 편지 : 곧뎄   ㅅ벨ㄹ 아cc올딩 도 흉 귱",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Mirae esŏ on p'yŏnji : Goddess - spell according to Hyung Kyung"
+      },
+      {
+         "count": 558,
+         "title": "미래세 가 다하고 남도록 : 버버  논설  소오상  서한  주모록 ",
+         "tpl_link": "https://www.torontopubliclibrary.ca/search.jsp?Ntt=Miraese ka tahago namtorok : pŏpŏ. nonsŏl. soosang. sŏhan. chumorok."
       }
    ]
 }

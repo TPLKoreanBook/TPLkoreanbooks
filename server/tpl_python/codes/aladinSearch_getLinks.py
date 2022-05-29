@@ -13,19 +13,22 @@ searched_count = 0
 #Fetching titles from json file
 with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/googleSearchedTitles.json", 'r') as f:
     aList = json.loads(f.read())["books"]
-length_of_aList = len(aList)
 
-#Select the best title among three choice; original title, title from aladin, title from kyobo
-for i in range(0, length_of_aList):
-    if aList[i][2]:
-        titlesBeforeSearch.append(aList[i][2])
-    elif aList[i][3]:
-        titlesBeforeSearch.append(aList[i][3])
+#Select the best title among three choice
+startingNumber = 0
+for i in range(0, len(aList)):
+    if aList[i]['aladin_title']:
+        titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link']], aList[i]['original_title'])
+    elif aList[i]['kyobo_title']:
+        titlesBeforeSearch.append([aList[i]['kyobo_title'], aList[i]['link']], aList[i]['original_title'])
     else:
-        titlesBeforeSearch.append(aList[i][1])
+        titlesBeforeSearch.append([aList[i]['original_title'], aList[i]['link']], aList[i]['original_title'])
 
 
 for title in titlesBeforeSearch:
+    original_title = title[2]
+    tpl_link = title[1]
+    title = title[0]
     try:
         # Searching title on Google and get html text into soup
         url = "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=All&SearchWord={}".format(title)
@@ -39,12 +42,21 @@ for title in titlesBeforeSearch:
             search_result.find('a', attrs={'class': 'bo3'})
             link = search_result.find('a', attrs={'class': "bo3"})
             link = link.get("href")
-            link_data = {"count": searched_count, "link":link}
+            link_data = {
+                "count": searched_count, 
+                "original_title": title, 
+                "link": link, 
+                "tpl_link":tpl_link}
             linksOfBooks.append(link_data)
             searched_count += 1
             link_data = {}
         except:
-            link_data2 = {"count": unsearched_count, "title":title}
+            link_data2 = {
+                "count": unsearched_count, 
+                "original_title": original_title, 
+                "link": link,
+                "title": title, 
+                "tpl_link": tpl_link}
             unsearched_titles.append(link_data2)
             unsearched_count += 1
             link_data2 = {}
@@ -55,8 +67,8 @@ for title in titlesBeforeSearch:
         print("error on %d" %count)
         break
 
-#update links of books
 
+#update links of books
 with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "r") as j:
     data = json.loads(j.read())
 

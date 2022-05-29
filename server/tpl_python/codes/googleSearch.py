@@ -11,6 +11,8 @@ booktitle_aladin = ''
 booktitle_kyobo = ''
 
 for title in constant.TBS:  #TBS= Titles before search
+    link = title[1] #link to TPL website
+    title = title[0] #title for searching
     try:
         # Searching title on Google and getting html text into soup
         # Num=40 ... meaning that showing 40 results
@@ -39,7 +41,14 @@ for title in constant.TBS:  #TBS= Titles before search
         if booktitle_aladin == '' and booktitle_kyobo == '':
             unsearched_titles.append(title)
         #Append titles into results
-        results.append([count, title, booktitle_aladin, booktitle_kyobo])
+        adding_data = {
+            "count": count,
+            "original_title": title,
+            "aladin_title": booktitle_aladin,
+            "kyobo_title": booktitle_kyobo,
+            "link": link
+            }
+        results.append(adding_data)
         booktitle_aladin = ''
         booktitle_kyobo = ''
         print("%d th search" %count)

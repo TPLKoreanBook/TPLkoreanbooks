@@ -1,1 +1,67 @@
-{"final_unsearched_link":[]}
+{
+   "final_unsearched_link": [
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=286896672",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=290568119",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=293825152",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=292455722",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=292455722",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=292455722",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=292455722",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=294959689",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=295221271",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285589579", #굿즈
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=294127020", #굿즈
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=10109",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=634142",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=288318523",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=97963846",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=216124132",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=294894312",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=286896672",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=225866739",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=225866694",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=42297",
+      "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=48506"
+   ]
+}
+
+unsearched_titles = [
+   "너를 보면", 
+   "셰어하우스", 
+   "안녕", 
+   "왕국", 
+   "파라다이스", 
+   "호랑이와 곶감", 
+   "고 흐", 
+   "고독한 청년", 
+   "구름 간다 구름이 가", 
+   "군학도", 
+   "기차 길", 
+   "나이팅게일", 
+   "남자의 밥", 
+   "누런 얼굴", 
+   "당근과 채찍", 
+   "들쥐새끼들 1", 
+   "먼 하늘 가까운 사람들"]
+
+fixedLinks = [
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170658040",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=206425240",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=155390621",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=136536411",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=16614423",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=93211062",
+   "고흐 못찾음",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=10109",
+   "군학도 알라딘에 없음.. 절판된 오래된 역사소설임",
+   "기차 길 못찾음",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=38456523",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=34614869",
+   "누런얼굴 너무 오래된 어린이 책임",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=8471071",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=42297",
+   "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=48506"
+
+
+
+]

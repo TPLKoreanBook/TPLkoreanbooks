@@ -13,6 +13,7 @@ for items in aList:
     }
     result.append(data)
 
+result = {"books": result}
 
-with open("googleSearchedTitles(수정).json", 'w', encoding='UTF-8') as f:
+with open("googleSearchedTitles(수정2).json", 'w', encoding='UTF-8') as f:
     json.dump(result, f, indent=2, ensure_ascii=False)
