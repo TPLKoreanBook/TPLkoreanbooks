@@ -1,8 +1,9 @@
 .categories-container {
+  border: 1px solid red;
+  min-width: 200px;
   width: 20%;
   height: 100%;
- background-color: #F6F6F6;
-  
+  background-color: #f6f6f6;
 }
 
 .categories-list {
@@ -14,5 +15,5 @@
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-weight: 800;
-  color: #934E72;
+  color: #934e72;
 }

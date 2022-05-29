@@ -4,7 +4,7 @@ import styles from './Categories.module.css';
 
 const Categories = ({ onCategory }) => {
     const category = [
-        "All",
+        "all",
         "어린이",
         "청소년",
         "좋은부모",
@@ -27,10 +27,9 @@ const Categories = ({ onCategory }) => {
         onCategory(tp);
     }
 
-   
     return (
         <div className={styles['categories-container']}>
-            
+
             {/* <h2>Categories</h2> */}
             <ul className={styles['categories-list']}>
                 {category.map((item, index) => <li key={index} className={styles['list']} onClick={() => selectedCategory(item)}>{item}</li>)}

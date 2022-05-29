@@ -13,6 +13,7 @@ with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'r') as
     aList = json.loads(f.read())["links"]
 
 for link in aList:
+    tpl_link = link['tpl_link']ㅅ
     link = link['link']
     try:
         # Searching title on Google and get html text into soup
@@ -22,11 +23,22 @@ for link in aList:
         res.raise_for_status()
         soup = BeautifulSoup(res.text, "lxml")
 
-        title = soup.body.find('a', attrs={'class': 'Ere_bo_title'}).get_text().replace('[세트]', '').replace('[eBook]', '').strip()
-        author = soup.body.find('a', attrs={'class': 'Ere_sub2_title'}).get_text()
-        category = soup.body.find('ul', attrs={'id': 'ulCategory'}).find_all('a')[1].get_text()
-        cover =  soup.body.find('img', attrs={'id': 'CoverMainImage'}).get("src")
-        adding_data = {"count":count, "title":title, "author":author, "category":category, "cover":cover}
+        try:
+            title = soup.body.find('a', attrs={'class': 'Ere_bo_title'}).get_text().replace('[세트]', '').replace('[eBook]', '').strip()
+            author = soup.body.find('a', attrs={'class': 'Ere_sub2_title'}).get_text()
+            cover =  soup.body.find('img', attrs={'id': 'CoverMainImage'}).get("src")
+            category = soup.body.find('ul', attrs={'id': 'ulCategory'}).find_all('a')[1].get_text()
+        except:
+            pass
+
+
+        adding_data = {
+            "count": count, 
+            "title": title, 
+            "author": author, 
+            "category": category, 
+            "cover": cover, 
+            "link": tpl_link}
         
         results.append(adding_data)
         print("%dth search is done" %count)
@@ -60,7 +72,7 @@ with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "r")
 data2 = data2["final_unsearched_link"]
 for item in unsearched_titles:
     data2.append(item)
-data2 = {"final_unsearched_link": data}
+data2 = {"final_unsearched_link": data2}
 
 with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "w") as j:
     json.dump(data2, j, indent=3, ensure_ascii=False)

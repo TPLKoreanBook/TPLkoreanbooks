@@ -8,4 +8,5 @@ jsonContent = fileObject.read()
 aList = json.loads(jsonContent)
 
 for i in range(CN, 4748):
-    TBS.append(aList['books'][0][i]['title'])
+    adding_data = [aList['books'][0][i]['title'], aList['books'][0][i]['link']]
+    TBS.append(adding_data)
