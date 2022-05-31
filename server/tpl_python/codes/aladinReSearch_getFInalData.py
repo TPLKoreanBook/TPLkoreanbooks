@@ -3,6 +3,12 @@ from bs4 import BeautifulSoup
 import json
 
 titlesBeforeSearch = []
+unsearched_titles = []
+results = []
+count = 0
+unsearched_count = 0
+searched_count = 0
+
 linksOfBooks = [
    "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170658040",
    "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=206425240",
@@ -16,11 +22,6 @@ linksOfBooks = [
    "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=8471071",
    "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=42297",
    "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=48506"]
-unsearched_titles = []
-results = []
-count = 0
-unsearched_count = 0
-searched_count = 0
 
 for link in linksOfBooks:
     try:
@@ -58,5 +59,5 @@ for link in linksOfBooks:
         continue
 
 
-with open("server/tpl_python/data_webcrawling/검색 안된거 다시.json", "w") as j:
+with open("server/tpl_python/data_webcrawling/aladinReSearchedData.json", "w") as j:
     json.dump(results, j, indent=3, ensure_ascii=False)
