@@ -1,7 +1,7 @@
 import json
 
 TBS = [] #Title Before Search
-CN = 2175 #Count Number
+CN = 2902 #Count Number (2175 -> 2902 ->  -> 4748)
 
 fileObject = open("client/public/tpl_json.json", "r")
 jsonContent = fileObject.read()

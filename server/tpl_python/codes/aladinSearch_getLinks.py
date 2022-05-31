@@ -15,14 +15,14 @@ with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcra
     aList = json.loads(f.read())["books"]
 
 #Select the best title among three choice
-startingNumber = 0
-for i in range(0, len(aList)):
+startingNumber = 2175
+for i in range(startingNumber, len(aList)):
     if aList[i]['aladin_title']:
-        titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link']], aList[i]['original_title'])
+        titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link'], aList[i]['original_title']])
     elif aList[i]['kyobo_title']:
-        titlesBeforeSearch.append([aList[i]['kyobo_title'], aList[i]['link']], aList[i]['original_title'])
+        titlesBeforeSearch.append([aList[i]['kyobo_title'], aList[i]['link'], aList[i]['original_title']])
     else:
-        titlesBeforeSearch.append([aList[i]['original_title'], aList[i]['link']], aList[i]['original_title'])
+        titlesBeforeSearch.append([aList[i]['original_title'], aList[i]['link'], aList[i]['original_title']])
 
 
 for title in titlesBeforeSearch:
@@ -71,12 +71,10 @@ for title in titlesBeforeSearch:
 #update links of books
 with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "r") as j:
     data = json.loads(j.read())
-
 data = data["links"]
 for link in linksOfBooks:
     data.append(link)
 data = {"links": data}
-
 with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "w") as j:
     json.dump(data, j, indent=3, ensure_ascii=False)
 
@@ -84,11 +82,9 @@ with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "w") as 
 #update unsearched data
 with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "r") as j:
     data = json.loads(j.read())
-
 data = data["unsearched_title"]
 for title in unsearched_titles:
     data.append(title)
 data = {"unsearched_title": data}
-
 with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "w") as j:
     json.dump(data, j, indent=3, ensure_ascii=False)
