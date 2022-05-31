@@ -24,6 +24,7 @@ const Categories = ({ onCategory }) => {
         "기타"];
 
     const selectedCategory = (tp) => {
+        console.log(tp);
         onCategory(tp);
     }
 
