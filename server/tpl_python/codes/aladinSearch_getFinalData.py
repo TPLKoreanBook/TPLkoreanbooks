@@ -13,7 +13,7 @@ with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'r') as
     aList = json.loads(f.read())["links"]
 
 for link in aList:
-    tpl_link = link['tpl_link']ㅅ
+    tpl_link = link['tpl_link']
     link = link['link']
     try:
         # Searching title on Google and get html text into soup
@@ -27,7 +27,7 @@ for link in aList:
             title = soup.body.find('a', attrs={'class': 'Ere_bo_title'}).get_text().replace('[세트]', '').replace('[eBook]', '').strip()
             author = soup.body.find('a', attrs={'class': 'Ere_sub2_title'}).get_text()
             cover =  soup.body.find('img', attrs={'id': 'CoverMainImage'}).get("src")
-            category = soup.body.find('ul', attrs={'id': 'ulCategory'}).find_all('a')[1].get_text()
+            category = soup.body.find('ul', attrs={'id': 'ulCategory'}).find_all('a')[1].get_text().replace('/', '+')
         except:
             pass
 
