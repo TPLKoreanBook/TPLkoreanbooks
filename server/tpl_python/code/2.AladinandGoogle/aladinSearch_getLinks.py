@@ -15,18 +15,21 @@ with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcra
     aList = json.loads(f.read())["books"]
 
 #Select the best title among three choice
-startingNumber = 2175
-for i in range(startingNumber, len(aList)):
+lenOfaList = len(aList)
+startingNumber = 2175  # 2175->
+for i in range(startingNumber, lenOfaList):
     if aList[i]['aladin_title']:
-        titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link'], aList[i]['original_title']])
+        titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link'], aList[i]['original_title'], aList[i]['aladin_title'], aList[i]['kyobo_title']])
     elif aList[i]['kyobo_title']:
-        titlesBeforeSearch.append([aList[i]['kyobo_title'], aList[i]['link'], aList[i]['original_title']])
+        titlesBeforeSearch.append([aList[i]['kyobo_title'], aList[i]['link'], aList[i]['original_title'], aList[i]['aladin_title'], aList[i]['kyobo_title']])
     else:
-        titlesBeforeSearch.append([aList[i]['original_title'], aList[i]['link'], aList[i]['original_title']])
+        titlesBeforeSearch.append([aList[i]['original_title'], aList[i]['link'], aList[i]['original_title'], aList[i]['aladin_title'], aList[i]['kyobo_title']])
 
 
 for title in titlesBeforeSearch:
     original_title = title[2]
+    aladin_title = title[3]
+    kyobo_title = title[4]
     tpl_link = title[1]
     title = title[0]
     try:
@@ -44,7 +47,7 @@ for title in titlesBeforeSearch:
             link = link.get("href")
             link_data = {
                 "count": searched_count, 
-                "original_title": title, 
+                "original_title": original_title, 
                 "link": link, 
                 "tpl_link":tpl_link}
             linksOfBooks.append(link_data)
@@ -54,8 +57,8 @@ for title in titlesBeforeSearch:
             link_data2 = {
                 "count": unsearched_count, 
                 "original_title": original_title, 
-                "link": link,
-                "title": title, 
+                "aladin_title": aladin_title,
+                "kyobo_title": kyobo_title,
                 "tpl_link": tpl_link}
             unsearched_titles.append(link_data2)
             unsearched_count += 1
@@ -67,8 +70,7 @@ for title in titlesBeforeSearch:
         print("error on %d" %count)
         break
 
-
-#update links of books
+# update links of books
 with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "r") as j:
     data = json.loads(j.read())
 data = data["links"]
@@ -78,13 +80,12 @@ data = {"links": data}
 with open("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", "w") as j:
     json.dump(data, j, indent=3, ensure_ascii=False)
 
-
 #update unsearched data
 with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "r") as j:
-    data = json.loads(j.read())
-data = data["unsearched_title"]
+    data2 = json.loads(j.read())
+data2 = data2["unsearched_title"]
 for title in unsearched_titles:
-    data.append(title)
-data = {"unsearched_title": data}
+    data2.append(title)
+data2 = {"unsearched_title": data2}
 with open("server/tpl_python/data_webcrawling/aladinUnsearchedData.json", "w") as j:
-    json.dump(data, j, indent=3, ensure_ascii=False)
+    json.dump(data2, j, indent=3, ensure_ascii=False)
