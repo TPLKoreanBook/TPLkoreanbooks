@@ -1,7 +1,5 @@
 import json
 
-
-
 with open("server/tpl_python/data_webcrawling/final_book_data.json", "r" ) as f:
     books = json.load(f)
 

@@ -1,7 +1,8 @@
 import json
 
 TBS = [] #Title Before Search
-CN = 2902 #Count Number (2175 -> 2902 ->  -> 4748)
+CN = 4360 #Count Number (2175 -> 2902 ->  -> 4748) 
+#... 700개 검색 다 끝나는 데 8분 걸림
 
 fileObject = open("client/public/tpl_json.json", "r")
 jsonContent = fileObject.read()
