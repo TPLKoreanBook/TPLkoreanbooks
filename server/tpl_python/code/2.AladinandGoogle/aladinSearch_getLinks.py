@@ -16,7 +16,7 @@ with open ("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcra
 
 #Select the best title among three choice
 lenOfaList = len(aList)
-startingNumber = 2175  # 2175->
+startingNumber = 4360  # 2175-> 4360
 for i in range(startingNumber, lenOfaList):
     if aList[i]['aladin_title']:
         titlesBeforeSearch.append([aList[i]['aladin_title'], aList[i]['link'], aList[i]['original_title'], aList[i]['aladin_title'], aList[i]['kyobo_title']])
