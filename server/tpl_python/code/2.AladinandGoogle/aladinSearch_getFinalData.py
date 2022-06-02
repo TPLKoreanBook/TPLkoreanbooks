@@ -10,8 +10,8 @@ count = 0
 
 #Fetching titles from json file
 with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'r') as f:
-    aList = json.loads(f.read())["links"]
-aList = aList[1716:]
+    aList = json.loads(f.read())
+aList = aList[2963:]
 for link in aList:
     tpl_link = link['tpl_link']
     link = link['link']
