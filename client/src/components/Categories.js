@@ -24,7 +24,9 @@ const Categories = ({ onCategory }) => {
         "기타"];
 
     const selectedCategory = (tp) => {
-        onCategory(tp);
+
+        const converted = tp.replaceAll('/', '+');
+        onCategory(converted);
     }
 
     return (

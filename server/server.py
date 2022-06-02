@@ -7,7 +7,11 @@ app = Flask(__name__)
 api = Api(app)
 cors = CORS(app)
 
+<<<<<<< HEAD
 with open("/Users/sejunpark/TPLkoreanbooks/server/tpl_python/data_webcrawling/final_book_data.json", 'r') as read_file:
+=======
+with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/final_book_data.json", 'r') as read_file:
+>>>>>>> 6ae069f627cb7efa01bb002c7e5ceb118236799c
     books = json.load(read_file)
 books = books["books"]
 
