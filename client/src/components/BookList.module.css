@@ -3,24 +3,12 @@
   position: relative;
 }
 
-.searchbar {
-  width: 320px;
-  border: 3px solid #f6f6f6;
-  padding-left: 10px;
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  margin: 40px auto 0;
-  display: block;
-  font-size: 20px;
-  background-color: #f6f6f6;
-}
-
 .category {
-  color: #934e72;
   margin-left: 10px;
   padding-bottom: 5px;
+  color: #934e72;
   border-bottom: 1px solid #934e72;
+  text-transform: capitalize;
 }
 .list-container {
   width: 100%;
