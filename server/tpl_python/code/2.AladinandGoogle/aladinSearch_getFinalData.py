@@ -10,8 +10,8 @@ count = 0
 
 #Fetching titles from json file
 with open ("server/tpl_python/data_webcrawling/aladinLinksOfBooks.json", 'r') as f:
-    aList = json.loads(f.read())["links"]
-
+    aList = json.loads(f.read())
+aList = aList[2963:]
 for link in aList:
     tpl_link = link['tpl_link']
     link = link['link']
@@ -66,13 +66,13 @@ with open("server/tpl_python/data_webcrawling/final_book_data.json", "w") as j:
 
 
 #update unsearched data 
-with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "r") as j:
-    data2 = json.loads(j.read())
+with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "r") as k:
+    data2 = json.loads(k.read())
 
 data2 = data2["final_unsearched_link"]
 for item in unsearched_titles:
     data2.append(item)
 data2 = {"final_unsearched_link": data2}
 
-with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "w") as j:
-    json.dump(data2, j, indent=3, ensure_ascii=False)
+with open("server/tpl_python/data_webcrawling/final_unsearched_links.json", "w") as k:
+    json.dump(data2, k, indent=3, ensure_ascii=False)
