@@ -1,5 +1,6 @@
 .book-list {
   width: 100%;
+  position: relative;
 }
 
 .searchbar {
@@ -22,7 +23,6 @@
   border-bottom: 1px solid #934e72;
 }
 .list-container {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;

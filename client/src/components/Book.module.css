@@ -18,12 +18,12 @@
   margin: 10px;
   padding: 5px;
   list-style-type: none;
-  background-color: #f6f6f6;
 }
 
 .book-container .img-container {
-  width: 300px;
+  width: 270px;
   height: 400px;
+  transition: 0.5s all;
 }
 
 .author {
@@ -33,7 +33,7 @@
 
 .link-btn {
   padding: 0.5rem 1rem;
-  display: inline-block;
+  display: none;
   border: none;
   border-radius: 20px;
   color: white;

@@ -1,29 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import Header from './components/Layout/Header.js';
+import Main from './components/Layout/Main.js';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
-
-
-import './App.css';
-
-
 
 function App() {
   const [category, setCategory] = useState('all');
 
   return (
     <div>
-      <header>
-
-      </header>
-      <main>
+      <Header>
         <Categories onCategory={setCategory} />
+      </Header>
+
+      <Main>
 
         <BookList
           category={category}
         />
-      </main>
+      </Main>
       <footer>
-
       </footer>
     </div>
   )
