@@ -1,36 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
 
-async function getBooks(category, setSearchTerm) {
+async function getBooks(category) {
     const response = await axios.get(`http://127.0.0.1:5000/category/${category}`);
     console.log(response);
-    setSearchTerm('');
+
     return response.data;
 }
 
-const BookList = ({ category }) => {
+const BookList = ({ category, userInput }) => {
 
-    const [state] = useAsync(() => getBooks(category, setSearchTerm), [category],);
+    const [state] = useAsync(() => getBooks(category), [category],);
     const { loading, data, error } = state;
-    const [visible, setVisible] = useState(6);
-    const [searchTerm, setSearchTerm] = useState('');
+    const [visible, setVisible] = useState(20);
 
 
     const showMoreBooks = () => {
-        setVisible((prev) => prev + 6)
+        setVisible((prev) => prev + 20)
     }
 
     const showLessBooks = () => {
-        setVisible((prev) => prev - 6)
+        setVisible((prev) => prev - 20)
     }
 
-    const searchHandler = (e) => {
-        const userInput = e.target.value;
-        setSearchTerm(userInput)
-    }
     // Error handling.
     if (loading) return <div>Loading...</div>
     if (error) return <div>Error</div>
@@ -39,7 +34,6 @@ const BookList = ({ category }) => {
     return (
         <section className={styles['book-list']}>
             <div>
-                <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
                 <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2>
                 <ul className={styles['list-container']}>
                     {/* Test filtering
@@ -47,7 +41,7 @@ const BookList = ({ category }) => {
                     {data
                         // After being filtered by the user's selected category, It will be filtered by the user's search input.
                         .filter((book) => {
-                            if (book.title.replace(/\s/g, '').includes(searchTerm.replace(/\s/g, '').substring(0, searchTerm.length))) {
+                            if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
                                 return book;
                             }
                         }).slice(0, visible).map((book, index) => (
