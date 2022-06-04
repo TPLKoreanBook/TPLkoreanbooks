@@ -1,22 +1,27 @@
 .categories-container {
   list-style: none;
-  border: 1px solid red;
   min-width: 200px;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: 999;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--color-white);
+  background-color: var(--color-secondBg);
+  /* background-color: transparent; */
+}
+
+.blur {
+  filter: blur(4px);
+  width: 100%;
+  height: 100%;
 }
 
 .categories-container li {
   /* display: inline-block; */
   text-transform: capitalize;
-  background-color: var(--color-mainBg);
-  color: var(--color-black);
+  border: 2px solid var(--color-mainBg);
   border-radius: 25px;
   cursor: pointer;
   padding: 0.5rem 1rem;

@@ -3,11 +3,12 @@
 @import "./normalize.css";
 html {
   font-family: "Roboto", sans-serif;
+  background-color: var(--color-secondBg);
 }
 
 .wrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 95%;
   height: auto;
   margin: 0 auto;
 }

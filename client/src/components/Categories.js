@@ -24,7 +24,6 @@ const Categories = ({ onCategory }) => {
         "기타"];
 
     const selectedCategory = (tp) => {
-
         const converted = tp.replaceAll('/', '+');
         onCategory(converted);
     }
@@ -35,10 +34,6 @@ const Categories = ({ onCategory }) => {
                 {category.map((item, index) => <li key={index} className={styles['list']} onClick={() => selectedCategory(item)}>{item}</li>)}
             </ul>
         </>
-
-
-
-
     )
 }
 export default Categories;

@@ -39,9 +39,10 @@
   text-decoration: none;
   text-align: center;
   color: white;
-  background-color: #934e72;
+  background-color: var(--color-mainBg);
   position: absolute;
-  top: 0;
+  top: 35%;
+
   opacity: 0;
   transition: ease-out 0.3s;
 }
@@ -53,6 +54,5 @@
 
 .book-container:hover .link-btn {
   /* top: 0; */
-  top: 35%;
   opacity: 1;
 }
