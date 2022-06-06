@@ -22,10 +22,6 @@ const BookList = ({ category, userInput }) => {
         setVisible((prev) => prev + 20)
     }
 
-    const showLessBooks = () => {
-        setVisible((prev) => prev - 20)
-    }
-
     // Error handling.
     if (loading) return <div>Loading...</div>
     if (error) return <div>Error</div>
@@ -54,8 +50,8 @@ const BookList = ({ category, userInput }) => {
                             />
                         ))}
                 </ul>
+                <h3>{visible} /{data.length}</h3>
                 <button onClick={showMoreBooks}>Show More!</button>
-                <button onClick={showLessBooks}>Show Less!</button>
             </div>
         </section>
     )

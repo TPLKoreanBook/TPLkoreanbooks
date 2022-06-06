@@ -1,7 +1,6 @@
-.book-container img {
+.book-container .img-container img {
   width: 100%;
   height: 100%;
-  transition: ease-out 0.3s;
 }
 
 .book-container h3,
@@ -49,6 +48,7 @@
 
 .book-container:hover .img-container img {
   opacity: 0.3;
+  transition: ease-in-out 0.5s;
   transform: scale(1.1);
 }
 
