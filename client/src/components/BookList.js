@@ -5,6 +5,7 @@ import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
 
 async function getBooks(category, setSearchTerm) {
+    console.log(category)
     const response = await axios.get(`http://127.0.0.1:5000/category/${category}`);
     console.log(response);
     setSearchTerm('');
