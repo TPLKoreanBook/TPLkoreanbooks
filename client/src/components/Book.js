@@ -10,9 +10,13 @@ function Book({ cover, title, address, author }) {
             </div>
             <h3 className={styles['booktitle']} >{title}</h3>
             <h4>{author}</h4>
+<<<<<<< HEAD
             {/* <h4 className={styles['author']}>{author}</h4> */}
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nobis rerum repudiandae?</p>
             <a href={address} target="_blank" className={styles['link-btn']}>Link</a>
+=======
+            <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>Link</a>
+>>>>>>> seungmin
         </li>
     )
 }

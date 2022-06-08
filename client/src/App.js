@@ -1,29 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Header from './Pages/Header';
+import Main from './Pages/Main.js';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 
-
-import './App.css';
-
-
-
 function App() {
   const [category, setCategory] = useState('all');
+  const [searchTerm, setSearchTerm] = useState('');
+
 
   return (
     <div>
-      <header>
+      <Header
+        onSearch={setSearchTerm}
+      >
+        <Categories
+          onCategory={setCategory}
+        />
+      </Header>
 
-      </header>
-      <main>
-        <Categories onCategory={setCategory} />
+      <Main>
 
         <BookList
           category={category}
+          userInput={searchTerm}
         />
-      </main>
+      </Main>
       <footer>
-
       </footer>
     </div>
   )
