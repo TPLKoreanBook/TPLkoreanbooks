@@ -1,7 +1,7 @@
 import json
 import collections
 
-with open("server/tpl_python/data_webcrawling/final_book_data(중복된링크제거2).json", "r" ) as f:
+with open("server/tpl_python/data_webcrawling/final_book_data.json", "r" ) as f:
     books = json.load(f)["books"]
 
 links = []
@@ -15,7 +15,8 @@ for book in books:
     titles.append(title)
 
 overlappedlinks = [item for item, count in collections.Counter(links).items() if count > 1]
-overlappedtitles = [item for item, count in collections.Counter(titles).items() if count > 1]
+overlappedtitles = [item for item, count in collections.Counter(titles).items() if count > 2]
 
 print(overlappedtitles)
-print(overlappedlinks)
+
+print(len(overlappedlinks))
