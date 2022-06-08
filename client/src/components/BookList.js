@@ -41,12 +41,8 @@ const BookList = ({ category, userInput }) => {
                     {data
                         // After being filtered by the user's selected category, It will be filtered by the user's search input.
                         .filter((book) => {
-<<<<<<< HEAD
-                            if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {                                return book;
-=======
                             if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
                                 return book;
->>>>>>> seungmin
                             }
                         }).slice(0, visible).map((book, index) => (
                             <Book
