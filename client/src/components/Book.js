@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState, Suspense } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from './Book.module.css';
 
 
 function Book({ cover, title, address, author }) {
+
     return (
         <li className={styles['book-container']}>
             <div className={styles['img-container']}>
                 <LazyLoadImage
-                    effect="blur"
+                    // effect="black-and-white"
                     height="400px"
                     src={cover}
                     alt={title}
+                    placeholderSrc={process.env.PUBLIC_URL + '/Spinner-1s-200px.svg'}
+                // visibleByDefault={true}
                 />
             </div>
             <h3 className={styles['booktitle']} >{title}</h3>
