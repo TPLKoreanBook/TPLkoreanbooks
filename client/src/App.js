@@ -3,6 +3,7 @@ import Header from './Pages/Header';
 import Main from './Pages/Main.js';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   const [category, setCategory] = useState('all');
@@ -10,25 +11,32 @@ function App() {
 
 
   return (
-    <div>
-      <Header
-        onSearch={setSearchTerm}
-      >
-        <Categories
-          onCategory={setCategory}
-        />
-      </Header>
+    <BrowserRouter>
+      <div>
+      <Route exact path="/en">
+        <div>
+          English Page
+        </div>
+      </Route>
+        <Header
+          onSearch={setSearchTerm}
+        >
+          <Categories
+            onCategory={setCategory}
+          />
+        </Header>
 
-      <Main>
+        <Main>
 
-        <BookList
-          category={category}
-          userInput={searchTerm}
-        />
-      </Main>
-      <footer>
-      </footer>
-    </div>
+          <BookList
+            category={category}
+            userInput={searchTerm}
+          />
+        </Main>
+        <footer>
+        </footer>
+      </div>
+    </BrowserRouter>
   )
 };
 

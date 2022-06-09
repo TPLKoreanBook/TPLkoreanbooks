@@ -1,4 +1,5 @@
 import styles from './Main.module.css';
+import React from 'react';
 
 const Main = (props) => {
     return (
