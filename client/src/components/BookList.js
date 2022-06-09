@@ -5,7 +5,7 @@ import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
 
 async function getBooks(category) {
-    const response = await axios.get(`http://127.0.0.1:5000/category/${category}`);
+    const response = await axios.get(`https://tplapiserver.herokuapp.com/${category}`);
     console.log(response);
 
     return response.data;
