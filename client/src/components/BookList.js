@@ -5,7 +5,8 @@ import useAsync from '../hooks/useAsync'
 import Book from './Book.js'
 
 async function getBooks(category) {
-    const response = await axios.get(`http://127.0.0.1:5000/category/${category}`);
+    // const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/${category}`);
+    const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/books`);
     console.log(response);
 
     return response.data;
@@ -20,10 +21,6 @@ const BookList = ({ category, userInput }) => {
 
     const showMoreBooks = () => {
         setVisible((prev) => prev + 20)
-    }
-
-    const showLessBooks = () => {
-        setVisible((prev) => prev - 20)
     }
 
     // Error handling.
@@ -54,8 +51,8 @@ const BookList = ({ category, userInput }) => {
                             />
                         ))}
                 </ul>
+                <h3>{visible} /{data.length}</h3>
                 <button onClick={showMoreBooks}>Show More!</button>
-                <button onClick={showLessBooks}>Show Less!</button>
             </div>
         </section>
     )
