@@ -18,6 +18,8 @@ function App() {
           English Page
         </div>
       </Route>
+
+      
         <Header
           onSearch={setSearchTerm}
         >
@@ -26,13 +28,20 @@ function App() {
           />
         </Header>
 
-        <Main>
+        <Route exact path="/">
+          <div > About page</div>
+        </Route>
+
+        <Route path="/book"> 
+          <Main>
 
           <BookList
             category={category}
             userInput={searchTerm}
           />
-        </Main>
+          </Main>
+        </Route>
+        
         <footer>
         </footer>
       </div>
