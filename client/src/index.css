@@ -1,21 +1,22 @@
 @import "./vars.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;900&display=swap");
 @import "./normalize.css";
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   background-color: var(--color-secondBg);
 }
 
 .wrapper {
-  max-width: 1400px;
-  width: 95%;
+  /* max-width: 1400px; */
+  /* width: 95%; */
   height: auto;
   margin: 0 auto;
 }
 
 h1,
 h2,
-ul {
+ul,
+p {
   padding: 0;
   margin: 0;
 }

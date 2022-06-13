@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Pages/Header';
 import Main from './Pages/Main.js';
+import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 
@@ -20,6 +21,7 @@ function App() {
       </Header>
 
       <Main>
+        <About />
 
         <BookList
           category={category}
