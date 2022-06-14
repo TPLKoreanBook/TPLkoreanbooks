@@ -35,13 +35,47 @@ const About = () => {
                         책을 빌릴 수가 없었습니다.</p>
 
                     <p>코불소 팀은 이렇게 생각했어요🦏</p>
-                    {/* <p>이런 문제라면 컴퓨터 프로그래밍을 통해서 해결할 수 있지 않을까?</p>
+                    <p className={styles['highlighted']}> 이런 문제라면 컴퓨터 프로그래밍을 통해서 해결할 수 있지 않을까?</p>
                     <p>
                         그렇게 코불소팀의 첫번째 작품인
                         토론토 공립 도서관 책 검색 프로그램이
                         만들어졌습니다~!! 🎉
                     </p>
+                </div>
+                <div className={styles['person-img']}></div>
+            </div>
+            <div className={`wrapper ${styles['profile-container']}`}>
+                <ul className={styles['profiles']}>
+                    <li className={styles['profile-card']}>
+                        <div className={styles['profile-img']}>
+                        </div>
+                        <ul className={styles['profile-links']}>
+                            <li>Name:?????????</li>
+                            <li>Contact:????@????.???</li>
+                            <li>Github:???????????????</li>
+                        </ul>
+                    </li>
+                    <li className={styles['profile-card']}>
+                        <div className={styles['profile-img']}>
 
+                        </div>
+                        <ul className={styles['profile-links']}>
+                            <li>Name:?????????</li>
+                            <li>Contact:????@????.???</li>
+                            <li>Github:???????????????</li>
+                        </ul>
+                    </li>
+                    <li className={styles['profile-card']}>
+                        <div className={styles['profile-img']}>
+                        </div>
+                        <ul className={styles['profile-links']}>
+                            <li>Name:?????????</li>
+                            <li>Contact:????@????.???</li>
+                            <li>Github:???????????????</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div className={styles['contents']}>
                     <p>코불소 팀은 </p>
                     <p>
                         토론토 한인분들의
@@ -65,13 +99,10 @@ const About = () => {
                     <p>
                         추천수가 가장 높은 게시물부터
                         저희 코불소 팀이 차근차근 해결해나갈게요🕵🏻‍♂️
-                    </p> */}
+                    </p>
                 </div>
-                <div className={styles['person-img']}></div>
-
             </div>
-
-        </section>
+        </section >
     )
 };
 

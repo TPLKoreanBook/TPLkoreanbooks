@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Pages/Header';
 import Main from './Pages/Main.js';
 import About from './Pages/About';
@@ -8,8 +8,21 @@ import Categories from './components/Categories';
 function App() {
   const [category, setCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    const loadingHandler = () => {
+      setIsLoaded(true);
+    }
+    console.log('ddd')
 
+    window.addEventListener('load', loadingHandler);
 
+    return () => {
+      window.removeEventListener('load', loadingHandler);
+
+    }
+  }, [])
+  if (!isLoaded) return <div>Loading...</div>
   return (
     <div>
       <Header
