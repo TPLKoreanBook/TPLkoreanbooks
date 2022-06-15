@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import LoadingPage from './components/LoadingPage';
 import Header from './Pages/Header';
 import Main from './Pages/Main.js';
 import About from './Pages/About';
@@ -13,27 +14,30 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isAnimationEnd, setIsAnimationEnd] = useState(false);
   useEffect(() => {
-    const loadingHandler = () => {
-      setIsLoaded(true);
-    }
-
-    window.addEventListener('load', loadingHandler);
-    // const timer = setTimeout(() => {
+    // const loadingHandler = () => {
     //   setIsLoaded(true);
-    // }, 3000)
+    // }
+
+    // window.addEventListener('load', loadingHandler);
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 3000)
 
     return () => {
-      // clearTimeout(timer);
-      window.removeEventListener('load', loadingHandler);
+      clearTimeout(timer);
+      // window.removeEventListener('load', loadingHandler);
     }
   }, []);
 
 
   return (
     <AnimatePresence exitBeforeEnter>
-      {!isLoaded && !isAnimationEnd && <AnimatedPage key="loading" isAnimationEnd={setIsAnimationEnd}>Loading...adsasdadadasdasdadadadsasdas</AnimatedPage>}
+      {!isLoaded && !isAnimationEnd &&
+        <AnimatedPage key="loading" type="loading" isAnimationEnd={setIsAnimationEnd}>
+          <LoadingPage />
+        </AnimatedPage>}
       {isLoaded && isAnimationEnd &&
-        <AnimatedPage key="main" isAnimationEnd={setIsAnimationEnd}>
+        <AnimatedPage key="main" type="main" isAnimationEnd={setIsAnimationEnd}>
           <Header
             onSearch={setSearchTerm}
           >

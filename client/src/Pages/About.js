@@ -19,7 +19,7 @@ const About = () => {
                             편함을
                         </span>
                         <span className={styles['br-line']}>
-                            해<span className={styles['emphasize']}>소</span>합니다.</span>
+                            해<span className={styles['emphasize']}>소</span>합니다!!</span>
                     </h1>
                     <p>"코불소는 토론토 한인들의 불편함 점들을 코딩으로 해결해드리는 웹사이트입니다."</p>
                 </div>
@@ -42,7 +42,7 @@ const About = () => {
                         만들어졌습니다~!! 🎉
                     </p>
                 </div>
-                <div className={styles['person-img']}></div>
+                <div className={`${styles['person-img']} ${styles['grid-row']}`}></div>
             </div>
             <div className={`wrapper ${styles['profile-container']}`}>
                 <ul className={styles['profiles']}>
