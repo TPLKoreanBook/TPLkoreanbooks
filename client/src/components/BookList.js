@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Line } from 'rc-progress';
 import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync'
@@ -7,7 +8,7 @@ import Book from './Book.js'
 async function getBooks(category) {
     // const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/${category}`);
     const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/books`);
-    console.log(response);
+    // console.log(response);
 
     return response.data;
 }
@@ -29,7 +30,7 @@ const BookList = ({ category, userInput }) => {
     if (!data) return null
 
     return (
-        <section className={styles['book-list']}>
+        <section className={`wrapper ${styles['book-list']}`}>
             <div>
                 <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2>
                 <ul className={styles['list-container']}>
@@ -52,6 +53,14 @@ const BookList = ({ category, userInput }) => {
                         ))}
                 </ul>
                 <h3>{visible} /{data.length}</h3>
+                <div className={styles['progress-bar']}>
+                    <Line
+                        percent={visible / data.length * 100}
+                        trailWidth={2}
+                        strokeWidth={4}
+                        trailColor="#000000"
+                        strokeColor="#D3D3D3" />
+                </div>
                 <button onClick={showMoreBooks}>Show More!</button>
             </div>
         </section>

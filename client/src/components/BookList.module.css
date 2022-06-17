@@ -17,3 +17,7 @@
   flex-wrap: wrap;
   padding-left: 0;
 }
+
+.progress-bar {
+  width: 20%;
+}

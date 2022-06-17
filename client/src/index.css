@@ -1,8 +1,8 @@
 @import "./vars.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@500&family=Roboto:wght@400;900&display=swap");
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   background-color: var(--color-secondBg);
 }
 
@@ -15,7 +15,21 @@ html {
 
 h1,
 h2,
-ul {
+ul,
+p {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
 }
