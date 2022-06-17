@@ -24,25 +24,35 @@ const About = () => {
                     <p>"코불소는 토론토 한인들의 불편함 점들을 코딩으로 해결해드리는 웹사이트입니다."</p>
                 </div>
             </div>
+            {/* need to fix <br/> part  */}
             <div className={`wrapper ${styles['story-container']}`}>
                 <div className={styles['story-divider']}>
                     <h2>코불소가 만들어진 배경</h2>
-                    <p>코불소는 하나의 생각에서 출발했어요👀</p>
-                    <p className={styles['highlighted']}>왜 토론토에 사는 한인들은 불편함을 감수하고 살아야할까?</p>
+                    <p>코불소는 하나의 생각에서 출발했어요 👀</p>
+                    <div className={styles['highlighted']}>
+                        <p>왜 토론토에 사는 한인들은 <br /> 불편함을 감수하고 살아야 할까?</p>
+                    </div>
                     <p>예를 들면...🙋🏻‍♂️</p>
-                    <p>토론토 공립 도서관에 5천여권의 한국어 책이 있지만
-                        제목이 읽기 힘든 영어식으로 표기돼 있어서
-                        책을 빌릴 수가 없었습니다.</p>
-
+                    <p className={styles['semi-bold']}>토론토 공립 도서관에 5천여권의 한국어 책이 있지만 <br />제목이 읽기 힘든 영어식으로 표기돼 있어서 <br /> 책을 빌릴 수가 없었습니다.</p>
+                    {/* 
                     <p>코불소 팀은 이렇게 생각했어요🦏</p>
-                    <p className={styles['highlighted']}> 이런 문제라면 컴퓨터 프로그래밍을 통해서 해결할 수 있지 않을까?</p>
-                    <p>
-                        그렇게 코불소팀의 첫번째 작품인
-                        토론토 공립 도서관 책 검색 프로그램이
-                        만들어졌습니다~!! 🎉
-                    </p>
+                    <div className={styles['highlighted']}>
+                        <p> 이런 문제라면 컴퓨터 프로그래밍을 통해서 해결할 수 있지 않을까?</p>
+                    </div>
+                    <p className={styles['semi-bold']}>그렇게 코불소팀의 첫번째 작품인 <br /> 토론토 공립 도서관 책 검색 프로그램이 <br /> 만들어졌습니다~!! 🎉
+                    </p> */}
                 </div>
                 <div className={`${styles['person-img']} ${styles['grid-row']}`}></div>
+                <div className={styles['story-divider']}>
+                    <p>코불소 팀은 이렇게 생각했어요🦏</p>
+                    <div className={styles['highlighted']}>
+                        <p> 컴퓨터 프로그래밍으로 <br /> 해결할 수 있지 않을까?</p>
+                    </div>
+                    <p className={styles['semi-bold']}>그렇게 코불소팀의 첫번째 작품인 <br /> 토론토 공립 도서관 책 검색 프로그램이 <br /> 만들어졌습니다~!! 🎉
+                    </p>
+                </div>
+                <div className={`${styles['person-img-2']}`}></div>
+
             </div>
             <div className={`wrapper ${styles['profile-container']}`}>
                 <ul className={styles['profiles']}>

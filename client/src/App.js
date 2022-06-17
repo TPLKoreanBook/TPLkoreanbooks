@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, } from 'framer-motion';
 import LoadingPage from './components/LoadingPage';
 import Header from './Pages/Header';
 import Main from './Pages/Main.js';
@@ -14,18 +14,18 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isAnimationEnd, setIsAnimationEnd] = useState(false);
   useEffect(() => {
-    // const loadingHandler = () => {
-    //   setIsLoaded(true);
-    // }
-
-    // window.addEventListener('load', loadingHandler);
-    const timer = setTimeout(() => {
+    const loadingHandler = () => {
       setIsLoaded(true);
-    }, 3000)
+    }
+
+    window.addEventListener('load', loadingHandler);
+    // const timer = setTimeout(() => {
+    //   setIsLoaded(true);
+    // }, 3000)
 
     return () => {
-      clearTimeout(timer);
-      // window.removeEventListener('load', loadingHandler);
+      // clearTimeout(timer);
+      window.removeEventListener('load', loadingHandler);
     }
   }, []);
 
