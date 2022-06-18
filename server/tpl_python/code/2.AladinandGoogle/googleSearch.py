@@ -6,7 +6,7 @@ with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcraw
     books = json.loads(j.read())
     books = books["books"]
 # Get the starting index from constant.py
-with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/code/2.AladinandGoogle/constant.py', 'r') as f:
+with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/code/2.AladinandGoogle/constant.text', 'r') as f:
     startingIndex = int(f.readline())
 
 count = startingIndex
@@ -77,5 +77,5 @@ with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcraw
     json.dump(books, j, indent=3, ensure_ascii=False)
 
 # Updating the startingIndex
-with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/code/2.AladinandGoogle/constant.py', 'w') as f:
+with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/code/2.AladinandGoogle/constant.text', 'w') as f:
     f.write(str(count))
