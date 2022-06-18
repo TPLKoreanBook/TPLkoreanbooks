@@ -1,0 +1,6 @@
+
+
+
+TPLscrapping()
+translator()
+googleSearch()

@@ -1,5 +1,6 @@
 from hangul_utils import join_jamos
-from langdetect import detect
+import json
+
 vowel = {
     'yae': 'ㅒ',
     'wae': 'ㅙ',
@@ -84,153 +85,55 @@ onset = {
     'r': 'ㄹ',
     'l': 'ㄹ'   #need another rule for deromanization
 }
-key_vowel = list(vowel.keys())
-val_vowel = list(set(vowel.values()))
+key_of_vowel = list(vowel.keys())
+value_of_vowel = list(set(vowel.values()))
 key_onset = list(onset.keys())
 
-f = open("tpl_title_NoTranslate.txt", 'r')
-title = f.readlines()
-f.close()
+def translator (trob):
+#.....<trob> means translation object
+#trimming...
+    trob = trob.lower().replace('ǒ', 'ŏ').replace('ǔ', 'ŭ').replace('ō', 'ŏ').replace("author", '').replace('ʻ', '\'').replace('ʼ', '\'')
+#translating...
+    if trob.find("shwi") != -1:
+        trob = trob.replace("shwi", 'ㅅㅟ')
+    for i in key_of_vowel:
+        result = trob.find(i)
+        if result != -1:
+            trob = trob.replace(i, vowel[i])
+    for i in key_onset:
+        result = trob.find(i)
+        if result != -1:
+            trob = trob.replace(i, onset[i])
+    locationOfEung = trob.find('ㅇ')
+    if locationOfEung != -1:
+        try:
+            if value_of_vowel.count(trob[locationOfEung+1]) == 1:
+             trob = trob[:locationOfEung] + "ㅇ" + trob[locationOfEung:]
+        except:
+            pass
+    trob = join_jamos(trob)
+    for i in value_of_vowel:
+        if trob.find(i) != -1:
+            trob = trob.replace(i, "ㅇ" + i)
+    trob = join_jamos(trob)
+    trob = trob.replace("y이", "이").replace("우이", '의')
+    return trob
 
-count = 0
-for k in title:
-    #trimming title
-    original = k.replace('[', '').replace(']', '').replace('\n', '')
-    k = k.lower()
-    k = k.replace('ǒ', 'ŏ').replace('ǔ', 'ŭ').replace('ō', 'ŏ').replace("author", '').replace('ʻ', '\'').replace('ʼ', '\'')
+with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/new_data/tpl_data.json", "r") as j:
+    books = json.loads(j.read())
+    books = books["books"]
 
-    first_k = k.split(",", 1)[0]
-    first_k = first_k.split("=", 1)[0]
-    first_k = first_k.split(":", 1)[0]
-    first_k = first_k.strip()
-    first_k = first_k.replace('ǒ', 'ŏ').replace('ǔ', 'ŭ')
+for book in books:
+    book_id = book['id']
+    book_title = book['tpl_title']
+    book_author = book['tpl_author']
 
-    #Only when the title is not English, translate the title
-    if detect(first_k) != "en":
-        vari = k.find('=')
-        if vari != -1:
-            k2 = k.split("=", 1)[1]
-            k = k.split("=", 1)[0]
-        shwi = k.find("shwi")
-        if shwi != -1:
-            k = k.replace("shwi", 'ㅅㅟ')
+    translated_title = translator(book_title)
+    books[book_id]['translated_title'] = translated_title
 
-        for i in key_vowel:
-            result = k.find(i)
-            if result != -1:
-                k = k.replace(i, vowel[i])
-        for i in key_onset:
-            result = k.find(i)
-            if result != -1:
-                k = k.replace(i, onset[i])
-        k = join_jamos(k)
-        for i in val_vowel:
-            result = k.find(i)
-            if result != -1:
-                k = k.replace(i, "ㅇ" + i)
-        if vari != -1:
-            k = k + '=' + k2
-        k = join_jamos(k)
-        k = k.replace("y이", "이")
-        k = k.replace("y이", '이')
+    translated_author = translator(book_author)
+    books[book_id]['translated_author'] = translated_author
 
-    else:
-        if first_k.find('ŏ') != -1 or first_k.find('ŭ') != -1:
-            vari = k.find('=')
-            if vari != -1:
-                k2 = k.split("=", 1)[1]
-                k = k.split("=", 1)[0]
-            shwi = k.find("shwi")
-            if shwi != -1:
-                k = k.replace("shwi", 'ㅅㅟ')
-
-            for i in key_vowel:
-                result = k.find(i)
-                if result != -1:
-                    k = k.replace(i, vowel[i])
-            for i in key_onset:
-                result = k.find(i)
-                if result != -1:
-                    k = k.replace(i, onset[i])
-            k = join_jamos(k)
-            for i in val_vowel:
-                result = k.find(i)
-                if result != -1:
-                    k = k.replace(i, "ㅇ" + i)
-            if vari != -1:
-                k = k + '=' + k2
-            k = join_jamos(k)
-            k = k.replace("y이", "이")
-            k = k.replace("y이", '이')
-            k = k.split("=", 1)[0]
-        if first_k.find("\'") != -1:
-            vari = k.find('=')
-            if vari != -1:
-                k2 = k.split("=", 1)[1]
-                k = k.split("=", 1)[0]
-            loc = first_k.index("\'")
-            if first_k[loc + 1] != 's':
-                shwi = k.find("shwi")
-                if shwi != -1:
-                    k = k.replace("shwi", 'ㅅㅟ')
-
-                for i in key_vowel:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, vowel[i])
-                for i in key_onset:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, onset[i])
-                k = join_jamos(k)
-                for i in val_vowel:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, "ㅇ" + i)
-                if vari != -1:
-                    k = k + '=' + k2
-                k = join_jamos(k)
-                k = k.replace("y이", "이")
-                k = k.replace("y이", '이')
-                k = k.split("=", 1)[0]
-        if first_k.find('ʼ') != -1:
-            vari = k.find('=')
-            if vari != -1:
-                k2 = k.split("=", 1)[1]
-                k = k.split("=", 1)[0]
-            loc2 = first_k.find('ʼ')
-            if first_k[loc2 + 1] != 's':
-                shwi = k.find("shwi")
-                if shwi != -1:
-                    k = k.replace("shwi", 'ㅅㅟ')
-
-                for i in key_vowel:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, vowel[i])
-                for i in key_onset:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, onset[i])
-                k = join_jamos(k)
-                for i in val_vowel:
-                    result = k.find(i)
-                    if result != -1:
-                        k = k.replace(i, "ㅇ" + i)
-                if vari != -1:
-                    k = k + '=' + k2
-                k = join_jamos(k)
-                k = k.replace("y이", "이")
-                k = k.replace("y이", '이')
-                k = k.split("=", 1)[0]
-    
-    k = k.replace('[', '').replace('.', ' ').replace('-', ' ').replace(']', '').replace('\n', '').replace("우이", '의')
-    result = k + "," + original + "\n"
-    title[count] = result
-    count += 1
-
-title.sort()
-
-with open("Translated_titles.txt", "w") as f:
-    for element in title: 
-        f.write(element)
+data = {"books": books}
+with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/new_data/translated_data.json", "w") as j:
+    json.dump(data, j, indent=3, ensure_ascii=False)
