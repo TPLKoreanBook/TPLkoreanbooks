@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
-import Link from "react-router-dom"
+import {Link} from 'react-router-dom'
 
 const Header = (props) => {
     const [toggleCategory, setToggleCategory] = useState(true);

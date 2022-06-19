@@ -7,7 +7,7 @@ import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 import AnimatedPage from './components/AnimatedPage';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 
 function App() {
   const [category, setCategory] = useState('all');
