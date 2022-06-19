@@ -7,13 +7,15 @@ import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 import AnimatedPage from './components/AnimatedPage';
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route,useLocation} from 'react-router-dom'
 
 function App() {
   const [category, setCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
   const [isAnimationEnd, setIsAnimationEnd] = useState(false);
+  // const currentUrl = useLocation() ;
+
   useEffect(() => {
     const loadingHandler = () => {
       setIsLoaded(true);
@@ -33,36 +35,40 @@ function App() {
 
   return (
    <Router>
-    <AnimatePresence exitBeforeEnter>
-      {!isLoaded && !isAnimationEnd &&
+    
+      {/* {!isLoaded && !isAnimationEnd &&
         <AnimatedPage key="loading" type="loading" isAnimationEnd={setIsAnimationEnd}>
           <LoadingPage />
-        </AnimatedPage>}
-      {isLoaded && isAnimationEnd &&
-        <AnimatedPage key="main" type="main" isAnimationEnd={setIsAnimationEnd}>
+        </AnimatedPage>} */}
+     
           
           <Header
             onSearch={setSearchTerm}
+           
+            
           >
             <Categories
               onCategory={setCategory}
+              
+              
             />
           </Header>
-        <Routes>
-          <Main>
-            <Route path="/about" element={<About />}/>
+        <Routes >
+        
+          
+            <Route path="/" element={<About />}/>
             <Route path="/book" element={ <BookList
               category={category}
               userInput={searchTerm}
             />}/>
             
-          </Main>
+          
         </Routes> 
           <footer>
           </footer>
-        </AnimatedPage>}
+       
 
-    </AnimatePresence>
+    
   </Router> 
   )
 };
