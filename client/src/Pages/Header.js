@@ -14,7 +14,7 @@ const Header = (props) => {
     return (
         <header className={`wrapper ${styles['header-container']}`}>
             <div>Logo Space</div>
-            <nav>
+            <nav className={styles['navbar']}>
                 <Link to="/about">About</Link>
                 <Link to="/book">Book</Link>
                 

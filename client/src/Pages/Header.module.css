@@ -13,6 +13,9 @@
   z-index: 999;
 }
 
+.navbar {
+  display: flex;
+}
 .header-container .wrapper {
   display: flex;
   justify-content: space-between;
