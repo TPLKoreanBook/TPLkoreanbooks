@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence, } from 'framer-motion';
 import LoadingPage from './components/LoadingPage';
 import Header from './Pages/Header';
@@ -31,6 +32,7 @@ function App() {
 
 
   return (
+
     <AnimatePresence exitBeforeEnter>
       {!isLoaded && !isAnimationEnd &&
         <AnimatedPage key="loading" type="loading" isAnimationEnd={setIsAnimationEnd}>
