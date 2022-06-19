@@ -7,6 +7,7 @@ import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 import AnimatedPage from './components/AnimatedPage';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 function App() {
   const [category, setCategory] = useState('all');
@@ -31,6 +32,7 @@ function App() {
 
 
   return (
+   <Router>
     <AnimatePresence exitBeforeEnter>
       {!isLoaded && !isAnimationEnd &&
         <AnimatedPage key="loading" type="loading" isAnimationEnd={setIsAnimationEnd}>
@@ -38,6 +40,7 @@ function App() {
         </AnimatedPage>}
       {isLoaded && isAnimationEnd &&
         <AnimatedPage key="main" type="main" isAnimationEnd={setIsAnimationEnd}>
+          
           <Header
             onSearch={setSearchTerm}
           >
@@ -45,20 +48,22 @@ function App() {
               onCategory={setCategory}
             />
           </Header>
-
+        <Routes>
           <Main>
-            <About />
-
-            <BookList
+            <Route path="/about" element={<About />}/>
+            <Route path="/book" element={ <BookList
               category={category}
               userInput={searchTerm}
-            />
+            />}/>
+            
           </Main>
+        </Routes> 
           <footer>
           </footer>
         </AnimatedPage>}
 
     </AnimatePresence>
+  </Router> 
   )
 };
 
