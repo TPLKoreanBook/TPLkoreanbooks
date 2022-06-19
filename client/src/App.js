@@ -8,6 +8,7 @@ import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 import AnimatedPage from './components/AnimatedPage';
+import FeedbackForm from './components/FeedbackForm';
 
 function App() {
   const [category, setCategory] = useState('all');
@@ -49,6 +50,7 @@ function App() {
           </Header>
 
           <Main>
+            <FeedbackForm />
             <About />
 
             <BookList
