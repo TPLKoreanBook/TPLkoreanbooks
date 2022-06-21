@@ -36,3 +36,11 @@
   font-weight: 800;
   z-index: 1000;
 }
+
+.categories-container li:hover {
+  background-color: var(--color-mainBg);
+ }
+
+.list:hover {
+ background-color: var(--color-mainBg);
+}

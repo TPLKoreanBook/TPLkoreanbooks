@@ -10,7 +10,7 @@ Fonts
 .about-container h2 {
   color: rgb(19, 212, 164);
   /* color: var(--color-mainBg); */
-  color: black;
+  color: var(--color-fourthBg)
 }
 
 .about-container p {

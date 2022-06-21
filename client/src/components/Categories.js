@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from './Categories.module.css';
+
 
 
 const Categories = ({ onCategory }) => {
@@ -28,12 +29,25 @@ const Categories = ({ onCategory }) => {
         onCategory(converted);
     }
 
+    const [selected, setSelected] = useState("");
+
+    const changeColor = (selectedItem) => {
+            setSelected({selectedItem});
+            console.log(selectedItem)
+        };
+
+        
+
     return (
         <>
             <ul className={styles['categories-container']}>
-                {category.map((item, index) => <li key={index} className={styles['list']} onClick={() => selectedCategory(item)}>{item}</li>)}
+                {category.map((item, index) => <li key={index} style={{
+                    backgroundColor:
+                   selected === item
+                   ? 'red' : ''}}  className={['list']} onClick={ () => {selectedCategory(item); changeColor(item);}}>{item}</li>)}
             </ul>
         </>
     )
 }
 export default Categories;
+

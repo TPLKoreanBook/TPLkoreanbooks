@@ -56,3 +56,13 @@
   /* top: 0; */
   opacity: 1;
 }
+
+.booktitle {
+  width: 250px;
+  display: inline-block;
+  height:54px;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
