@@ -29,11 +29,13 @@ const Categories = ({ onCategory }) => {
         onCategory(converted);
     }
 
-    const [selected, setSelected] = useState("");
+    const [selected, setSelected] = useState(Array(category.length).fill(false));
 
-    const changeColor = (selectedItem) => {
-            setSelected({selectedItem});
-            console.log(selectedItem)
+    const changeColor = (index) => {
+        const newArr = Array(category.length).fill(false);
+        newArr[index] = true;
+        setSelected(newArr)
+        console.log(selected)
         };
 
         
@@ -41,10 +43,14 @@ const Categories = ({ onCategory }) => {
     return (
         <>
             <ul className={styles['categories-container']}>
-                {category.map((item, index) => <li key={index} style={{
-                    backgroundColor:
-                   selected === item
-                   ? 'red' : ''}}  className={['list']} onClick={ () => {selectedCategory(item); changeColor(item);}}>{item}</li>)}
+                {category.map((item, index) => 
+                    <li key={index} 
+                        className={styles[selected[index] ? 'list' : '' ] } 
+                        onClick={ 
+                            () => {selectedCategory(item); changeColor(index);}}
+                            > {item}
+                    </li>
+                    )}
             </ul>
         </>
     )

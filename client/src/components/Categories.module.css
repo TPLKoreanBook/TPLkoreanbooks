@@ -1,13 +1,13 @@
 .categories-container {
   list-style: none;
   min-width: 200px;
-  width: 300px;
+  width: 350px;
   height: 100%;
   z-index: 100;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   background-color: var(--color-secondBg);
 
   /* background-color: rgba(255, 255, 255, 0.3);
@@ -24,10 +24,11 @@
 } */
 
 .categories-container li {
-  /* display: inline-block; */
-  text-transform: capitalize;
+  /* display: inline-block; */ 
   /* background-color: var(--color-secondBg); */
   /* width: 400px; */
+
+  text-transform: capitalize;
   border: 2px solid var(--color-mainBg);
   border-radius: 25px;
   cursor: pointer;
@@ -39,8 +40,10 @@
 
 .categories-container li:hover {
   background-color: var(--color-mainBg);
+
  }
 
-.list:hover {
+.list {
  background-color: var(--color-mainBg);
 }
+
