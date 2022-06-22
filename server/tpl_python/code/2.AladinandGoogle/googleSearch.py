@@ -29,13 +29,17 @@ for i in range(startingIndex, len(books)):
                 booktitle = bookInfo
                 if booktitle:
                     booktitle = booktitle.get_text()
-                    booktitle_aladin = booktitle.replace(" - 알라딘", '').replace("[전자책]", '').replace("[중고]", '').replace("(양장)", '').strip()
+                    booktitle_aladin = booktitle.replace(" - 알라딘", '').replace("[전자책]", '').replace("[중고]", '').replace('[eBook]', '').replace("(양장)", '').strip()
+                    if booktitle_aladin.count('미리보기') != 0:
+                        booktitle_aladin = ''
                     pass
             elif bookInfo.findAll(text=re.compile('교보문고')):
                 booktitle2 = bookInfo
                 if booktitle2:
                     booktitle2 = booktitle2.get_text()
-                    booktitle_kyobo = booktitle2.replace("교보문고", '').replace("전자책", '').replace("중고", '').replace("양장본", '').replace('/', '').strip()
+                    booktitle_kyobo = booktitle2.replace("교보문고", '').replace("전자책", '').replace("중고", '').replace("양장본", '').replace('/', '').replace('-', '').replace('(원서번역서', '').replace('( HardCover)', '').split('|')[0].strip()
+                    if booktitle_kyobo.count('검색 ') != 0:
+                        booktitle_kyobo = ''
                     pass
 
 # If there is no result, search again with only title(no author)

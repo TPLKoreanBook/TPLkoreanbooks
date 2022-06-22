@@ -1,18 +1,21 @@
 import json
-import collections
 
-with open("server/tpl_python/data_webcrawling/final_book_data(중복된링크제거).json", "r" ) as f:
-    books = json.load(f)["books"]
+with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/new_data/googleSearchedTitles.json') as j:
+    books = json.loads(j.read())
+    books = books["books"]
 
-link_titles_duplicated = []
-
-for link_title in link_titles_duplicated:
-    for book in books:
-        if book['title'] == link_title:
-            books.remove(book)
-            break
-
+for book in books:
+    kbt = book['kyobo_title']
+    if kbt != '':
+        book['kyobo_title'] = kbt.split('|')[0].replace('(원서번역서', '').replace('( HardCover)', '').strip()
+    abt = book['aladin_title']
+    if kbt.count('검색 ') != 0:
+        book['kyobo_title'] = ''
+    if abt != '':
+        book['aladin_title'] = abt.replace(" - 알라딘", '').replace("[전자책]", '').replace("[중고]", '').replace('[eBook]', '').replace("(양장)", '').strip()
+        if abt.count('미리보기') != 0:
+            book['aladin_title'] = ''
 
 books = {"books": books}
-with open("server/tpl_python/data_webcrawling/final_book_data(중복된링크제거2).json", "w") as f:
-    json.dump(books, f,indent=3, ensure_ascii=False)
+with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcrawling/new_data/googleSearchedTitles.json", "w") as j:
+    json.dump(books, j, indent=3, ensure_ascii=False)
