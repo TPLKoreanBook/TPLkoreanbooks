@@ -52,16 +52,20 @@ const BookList = ({ category, userInput }) => {
                             />
                         ))}
                 </ul>
-                <h3>{visible} /{data.length}</h3>
-                <div className={styles['progress-bar']}>
-                    <Line
-                        percent={visible / data.length * 100}
-                        trailWidth={2}
-                        strokeWidth={4}
-                        trailColor="#000000"
-                        strokeColor="#D3D3D3" />
+
+                <div className={styles['booklist-status']}>
+                    <h3>{visible} /{data.length}</h3>
+                    <div className={styles['progress-bar']}>
+                        <Line
+                            percent={visible / data.length * 100}
+                            trailWidth={2}
+                            strokeWidth={4}
+                            trailColor="#000000"
+                            strokeColor="#D3D3D3" />
+                    </div>
+                    <button onClick={showMoreBooks}>Show More!</button>
                 </div>
-                <button onClick={showMoreBooks}>Show More!</button>
+                
             </div>
         </section>
     )

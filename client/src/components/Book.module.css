@@ -8,6 +8,7 @@
 .book-container .link-btn {
   margin: 0;
   margin-top: 1rem;
+  text-align: center;
 }
 .book-container {
   width: 250px;
@@ -52,7 +53,16 @@
   transform: scale(1.1);
 }
 
-.book-container:hover .link-btn {
-  /* top: 0; */
+.book-container:hover .link-btn,
+.book-container:focus .link-btn {
   opacity: 1;
+}
+
+.booktitle {
+  width: 250px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

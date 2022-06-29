@@ -6,9 +6,14 @@ html {
   background-color: var(--color-secondBg);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   max-width: 1400px;
-  width: 95%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }
@@ -27,9 +32,31 @@ h1 {
 
 h2 {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 3rem;
+  font-size: 2.95rem;
+  /* margin-left: -24px; */
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 p {
   font-size: 1rem;
+}
+
+button {
+  background-color: var(--color-mainBg);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  padding: 12px 15px;
+}
+
+button:hover {
+  opacity: 0.7;
 }
