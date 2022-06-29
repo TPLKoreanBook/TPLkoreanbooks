@@ -4,14 +4,18 @@ import Main from './Pages/Main.js';
 import About from './Pages/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
-import FeedbackForm from './components/FeedbackForm';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   const [category, setCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
+
+
   return (
-    <div>
+    <Router>
+
       <Header
         onSearch={setSearchTerm}
       >
@@ -21,18 +25,20 @@ function App() {
       </Header>
 
       <Main>
-        <FeedbackForm />
-        <About />
-
-        <BookList
-          category={category}
-          userInput={searchTerm}
-        />
+        <Routes >
+          <Route path="/" element={<About />} />
+          <Route path="/book" element={<BookList
+            category={category}
+            userInput={searchTerm}
+          />} />
+        </Routes>
       </Main>
       <footer>
       </footer>
-    </div>
 
+
+
+    </Router>
   )
 };
 

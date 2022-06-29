@@ -12,6 +12,12 @@ Fonts
   align-items: center;
 }
 
+.about-container h2 {
+  color: rgb(19, 212, 164);
+  /* color: var(--color-mainBg); */
+  color: var(--color-fourthBg);
+}
+
 .about-container p {
   margin-top: 1rem;
   line-height: 1.5;
@@ -42,6 +48,7 @@ title
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* height: calc(100vh - 100px); */
 }
 
 .br-line {
