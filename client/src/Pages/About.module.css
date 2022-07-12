@@ -37,6 +37,15 @@ p.semi-bold {
 
 .about-container {
   position: relative;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.title-container,
+.story-container,
+.profile-container {
+  scroll-snap-align: start;
 }
 
 /* =========

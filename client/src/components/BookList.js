@@ -32,7 +32,7 @@ const BookList = ({ category, userInput }) => {
     return (
         <section className={`wrapper ${styles['book-list']}`}>
             <div>
-                <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2>
+                {/* <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2> */}
                 <ul className={styles['list-container']}>
                     {/* Test filtering
                     {/* Filtered by users' selected category */}
@@ -65,7 +65,7 @@ const BookList = ({ category, userInput }) => {
                     </div>
                     <button onClick={showMoreBooks}>Show More!</button>
                 </div>
-                
+
             </div>
         </section>
     )

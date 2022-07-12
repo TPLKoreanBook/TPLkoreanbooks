@@ -13,6 +13,7 @@ const Header = (props) => {
     const searchHandler = (e) => {
         props.onSearch(e.target.value)
     }
+
     return (
         <header className={`wrapper ${styles['header-container']}`}>
             <div >
@@ -34,7 +35,7 @@ const Header = (props) => {
             {url.pathname === "/book" &&
                 <div className={styles['search-container']}>
                     <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
-                    <button onClick={categoryHandler}>Category</button>
+                    <button onClick={categoryHandler}>{props.categoryName}</button>
                     <div className={styles['dropdown-menu']}>
                         {toggleCategory && props.children}
                     </div>
