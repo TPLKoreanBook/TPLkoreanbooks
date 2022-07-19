@@ -6,7 +6,7 @@
   top: 0;
   background-color: var(--color-secondBg);
   width: 100%;
-  height: 80px;
+  height: 10vh;
   z-index: 999;
   margin: 0;
 }

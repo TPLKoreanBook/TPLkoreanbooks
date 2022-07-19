@@ -35,19 +35,6 @@ p.semi-bold {
   font-weight: bold;
 }
 
-.about-container {
-  position: relative;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-.title-container,
-.story-container,
-.profile-container {
-  scroll-snap-align: start;
-}
-
 /* =========
 title
 =========== */
@@ -57,7 +44,6 @@ title
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* height: calc(100vh - 100px); */
 }
 
 .br-line {
@@ -123,6 +109,34 @@ Story
 
 .story-container {
   display: grid;
+  background-color: white;
+  /* height: calc(300vh - 80px); */
+  height: 290vh;
+  width: 100%;
+  /* margin-top: 90vh; */
+}
+
+.sticky {
+  /* border: 1px solid red; */
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 10vh; */
+  overflow: hidden;
+}
+.row-container {
+  /* need to fix this part */
+  background-color: #fff;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.header {
+  border-top: 1px solid black;
+  background-color: #fff;
 }
 
 .person-img {
@@ -218,7 +232,7 @@ profiles
   story
   =========== */
 
-  .row-container {
+  .contents {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -262,5 +276,16 @@ profiles
     -o-transform: translate(0, 0) scaleX(-1);
     -ms-transform: translate(0, 0) scaleX(-1);
     /* transform: scaleX(-1); */
+  }
+}
+
+@keyframes pageSlide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
   }
 }
