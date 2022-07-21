@@ -17,11 +17,11 @@ const BookList = ({ category, userInput }) => {
 
     const [state] = useAsync(() => getBooks(category), [category],);
     const { loading, data, error } = state;
-    const [visible, setVisible] = useState(20);
+    const [visible, setVisible] = useState(24);
 
 
     const showMoreBooks = () => {
-        setVisible((prev) => prev + 20)
+        setVisible((prev) => prev + 24)
     }
 
     // Error handling.
@@ -32,7 +32,6 @@ const BookList = ({ category, userInput }) => {
     return (
         <section className={`wrapper ${styles['book-list']}`}>
             <div>
-                {/* <h2 className={styles['category']}>{category === '' ? 'All' : category}</h2> */}
                 <ul className={styles['list-container']}>
                     {/* Test filtering
                     {/* Filtered by users' selected category */}
@@ -63,7 +62,7 @@ const BookList = ({ category, userInput }) => {
                             trailColor="#000000"
                             strokeColor="#D3D3D3" />
                     </div>
-                    <button onClick={showMoreBooks}>Show More!</button>
+                    <button className={styles['showMore-btn']} onClick={showMoreBooks}>Show More!</button>
                 </div>
 
             </div>

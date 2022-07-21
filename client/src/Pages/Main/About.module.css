@@ -14,7 +14,6 @@ Fonts
 
 .about-container h2 {
   color: rgb(19, 212, 164);
-  /* color: var(--color-mainBg); */
   color: var(--color-fourthBg);
 }
 
@@ -31,7 +30,7 @@ Fonts
   color: black;
 }
 
-p.semi-bold {
+.semi-bold {
   font-weight: bold;
 }
 
@@ -55,7 +54,7 @@ title
 }
 
 .title-container .title-bg {
-  background-image: url("../images/main.png");
+  background-image: url("../../images/main.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -65,12 +64,12 @@ title
 .title-divider {
   padding: 1rem;
   position: absolute;
-  top: 200px;
   background-color: white;
   border-radius: 10px;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 450px;
 }
@@ -129,40 +128,46 @@ Story
   /* need to fix this part */
   background-color: #fff;
 
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   position: absolute;
+  left: 50%;
 }
 
 .header {
-  border-top: 1px solid black;
+  color: rgb(25, 21, 21);
+  border-top: 1px solid rgb(14, 11, 11);
   background-color: #fff;
 }
 
+.header:first-child {
+  /* border: none; */
+}
+
 .person-img {
-  background-image: url("../images/test.png");
+  background-image: url("../../images/test.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transform: scaleX(-1);
-  height: 600px;
+  height: 500px;
 }
 .person-img-2 {
-  background-image: url("../images/test2.png");
+  background-image: url("../../images/test2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transform: scaleX(-1);
-  height: 600px;
+  height: 500px;
 }
 
 .person-img-3 {
-  background-image: url("../images/test3.png");
+  background-image: url("../../images/test3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scaleX(-1);
-  height: 600px;
+  /* transform: scaleX(-1); */
+  height: 500px;
 }
 
 /* =========
@@ -176,7 +181,7 @@ profiles
 .profile-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   padding: 2rem 0;
 }
@@ -184,7 +189,8 @@ profiles
 .profiles {
   list-style: none;
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 80%;
 }
 
 .profile-card {
@@ -249,11 +255,6 @@ profiles
 
   .grid-row {
     grid-row: initial;
-  }
-
-  .person-img {
-    background-position: 2rem;
-    height: 600px;
   }
 }
 

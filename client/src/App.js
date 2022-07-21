@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from './Pages/Header';
-import Main from './Pages/Main.js';
-import About from './Pages/About';
+import Header from './Pages/Header/Header';
+import Main from './Pages/Main/Main.js';
+import About from './Pages/Main/About';
 import BookList from './components/BookList.js';
 import Categories from './components/Categories';
 
