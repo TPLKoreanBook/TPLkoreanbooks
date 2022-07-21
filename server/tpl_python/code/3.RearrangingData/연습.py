@@ -6,9 +6,9 @@ with open('/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcraw
 
 for book in books:
     kbt = book['kyobo_title']
+    abt = book['aladin_title']
     if kbt != '':
         book['kyobo_title'] = kbt.split('|')[0].replace('(원서번역서', '').replace('( HardCover)', '').strip()
-    abt = book['aladin_title']
     if kbt.count('검색 ') != 0:
         book['kyobo_title'] = ''
     if abt != '':
