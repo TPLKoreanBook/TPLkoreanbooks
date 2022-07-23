@@ -26,8 +26,6 @@ const Categories = ({ onCategory }) => {
         onCategory(converted);
     }
 
-
-
     return (
         <>
             <ul className={styles['categories-container']}>

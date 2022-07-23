@@ -1,9 +1,10 @@
+import { NavLink, useLocation, } from 'react-router-dom'
 import SearchForm from '../../components/SearchForm';
 import styles from './Header.module.css';
-import { NavLink, useLocation } from 'react-router-dom'
 
 const Header = ({ categoryName, onSearch, children }) => {
     const url = useLocation();
+
 
     return (
         <header className={styles['header-container']}>
@@ -16,10 +17,15 @@ const Header = ({ categoryName, onSearch, children }) => {
 
                     <NavLink
                         className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                        to="/">Home</NavLink>
+                        to="/"
+                        end>Home
+                    </NavLink>
                     <NavLink
                         className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                        to="/book">Library</NavLink>
+                        to="/book"
+                        end>Library
+                    </NavLink>
+
 
                 </nav>
 

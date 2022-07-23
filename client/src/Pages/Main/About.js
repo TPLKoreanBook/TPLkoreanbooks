@@ -13,7 +13,6 @@ const About = () => {
     const mainContent = useRef();
     const sticky = useRef();
     const children = useRef([]);
-
     const animate = useCallback((start, end, contentVh, length) => {
         children.current.forEach((item, i) => {
             const unit = (end - start) / length;
@@ -30,20 +29,24 @@ const About = () => {
         })
     }, []);
 
+
     useEffect(() => {
         console.log('refreshed');
+
+
         const length = children.current.length;
         const headerVh = 6;
         const contentVh = 90 - headerVh * length;
+        let scrollStart = mainContent.current.offsetTop + 100;
+        let scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
 
         // reseting initial position 
         const init = () => {
-            const scrollStart = mainContent.current.offsetTop + 100;
-            const scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
-            return [scrollStart, scrollEnd]
+            console.log('working')
+            scrollStart = mainContent.current.offsetTop + 100;
+            scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
         };
 
-        let [scrollStart, scrollEnd] = init();
 
         children.current.forEach((item, i) => {
             item.style.bottom = -(90 - headerVh * (length - i)) + 'vh';
@@ -56,20 +59,17 @@ const About = () => {
             animate(scrollStart, scrollEnd, contentVh, length);
         })
 
-        window.addEventListener('resize', () => {
-            console.log('resizing...');
-            [scrollStart, scrollEnd] = init();
-        });
+        window.addEventListener('resize', init);
 
         return () => {
             window.removeEventListener('scroll', () => {
                 animate(scrollStart, scrollEnd, contentVh, length);
             });
 
-            window.removeEventListener('resize', () => {
-                [scrollStart, scrollEnd] = init();
-            });
+            window.removeEventListener('resize', init);
         }
+
+
 
     }, [animate]);
 
