@@ -11,7 +11,8 @@ function Book({ cover, title, address, author }) {
             <div className={styles['img-container']}>
                 {/* <img src={cover} alt={title} /> */}
                 <LazyLoadImage
-                    height="300px"
+                    width={"100%"}
+                    height={"100%"}
                     src={cover}
                     alt={title}
                     placeholderSrc={process.env.PUBLIC_URL + '/Spinner-1s-200px.svg'}

@@ -17,6 +17,7 @@ function App() {
       <Header
         onSearch={setSearchTerm}
         categoryName={category}
+        resetSearchTerm={setSearchTerm}
       >
         <Categories
           onCategory={setCategory}

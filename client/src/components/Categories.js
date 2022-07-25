@@ -31,7 +31,6 @@ const Categories = ({ onCategory }) => {
             <ul className={styles['categories-container']}>
                 {category.map((item, index) =>
                     <li key={index}
-
                         onClick={
                             () => { selectedCategory(item) }}
                     > {item}

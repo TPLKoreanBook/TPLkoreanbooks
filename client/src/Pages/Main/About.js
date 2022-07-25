@@ -14,10 +14,17 @@ const About = () => {
     const sticky = useRef();
     const children = useRef([]);
     const animate = useCallback((start, end, contentVh, length) => {
+
         children.current.forEach((item, i) => {
+            // skip first animation section
+            if (i === 0) return;
+
             const unit = (end - start) / length;
+            // console.log(start, end);
             const s = start + unit * i + 100;
             const e = start + unit * (i + 1);
+
+
             if (window.scrollY <= s) {
                 item.style.transform = `translate3d(-50%, 0, 0)`;
             } else if (window.scrollY >= e) {
@@ -31,9 +38,6 @@ const About = () => {
 
 
     useEffect(() => {
-        console.log('refreshed');
-
-
         const length = children.current.length;
         const headerVh = 6;
         const contentVh = 90 - headerVh * length;
@@ -42,16 +46,26 @@ const About = () => {
 
         // reseting initial position 
         const init = () => {
-            console.log('working')
             scrollStart = mainContent.current.offsetTop + 100;
             scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
         };
 
 
         children.current.forEach((item, i) => {
-            item.style.bottom = -(90 - headerVh * (length - i)) + 'vh';
-            item.children[0].style.height = headerVh + 'vh';
-            item.children[1].style.height = contentVh + 'vh';
+
+            // skip first animation section.
+            if (i === 0) {
+                item.style.bottom = "-72vh";
+                item.children[0].style.height = headerVh + 'vh';
+                item.children[1].style.height = contentVh + 'vh';
+                item.style.transform = `translate3d(-50%, -72%, 0)`;
+
+            } else {
+                item.style.bottom = -(90 - headerVh * (length - (i))) + 'vh';
+                item.children[0].style.height = headerVh + 'vh';
+                item.children[1].style.height = contentVh + 'vh';
+            }
+
         });
 
 
@@ -100,17 +114,16 @@ const About = () => {
                         <span className={styles['br-line']}>
                             해<span className={styles['emphasize']}>소</span>합니다!!</span>
                     </h1>
-                    <p>"코뿔소는 코딩으로 불편함을 해결해드리는 웹사이트입니다. ."</p>
+                    <p>"코뿔소는 코딩으로 불편함을 해결해드리는 웹사이트입니다."</p>
                 </div>
             </div>
 
             {/* need to fix <br/> part  */}
             <div ref={mainContent} className={` ${styles['story-container']}`}>
+
                 <div ref={sticky} className={styles['sticky']}>
-                    {/* ??? */}
-                    {/* <h2 className='wrapper'>코뿔소가 만들어진 배경</h2> */}
                     <div ref={addToRefs} className={`wrapper ${styles['row-container']}`}>
-                        <div className={styles.header}>1</div>
+                        <div className={styles.header}>1.</div>
                         <div className={styles.contents}>
                             <div className={styles['story-divider']}>
                                 <h2>코불소가 만들어진 배경</h2>
