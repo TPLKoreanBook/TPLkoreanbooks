@@ -12,12 +12,6 @@ Fonts
   align-items: center;
 }
 
-.about-container h2 {
-  color: rgb(19, 212, 164);
-  /* color: var(--color-mainBg); */
-  color: var(--color-fourthBg);
-}
-
 .about-container p {
   margin-top: 1rem;
   line-height: 1.5;
@@ -27,16 +21,10 @@ Fonts
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-
-  color: black;
 }
 
-p.semi-bold {
+.semi-bold {
   font-weight: bold;
-}
-
-.about-container {
-  position: relative;
 }
 
 /* =========
@@ -48,7 +36,6 @@ title
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* height: calc(100vh - 100px); */
 }
 
 .br-line {
@@ -60,7 +47,7 @@ title
 }
 
 .title-container .title-bg {
-  background-image: url("../images/main.png");
+  background-image: url("../../images/main.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -70,12 +57,12 @@ title
 .title-divider {
   padding: 1rem;
   position: absolute;
-  top: 200px;
-  background-color: white;
+  background-color: var(--color-secondBg);
   border-radius: 10px;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 450px;
 }
@@ -89,8 +76,7 @@ Story
   border-radius: 10px;
   padding: 1.5rem 0.5rem;
   margin-top: 1rem;
-  /* need to create var  */
-  background-color: rgb(249, 197, 66);
+  background-color: var(--color-thirdBg);
   position: relative;
 }
 
@@ -114,32 +100,54 @@ Story
 
 .story-container {
   display: grid;
+  height: 290vh;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.row-container {
+  background-color: var(--color-secondBg);
+
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+.header {
+  border-top: 1px solid var(--color-fourthBg);
+  background-color: var(--color-secondBg);
 }
 
 .person-img {
-  background-image: url("../images/test.png");
+  background-image: url("../../images/test.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transform: scaleX(-1);
-  height: 600px;
+  height: 500px;
 }
 .person-img-2 {
-  background-image: url("../images/test2.png");
+  background-image: url("../../images/test2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transform: scaleX(-1);
-  height: 600px;
+  height: 500px;
 }
 
 .person-img-3 {
-  background-image: url("../images/test3.png");
+  background-image: url("../../images/test3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scaleX(-1);
-  height: 600px;
+  /* transform: scaleX(-1); */
+  height: 500px;
 }
 
 /* =========
@@ -153,7 +161,7 @@ profiles
 .profile-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   padding: 2rem 0;
 }
@@ -161,7 +169,8 @@ profiles
 .profiles {
   list-style: none;
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 80%;
 }
 
 .profile-card {
@@ -209,7 +218,7 @@ profiles
   story
   =========== */
 
-  .row-container {
+  .contents {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -226,11 +235,6 @@ profiles
 
   .grid-row {
     grid-row: initial;
-  }
-
-  .person-img {
-    background-position: 2rem;
-    height: 600px;
   }
 }
 
@@ -253,5 +257,16 @@ profiles
     -o-transform: translate(0, 0) scaleX(-1);
     -ms-transform: translate(0, 0) scaleX(-1);
     /* transform: scaleX(-1); */
+  }
+}
+
+@keyframes pageSlide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
   }
 }

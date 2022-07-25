@@ -9,18 +9,20 @@ function Book({ cover, title, address, author }) {
     return (
         <li className={styles['book-container']}>
             <div className={styles['img-container']}>
+                {/* <img src={cover} alt={title} /> */}
                 <LazyLoadImage
-                    // effect="black-and-white"
-                    height="400px"
+                    width={"100%"}
+                    height={"100%"}
                     src={cover}
                     alt={title}
                     placeholderSrc={process.env.PUBLIC_URL + '/Spinner-1s-200px.svg'}
-                // visibleByDefault={true}
                 />
             </div>
-            <h3 className={styles['booktitle']} >{title}</h3>
-            <h4>{author}</h4>
-            <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>Link</a>
+            <div className={styles['description']}>
+                <h3 title={title} className={styles['booktitle']} >{title}</h3>
+                <h4>{author}</h4>
+                <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>Link</a>
+            </div>
         </li>
     )
 }
