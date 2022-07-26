@@ -7,10 +7,7 @@ import Book from './Book.js';
 
 
 async function getBooks(category) {
-    console.log(category);
-    // const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/${category}`);
-    const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/books`);
-    console.log(response);
+    const response = await axios.get(`https://tpl-server-heroku.herokuapp.com/${category}`);
     return response.data;
 }
 
@@ -43,7 +40,7 @@ const BookList = ({ category, userInput }) => {
                         }
                     }).slice(0, visible).map((book, index) => (
                         <Book
-                            key={book.count}
+                            key={book.id}
                             cover={book.cover}
                             title={book.title}
                             author={book.author}

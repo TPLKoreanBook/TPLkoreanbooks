@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import Categories from './Categories';
 import styles from './SearchForm.module.css';
 
-const SearchForm = ({ categoryName, onSearch, children }) => {
+const SearchForm = ({ categoryName, onSearch, onCategory }) => {
     const [toggleCategory, setToggleCategory] = useState(true);
     const newStr = categoryName.replaceAll('+', '/');
 
@@ -20,7 +21,7 @@ const SearchForm = ({ categoryName, onSearch, children }) => {
                 <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
             </div>
             <div className={styles['dropdown-menu']}>
-                {toggleCategory && children}
+                {toggleCategory && <Categories onCategory={onCategory} />}
             </div>
         </div>
     )

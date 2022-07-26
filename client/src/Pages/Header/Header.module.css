@@ -1,19 +1,28 @@
 .header-container {
   position: fixed;
   top: 0;
-  background-color: var(--color-secondBg);
+  background-color: var(--color-mainBg);
   z-index: 999;
   width: 100%;
   margin: 0;
   height: 8vh;
+  /* height: auto; */
   display: flex;
   align-items: center;
 }
 
 .header-contents {
   display: flex;
-  /* justify-content: space-between; */
+
+  justify-content: space-between;
   align-items: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -26,37 +35,90 @@
   align-items: center;
   font-size: 1.3rem;
   text-decoration: none;
-  color: var(--color-fourthBg);
+  color: var(--color-secondBg);
   margin-right: 3rem;
 }
 
-.navbar {
+.nav-list {
+  list-style: none;
+  width: 100%;
+  position: fixed;
+  top: -100%;
+  left: 0;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  margin-right: 30rem;
+  flex-direction: column;
+  transition: all 0.5s;
+
+  z-index: 999;
+  background-color: black;
 }
 
-.link {
+.nav-list li {
+  /* border: 1px solid red; */
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.active {
+  top: 8vh;
+}
+
+/* .nav-list-active {
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  background-color: black;
+} */
+
+.link {
+  display: inline-block;
   transition: all 0.3s;
   text-decoration: none;
-  padding: 0 0.5rem;
-  color: var(--color-fourthBg);
+  /* padding: 0 0.5rem; */
+  color: var(--color-secondBg);
   font-size: 0.9rem;
+  padding: 1rem;
 }
 
 .link-active {
+  display: block;
+
   font-size: 0.9rem;
 
   text-decoration: underline;
-  padding: 0 0.5rem;
-  color: var(--color-mainBg);
-  /* font-weight: bold; */
+  color: var(--color-thirdBg);
+  padding: 1rem;
 }
 
 .link:not(:first-child):hover,
 .link:not(:first-child):focus {
   color: var(--color-mainBg);
+}
+
+.burger-menu {
+  /* display: none */
+}
+
+@media (min-width: 840px) {
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: initial;
+  }
+  .divider {
+    width: initial;
+  }
+
+  .burger-menu {
+    display: none;
+  }
 }
