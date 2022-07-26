@@ -9,7 +9,7 @@ with open("/Users/minkijung/Desktop/tplkoreanbook/server/tpl_python/data_webcraw
 statingNumber = 0
 lenOfBooks = len(books)
 count = statingNumber
-for i in range(statingNumber, 100):
+for i in range(20, lenOfBooks):
 # Choose the best title among three options
     if books[i]['aladin_title']:
         searchingTitle = books[i]['aladin_title']
@@ -17,7 +17,6 @@ for i in range(statingNumber, 100):
         searchingTitle = books[i]['kyobo_title']
     else:
         searchingTitle = books[i]['translated_title']
-        searchingTitle = searchingTitle.split(':')[0]
     try:
 # Searching title on Google and get html text into soup
         url = "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=All&SearchWord={}".format(searchingTitle)
