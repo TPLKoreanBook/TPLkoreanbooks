@@ -8,8 +8,8 @@
   justify-content: left;
   background-color: var(--color-secondBg);
   overflow-y: scroll;
-  scrollbar-color: var(--color-mainBg) var(--color-secondBg);
-  border: 1px solid var(--color-mainBg);
+  scrollbar-color: var(--color-thirdBg) var(--color-secondBg);
+  border: 1px solid var(--color-thirdBg);
   border-radius: 5px;
 }
 

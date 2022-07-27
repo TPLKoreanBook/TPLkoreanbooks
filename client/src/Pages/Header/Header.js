@@ -1,49 +1,75 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink, useLocation, } from 'react-router-dom'
 import SearchForm from '../../components/SearchForm';
 import styles from './Header.module.css';
 
-const Header = ({ categoryName, onSearch, children, resetSearchTerm }) => {
+const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
     const url = useLocation();
+    const [navExpanded, setNavExpanded] = useState(false);
 
+
+    const navHandler = () => {
+        setNavExpanded((prev) => !prev);
+    }
     useEffect(() => {
-        console.log(url);
         resetSearchTerm('');
+
+        const resetBurgerMenu = () => {
+            if (window.innerWidth > 840) {
+                setNavExpanded(false);
+            }
+        }
+
+        window.addEventListener('resize', resetBurgerMenu);
+
+        return () => {
+            window.removeEventListener('resize', resetBurgerMenu)
+        }
     }, [url, resetSearchTerm]);
     return (
         <header className={styles['header-container']}>
             <div className={`wrapper ${styles['header-contents']}`}>
-
-                <NavLink to="/" className={styles['logo-link']}>
-                    <img className={styles['logo']} src="/logo.png" alt="logo" />
-                    Kopulso
-                </NavLink>
-                <nav className={styles['navbar']}>
-
-
-                    <NavLink
-                        className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                        to="/"
-                        replace>About
-                    </NavLink>
-                    <NavLink
-                        className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                        to="/book"
-                        replace>Library
+                <div className={styles['divider']}>
+                    <NavLink to="/" className={styles['logo-link']}>
+                        <img className={styles['logo']} src="/logo.png" alt="logo" />
+                        Koppulso
                     </NavLink>
 
-                    <NavLink
-                        className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                        to="/yyy"
-                        replace>Contact
-                    </NavLink>
+                    <nav className={styles['navbar']}>
+                        <div className={styles['burger-menu']} onClick={navHandler}>hi</div>
+                        <ul className={`${styles['nav-list']} ${navExpanded ? styles['active'] : ''}`}>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
+                                    to="/"
+                                    replace>About
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
+                                    to="/book"
+                                    replace>Library
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
+                                    to="/yyy"
+                                    replace>Contact
+                                </NavLink>
+                            </li>
+                        </ul>
 
-                </nav>
+                    </nav>
+                </div>
+
 
                 {url.pathname === "/book" && <SearchForm
                     categoryName={categoryName}
                     onSearch={onSearch}
-                    children={children}
+                    onCategory={onCategory}
+                // children={children}
                 />}
             </div>
 

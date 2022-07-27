@@ -3,7 +3,6 @@ import Header from './Pages/Header/Header';
 import Main from './Pages/Main/Main.js';
 import About from './Pages/Main/About';
 import BookList from './components/BookList.js';
-import Categories from './components/Categories';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -18,10 +17,8 @@ function App() {
         onSearch={setSearchTerm}
         categoryName={category}
         resetSearchTerm={setSearchTerm}
+        onCategory={setCategory}
       >
-        <Categories
-          onCategory={setCategory}
-        />
       </Header>
 
       <Main>
