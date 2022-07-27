@@ -36,8 +36,14 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                     </NavLink>
 
                     <nav className={styles['navbar']}>
-                        <div className={styles['burger-menu']} onClick={navHandler}>hi</div>
-                        <ul className={`${styles['nav-list']} ${navExpanded ? styles['active'] : ''}`}>
+                        <div className={styles['burger-menu']} onClick={navHandler}>
+                            <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
+                            <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
+                            <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
+                        </div>
+                        {/* {`${styles['nav-list']} ${navExpanded ? styles.active : ''}`} */}
+                        <ul className={navExpanded ? [styles['nav-list'], styles['active']].join(
+                            ' ') : styles['nav-list']}>
                             <li>
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
