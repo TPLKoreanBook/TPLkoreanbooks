@@ -28,7 +28,7 @@
   height: 40px;
   padding-left: 10px;
   border-radius: 5px;
-  border: 2px solid var(--color-thirdBg);
+  border-style: none;
 }
 
 .category-btn {
@@ -44,7 +44,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+  color: #7c7c7c;
   position: absolute;
   right: 0;
 }

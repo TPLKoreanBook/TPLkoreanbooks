@@ -48,8 +48,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: all 0.5s;
-
+  transition: 0.5s all;
+  /* transform: translateY(-200%); */
+  /* transition: transform 0.5s; */
   z-index: 999;
   background-color: black;
 }
@@ -63,20 +64,8 @@
 
 .active {
   top: 8vh;
+  /* transform: translateY(0); */
 }
-
-/* .nav-list-active {
-  list-style: none;
-  position: absolute;
-  top: 8vh;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-} */
 
 .link {
   display: inline-block;
@@ -112,7 +101,10 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    top: 0;
+    left: 0;
     background-color: initial;
+    transition: none;
   }
   .divider {
     width: initial;

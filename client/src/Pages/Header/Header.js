@@ -32,7 +32,7 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                 <div className={styles['divider']}>
                     <NavLink to="/" className={styles['logo-link']}>
                         <img className={styles['logo']} src="/logo.png" alt="logo" />
-                        Kopulso
+                        Koppulso
                     </NavLink>
 
                     <nav className={styles['navbar']}>
