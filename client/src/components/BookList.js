@@ -34,6 +34,7 @@ const BookList = ({ category, userInput }) => {
                     {/* Filtered by users' selected category */}
                 {data
                     // After being filtered by the user's selected category, It will be filtered by the user's search input.
+                    // eslint-disable-next-line array-callback-return
                     .filter((book) => {
                         if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
                             return book;
