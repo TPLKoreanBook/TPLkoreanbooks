@@ -51,17 +51,43 @@
   transition: ease-out 0.3s;
   padding-bottom: 1rem;
 }
-
 .link-btn {
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  border: none;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  width: 70px;
+  padding: 5px 20px;
+  position: relative;
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  text-align: center;
-  color: white;
   background-color: var(--color-mainBg);
+  color: white;
+  position: relative;
+  transition: 400ms;
+}
+
+.link-arrow {
+  font-size: 0.8rem;
+  transition: all 0.5s;
+  position: absolute;
+  top: 22%;
+  margin-left: 2rem;
+  opacity: 0;
+  transform: translateX(-200%);
+}
+
+.link-btn:hover,
+.link-btn:focus,
+.link-btn:active {
+  width: 80px;
+  padding-right: 40px;
+}
+
+.link-btn:hover .link-arrow,
+.link-btn:focus .link-arrow {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .book-container:hover img {

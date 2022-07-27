@@ -1,6 +1,8 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { IconContext } from 'react-icons';
 import styles from './Book.module.css';
 
 
@@ -21,7 +23,12 @@ function Book({ cover, title, address, author }) {
             <div className={styles['description']}>
                 <h3 title={title} className={styles['booktitle']} >{title}</h3>
                 <h4>{author}</h4>
-                <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>Link</a>
+                <IconContext.Provider value={{ className: `${styles['link-arrow']}` }}>
+                    <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>
+                        <span>Link</span>
+                        <AiOutlineArrowRight />
+                    </a>
+                </IconContext.Provider>
             </div>
         </li>
     )
