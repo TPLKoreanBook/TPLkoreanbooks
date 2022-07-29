@@ -36,10 +36,12 @@ const BookList = ({ category, userInput }) => {
                     // After being filtered by the user's selected category, It will be filtered by the user's search input.
                     // eslint-disable-next-line array-callback-return
                     .filter((book) => {
-                        if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
+                        if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length)) ||
+                            book.author.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
                             return book;
                         }
-                    }).slice(0, visible).map((book, index) => (
+                    })
+                    .slice(0, visible).map((book, index) => (
                         <Book
                             key={book.id}
                             cover={book.cover}

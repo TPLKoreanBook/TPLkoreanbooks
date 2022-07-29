@@ -5,6 +5,12 @@ import test1 from '../../images/minki.jpeg';
 import test2 from '../../images/seungmin.jpeg';
 import test3 from '../../images/sejun.jpeg';
 
+import slideImg1 from '../../images/slide1.png';
+import slideImg2 from '../../images/slide2.png';
+import slideImg3 from '../../images/slide3.png';
+
+
+
 // import mainBg from '../images/main.png';
 
 
@@ -17,7 +23,7 @@ const About = () => {
 
         children.current.forEach((item, i) => {
             // skip first animation section
-            if (i === 0) return;
+            // if (i === 0) return;
 
             const unit = (end - start) / length;
             // console.log(start, end);
@@ -40,7 +46,7 @@ const About = () => {
     useEffect(() => {
         const length = children.current.length;
         const headerVh = 6;
-        const contentVh = 90 - headerVh * length;
+        const contentVh = 92 - headerVh * length;
         let scrollStart = mainContent.current.offsetTop + 100;
         let scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
 
@@ -54,17 +60,21 @@ const About = () => {
         children.current.forEach((item, i) => {
 
             // skip first animation section.
-            if (i === 0) {
-                item.style.bottom = "-72vh";
-                item.children[0].style.height = headerVh + 'vh';
-                item.children[1].style.height = contentVh + 'vh';
-                item.style.transform = `translate3d(-50%, -72%, 0)`;
+            // if (i === 0) {
+            //     item.style.bottom = "-72vh";
+            //     item.children[0].style.height = headerVh + 'vh';
+            //     item.children[1].style.height = contentVh + 'vh';
+            //     item.style.transform = `translate3d(-50%, -72%, 0)`;
 
-            } else {
-                item.style.bottom = -(90 - headerVh * (length - (i))) + 'vh';
-                item.children[0].style.height = headerVh + 'vh';
-                item.children[1].style.height = contentVh + 'vh';
-            }
+            // } else {
+            //     item.style.bottom = -(90 - headerVh * (length - (i))) + 'vh';
+            //     item.children[0].style.height = headerVh + 'vh';
+            //     item.children[1].style.height = contentVh + 'vh';
+            // }
+
+            item.style.bottom = -(100 - headerVh * (length - i)) + 'vh';
+            item.children[0].style.height = headerVh + 'vh';
+            item.children[1].style.height = contentVh + 'vh';
 
         });
 
@@ -120,62 +130,70 @@ const About = () => {
 
             {/* need to fix <br/> part  */}
             <div ref={mainContent} className={` ${styles['story-container']}`}>
-
                 <div ref={sticky} className={styles['sticky']}>
-                    <div ref={addToRefs} className={`wrapper ${styles['row-container']}`}>
-                        <div className={styles.header}>1.</div>
+                    <div className={styles['intro']}>
+                        <h2>코뿔소 팀은 어떻게 만들어졌을까?</h2>
+                    </div>
+                    <div ref={addToRefs} className={`${styles['story-wrapper']} ${styles['row-container']}`}>
+                        <div className={styles.header}><h2>1. 코뿔소는 하나의 생각에서 출발했어요</h2></div>
                         <div className={styles.contents}>
-                            <div className={styles['story-divider']}>
-                                <h2>코불소가 만들어진 배경</h2>
-                                <p >코불소는 하나의 생각에서 출발했어요 👀</p>
-                                <div className={styles['highlighted']}>
-                                    <p>왜 토론토에 사는 한인들은 <br /> 불편함을 감수하고 살아야 할까?</p>
+                            <div className={styles['img-container']}>
+                                <img src={slideImg1} alt="" />
+                                <div className={styles['text-top']}>
+                                    <p>토론토 공립 도서관에는 <br />
+                                        한국어 책이 5천권이나 있는데<br />
+                                        제목이 영어로 되어 있어서<br />
+                                        검색을 못하네...</p>
                                 </div>
-                                <p>예를 들면...🙋🏻‍♂️</p>
-                                <p className={styles['semi-bold']}>토론토 공립 도서관에 5천여권의 한국어 책이 있지만 <br />제목이 읽기 힘든 영어식으로 표기되어 있어서 <br /> 책을 빌릴 수가 없었습니다.</p>
+                                <div className={styles['text-bottom']}>
+                                    <p>예를 들어,<br />
+                                        라면을 끓이며란 책은<br />
+                                        “Ramyonul kkurimyo”로<br />
+                                        검색해야하는 식이었어요..😂</p>
+                                </div>
                             </div>
-                            <div className={`${styles['person-img']}`}></div>
                         </div>
                     </div>
 
-                    <div ref={addToRefs} className={`wrapper ${styles['row-container']}`}>
-                        <div className={styles.header}>2.</div>
+                    <div ref={addToRefs} className={`${styles['story-wrapper']} ${styles['row-container']}`}>
+                        <div className={styles.header}><h2>2. 그래서 검색 프로그램을 만들어 보기로 했죠</h2></div>
                         <div className={styles.contents}>
-                            <div className={styles['story-divider']}>
-                                <p>🦏 코불소 팀은 이렇게 생각했어요!</p>
-                                <div className={styles['highlighted']}>
-                                    <p> 컴퓨터 프로그래밍으로 <br /> 해결할 수 있지 않을까?</p>
-                                </div>
-                                <p className={styles['semi-bold']}>그렇게 코불소팀의 첫번째 작품인 <br />"토론토 공립 도서관 책 검색 프로그램"이 <br /> 만들어졌습니다~!! 🎉
-                                </p>
-                            </div>
-                            <div className={`${styles['person-img-2']}`}></div>
-                        </div>
-                    </div>
+                            <div className={styles['img-container']}>
+                                <img src={slideImg2} alt="" />
 
-                    <div ref={addToRefs} className={`wrapper ${styles['row-container']}`}>
-                        <div className={styles.header}>3.</div>
-                        <div className={styles.contents}>
-                            <div className={styles['story-divider']}>
-                                <p>
-                                    코불소팀이 또 어떤 프로그램을 개발하면 좋을까요?
-                                </p>
-                                <div className={styles['highlighted']}>
-                                    <p className={styles['semi-bold']}>
-                                        저희는 앞으로 <br />
-                                        여러분들의 건의사항을 통해<br />
-                                        또 다른 유용한 프로그램을 <br />
-                                        만들어 갈 예정이에요😊
+                                <div className={styles['text-top']}>
+                                    <p>
+                                        일단 영어 제목을 <br />
+                                        전부 한글로 바꾸고<br />
+                                        책 표지랑 링크도<br />
+                                        추가해보자고!<br />
                                     </p>
                                 </div>
 
-                                <p className={styles['semi-bold']}>토론토에 살면서 불편했던 점이나<br />
-                                    꼭 있었으면 하는 프로그램이 있다면<br />
-                                    아래 주소로 메일을 보내주세요🕵🏻‍♂️
-                                </p>
-                                <p style={{ border: '1px solid red' }}>shin891211@hotmail.com</p>
+                                <div className={styles['text-middle']}>
+                                    <p>
+                                        손 쉽게 토론토 도서관으로 <br />
+                                        이동할 수 있는 링크도<br />
+                                        추가하면 좋을 것 같은데?<br />
+                                    </p>
+                                </div>
+
+                                <div className={styles['text-bottom']}>
+                                    <p>
+                                        오 좋은 아이디어야!<br />
+                                        카테고리별로 책을 골라볼 수 있는 기능도 넣자!
+                                    </p>
+                                </div>
                             </div>
-                            <div className={`${styles['person-img-3']}`}></div>
+                        </div>
+                    </div>
+
+                    <div ref={addToRefs} className={`${styles['story-wrapper']} ${styles['row-container']}`}>
+                        <div className={styles.header}><h2>3. 코뿔소는 앞으로 또 어떤 문제를 해결할까요?</h2></div>
+                        <div className={styles.contents}>
+                            <div className={styles['img-container']}>
+                                <img src={slideImg3} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
