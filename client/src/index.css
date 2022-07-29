@@ -4,9 +4,11 @@
 html {
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--color-secondBg);
+  scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
