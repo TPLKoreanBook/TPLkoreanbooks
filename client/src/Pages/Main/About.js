@@ -33,11 +33,15 @@ const About = () => {
 
             if (window.scrollY <= s) {
                 item.style.transform = `translate3d(-50%, 0, 0)`;
+                item.style.webkitTransform = `translate3d(-50%, 0, 0)`;
             } else if (window.scrollY >= e) {
                 item.style.transform = `translate3d(-50%, ${-contentVh}%, 0)`;
+                item.style.webkitTransform = `translate3d(-50%, ${-contentVh}%, 0)`
             } else {
                 item.style.transform = `translate3d(-50%, ${(window.scrollY - s) / (unit - 100) * (-contentVh)
-                    }%, 0)`
+                    }%, 0)`;
+                item.style.webkitTransform = `translate3d(-50%, ${(window.scrollY - s) / (unit - 100) * (-contentVh)
+                    }%, 0)`;
             }
         })
     }, []);
