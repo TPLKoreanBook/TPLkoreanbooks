@@ -65,33 +65,6 @@ title
 Story
 =========== */
 
-.highlighted {
-  text-align: center;
-  border-radius: 10px;
-  padding: 1.5rem 0.5rem;
-  margin-top: 1rem;
-  background-color: var(--color-thirdBg);
-  position: relative;
-}
-
-.highlighted::before {
-  content: open-quote;
-  color: var(--color-mainBg);
-  font-size: 4rem;
-  position: absolute;
-  top: -20px;
-  left: 0;
-}
-
-.highlighted::after {
-  content: close-quote;
-  color: var(--color-mainBg);
-  font-size: 4rem;
-  position: absolute;
-  bottom: -65px;
-  right: 0;
-}
-
 .story-container {
   height: 290vh;
   width: 100%;
@@ -105,14 +78,73 @@ Story
   overflow: hidden;
   will-change: transform;
 }
-
+/* =====
+intro
+======== */
 .intro {
   width: 100%;
   height: 72vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-mainBg);
+}
+
+.highlight {
+  text-align: center;
+  border-radius: 10px;
+  padding: 4rem 6rem;
+  margin-top: 1rem;
+  background-color: var(--color-thirdBg);
+  position: relative;
+}
+
+.highlight h2 {
+  font-size: 1.5rem;
+}
+
+.highlight::before {
+  content: open-quote;
+  color: var(--color-secondBg);
+  font-size: 4rem;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.highlight::after {
+  content: close-quote;
+  color: var(--color-secondBg);
+  font-size: 4rem;
+  position: absolute;
+  bottom: -65px;
+  right: 0;
+}
+
+.arrow {
+  padding-top: 4rem;
+
+  bottom: 17rem;
+}
+
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid var(--color-secondBg);
+  border-right: 4px solid var(--color-secondBg);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scrollDown 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
 }
 
 .row-container {
@@ -129,7 +161,7 @@ Story
 .header {
   background-color: var(--color-thirdBg);
   border-top: 1px solid var(--color-fourthBg);
-  border: 1px solid black;
+  border: 1px solid var(--color-fourthBg);
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -155,6 +187,8 @@ Story
 .text-top p,
 .text-middle p,
 .text-bottom p {
+  padding: 0;
+  margin: 0;
   font-size: 15px;
 }
 
@@ -164,15 +198,14 @@ Story
   height: 100px;
   z-index: 599;
   right: 45px;
-  top: 90px;
+  top: 110px;
 }
 
 .text-bottom {
   position: absolute;
   width: 200px;
   right: 23px;
-  bottom: 100px;
-  z-index: 599;
+  bottom: 95px;
 }
 
 /*======
@@ -184,13 +217,13 @@ Second Slide
 }
 
 .row-container:nth-child(3) .text-top {
-  top: 45px;
+  top: 65px;
   right: 40px;
 }
 
 .row-container:nth-child(3) .text-middle {
   position: absolute;
-  top: 220px;
+  top: 240px;
   right: 93px;
 }
 
@@ -217,6 +250,23 @@ Third Slide
 
 .contents {
   border: 1px solid black;
+}
+
+.row-container:nth-child(4) .text-top {
+  width: 230px;
+  top: 24px;
+  right: -8px;
+}
+
+.row-container:nth-child(4) .text-middle {
+  position: absolute;
+  top: 196px;
+  right: 33px;
+}
+
+.row-container:nth-child(4) .text-bottom {
+  bottom: 20px;
+  right: 46px;
 }
 
 /* =========
@@ -318,5 +368,21 @@ profiles
   to {
     left: 0;
     opacity: 1;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }

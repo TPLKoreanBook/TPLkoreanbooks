@@ -136,7 +136,14 @@ const About = () => {
             <div ref={mainContent} className={` ${styles['story-container']}`}>
                 <div ref={sticky} className={styles['sticky']}>
                     <div className={styles['intro']}>
-                        <h2>코뿔소 팀은 어떻게 만들어졌을까?</h2>
+                        <div className={styles['highlight']}>
+                            <h2 >코뿔소 팀은 어떻게 만들어졌을까?</h2>
+                        </div>
+                        <div className={styles['arrow']}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                     <div ref={addToRefs} className={`${styles['story-wrapper']} ${styles['row-container']}`}>
                         <div className={styles.header}><h2>1. 코뿔소는 하나의 생각에서 출발했어요</h2></div>
@@ -197,6 +204,31 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img src={slideImg3} alt="" />
+                                <div className={styles['text-top']}>
+                                    <p>
+                                        토론토 거주 한인 여러분~!<br />
+                                        타국에 살면서 겪었던 불편함이나<br />
+                                        꼭 있었으면 하는 서비스가 있다면<br />
+                                        코뿔소에게 알려주세요~!!<br />
+                                    </p>
+                                </div>
+                                <div className={styles['text-middle']}>
+                                    <p>
+                                        토론토 한인 동아리/동호회를<br />
+                                        손 쉽게 찾아보고 가입할 수 있는<br />
+                                        플랫폼이 있었으면 좋겠어요!<br />
+                                    </p>
+
+                                </div>
+                                <div className={styles['text-bottom']}>
+                                    <p>
+                                        와우 너무 좋은 서비스네요!<br />
+                                        저희가 한번 만들어보겠습니다!<br />
+                                        또 다른 아이디어가 있으면<br />
+                                        메일로 건의해주세요!<br />
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
