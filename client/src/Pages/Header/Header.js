@@ -7,6 +7,9 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
     const url = useLocation();
     const [navExpanded, setNavExpanded] = useState(false);
 
+    useEffect(() => {
+        setNavExpanded(false);
+    }, [url])
 
     const navHandler = () => {
         setNavExpanded((prev) => !prev);
