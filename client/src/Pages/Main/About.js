@@ -1,5 +1,5 @@
 // import { ScrollContainer, ScrollPage, Animator, batch, Sticky, Fade, MoveOut } from 'react-scroll-motion';
-import { useEffect, useCallback, useRef, useState } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 import styles from './About.module.css';
 import test1 from '../../images/minki.jpeg';
 import test2 from '../../images/seungmin.jpeg';
