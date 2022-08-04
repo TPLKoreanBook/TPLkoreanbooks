@@ -19,6 +19,10 @@ Fonts
   font-weight: 100;
 }
 
+.profile-container h2 {
+  font-size: 1.5rem;
+}
+
 .about-container p {
   margin-top: 1rem;
   line-height: 1.5;
@@ -164,12 +168,9 @@ intro
   border: 1px solid black;
 }
 
-/*======
- First slide 
- =======*/
 .img-container {
-  width: 500px;
-  height: 500px;
+  width: 360px;
+  height: auto;
   position: relative;
 }
 
@@ -181,42 +182,48 @@ intro
   font-size: 15px;
 }
 
-.text-top {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  right: 20px;
-  top: 110px;
-}
-
+.text-top,
+.text-middle,
 .text-bottom {
   position: absolute;
-  right: 0;
-  bottom: 95px;
+}
+
+/*======
+ First slide 
+ =======*/
+
+.row-container:nth-child(2) .text-top {
+  right: 75px;
+  top: 50px;
+}
+
+.row-container:nth-child(2) .text-bottom {
+  right: 20px;
+  bottom: 69px;
 }
 
 /*======
 Second Slide
 =======*/
 
-.row-container:nth-child(3) .img-container {
+/* .row-container:nth-child(3) .img-container {
   width: 550px;
-}
+} */
 
 .row-container:nth-child(3) .text-top {
-  top: 65px;
-  right: 40px;
+  top: 25px;
+  right: 180px;
 }
 
 .row-container:nth-child(3) .text-middle {
-  position: absolute;
-  top: 240px;
-  right: 93px;
+  top: 165px;
+  right: 43px;
 }
 
 .row-container:nth-child(3) .text-bottom {
-  bottom: 71px;
-  right: 160px;
+  bottom: 40px;
+  right: 45px;
+  width: 168px;
 }
 
 .row-container:nth-child(3) .header {
@@ -227,30 +234,28 @@ Second Slide
 Third Slide
  =======*/
 
-.row-container:nth-child(4) .img-container {
+/* .row-container:nth-child(4) .img-container {
   width: 550px;
   height: 450px;
-}
+} */
 
 .row-container:nth-child(4) .header {
   background-color: #577fb7;
 }
 
 .row-container:nth-child(4) .text-top {
-  width: 230px;
-  top: 24px;
-  right: -8px;
+  top: 28px;
+  right: 97px;
 }
 
 .row-container:nth-child(4) .text-middle {
-  position: absolute;
-  top: 196px;
-  right: 33px;
+  top: 167px;
+  right: 22px;
 }
 
 .row-container:nth-child(4) .text-bottom {
-  bottom: 20px;
-  right: 46px;
+  bottom: 30px;
+  right: 24px;
 }
 
 /* =========
@@ -273,42 +278,78 @@ profiles
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 80%;
 }
 
 .profile-card {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  border: 1px solid var(--color-mainBg);
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 1rem;
+  position: relative;
 }
 
 .profile-img-container {
+  position: absolute;
+  top: -70px;
   object-fit: cover;
   min-width: 100px;
   min-height: 100px;
-  max-width: 300px;
-  width: 100%;
+  max-width: 200px;
+  border: 2px solid var(--color-mainBg);
+  border-radius: 50%;
+  width: 40%;
+}
+
+.profile-img-container img {
+  border-radius: 50%;
 }
 
 .profile-links {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+}
+
+.profile-links li {
+  padding: 0.3rem;
+}
+
+.profile-links li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  /* border: 1px solid blue; */
+  font-size: 1.5rem;
 }
 
 @media (min-width: 500px) {
   /* =======
   first slide
   ========== */
-  .text-top {
-    right: 50px;
+  .img-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
   }
-  .text-bottom {
-    right: 37px;
+  .row-container:nth-child(2) .text-top {
+    top: 115px;
+    right: 60px;
+  }
+
+  .row-container:nth-child(2) .text-bottom {
+    top: 315px;
+    right: 30px;
   }
 
   /* =======
@@ -316,14 +357,18 @@ profiles
   ========== */
 
   .row-container:nth-child(3) .text-top {
+    top: 70px;
+    right: 98px;
   }
 
   .row-container:nth-child(3) .text-middle {
+    top: 240px;
+    right: 75px;
   }
 
   .row-container:nth-child(3) .text-bottom {
-    width: 200px;
-    right: 155px;
+    top: 367px;
+    right: 154px;
   }
 
   /* =======
@@ -331,16 +376,17 @@ profiles
   ========== */
 
   .row-container:nth-child(4) .text-top {
-    right: 5px;
+    top: 33px;
+    right: 8px;
   }
 
   .row-container:nth-child(4) .text-middle {
-    right: 50px;
+    top: 225px;
+    right: 35px;
   }
 
   .row-container:nth-child(4) .text-bottom {
-    width: 200px;
-    right: 65px;
+    right: 45px;
   }
 }
 
