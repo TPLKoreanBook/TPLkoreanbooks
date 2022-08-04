@@ -8,7 +8,10 @@ Fonts
 .about-container h1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+}
+.highlight h2 {
+  font-size: 1.5rem;
 }
 
 .about-container h2 {
@@ -27,8 +30,6 @@ title
 
 .title-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -42,23 +43,15 @@ title
 
 .title-container .title-bg {
   background-image: url("../../images/main.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 250% 100%;
+  background-position: right center;
   width: 100%;
   height: 100%;
 }
 
 .title-divider {
-  padding: 1rem;
   position: absolute;
-  background-color: var(--color-secondBg);
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
+  right: 1rem;
 }
 
 /* =========
@@ -94,14 +87,10 @@ intro
 .highlight {
   text-align: center;
   border-radius: 10px;
-  padding: 4rem 6rem;
+  padding: 2rem 4rem;
   margin-top: 1rem;
   background-color: var(--color-thirdBg);
   position: relative;
-}
-
-.highlight h2 {
-  font-size: 1.5rem;
 }
 
 .highlight::before {
@@ -124,7 +113,6 @@ intro
 
 .arrow {
   padding-top: 4rem;
-
   bottom: 17rem;
 }
 
@@ -173,6 +161,7 @@ intro
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 /*======
@@ -196,15 +185,13 @@ intro
   position: absolute;
   width: 200px;
   height: 100px;
-  z-index: 599;
-  right: 45px;
+  right: 20px;
   top: 110px;
 }
 
 .text-bottom {
   position: absolute;
-  width: 200px;
-  right: 23px;
+  right: 0;
   bottom: 95px;
 }
 
@@ -213,7 +200,7 @@ Second Slide
 =======*/
 
 .row-container:nth-child(3) .img-container {
-  width: 565px;
+  width: 550px;
 }
 
 .row-container:nth-child(3) .text-top {
@@ -241,15 +228,12 @@ Third Slide
  =======*/
 
 .row-container:nth-child(4) .img-container {
+  width: 550px;
   height: 450px;
 }
 
 .row-container:nth-child(4) .header {
   background-color: #577fb7;
-}
-
-.contents {
-  border: 1px solid black;
 }
 
 .row-container:nth-child(4) .text-top {
@@ -316,21 +300,75 @@ profiles
   align-items: center;
 }
 
+@media (min-width: 500px) {
+  /* =======
+  first slide
+  ========== */
+  .text-top {
+    right: 50px;
+  }
+  .text-bottom {
+    right: 37px;
+  }
+
+  /* =======
+  second slide
+  ========== */
+
+  .row-container:nth-child(3) .text-top {
+  }
+
+  .row-container:nth-child(3) .text-middle {
+  }
+
+  .row-container:nth-child(3) .text-bottom {
+    width: 200px;
+    right: 155px;
+  }
+
+  /* =======
+  third slide
+  ========== */
+
+  .row-container:nth-child(4) .text-top {
+    right: 5px;
+  }
+
+  .row-container:nth-child(4) .text-middle {
+    right: 50px;
+  }
+
+  .row-container:nth-child(4) .text-bottom {
+    width: 200px;
+    right: 65px;
+  }
+}
+
 @media (min-width: 900px) {
   /* =========
   title
   =========== */
+
+  .title-container h1 {
+    font-size: 3rem;
+  }
   .title-container .title-bg {
+    margin-top: 10vh;
     background-position: initial;
+    background-size: cover;
     width: 50%;
     height: 100%;
     transform: translateX(-1000px) scaleX(-1);
     animation: slideIn 1s ease-in-out forwards;
   }
   .title-divider {
-    position: static;
+    position: initial;
     width: 50%;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* =========
