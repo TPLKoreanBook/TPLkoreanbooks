@@ -240,10 +240,10 @@ const About = () => {
                         <h3>Minki</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineGithub />
                             </a></li>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineMail />
                             </a></li>
                         </ul>
@@ -255,10 +255,10 @@ const About = () => {
                         <h3>Seungmin</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineGithub />
                             </a></li>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineMail />
                             </a></li>
                         </ul>
@@ -270,10 +270,10 @@ const About = () => {
                         <h3>Sejun</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineGithub />
                             </a></li>
-                            <li><a href="">
+                            <li><a href="/">
                                 <AiOutlineMail />
                             </a></li>
                         </ul>
