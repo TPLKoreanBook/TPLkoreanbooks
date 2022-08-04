@@ -1,5 +1,5 @@
 // import { ScrollContainer, ScrollPage, Animator, batch, Sticky, Fade, MoveOut } from 'react-scroll-motion';
-import { useEffect, useCallback, useRef } from 'react';
+import { useEffect, useCallback, useRef, useState } from 'react';
 import styles from './About.module.css';
 import test1 from '../../images/minki.jpeg';
 import test2 from '../../images/seungmin.jpeg';
@@ -8,6 +8,12 @@ import test3 from '../../images/sejun.jpeg';
 import slideImg1 from '../../images/slide1.png';
 import slideImg2 from '../../images/slide2.png';
 import slideImg3 from '../../images/slide3.png';
+import mobileSlide1 from '../../images/mobile-first-slide.png';
+import mobileSlide2 from '../../images/mobile-second-slide.png';
+import mobileSlide3 from '../../images/mobile-third-slide.png';
+
+import { AiOutlineGithub, AiOutlineMail } from 'react-icons/ai';
+// import { IconContext } from 'react-icons';
 
 
 
@@ -16,21 +22,16 @@ import slideImg3 from '../../images/slide3.png';
 
 
 const About = () => {
-    // const [isLoaded, setIsLoaded] = useState(false);
+    const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
     const mainContent = useRef();
     const sticky = useRef();
     const children = useRef([]);
     const animate = useCallback((start, end, contentVh, length) => {
 
         children.current.forEach((item, i) => {
-            // skip first animation section
-            // if (i === 0) return;
-
             const unit = (end - start) / length;
-            // console.log(start, end);
             const s = start + unit * i + 100;
             const e = start + unit * (i + 1);
-
 
             if (window.scrollY <= s) {
                 item.style.transform = `translate3d(-50%, 0, 0)`;
@@ -50,15 +51,6 @@ const About = () => {
 
     useEffect(() => {
 
-        // const onPageLoad = () => {
-        //     setIsLoaded(true);
-        // }
-        // if (document.readyState === 'complete') {
-        //     onPageLoad();
-        // } else {
-        //     window.addEventListener("load", onPageLoad);
-        // }
-
         const length = children.current.length;
         const headerVh = 6;
         const contentVh = 92 - headerVh * length;
@@ -74,19 +66,6 @@ const About = () => {
 
         children.current.forEach((item, i) => {
 
-            // skip first animation section.
-            // if (i === 0) {
-            //     item.style.bottom = "-72vh";
-            //     item.children[0].style.height = headerVh + 'vh';
-            //     item.children[1].style.height = contentVh + 'vh';
-            //     item.style.transform = `translate3d(-50%, -72%, 0)`;
-
-            // } else {
-            //     item.style.bottom = -(90 - headerVh * (length - (i))) + 'vh';
-            //     item.children[0].style.height = headerVh + 'vh';
-            //     item.children[1].style.height = contentVh + 'vh';
-            // }
-
             item.style.bottom = -(100 - headerVh * (length - i)) + 'vh';
             item.children[0].style.height = headerVh + 'vh';
             item.children[1].style.height = contentVh + 'vh';
@@ -100,6 +79,10 @@ const About = () => {
 
         window.addEventListener('resize', init);
 
+        window.addEventListener('resize', () => {
+            setCurrentWidth(window.innerWidth);
+        })
+
         return () => {
             window.removeEventListener('scroll', () => {
                 animate(scrollStart, scrollEnd, contentVh, length);
@@ -111,7 +94,7 @@ const About = () => {
 
 
 
-    }, [animate]);
+    }, [animate, currentWidth]);
 
     const addToRefs = el => {
         if (el && !children.current.includes(el)) {
@@ -161,7 +144,7 @@ const About = () => {
                         <div className={styles.header}><h2>1. 코뿔소는 하나의 생각에서 출발했어요</h2></div>
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
-                                <img src={slideImg1} alt="" />
+                                <img src={currentWidth <= 500 ? mobileSlide1 : slideImg1} alt="" />
                                 <div className={styles['text-top']}>
                                     <p>토론토 공립 도서관에는 <br />
                                         한국어 책이 5천권이나 있는데<br />
@@ -182,7 +165,7 @@ const About = () => {
                         <div className={styles.header}><h2>2. 그래서 검색 프로그램을 만들어 보기로 했죠</h2></div>
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
-                                <img src={slideImg2} alt="" />
+                                <img src={currentWidth <= 500 ? mobileSlide2 : slideImg2} alt="" />
 
                                 <div className={styles['text-top']}>
                                     <p>
@@ -215,7 +198,7 @@ const About = () => {
                         <div className={styles.header}><h2>3. 코뿔소는 앞으로 또 어떤 문제를 해결할까요?</h2></div>
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
-                                <img src={slideImg3} alt="" />
+                                <img src={currentWidth <= 500 ? mobileSlide3 : slideImg3} alt="" />
                                 <div className={styles['text-top']}>
                                     <p>
                                         토론토 거주 한인 여러분~!<br />
@@ -254,30 +237,45 @@ const About = () => {
                         <div className={styles['profile-img-container']}>
                             <img src={test1} alt="" />
                         </div>
+                        <h3>Minki</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li>Minki</li>
-                            <li>Contact</li>
-                            <li>Github</li>
+                            <li><a href="/">
+                                <AiOutlineGithub />
+                            </a></li>
+                            <li><a href="/">
+                                <AiOutlineMail />
+                            </a></li>
                         </ul>
                     </li>
                     <li className={styles['profile-card']}>
                         <div className={styles['profile-img-container']}>
                             <img src={test2} alt="" />
                         </div>
+                        <h3>Seungmin</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li>Seungmin</li>
-                            <li>Contact</li>
-                            <li>Github</li>
+                            <li><a href="/">
+                                <AiOutlineGithub />
+                            </a></li>
+                            <li><a href="/">
+                                <AiOutlineMail />
+                            </a></li>
                         </ul>
                     </li>
                     <li className={styles['profile-card']}>
                         <div className={styles['profile-img-container']}>
                             <img src={test3} alt="" />
                         </div>
+                        <h3>Sejun</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem porro consequatur.</p>
                         <ul className={styles['profile-links']}>
-                            <li>Sejun</li>
-                            <li>Contact</li>
-                            <li>Github</li>
+                            <li><a href="/">
+                                <AiOutlineGithub />
+                            </a></li>
+                            <li><a href="/">
+                                <AiOutlineMail />
+                            </a></li>
                         </ul>
                     </li>
                 </ul>
