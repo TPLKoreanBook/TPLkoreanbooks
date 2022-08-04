@@ -13,7 +13,7 @@ import mobileSlide2 from '../../images/mobile-second-slide.png';
 import mobileSlide3 from '../../images/mobile-third-slide.png';
 
 import { AiOutlineGithub, AiOutlineMail } from 'react-icons/ai';
-import { IconContext } from 'react-icons';
+// import { IconContext } from 'react-icons';
 
 
 
