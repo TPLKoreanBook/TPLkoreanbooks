@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation, } from 'react-router-dom'
 import SearchForm from '../../components/SearchForm';
 import styles from './Header.module.css';
+
+
+
 
 const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
     const url = useLocation();
@@ -31,6 +34,8 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
     }, [url, resetSearchTerm]);
     return (
         <header className={styles['header-container']}>
+            <div className={navExpanded ? styles['overlay'] : ''} onClick={navHandler}></div>
+            {/* {navExpanded && <div className={styles['overlay']} onClick={navHandler}></div>} */}
             <div className={`wrapper ${styles['header-contents']}`}>
                 <div className={styles['divider']}>
                     <NavLink to="/" className={styles['logo-link']}>
@@ -78,12 +83,12 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                     categoryName={categoryName}
                     onSearch={onSearch}
                     onCategory={onCategory}
-                // children={children}
                 />}
             </div>
-
         </header>
     );
 };
+
+
 
 export default Header;
