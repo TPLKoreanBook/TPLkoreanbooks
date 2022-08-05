@@ -206,10 +206,6 @@ intro
 Second Slide
 =======*/
 
-/* .row-container:nth-child(3) .img-container {
-  width: 550px;
-} */
-
 .row-container:nth-child(3) .text-top {
   top: 25px;
   right: 180px;
@@ -329,7 +325,6 @@ profiles
   color: black;
   text-decoration: none;
   display: flex;
-  /* border: 1px solid blue; */
   font-size: 1.5rem;
 }
 
