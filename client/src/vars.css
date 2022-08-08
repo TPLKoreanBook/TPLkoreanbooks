@@ -1,7 +1,11 @@
 :root {
-  --color-mainBg: #33a780;
-  --color-secondBg: white;
-  --color-thirdBg: rgb(249, 197, 66);
-  --color-fourthBg: rgb(0, 0, 0);
-  --color-fi: rgba(224, 79, 79, 0.83);
+  --color-green: #33a780;
+  /* --color-green: #10e7dc; */
+
+  --color-white: white;
+  --color-yellow: #f9c542;
+  /* --color-yellow: #f79e02; */
+  --color-black: rgb(0, 0, 0);
+  --color-red: rgba(224, 79, 79, 0.83);
+  --color-blue: #7ba4d4;
 }

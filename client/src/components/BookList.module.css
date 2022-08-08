@@ -25,7 +25,7 @@
 .showMore-btn {
   display: flex;
   align-items: center;
-  background-color: var(--color-mainBg);
+  background-color: var(--color-green);
   height: 40px;
   border: none;
   border-radius: 50px;

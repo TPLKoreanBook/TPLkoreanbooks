@@ -6,9 +6,8 @@
   top: 8vh;
   left: 0;
 
-  border: 12px solid var(--color-mainBg);
-  background: var(--color-mainBg);
-  /* padding: 0 2rem; */
+  border: 12px solid var(--color-green);
+  background: var(--color-green);
 }
 
 input:focus,
@@ -45,7 +44,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-thirdBg);
+  background-color: var(--color-yellow);
   max-width: 120px;
   min-width: 80px;
   height: 40px;
