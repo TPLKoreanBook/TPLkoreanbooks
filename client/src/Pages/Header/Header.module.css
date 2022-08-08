@@ -1,7 +1,7 @@
 .header-container {
   position: fixed;
   top: 0;
-  background-color: var(--color-mainBg);
+  background-color: var(--color-green);
   z-index: 999;
   width: 100%;
   margin: 0;
@@ -28,7 +28,7 @@
   top: 8vh;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: var(--color-white);
   opacity: 0.8;
   transition: 0.5s all;
 }
@@ -43,7 +43,7 @@
   align-items: center;
   font-size: 1.3rem;
   text-decoration: none;
-  color: var(--color-secondBg);
+  color: var(--color-white);
   margin-right: 3rem;
 }
 
@@ -58,7 +58,7 @@
   flex-direction: column;
   transition: 0.5s all;
   z-index: 999;
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .nav-list.active {
@@ -78,17 +78,17 @@
   transition: all 0.3s;
   text-decoration: none;
   font-size: 0.9rem;
-  color: var(--color-secondBg);
+  color: var(--color-white);
   position: relative;
   transition: 0.5s all;
 }
 .link:hover,
 .link:focus {
-  color: var(--color-thirdBg);
+  color: var(--color-yellow);
 }
 
 .link-active {
-  color: var(--color-thirdBg);
+  color: var(--color-yellow);
 }
 
 .link-active::before {
@@ -96,14 +96,14 @@
   content: "";
   width: 100%;
   height: 2px;
-  background-color: var(--color-thirdBg);
+  background-color: var(--color-yellow);
   bottom: -5px;
   left: 0;
 }
 
 .link:not(:first-child):hover,
 .link:not(:first-child):focus {
-  color: var(--color-mainBg);
+  color: var(--color-green);
 }
 
 .burger-menu {
@@ -116,12 +116,12 @@
 .burger-bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .burger-menu:hover .burger-bar,
 .burger-menu:focus .burger-bar {
-  background-color: var(--color-thirdBg);
+  background-color: var(--color-yellow);
 }
 
 .burger-open:nth-child(1) {

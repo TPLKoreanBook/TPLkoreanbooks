@@ -61,7 +61,7 @@
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--color-mainBg);
+  background-color: var(--color-green);
   color: white;
   position: relative;
   transition: 400ms;
