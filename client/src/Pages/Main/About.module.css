@@ -6,26 +6,35 @@ Fonts
   height: 100%;
 }
 .about-container h1 {
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.highlight h2 {
-  font-size: 1.5rem;
-}
 
-.about-container h2 {
-  font-size: 1rem;
-  font-weight: 100;
-}
-
+.about-container h2,
 .profile-container h2 {
-  font-size: 1.5rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  /* font-size: 45px; */
+  font-weight: 400;
+}
+
+.about-container p {
+  font-size: 1rem;
+  color: var(--color-black);
 }
 
 .about-container p {
   margin-top: 1rem;
   line-height: 1.5;
+}
+
+.profile-container h3 {
+  font-size: 1rem;
+}
+.profile-container p {
+  font-size: 16px;
 }
 
 /* =========
@@ -34,7 +43,8 @@ title
 
 .title-container {
   display: flex;
-  height: 100vh;
+  height: 92vh;
+  background-color: var(--color-green);
 }
 
 .br-line {
@@ -42,15 +52,15 @@ title
 }
 
 .br-line .emphasize {
-  color: var(--color-green);
+  color: var(--color-yellow);
 }
 
-.title-container .title-bg {
-  background-image: url("../../images/main.png");
-  background-size: 250% 100%;
-  background-position: right center;
-  width: 100%;
-  height: 100%;
+.title-bg {
+  background-image: url("../../images/main-bg.png");
+  background-size: cover;
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 50%;
 }
 
 .title-divider {
@@ -80,45 +90,25 @@ intro
 ======== */
 .intro {
   width: 100%;
-  /* height: 72vh; */
-  height: 72vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-green);
+  height: 92vh;
+  margin-top: 8vh;
 }
 
-.highlight {
-  text-align: center;
-  border-radius: 10px;
-  padding: 2rem 4rem;
-  margin-top: 1rem;
-  background-color: var(--color-yellow);
-  position: relative;
+.intro-header {
+  height: 10vh;
 }
 
-.highlight::before {
-  content: open-quote;
+.intro-header p {
   color: var(--color-white);
-  font-size: 4rem;
-  position: absolute;
-  top: -20px;
-  left: 0;
-}
-
-.highlight::after {
-  content: close-quote;
-  color: var(--color-white);
-  font-size: 4rem;
-  position: absolute;
-  bottom: -65px;
-  right: 0;
+  font-size: 0.8rem;
 }
 
 .arrow {
-  padding-top: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  /* padding-top: 4rem; */
   bottom: 17rem;
 }
 
@@ -277,6 +267,7 @@ profiles
 }
 
 .profile-container h2 {
+  align-self: flex-start;
   margin-top: 2rem;
 }
 
@@ -292,20 +283,11 @@ profiles
 
 .profile-card {
   width: 300px;
-  border-radius: 50px;
   margin: 1rem;
-  -webkit-box-shadow: 0px 9px 23px 0px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 9px 23px 0px rgba(0, 0, 0, 0.46);
-}
-
-.card-top {
-  width: 100%;
-  height: 150px;
-
-  background-color: var(--color-green);
-  border-radius: 50px 50px 0 0;
-  position: relative;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-bottom {
@@ -316,32 +298,28 @@ profiles
   padding: 1rem;
 }
 
-.profile-card p {
-  width: 200px;
+.profile-card p,
+.profile-card h3 {
+  margin: 0;
+  color: var(--color-white);
 }
 
 .profile-img-container {
-  display: flex;
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  transform: translate(50%, 20%);
-  object-fit: cover;
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 200px;
-  -webkit-box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.46);
+  background-image: url("../../images/seunghwa.jpeg");
+  background-size: cover;
+  background-position: 35% center;
+  width: 100%;
+  height: 300px;
   border-radius: 50%;
-  width: 40%;
 }
 
 .profile-img-container img {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .profile-links {
-  margin-top: 2rem;
   list-style: none;
   display: flex;
   align-items: center;
@@ -442,14 +420,20 @@ profiles
   .title-container h1 {
     font-size: 3rem;
   }
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .title-container .title-bg {
-    margin-top: 10vh;
+    margin-left: 7rem;
     background-position: initial;
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-    transform: translateX(-1000px) scaleX(-1);
-    animation: slideIn 1s ease-in-out forwards;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 721px;
+    height: 584px;
+    /* position: absolute; */
   }
   .title-divider {
     position: initial;

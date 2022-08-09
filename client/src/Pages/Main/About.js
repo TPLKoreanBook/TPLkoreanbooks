@@ -4,6 +4,7 @@ import styles from './About.module.css';
 import test1 from '../../images/minki.jpeg';
 import test2 from '../../images/seungmin.jpeg';
 import test3 from '../../images/sejun.jpeg';
+import seunghwa from '../../images/seunghwa.jpeg';
 
 import slideImg1 from '../../images/slide1.png';
 import slideImg2 from '../../images/slide2.png';
@@ -22,6 +23,8 @@ const About = () => {
     const mainContent = useRef();
     const sticky = useRef();
     const children = useRef([]);
+
+    const h2Ref = useRef();
 
     const animate = useCallback((start, end, contentVh, length) => {
         // console.log('rebuild');
@@ -47,9 +50,15 @@ const About = () => {
 
 
     useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            console.log(entry);
+        });
+        observer.observe(h2Ref.current);
         const headerVh = 6;
         const length = children.current.length;
-        const contentVh = 92 - headerVh * length;
+        const contentVh = 82 - headerVh * length;
+        console.log(mainContent.current.offsetTop);
         let scrollStart = mainContent.current.offsetTop + 100;
         let scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
 
@@ -106,7 +115,6 @@ const About = () => {
         <section className={styles['about-container']}>
             <div className={styles['title-container']}>
                 <div className={styles['title-bg']}>
-                    {/* <img src={mainBg} alt="" /> */}
                 </div>
                 <div className={styles['title-divider']}>
                     <h1>
@@ -121,7 +129,6 @@ const About = () => {
                         <span className={styles['br-line']}>
                             해<span className={styles['emphasize']}>소</span>합니다</span>
                     </h1>
-                    {/* <p>"코뿔소는 코딩으로 불편함을 해결해드리는 웹사이트입니다."</p> */}
                 </div>
             </div>
 
@@ -129,9 +136,11 @@ const About = () => {
             <div ref={mainContent} className={` ${styles['story-container']}`}>
                 <div ref={sticky} className={styles['sticky']}>
                     <div className={styles['intro']}>
-                        <div className={styles['highlight']}>
-                            <h2>코뿔소 팀은 어떻게 만들어졌을까?</h2>
+                        <div ref={h2Ref} className={`wrapper ${styles['intro-header']}`}>
+                            <h2>Who We Are</h2>
+                            <p>코뿔소 팀은 어떻게 만들어졌을까?</p>
                         </div>
+                        {/* <p>Please scroll down</p> */}
                         <div className={styles['arrow']}>
                             <span></span>
                             <span></span>
@@ -229,17 +238,17 @@ const About = () => {
             </div>
 
             <div className={`wrapper ${styles['profile-container']}`}>
-                <h2>코불소를 만들어가는 사람들</h2>
+                <h2>Meet The Team</h2>
                 <ul className={styles['profiles']}>
                     <li className={styles['profile-card']}>
-                        <div className={styles['card-top']}>
-                            <div className={styles['profile-img-container']}>
-                                <img src={test1} alt="" />
-                            </div>
+
+                        <div className={styles['profile-img-container']}>
+                            <img src={test1} alt="" />
                         </div>
+
                         <div className={styles['card-bottom']}>
                             <h3>Minki</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Backend Developer</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
                                     <AiOutlineGithub />
@@ -251,14 +260,12 @@ const About = () => {
                         </div>
                     </li>
                     <li className={styles['profile-card']}>
-                        <div className={styles['card-top']}>
-                            <div className={styles['profile-img-container']}>
-                                <img src={test2} alt="" />
-                            </div>
+                        <div className={styles['profile-img-container']}>
+                            <img src={test2} alt="" />
                         </div>
                         <div className={styles['card-bottom']}>
                             <h3>Seungmin</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Frontend Developer</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
                                     <AiOutlineGithub />
@@ -270,14 +277,29 @@ const About = () => {
                         </div>
                     </li>
                     <li className={styles['profile-card']}>
-                        <div className={styles['card-top']}>
-                            <div className={styles['profile-img-container']}>
-                                <img src={test3} alt="" />
-                            </div>
+                        <div className={styles['profile-img-container']}>
+                            <img src={test2} alt="" />
                         </div>
                         <div className={styles['card-bottom']}>
-                            <h3>Sejun</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3>Woong</h3>
+                            <p>Frontend Developer</p>
+                            <ul className={styles['profile-links']}>
+                                <li><a href="/">
+                                    <AiOutlineGithub />
+                                </a></li>
+                                <li><a href="/">
+                                    <AiOutlineMail />
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li className={styles['profile-card']}>
+                        <div className={styles['profile-img-container']}>
+                            {/* <img src={seunghwa} alt="" /> */}
+                        </div>
+                        <div className={styles['card-bottom']}>
+                            <h3>Seunghwa Kim</h3>
+                            <p>Project Manager</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
                                     <AiOutlineGithub />

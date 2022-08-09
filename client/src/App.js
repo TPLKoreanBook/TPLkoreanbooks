@@ -3,6 +3,7 @@ import Header from './Pages/Header/Header';
 import Main from './Pages/Main/Main.js';
 import About from './Pages/Main/About';
 import BookList from './components/BookList.js';
+import Footer from './Pages/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -30,8 +31,7 @@ function App() {
           />} />
         </Routes>
       </Main>
-      <footer>
-      </footer>
+      <Footer />
 
 
 
