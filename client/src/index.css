@@ -11,10 +11,11 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  background-color: var(--color-green);
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1500px;
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -23,6 +24,7 @@ body {
 
 h1,
 h2,
+h3,
 ul,
 p {
   padding: 0;
