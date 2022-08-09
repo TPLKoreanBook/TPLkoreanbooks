@@ -28,42 +28,45 @@ const BookList = ({ category, userInput }) => {
     if (!data) return null
 
     return (
-        <section className={`wrapper ${styles['book-list']}`}>
-            <ul className={styles['list-container']}>
-                {/* Test filtering
+        <section className={` ${styles['book-list']}`}>
+            <div className='wrapper'>
+                <ul className={styles['list-container']}>
+                    {/* Test filtering
                     {/* Filtered by users' selected category */}
-                {data
-                    // After being filtered by the user's selected category, It will be filtered by the user's search input.
-                    // eslint-disable-next-line array-callback-return
-                    .filter((book) => {
-                        if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length)) ||
-                            book.author.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
-                            return book;
-                        }
-                    })
-                    .slice(0, visible).map((book, index) => (
-                        <Book
-                            key={book.id}
-                            cover={book.cover}
-                            title={book.title}
-                            author={book.author}
-                            address={book.link}
-                        />
-                    ))}
-            </ul>
+                    {data
+                        // After being filtered by the user's selected category, It will be filtered by the user's search input.
+                        // eslint-disable-next-line array-callback-return
+                        .filter((book) => {
+                            if (book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length)) ||
+                                book.author.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))) {
+                                return book;
+                            }
+                        })
+                        .slice(0, visible).map((book, index) => (
+                            <Book
+                                key={book.id}
+                                cover={book.cover}
+                                title={book.title}
+                                author={book.author}
+                                address={book.link}
+                            />
+                        ))}
+                </ul>
 
-            <div className={styles['booklist-status']}>
-                <h3>{visible} /{data.length}</h3>
-                <div className={styles['progress-bar']}>
-                    <Line
-                        percent={visible / data.length * 100}
-                        trailWidth={2}
-                        strokeWidth={4}
-                        trailColor="#000000"
-                        strokeColor="#D3D3D3" />
+                <div className={styles['booklist-status']}>
+                    <h3>{visible} /{data.length}</h3>
+                    <div className={styles['progress-bar']}>
+                        <Line
+                            percent={visible / data.length * 100}
+                            trailWidth={2}
+                            strokeWidth={4}
+                            trailColor="#000000"
+                            strokeColor="#D3D3D3" />
+                    </div>
+                    <button className={styles['showMore-btn']} onClick={showMoreBooks}>Show More!</button>
                 </div>
-                <button className={styles['showMore-btn']} onClick={showMoreBooks}>Show More!</button>
             </div>
+
 
         </section>
     )

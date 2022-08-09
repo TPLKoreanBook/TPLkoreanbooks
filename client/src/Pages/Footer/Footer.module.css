@@ -1,0 +1,22 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-green);
+}
+.links-container {
+  list-style: none;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 16px;
+}
+
+.footer-container p {
+  margin-top: 1rem;
+  color: white;
+  font-size: 16px;
+}
