@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background: var(--color-green);
+  background-color: var(--color-green);
 }
 
 .wrapper {
@@ -24,6 +24,7 @@ body {
 
 h1,
 h2,
+h3,
 ul,
 p {
   padding: 0;

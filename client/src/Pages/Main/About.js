@@ -1,10 +1,6 @@
 // import { ScrollContainer, ScrollPage, Animator, batch, Sticky, Fade, MoveOut } from 'react-scroll-motion';
 import { useEffect, useCallback, useRef, useState } from 'react';
 import styles from './About.module.css';
-import test1 from '../../images/minki.jpeg';
-import test2 from '../../images/seungmin.jpeg';
-import test3 from '../../images/sejun.jpeg';
-import seunghwa from '../../images/seunghwa.jpeg';
 
 import slideImg1 from '../../images/slide1.png';
 import slideImg2 from '../../images/slide2.png';
@@ -113,7 +109,7 @@ const About = () => {
 
     return (
         <section className={styles['about-container']}>
-            <div className={styles['title-container']}>
+            <div className={`wrapper ${styles['title-container']}`} >
                 <div className={styles['title-bg']}>
                 </div>
                 <div className={styles['title-divider']}>
@@ -131,7 +127,6 @@ const About = () => {
                     </h1>
                 </div>
             </div>
-
             {/* need to fix <br/> part  */}
             <div ref={mainContent} className={` ${styles['story-container']}`}>
                 <div ref={sticky} className={styles['sticky']}>
@@ -242,8 +237,8 @@ const About = () => {
                 <ul className={styles['profiles']}>
                     <li className={styles['profile-card']}>
 
-                        <div className={styles['profile-img-container']}>
-                            <img src={test1} alt="" />
+                        <div className={`${styles['pic-minki']} ${styles['profile-img-container']}`}>
+                            {/* <img src={test1} alt="" /> */}
                         </div>
 
                         <div className={styles['card-bottom']}>
@@ -260,8 +255,8 @@ const About = () => {
                         </div>
                     </li>
                     <li className={styles['profile-card']}>
-                        <div className={styles['profile-img-container']}>
-                            <img src={test2} alt="" />
+                        <div className={`${styles['pic-seung']} ${styles['profile-img-container']}`}>
+                            {/* <img src={test2} alt="" /> */}
                         </div>
                         <div className={styles['card-bottom']}>
                             <h3>Seungmin</h3>
@@ -277,8 +272,8 @@ const About = () => {
                         </div>
                     </li>
                     <li className={styles['profile-card']}>
-                        <div className={styles['profile-img-container']}>
-                            <img src={test2} alt="" />
+                        <div className={`${styles['pic-woong']} ${styles['profile-img-container']}`}>
+                            {/* <img src={test2} alt="" /> */}
                         </div>
                         <div className={styles['card-bottom']}>
                             <h3>Woong</h3>
@@ -294,7 +289,7 @@ const About = () => {
                         </div>
                     </li>
                     <li className={styles['profile-card']}>
-                        <div className={styles['profile-img-container']}>
+                        <div className={`${styles['pic-hwa']} ${styles['profile-img-container']}`}>
                             {/* <img src={seunghwa} alt="" /> */}
                         </div>
                         <div className={styles['card-bottom']}>

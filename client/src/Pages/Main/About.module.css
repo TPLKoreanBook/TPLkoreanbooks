@@ -1,6 +1,9 @@
 /* =========
 Fonts
 =========== */
+/* .about-container {
+  background-color: var(--color-green);
+} */
 .about-container img {
   width: 100%;
   height: 100%;
@@ -30,6 +33,12 @@ Fonts
   line-height: 1.5;
 }
 
+.intro-header p {
+  color: var(--color-white);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
 .profile-container h3 {
   font-size: 1rem;
 }
@@ -57,14 +66,19 @@ title
 
 .title-bg {
   background-image: url("../../images/main-bg.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 550px;
+  /* width: 380px; */
+  /* height: 300px; */
+  margin-top: 1rem;
   /* border: 1px solid red; */
-  width: 50%;
-  height: 50%;
 }
 
 .title-divider {
   position: absolute;
+  bottom: 7rem;
   right: 1rem;
 }
 
@@ -96,11 +110,6 @@ intro
 
 .intro-header {
   height: 10vh;
-}
-
-.intro-header p {
-  color: var(--color-white);
-  font-size: 0.8rem;
 }
 
 .arrow {
@@ -282,8 +291,9 @@ profiles
 }
 
 .profile-card {
-  width: 300px;
-  margin: 1rem;
+  min-width: 152px;
+  width: 30%;
+  margin: 0.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,32 +301,38 @@ profiles
 }
 
 .card-bottom {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .profile-card p,
 .profile-card h3 {
   margin: 0;
+  text-align: center;
   color: var(--color-white);
 }
 
 .profile-img-container {
-  background-image: url("../../images/seunghwa.jpeg");
   background-size: cover;
   background-position: 35% center;
-  width: 100%;
-  height: 300px;
+  width: 114px;
+  height: 117px;
   border-radius: 50%;
 }
 
-.profile-img-container img {
-  border-radius: 50%;
-  max-width: 100%;
-  height: auto;
+.pic-minki {
+  background-image: url("../../images/minki.jpeg");
+}
+.pic-seung,
+.pic-woong {
+  background-image: url("../../images/profile-sample.jpg");
+}
+
+.pic-hwa {
+  background-image: url("../../images/seunghwa.jpeg");
 }
 
 .profile-links {
@@ -412,6 +428,17 @@ profiles
   }
 }
 
+@media (min-width: 638px) {
+  .profile-card {
+    width: 270px;
+  }
+  .profile-card .profile-img-container,
+  .profile-img-container-minki {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media (min-width: 900px) {
   /* =========
   title
@@ -426,9 +453,8 @@ profiles
     align-items: center;
   }
   .title-container .title-bg {
-    margin-left: 7rem;
     background-position: initial;
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     width: 721px;
@@ -446,14 +472,17 @@ profiles
   }
 
   /* =========
-  story
+  profiles
   =========== */
+
+  .profile-card .profile-img-container,
+  .profile-img-container-minki {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (min-width: 1151px) {
-  .profile-container {
-    height: 92vh;
-  }
 }
 
 @keyframes slideIn {

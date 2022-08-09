@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--color-green);
 }
 .links-container {
   list-style: none;
