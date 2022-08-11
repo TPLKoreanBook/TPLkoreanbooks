@@ -26,7 +26,6 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
         "healthleisure": '건강/취미/레저',
         "etc": '기타'
     };
-    // const newStr = categoryName.replaceAll('+', '/');
 
     useEffect(() => {
         setToggleCategory(false);
@@ -34,15 +33,25 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
     const categoryHandler = () => {
         setToggleCategory((prev) => !prev);
     }
-
+    const subbmitHandler = (e) => e.preventDefault();
     const searchHandler = (e) => {
-        onSearch(e.target.value)
+        onSearch(e.target.value);
     }
+    // const searchHandler = (e) => {
+    //     if(!e.target.value) return 
+    //     const resultsArray = data.filter((book) => 
+    //     book.title.replace(/\s/g, '').includes(e.target.value.replace(/\s/g, '').substring(0, e.target.value.length)) || 
+    //     book.author.replace(/\s/g, '').includes(e.target.value.replace(/\s/g, '').substring(0, e.target.value.length)));
+    //     onSearch(e.target.value);
+    // }
     return (
         <div className={styles['search-container']}>
             <div className={styles['input-container']}>
                 <button className={styles['category-btn']} onClick={categoryHandler}>{categoryHash[categoryName]}</button>
-                <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
+
+                <form onSubmit={subbmitHandler}>
+                    <input className={styles['searchbar']} type="text" placeholder='Search...' onChange={searchHandler} />
+                </form>
             </div>
             <div className={styles['dropdown-menu']}>
                 {toggleCategory && <Categories onCategory={onCategory} />}

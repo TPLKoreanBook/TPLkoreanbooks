@@ -3,10 +3,7 @@ import { NavLink, useLocation, } from 'react-router-dom'
 import SearchForm from '../../components/SearchForm';
 import styles from './Header.module.css';
 
-
-
-
-const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
+const Header = ({ categoryName, onSearch, onCategory }) => {
     const url = useLocation();
     const [navExpanded, setNavExpanded] = useState(false);
 
@@ -18,7 +15,8 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
         setNavExpanded((prev) => !prev);
     }
     useEffect(() => {
-        resetSearchTerm('');
+        //Reset search input when user move to another page
+        onSearch('');
 
         const resetBurgerMenu = () => {
             if (window.innerWidth > 840) {
@@ -31,11 +29,10 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
         return () => {
             window.removeEventListener('resize', resetBurgerMenu)
         }
-    }, [url, resetSearchTerm]);
+    }, [url, onSearch]);
     return (
         <header className={styles['header-container']}>
             <div className={navExpanded ? styles['overlay'] : ''} onClick={navHandler}></div>
-            {/* {navExpanded && <div className={styles['overlay']} onClick={navHandler}></div>} */}
             <div className={`wrapper ${styles['header-contents']}`}>
                 <div className={styles['divider']}>
                     <NavLink to="/" className={styles['logo-link']}>
@@ -49,16 +46,8 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                             <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
                             <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
                         </div>
-                        {/* {`${styles['nav-list']} ${navExpanded ? styles.active : ''}`} */}
                         <ul className={navExpanded ? [styles['nav-list'], styles['active']].join(
                             ' ') : styles['nav-list']}>
-                            <li>
-                                <NavLink
-                                    className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                                    to="/"
-                                    replace>About
-                                </NavLink>
-                            </li>
                             <li>
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
@@ -70,7 +59,7 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
                                     to="/yyy"
-                                    replace>Contact
+                                    replace>Club
                                 </NavLink>
                             </li>
                         </ul>

@@ -9,7 +9,7 @@ import mobileSlide1 from '../../images/mobile-first-slide.png';
 import mobileSlide2 from '../../images/mobile-second-slide.png';
 import mobileSlide3 from '../../images/mobile-third-slide.png';
 
-import { AiOutlineGithub, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 // import { IconContext } from 'react-icons';
 
 
@@ -20,7 +20,7 @@ const About = () => {
     const sticky = useRef();
     const children = useRef([]);
 
-    const h2Ref = useRef();
+    // const h2Ref = useRef();
 
     const animate = useCallback((start, end, contentVh, length) => {
         // console.log('rebuild');
@@ -46,15 +46,10 @@ const About = () => {
 
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const entry = entries[0];
-            console.log(entry);
-        });
-        observer.observe(h2Ref.current);
+
         const headerVh = 6;
         const length = children.current.length;
         const contentVh = 82 - headerVh * length;
-        console.log(mainContent.current.offsetTop);
         let scrollStart = mainContent.current.offsetTop + 100;
         let scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
 
@@ -131,7 +126,7 @@ const About = () => {
             <div ref={mainContent} className={` ${styles['story-container']}`}>
                 <div ref={sticky} className={styles['sticky']}>
                     <div className={styles['intro']}>
-                        <div ref={h2Ref} className={`wrapper ${styles['intro-header']}`}>
+                        <div className={`wrapper ${styles['intro-header']}`}>
                             <h2>Who We Are</h2>
                             <p>코뿔소 팀은 어떻게 만들어졌을까?</p>
                         </div>
@@ -246,10 +241,14 @@ const About = () => {
                             <p>Backend Developer</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
+                                    <p className="sr-only">Link to github</p>
+
                                     <AiOutlineGithub />
                                 </a></li>
                                 <li><a href="/">
-                                    <AiOutlineMail />
+                                    <p className="sr-only">Link to linkedin</p>
+
+                                    <AiFillLinkedin />
                                 </a></li>
                             </ul>
                         </div>
@@ -263,10 +262,14 @@ const About = () => {
                             <p>Frontend Developer</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
+                                    <p className="sr-only">Link to github</p>
+
                                     <AiOutlineGithub />
                                 </a></li>
                                 <li><a href="/">
-                                    <AiOutlineMail />
+                                    <p className="sr-only">Link to linkedin</p>
+
+                                    <AiFillLinkedin />
                                 </a></li>
                             </ul>
                         </div>
@@ -280,10 +283,14 @@ const About = () => {
                             <p>Frontend Developer</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
+                                    <p className="sr-only">Link to github</p>
+
                                     <AiOutlineGithub />
                                 </a></li>
                                 <li><a href="/">
-                                    <AiOutlineMail />
+                                    <p className="sr-only">Link to linkedin</p>
+
+                                    <AiFillLinkedin />
                                 </a></li>
                             </ul>
                         </div>
@@ -297,10 +304,13 @@ const About = () => {
                             <p>Project Manager</p>
                             <ul className={styles['profile-links']}>
                                 <li><a href="/">
+                                    <p className="sr-only">Link to github</p>
                                     <AiOutlineGithub />
                                 </a></li>
                                 <li><a href="/">
-                                    <AiOutlineMail />
+                                    <p className="sr-only">Link to linkedin</p>
+
+                                    <AiFillLinkedin />
                                 </a></li>
                             </ul>
                         </div>
