@@ -1,7 +1,7 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { IoIosArrowForward } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 import styles from './Book.module.css';
 
@@ -26,7 +26,7 @@ function Book({ cover, title, address, author }) {
                 <IconContext.Provider value={{ className: `${styles['link-arrow']}` }}>
                     <a href={address} target="_blank" rel="noopener noreferrer" className={styles['link-btn']}>
                         <span>Link</span>
-                        <AiOutlineArrowRight />
+                        <IoIosArrowForward />
                     </a>
                 </IconContext.Provider>
             </div>
