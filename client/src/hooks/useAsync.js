@@ -33,6 +33,7 @@ function useAsync(callback, deps = [],) {
 	});
 
 	const fetchData = async () => {
+		console.log('works');
 		dispatch({ type: 'LOADING' });
 		try {
 			const data = await callback();

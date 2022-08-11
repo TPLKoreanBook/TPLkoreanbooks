@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 
 
 
-const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
+const Header = ({ categoryName, onSearch, onCategory }) => {
     const url = useLocation();
     const [navExpanded, setNavExpanded] = useState(false);
 
@@ -18,7 +18,6 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
         setNavExpanded((prev) => !prev);
     }
     useEffect(() => {
-        resetSearchTerm('');
 
         const resetBurgerMenu = () => {
             if (window.innerWidth > 840) {
@@ -31,11 +30,10 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
         return () => {
             window.removeEventListener('resize', resetBurgerMenu)
         }
-    }, [url, resetSearchTerm]);
+    }, [url]);
     return (
         <header className={styles['header-container']}>
             <div className={navExpanded ? styles['overlay'] : ''} onClick={navHandler}></div>
-            {/* {navExpanded && <div className={styles['overlay']} onClick={navHandler}></div>} */}
             <div className={`wrapper ${styles['header-contents']}`}>
                 <div className={styles['divider']}>
                     <NavLink to="/" className={styles['logo-link']}>
@@ -55,13 +53,6 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                             <li>
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
-                                    to="/"
-                                    replace>About
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
                                     to="/book"
                                     replace>Library
                                 </NavLink>
@@ -70,7 +61,7 @@ const Header = ({ categoryName, onSearch, resetSearchTerm, onCategory }) => {
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
                                     to="/yyy"
-                                    replace>Contact
+                                    replace>Club
                                 </NavLink>
                             </li>
                         </ul>
