@@ -20,13 +20,18 @@ const BookList = ({ category, userInput }) => {
 
     useEffect(() => {
         if (data) {
+
             if (!userInput) return setFilteredData(data);
-            const filtered = data.filter((book) => book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length)) || book.author.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))
+
+            const filtered = data.filter((book) =>
+                book.title.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length)) ||
+                book.author.replace(/\s/g, '').includes(userInput.replace(/\s/g, '').substring(0, userInput.length))
             )
             return setFilteredData(filtered);
         };
         // console.log(userInput);
-    }, [data, userInput])
+    }, [data, userInput]);
+
     const showMoreBooks = () => {
         setVisible((prev) => prev + 24)
     }
@@ -46,8 +51,6 @@ const BookList = ({ category, userInput }) => {
                 </div>
 
                 <ul className={styles['list-container']}>
-                    {/* Test filtering
-                    {/* Filtered by users' selected category */}
                     {filteredData
                         .slice(0, visible).map((book, index) => (
                             <Book

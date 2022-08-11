@@ -3,9 +3,6 @@ import { NavLink, useLocation, } from 'react-router-dom'
 import SearchForm from '../../components/SearchForm';
 import styles from './Header.module.css';
 
-
-
-
 const Header = ({ categoryName, onSearch, onCategory }) => {
     const url = useLocation();
     const [navExpanded, setNavExpanded] = useState(false);
@@ -18,6 +15,8 @@ const Header = ({ categoryName, onSearch, onCategory }) => {
         setNavExpanded((prev) => !prev);
     }
     useEffect(() => {
+        //Reset search input when user move to another page
+        onSearch('');
 
         const resetBurgerMenu = () => {
             if (window.innerWidth > 840) {
@@ -30,7 +29,7 @@ const Header = ({ categoryName, onSearch, onCategory }) => {
         return () => {
             window.removeEventListener('resize', resetBurgerMenu)
         }
-    }, [url]);
+    }, [url, onSearch]);
     return (
         <header className={styles['header-container']}>
             <div className={navExpanded ? styles['overlay'] : ''} onClick={navHandler}></div>
@@ -47,7 +46,6 @@ const Header = ({ categoryName, onSearch, onCategory }) => {
                             <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
                             <div className={`${styles['burger-bar']} ${navExpanded ? styles['burger-open'] : styles['burger-close']}`}></div>
                         </div>
-                        {/* {`${styles['nav-list']} ${navExpanded ? styles.active : ''}`} */}
                         <ul className={navExpanded ? [styles['nav-list'], styles['active']].join(
                             ' ') : styles['nav-list']}>
                             <li>
