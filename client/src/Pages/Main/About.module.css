@@ -353,12 +353,12 @@ profiles
     position: relative;
   }
   .row-container:nth-child(2) .text-top {
-    top: 115px;
-    right: 60px;
+    top: 105px;
+    right: 50px;
   }
 
   .row-container:nth-child(2) .text-bottom {
-    top: 315px;
+    top: 330px;
     right: 30px;
   }
 
@@ -366,48 +366,42 @@ profiles
   second slide
   ========== */
 
-  .row-container:nth-child(3) .img-container {
-    width: 600px;
-  }
-
   .row-container:nth-child(3) .text-top {
-    top: 70px;
-    /* right: 98px; */
-    right: 128px;
+    top: 75px;
+    right: 88px;
   }
 
   .row-container:nth-child(3) .text-middle {
-    top: 240px;
+    top: 250px;
     /* right: 75px; */
-    right: 105px;
+    right: 55px;
   }
 
   .row-container:nth-child(3) .text-bottom {
-    top: 367px;
+    top: 400px;
     /* right: 154px; */
-    right: 200px;
+    right: 100px;
   }
 
   /* =======
   third slide
   ========== */
   .row-container:nth-child(4) .img-container {
-    width: 550px;
-    height: 450px;
+    height: 550px;
   }
   .row-container:nth-child(4) .text-top {
-    top: 26px;
+    top: 108px;
     right: 18px;
   }
 
   .row-container:nth-child(4) .text-middle {
-    top: 200px;
-    right: 45px;
+    top: 275px;
+    right: 35px;
   }
 
   .row-container:nth-child(4) .text-bottom {
-    right: 55px;
-    bottom: 20px;
+    right: 35px;
+    bottom: 30px;
   }
 }
 
