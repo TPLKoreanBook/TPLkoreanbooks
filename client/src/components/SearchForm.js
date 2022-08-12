@@ -27,7 +27,6 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
     healthleisure: '건강/취미/레저',
     etc: '기타',
   };
-  // const newStr = categoryName.replaceAll('+', '/');
 
   useEffect(() => {
     setToggleCategory(false);
@@ -35,7 +34,7 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
   const categoryHandler = () => {
     setToggleCategory((prev) => !prev);
   };
-
+  const subbmitHandler = (e) => e.preventDefault();
   const searchHandler = (e) => {
     onSearch(e.target.value);
   };
@@ -46,11 +45,14 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
           <p>{categoryHash[categoryName]}</p>
         </button>
         <div className={styles['border']}></div>
-        <input
-          className={styles['searchbar']}
-          type='text'
-          onChange={searchHandler}
-        />
+        <form onSubmit={subbmitHandler}>
+          <input
+            className={styles['searchbar']}
+            type='text'
+            onChange={searchHandler}
+          />
+        </form>
+
         <HiSearch
           size='25'
           style={{

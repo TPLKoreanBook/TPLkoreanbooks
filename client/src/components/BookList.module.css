@@ -2,6 +2,22 @@
   width: 100%;
   margin-bottom: 1rem;
   background-color: var(--color-white);
+  position: relative;
+}
+
+.status-container h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-container {
+  padding: 1rem;
 }
 
 .list-container {
@@ -9,13 +25,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.booklist-status {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .progress-bar {
@@ -37,8 +46,18 @@
   cursor: pointer;
   color: white;
   position: relative;
+  align-self: center;
 }
 
 .showMore-btn:hover {
   opacity: 0.7;
+}
+.toTop-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }

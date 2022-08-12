@@ -409,22 +409,21 @@ profiles
   ========== */
   .row-container:nth-child(4) .img-container {
     width: 550px;
+    height: 450px;
   }
   .row-container:nth-child(4) .text-top {
-    top: 33px;
-    /* right: 8px; */
+    top: 26px;
     right: 18px;
   }
 
   .row-container:nth-child(4) .text-middle {
-    top: 225px;
-    /* right: 35px; */
+    top: 200px;
     right: 45px;
   }
 
   .row-container:nth-child(4) .text-bottom {
-    /* right: 45px; */
     right: 55px;
+    bottom: 20px;
   }
 }
 
@@ -459,7 +458,6 @@ profiles
     background-position: center center;
     width: 721px;
     height: 584px;
-    /* position: absolute; */
   }
   .title-divider {
     position: initial;
@@ -480,9 +478,6 @@ profiles
     width: 250px;
     height: 250px;
   }
-}
-
-@media (min-width: 1151px) {
 }
 
 @keyframes slideIn {

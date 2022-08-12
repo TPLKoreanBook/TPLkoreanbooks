@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Line } from 'rc-progress';
 import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
-import { HiChevronDown } from 'react-icons/hi';
+import { useEffect } from 'react';
+import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 
-async function getBooks(category) {
+async function getBooks(category, userInput) {
   const response = await axios.get(
     `https://tpl-server-heroku.herokuapp.com/${category}`
   );
@@ -16,10 +16,40 @@ async function getBooks(category) {
 const BookList = ({ category, userInput }) => {
   const [state] = useAsync(() => getBooks(category), [category]);
   const { loading, data, error } = state;
+  const [filteredData, setFilteredData] = useState([]);
   const [visible, setVisible] = useState(24);
+
+  useEffect(() => {
+    if (data) {
+      if (!userInput) return setFilteredData(data);
+
+      const filtered = data.filter(
+        (book) =>
+          book.title
+            .replace(/\s/g, '')
+            .includes(
+              userInput.replace(/\s/g, '').substring(0, userInput.length)
+            ) ||
+          book.author
+            .replace(/\s/g, '')
+            .includes(
+              userInput.replace(/\s/g, '').substring(0, userInput.length)
+            )
+      );
+      return setFilteredData(filtered);
+    }
+    // console.log(userInput);
+  }, [data, userInput]);
 
   const showMoreBooks = () => {
     setVisible((prev) => prev + 24);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   // Error handling.
@@ -28,55 +58,30 @@ const BookList = ({ category, userInput }) => {
   if (!data) return null;
 
   return (
-    <section className={` ${styles['book-list']}`}>
-      <div className='wrapper'>
-        <ul className={styles['list-container']}>
-          {/* Test filtering
-                    {/* Filtered by users' selected category */}
-          {data
-            // After being filtered by the user's selected category, It will be filtered by the user's search input.
-            // eslint-disable-next-line array-callback-return
-            .filter((book) => {
-              if (
-                book.title
-                  .replace(/\s/g, '')
-                  .includes(
-                    userInput.replace(/\s/g, '').substring(0, userInput.length)
-                  ) ||
-                book.author
-                  .replace(/\s/g, '')
-                  .includes(
-                    userInput.replace(/\s/g, '').substring(0, userInput.length)
-                  )
-              ) {
-                return book;
-              }
-            })
-            .slice(0, visible)
-            .map((book, index) => (
-              <Book
-                key={book.id}
-                cover={book.cover}
-                title={book.title}
-                author={book.author}
-                address={book.link}
-              />
-            ))}
-        </ul>
+    <section className={styles['book-list']}>
+      <div className={`wrapper ${styles['list-wrapper']}`}>
+        <div className={styles['status-container']}>
+          <h2>
+            Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
+            손쉽게 찾으세요.
+          </h2>
+          <p>
+            1 - {filteredData.length} of {data.length} results
+          </p>
+        </div>
 
-        <div className={styles['booklist-status']}>
-          <h3>
-            {visible} /{data.length}
-          </h3>
-          <div className={styles['progress-bar']}>
-            <Line
-              percent={(visible / data.length) * 100}
-              trailWidth={2}
-              strokeWidth={4}
-              trailColor='#000000'
-              strokeColor='#D3D3D3'
+        <ul className={styles['list-container']}>
+          {filteredData.slice(0, visible).map((book, index) => (
+            <Book
+              key={book.id}
+              cover={book.cover}
+              title={book.title}
+              author={book.author}
+              address={book.link}
             />
-          </div>
+          ))}
+        </ul>
+        {filteredData.length > visible && (
           <button className={styles['showMore-btn']} onClick={showMoreBooks}>
             <HiChevronDown
               size='30'
@@ -89,8 +94,12 @@ const BookList = ({ category, userInput }) => {
             />
             <span>More results</span>
           </button>
-        </div>
+        )}
       </div>
+      <button onClick={scrollToTop} className={styles['toTop-btn']}>
+        <HiChevronUp size='30' />
+        <p>TOP</p>
+      </button>
     </section>
   );
 };
