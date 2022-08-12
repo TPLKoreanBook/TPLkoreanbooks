@@ -400,22 +400,20 @@ profiles
   /* =======
   third slide
   ========== */
-  .row-container:nth-child(4) .img-container {
-    /* height: 550px; */
-  }
+
   .row-container:nth-child(4) .text-top {
-    top: 88px;
+    top: 73px;
     right: 18px;
   }
 
   .row-container:nth-child(4) .text-middle {
-    top: 235px;
-    right: 35px;
+    top: 233px;
+    right: 30px;
   }
 
   .row-container:nth-child(4) .text-bottom {
-    right: 30px;
-    bottom: 20px;
+    right: 35px;
+    bottom: 25px;
   }
 }
 
