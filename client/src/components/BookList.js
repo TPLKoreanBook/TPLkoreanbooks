@@ -18,6 +18,19 @@ const BookList = ({ category, userInput }) => {
   const { loading, data, error } = state;
   const [filteredData, setFilteredData] = useState([]);
   const [visible, setVisible] = useState(24);
+  const [showToTop, setShowToTop] = useState(false);
+  const [positionAbsolute, setPositionAbsolite] = useState(false);
+
+  const toTopBtnHandler = () => {
+    setShowToTop(window.pageYOffset > 50);
+    setPositionAbsolite(
+      document.body.offsetHeight - 95 <= window.pageYOffset + window.innerHeight
+    );
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toTopBtnHandler);
+  }, []);
 
   useEffect(() => {
     if (data) {
@@ -96,9 +109,13 @@ const BookList = ({ category, userInput }) => {
           </button>
         )}
       </div>
-      <button onClick={scrollToTop} className={styles['toTop-btn']}>
-        <HiChevronUp size='30' />
-        <p>TOP</p>
+      <button
+        onClick={scrollToTop}
+        className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${
+          positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
+        } ${styles['toTop-btn']}`}
+      >
+        <HiChevronUp className={styles['topTop-btn-svg']} size='30' />
       </button>
     </section>
   );
