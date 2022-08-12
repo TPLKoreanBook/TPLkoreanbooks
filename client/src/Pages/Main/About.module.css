@@ -20,6 +20,10 @@ Fonts
   font-weight: 400;
 }
 
+.profile-container h3 {
+  font-size: 1rem;
+}
+
 .about-container p {
   font-size: 1rem;
   color: var(--color-black);
@@ -36,9 +40,11 @@ Fonts
   margin-top: 0.2rem;
 }
 
-.profile-container h3 {
-  font-size: 1rem;
+.scrollDown-animation p {
+  color: var(--color-white);
+  font-size: 0.8rem;
 }
+
 .profile-container p {
   font-size: 16px;
 }
@@ -62,7 +68,7 @@ title
 }
 
 .title-bg {
-  background-image: url("../../images/main-bg.png");
+  background-image: url("../../images/main-bg2.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 700px;
@@ -106,12 +112,21 @@ intro
   height: 10vh;
 }
 
-.arrow {
+.scrollDown-animation {
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 17rem;
+
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  margin-top: 2.2rem;
 }
 
 .arrow span {
@@ -184,8 +199,8 @@ intro
 }
 
 /*======
- First slide 
- =======*/
+First slide 
+=======*/
 
 .row-container:nth-child(2) .text-top {
   right: 75px;
@@ -349,17 +364,17 @@ profiles
   ========== */
   .img-container {
     width: 500px;
-    height: 500px;
+    height: 475px;
     position: relative;
   }
   .row-container:nth-child(2) .text-top {
-    top: 105px;
+    top: 100px;
     right: 50px;
   }
 
   .row-container:nth-child(2) .text-bottom {
-    top: 330px;
-    right: 30px;
+    top: 310px;
+    right: 50px;
   }
 
   /* =======
@@ -372,13 +387,12 @@ profiles
   }
 
   .row-container:nth-child(3) .text-middle {
-    top: 250px;
-    /* right: 75px; */
+    top: 235px;
     right: 55px;
   }
 
   .row-container:nth-child(3) .text-bottom {
-    top: 400px;
+    top: 380px;
     /* right: 154px; */
     right: 100px;
   }
@@ -387,21 +401,21 @@ profiles
   third slide
   ========== */
   .row-container:nth-child(4) .img-container {
-    height: 550px;
+    /* height: 550px; */
   }
   .row-container:nth-child(4) .text-top {
-    top: 108px;
+    top: 88px;
     right: 18px;
   }
 
   .row-container:nth-child(4) .text-middle {
-    top: 275px;
+    top: 235px;
     right: 35px;
   }
 
   .row-container:nth-child(4) .text-bottom {
-    right: 35px;
-    bottom: 30px;
+    right: 30px;
+    bottom: 20px;
   }
 }
 
