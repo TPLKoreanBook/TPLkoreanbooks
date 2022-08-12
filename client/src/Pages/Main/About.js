@@ -4,7 +4,7 @@ import styles from './About.module.css';
 
 import slideImg1 from '../../images/slide3-1.png';
 import slideImg2 from '../../images/slide3-2.png';
-import slideImg3 from '../../images/slide3-3.png';
+import slideImg3 from '../../images/slide4-3.png';
 import mobileSlide1 from '../../images/mobile-first-slide.png';
 import mobileSlide2 from '../../images/mobile-second-slide.png';
 import mobileSlide3 from '../../images/mobile-third-slide.png';
