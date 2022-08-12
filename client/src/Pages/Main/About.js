@@ -2,9 +2,9 @@
 import { useEffect, useCallback, useRef, useState } from 'react';
 import styles from './About.module.css';
 
-import slideImg1 from '../../images/slide1.png';
-import slideImg2 from '../../images/slide2.png';
-import slideImg3 from '../../images/slide3.png';
+import slideImg1 from '../../images/slide3-1.png';
+import slideImg2 from '../../images/slide3-2.png';
+import slideImg3 from '../../images/slide3-3.png';
 import mobileSlide1 from '../../images/mobile-first-slide.png';
 import mobileSlide2 from '../../images/mobile-second-slide.png';
 import mobileSlide3 from '../../images/mobile-third-slide.png';
@@ -52,8 +52,6 @@ const About = () => {
         const contentVh = 82 - headerVh * length;
         let scrollStart = mainContent.current.offsetTop + 100;
         let scrollEnd = mainContent.current.offsetTop + mainContent.current.offsetHeight - window.innerHeight - 100;
-
-        // console.log(scrollStart);
 
         // resetting initial position 
         const resetInitPos = () => {
@@ -130,21 +128,23 @@ const About = () => {
                             <h2>Who We Are</h2>
                             <p>코뿔소 팀은 어떻게 만들어졌을까?</p>
                         </div>
-                        {/* <p>Please scroll down</p> */}
-                        <div className={styles['arrow']}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div className={styles['scrollDown-animation']}>
+                            <p>Scroll Down</p>
+                            <div className={styles['arrow']}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                     <div ref={addToRefs} className={`${styles['row-container']}`}>
-                        <div className={styles.header}><h3>1. 코뿔소는 하나의 생각에서 출발했어요</h3></div>
+                        <div className={styles.header}><h3>1. 코뿔소는 하나의 불편함에서 출발했어요</h3></div>
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img src={currentWidth <= 500 ? mobileSlide1 : slideImg1} alt="" />
                                 <div className={styles['text-top']}>
                                     <p>토론토 공립 도서관에는 <br />
-                                        한국어 책이 5천권이나 있는데<br />
+                                        한국어 책이 4천권이나 있는데<br />
                                         제목이 영어로 되어 있어서<br />
                                         검색을 못하네...</p>
                                 </div>
@@ -152,7 +152,7 @@ const About = () => {
                                     <p>예를 들어,<br />
                                         라면을 끓이며란 책은<br />
                                         “Ramyonul kkurimyo”로<br />
-                                        검색해야하는 식이었어요..😂</p>
+                                        검색해야했지..😂</p>
                                 </div>
                             </div>
                         </div>
@@ -237,19 +237,27 @@ const About = () => {
                         </div>
 
                         <div className={styles['card-bottom']}>
-                            <h3>Minki</h3>
+                            <h3>Minki Jung</h3>
                             <p>Backend Developer</p>
                             <ul className={styles['profile-links']}>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to github</p>
-
-                                    <AiOutlineGithub />
-                                </a></li>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to linkedin</p>
-
-                                    <AiFillLinkedin />
-                                </a></li>
+                                <li>
+                                    <a
+                                        href="https://github.com/bonsense"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to github</p>
+                                        <AiOutlineGithub />
+                                    </a></li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/minki-jung-5150a314a"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to linkedin</p>
+                                        <AiFillLinkedin />
+                                    </a></li>
                             </ul>
                         </div>
                     </li>
@@ -258,19 +266,29 @@ const About = () => {
                             {/* <img src={test2} alt="" /> */}
                         </div>
                         <div className={styles['card-bottom']}>
-                            <h3>Seungmin</h3>
+                            <h3>Seungmin Shin</h3>
                             <p>Frontend Developer</p>
                             <ul className={styles['profile-links']}>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to github</p>
+                                <li>
+                                    <a
+                                        href="https://github.com/shin1211"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to github</p>
 
-                                    <AiOutlineGithub />
-                                </a></li>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to linkedin</p>
+                                        <AiOutlineGithub />
+                                    </a></li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/seungmin-shin-"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to linkedin</p>
 
-                                    <AiFillLinkedin />
-                                </a></li>
+                                        <AiFillLinkedin />
+                                    </a></li>
                             </ul>
                         </div>
                     </li>
@@ -279,19 +297,27 @@ const About = () => {
                             {/* <img src={test2} alt="" /> */}
                         </div>
                         <div className={styles['card-bottom']}>
-                            <h3>Woong</h3>
+                            <h3>Woong O</h3>
                             <p>Frontend Developer</p>
                             <ul className={styles['profile-links']}>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to github</p>
-
-                                    <AiOutlineGithub />
-                                </a></li>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to linkedin</p>
-
-                                    <AiFillLinkedin />
-                                </a></li>
+                                <li>
+                                    <a
+                                        href="https://github.com/woong0419"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to github</p>
+                                        <AiOutlineGithub />
+                                    </a></li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/woongo/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to linkedin</p>
+                                        <AiFillLinkedin />
+                                    </a></li>
                             </ul>
                         </div>
                     </li>
@@ -303,15 +329,16 @@ const About = () => {
                             <h3>Seunghwa Kim</h3>
                             <p>Project Manager</p>
                             <ul className={styles['profile-links']}>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to github</p>
-                                    <AiOutlineGithub />
-                                </a></li>
-                                <li><a href="/">
-                                    <p className="sr-only">Link to linkedin</p>
-
-                                    <AiFillLinkedin />
-                                </a></li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/michaellakim/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p className="sr-only">Link to linkedin</p>
+                                        <AiFillLinkedin />
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
