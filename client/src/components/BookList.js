@@ -6,6 +6,8 @@ import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 
+import Loading from './Loading';
+
 async function getBooks(category, userInput) {
   const response = await axios.get(
     `https://tpl-server-heroku.herokuapp.com/${category}`
@@ -66,7 +68,7 @@ const BookList = ({ category, userInput }) => {
   };
 
   // Error handling.
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
   if (error) return <div>Error</div>;
   if (!data) return null;
 

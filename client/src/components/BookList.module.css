@@ -75,10 +75,13 @@
   animation: none;
 }
 .topTop-btn-svg {
-  animation: arrow 1.5s ease-out infinite;
+  animation: arrow 2s ease-out infinite;
 }
 @keyframes arrow {
-  to {
+  50% {
+    transform: translate(0px, -5px) scale(1.3);
+  }
+  100% {
     transform: translate(0px, -5px) scale(1.3);
   }
 }
