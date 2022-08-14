@@ -1,6 +1,17 @@
+.no-results {
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-results h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .book-list {
   width: 100%;
-  margin-bottom: 1rem;
   background-color: var(--color-white);
   position: relative;
 }
