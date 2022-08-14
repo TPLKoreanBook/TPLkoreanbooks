@@ -58,6 +58,7 @@ const BookList = ({ category, userInput }) => {
 
   const showMoreBooks = () => {
     setVisible((prev) => prev + 24);
+    setPositionAbsolite(false);
   };
 
   const scrollToTop = () => {

@@ -14,33 +14,42 @@ import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import Loading from '../../components/Loading';
 // import { IconContext } from 'react-icons';
 
-const imageList = [
-  { id: 1, hasLoaded: false },
-  { id: 2, hasLoaded: false },
-  { id: 3, hasLoaded: false },
-  { id: 4, hasLoaded: false },
-];
+//LOADING
+// const imageList = [
+//   { id: 1, hasLoaded: false },
+//   { id: 2, hasLoaded: false },
+//   { id: 3, hasLoaded: false },
+//   { id: 4, hasLoaded: false },
+// ];
 
 const About = () => {
-  const [images, setImages] = useState(imageList);
+  //LOAD
+  //const [images, setImages] = useState(imageList);
   //   const [imgLoaded, setImgLoaded] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
   const mainContent = useRef();
   const sticky = useRef();
   const children = useRef([]);
+  //LOADING
+  //const loading = images.some((img) => img.hasLoaded === false);
 
-  const loading = images.some((img) => img.hasLoaded === false);
+  //   useEffect(() => {
+  //     const body = document.querySelector('body');
 
-  const imageLoadHandler = (id) => {
-    setImages((prevState) => {
-      const index = prevState.findIndex((img) => img.id === id);
-      const newState = [...prevState];
-      const newImage = { ...newState[index] };
-      newImage.hasLoaded = true;
-      newState[index] = newImage;
-      return newState;
-    });
-  };
+  //     // window.scrollTo(0, 0);
+  //     body.style.overflow = loading ? 'hidden' : 'auto';
+  //   }, [loading]);
+
+  //   const imageLoadHandler = (id) => {
+  //     setImages((prevState) => {
+  //       const index = prevState.findIndex((img) => img.id === id);
+  //       const newState = [...prevState];
+  //       const newImage = { ...newState[index] };
+  //       newImage.hasLoaded = true;
+  //       newState[index] = newImage;
+  //       return newState;
+  //     });
+  //   };
 
   const animate = useCallback((start, end, contentVh, length) => {
     // console.log('rebuild');
@@ -124,16 +133,15 @@ const About = () => {
       children.current.push(el);
     }
   };
-
+  //   if (loading) return <Loading />;
   return (
     <>
-      {loading && <Loading />}
-      {console.log(mainContent.current)}
+      {/* {loading && <Loading />} */}
       <section className={styles['about-container']}>
         <div className={`wrapper ${styles['title-container']}`}>
           <div className={styles['title-bg']}>
             <img
-              onLoad={(e) => imageLoadHandler(imageList[0].id, e)}
+              //   onLoad={(e) => imageLoadHandler(imageList[0].id, e)}
               src={mainImg}
               alt='KPS main'
             />
@@ -178,7 +186,7 @@ const About = () => {
                   <img
                     src={currentWidth <= 500 ? mobileSlide1 : slideImg1}
                     alt=''
-                    onLoad={(e) => imageLoadHandler(imageList[1].id, e)}
+                    // onLoad={(e) => imageLoadHandler(imageList[1].id, e)}
                   />
                   <div className={styles['text-top']}>
                     <p>
@@ -214,7 +222,7 @@ const About = () => {
                   <img
                     src={currentWidth <= 500 ? mobileSlide2 : slideImg2}
                     alt=''
-                    onLoad={(e) => imageLoadHandler(imageList[2].id, e)}
+                    // onLoad={(e) => imageLoadHandler(imageList[2].id, e)}
                   />
 
                   <div className={styles['text-top']}>
@@ -259,7 +267,7 @@ const About = () => {
                   <img
                     src={currentWidth <= 500 ? mobileSlide3 : slideImg3}
                     alt=''
-                    onLoad={(e) => imageLoadHandler(imageList[3].id, e)}
+                    // onLoad={(e) => imageLoadHandler(imageList[3].id, e)}
                   />
                   <div className={styles['text-top']}>
                     <p>

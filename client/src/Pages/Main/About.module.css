@@ -65,9 +65,9 @@ title
 }
 
 .title-bg {
-  /* background-image: url("../../images/main-bg.png");
+  background-image: url('../../images/main-bg.png');
   background-size: contain;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   width: 700px;
   height: 550px;
   /* width: 380px; */
