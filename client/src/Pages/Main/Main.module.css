@@ -1,9 +1,9 @@
 .main-container {
-  margin-top: 16vh;
+  padding-top: 16vh;
 }
 
 @media (min-width: 840px) {
   .main-container {
-    margin-top: 8vh;
+    padding-top: 8vh;
   }
 }
