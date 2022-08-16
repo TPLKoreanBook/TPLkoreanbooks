@@ -27,6 +27,7 @@ const About = () => {
     //const [images, setImages] = useState(imageList);
     //   const [imgLoaded, setImgLoaded] = useState(false);
     const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+    const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
     const mainContent = useRef();
     const sticky = useRef();
     const children = useRef([]);
@@ -110,6 +111,7 @@ const About = () => {
 
         window.addEventListener('resize', () => {
             setCurrentWidth(window.innerWidth);
+            setCurrentHeight(window.innerHeight);
         });
 
         return () => {
@@ -120,9 +122,11 @@ const About = () => {
             window.removeEventListener('resize', resetInitPos);
             window.removeEventListener('resize', () => {
                 setCurrentWidth(window.innerWidth);
+                setCurrentHeight(window.innerHeight);
+
             });
         };
-    }, [animate, currentWidth]);
+    }, [animate, currentWidth, currentHeight]);
 
     const addToRefs = (el) => {
         if (el && !children.current.includes(el)) {
@@ -174,7 +178,7 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide1 : slideImg1}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide1 : slideImg1}
                                     alt=''
                                 />
                                 <div className={styles['text-top']}>
@@ -209,7 +213,7 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide2 : slideImg2}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide2 : slideImg2}
                                     alt=''
                                 />
 
@@ -253,7 +257,7 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide3 : slideImg3}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide3 : slideImg3}
                                     alt=''
                                 />
                                 <div className={styles['text-top']}>
