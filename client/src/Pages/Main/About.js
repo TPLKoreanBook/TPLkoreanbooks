@@ -8,10 +8,10 @@ import slideImg3 from '../../images/slide4-3.png';
 import mobileSlide1 from '../../images/mobile-first-slide.png';
 import mobileSlide2 from '../../images/mobile-second-slide.png';
 import mobileSlide3 from '../../images/mobile-third-slide.png';
-import mainImg from '../../images/main-bg.png';
+// import mainImg from '../../images/main-bg.png';
 
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-import Loading from '../../components/Loading';
+// import Loading from '../../components/Loading';
 // import { IconContext } from 'react-icons';
 
 //LOADING
