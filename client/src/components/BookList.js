@@ -4,7 +4,8 @@ import axios from 'axios';
 import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
-import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
+import { HiChevronDown, HiChevronUp, } from 'react-icons/hi';
+import { BsSearch } from 'react-icons/bs'
 
 import Loading from './Loading';
 
@@ -78,6 +79,7 @@ const BookList = ({ category, userInput }) => {
       <div className={`wrapper ${styles['list-wrapper']}`}>
         {!filteredData.length && (
           <div className={styles['no-results']}>
+            <BsSearch className={styles['no-search-icon']} />
             <h2>No results found</h2>
             <p>We couldn't find what you are looking for</p>
           </div>
@@ -90,18 +92,9 @@ const BookList = ({ category, userInput }) => {
                 Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
                 손쉽게 찾으세요.
               </h2>
-              {/* <p>
-                토론토 공립도서관에 한국어 책이 4천권📚이나 있다는 사실 알고 계셨나요? <br />
-                하지만 표지가 없고 제목이 영어로 변환돼 있어서 검색하기가 쉽지 않았죠😅 <br />
-                이제 코뿔소🦏 라이브러리 기능을 통해 쉽고 간편하게 검색해보세요~🥰<br />
-              </p>
-              <p>
-                자세한 이용 방법이 궁금하시다면 아래 유튜브 영상을 참고해주세요
-              </p> */}
-              {/* <a href="/">youtube link</a> */}
 
               {/* <p>1 - {filteredData.length} of {data.length} results</p> */}
-              <p>{filteredData.length} results</p>
+              <p>{filteredData.length} results in {category}</p>
             </div>
             <ul className={styles['list-container']}>
               {filteredData.slice(0, visible).map((book, index) => (
@@ -136,9 +129,8 @@ const BookList = ({ category, userInput }) => {
 
         <button
           onClick={scrollToTop}
-          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${
-            positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
-          } ${styles['toTop-btn']}`}
+          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
+            } ${styles['toTop-btn']}`}
         >
           <HiChevronUp className={styles['topTop-btn-svg']} size='30' />
         </button>
