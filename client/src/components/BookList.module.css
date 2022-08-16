@@ -8,6 +8,12 @@
 .no-results h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.no-search-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .book-list {
