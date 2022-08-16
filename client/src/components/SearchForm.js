@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Categories from './Categories';
 import styles from './SearchForm.module.css';
-import { HiSearch } from 'react-icons/hi';
+import { HiSearch, HiChevronDown } from 'react-icons/hi';
 
 const SearchForm = ({ categoryName, onSearch, onCategory }) => {
-  const [toggleCategory, setToggleCategory] = useState(true);
+  const [toggleCategory, setToggleCategory] = useState(false);
 
   const categoryHash = {
     all: 'all',
@@ -43,6 +43,7 @@ const SearchForm = ({ categoryName, onSearch, onCategory }) => {
       <div className={styles['input-container']}>
         <button className={styles['category-btn']} onClick={categoryHandler}>
           <p>{categoryHash[categoryName]}</p>
+          <HiChevronDown />
         </button>
         <div className={styles['border']}></div>
         <form onSubmit={subbmitHandler}>
