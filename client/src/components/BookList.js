@@ -6,6 +6,7 @@ import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 import { GiInfo } from 'react-icons/gi';
+import { BsSearch } from 'react-icons/bs';
 
 import Loading from './Loading';
 import Modal from './Modal';
@@ -101,6 +102,7 @@ const BookList = ({ category, userInput }) => {
       <div className={`wrapper ${styles['list-wrapper']}`}>
         {!filteredData.length && (
           <div className={styles['no-results']}>
+            <BsSearch className={styles['no-search-icon']} />
             <h2>No results found</h2>
             <p>We couldn't find what you are looking for</p>
           </div>
@@ -118,7 +120,10 @@ const BookList = ({ category, userInput }) => {
                 <h3>
                   Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
                   손쉽게 찾으세요.
-                  <div ref={wrapperRef} className={styles['status-header-modal']}>
+                  <div
+                    ref={wrapperRef}
+                    className={styles['status-header-modal']}
+                  >
                     <button
                       onClick={infoBtnHandler}
                       className={styles['info-btn']}
@@ -146,7 +151,9 @@ const BookList = ({ category, userInput }) => {
               {/* <a href="/">youtube link</a> */}
 
               {/* <p>1 - {filteredData.length} of {data.length} results</p> */}
-              <p>{filteredData.length} results</p>
+              <p>
+                {filteredData.length} results in {category}
+              </p>
             </div>
             <ul className={styles['list-container']}>
               {filteredData.slice(0, visible).map((book, index) => (
