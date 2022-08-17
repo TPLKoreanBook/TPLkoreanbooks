@@ -1,9 +1,9 @@
 import styles from './Categories.module.css';
 
-const Categories = ({ onCategory }) => {
+const Categories = ({ onCategory, setToggleCategory }) => {
 
     const categoryHash = {
-        "all": 'all',
+        "통합검색": 'all',
         "어린이": 'children',
         "청소년": 'youngadult',
         "좋은부모": 'parenting',
@@ -24,6 +24,7 @@ const Categories = ({ onCategory }) => {
     };
     const selectedCategory = (tp) => {
         // const converted = tp.replaceAll('/', '+');
+        setToggleCategory(false)
         onCategory(categoryHash[tp]);
     }
 
