@@ -28,9 +28,9 @@ const categoryHash = {
 const SearchForm = ({ categoryName, onSearch, onCategory }) => {
   const [toggleCategory, setToggleCategory] = useState(true);
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
+  useOutsideClickHandler(wrapperRef);
 
-  function useOutsideAlerter(ref) {
+  function useOutsideClickHandler(ref) {
     useEffect(() => {
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {

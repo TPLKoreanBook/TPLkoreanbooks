@@ -29,6 +29,7 @@
 
 .status-container {
   padding: 1rem;
+  position: relative;
 }
 
 .list-container {
@@ -102,4 +103,47 @@
 }
 .toTop-btn-positionAbsolute {
   position: absolute;
+}
+
+.info-btn {
+  border: none;
+  background: none;
+  color: #0000ee;
+  cursor: pointer;
+}
+
+.info-modal {
+  position: absolute;
+  background-color: #d9d9d9;
+  padding: 20px;
+  box-shadow: 10px 10px 61px -20px rgb(0 0 0 / 35%);
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+}
+.modal-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.status-header {
+  display: flex;
+}
+.status-header-modal {
+  display: inline-block;
+}
+
+@media (min-width: 638px) {
+  .info-modal {
+    width: 500px;
+  }
+}
+@media (min-width: 900px) {
+  .info-modal {
+    width: 620px;
+  }
 }

@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
+import { GiInfo } from 'react-icons/gi';
 
 import Loading from './Loading';
+import Modal from './Modal';
 
 async function getBooks(category, userInput) {
   const response = await axios.get(
@@ -22,6 +24,10 @@ const BookList = ({ category, userInput }) => {
   const [visible, setVisible] = useState(24);
   const [showToTop, setShowToTop] = useState(false);
   const [positionAbsolute, setPositionAbsolite] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const wrapperRef = useRef(null);
+  useOutsideClickHandler(wrapperRef);
 
   const toTopBtnHandler = () => {
     setShowToTop(window.pageYOffset > 50);
@@ -29,6 +35,19 @@ const BookList = ({ category, userInput }) => {
       document.body.offsetHeight - 95 <= window.pageYOffset + window.innerHeight
     );
   };
+  function useOutsideClickHandler(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setShowModal(false);
+        }
+      }
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', toTopBtnHandler);
@@ -68,6 +87,10 @@ const BookList = ({ category, userInput }) => {
     });
   };
 
+  const infoBtnHandler = () => {
+    setShowModal((prev) => !prev);
+  };
+
   // Error handling.
   if (loading) return <Loading />;
   if (error) return <div>Error</div>;
@@ -86,10 +109,32 @@ const BookList = ({ category, userInput }) => {
         {filteredData.length > 0 && (
           <>
             <div className={styles['status-container']}>
-              <h2>
-                Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
-                손쉽게 찾으세요.
-              </h2>
+              {/* <div
+                className={`${showModal ? styles['modal-visible'] : ''} ${
+                  styles['info-modal']
+                }`}
+              > */}
+              <div className={styles['status-header']}>
+                <h3>
+                  Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
+                  손쉽게 찾으세요.
+                  <div ref={wrapperRef} className={styles['status-header-modal']}>
+                    <button
+                      onClick={infoBtnHandler}
+                      className={styles['info-btn']}
+                    >
+                      <GiInfo />
+                    </button>
+                    <div
+                      className={`${showModal ? styles['modal-visible'] : ''} ${
+                        styles['info-modal']
+                      }`}
+                    >
+                      {showModal && <Modal setShowModal={setShowModal} />}
+                    </div>
+                  </div>
+                </h3>
+              </div>
               {/* <p>
                 토론토 공립도서관에 한국어 책이 4천권📚이나 있다는 사실 알고 계셨나요? <br />
                 하지만 표지가 없고 제목이 영어로 변환돼 있어서 검색하기가 쉽지 않았죠😅 <br />

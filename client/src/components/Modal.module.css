@@ -1,0 +1,16 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-btn {
+  border: none;
+  background: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin-bottom: 10px;
+  line-height: 150%;
+}
