@@ -1,5 +1,6 @@
 // import { ScrollContainer, ScrollPage, Animator, batch, Sticky, Fade, MoveOut } from 'react-scroll-motion';
 import { useEffect, useCallback, useRef, useState } from 'react';
+import ContactForm from './ContactForm';
 import styles from './About.module.css';
 
 import slideImg1 from '../../images/slide3-1.png';
@@ -27,6 +28,7 @@ const About = () => {
     //const [images, setImages] = useState(imageList);
     //   const [imgLoaded, setImgLoaded] = useState(false);
     const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+    const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
     const mainContent = useRef();
     const sticky = useRef();
     const children = useRef([]);
@@ -110,6 +112,7 @@ const About = () => {
 
         window.addEventListener('resize', () => {
             setCurrentWidth(window.innerWidth);
+            setCurrentHeight(window.innerHeight);
         });
 
         return () => {
@@ -120,9 +123,11 @@ const About = () => {
             window.removeEventListener('resize', resetInitPos);
             window.removeEventListener('resize', () => {
                 setCurrentWidth(window.innerWidth);
+                setCurrentHeight(window.innerHeight);
+
             });
         };
-    }, [animate, currentWidth]);
+    }, [animate, currentWidth, currentHeight]);
 
     const addToRefs = (el) => {
         if (el && !children.current.includes(el)) {
@@ -132,6 +137,7 @@ const About = () => {
 
     return (
         <section className={styles['about-container']}>
+            {/* main  */}
             <div className={`wrapper ${styles['title-container']}`}>
                 <div className={styles['title-bg']}></div>
                 <div className={styles['title-divider']}>
@@ -151,6 +157,7 @@ const About = () => {
                 </div>
             </div>
             {/* need to fix <br/> part  */}
+            {/* scroll animation start */}
             <div ref={mainContent} className={` ${styles['story-container']}`}>
                 <div ref={sticky} className={styles['sticky']}>
                     <div className={styles['intro']}>
@@ -174,7 +181,7 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide1 : slideImg1}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide1 : slideImg1}
                                     alt=''
                                 />
                                 <div className={styles['text-top']}>
@@ -204,12 +211,12 @@ const About = () => {
 
                     <div ref={addToRefs} className={`${styles['row-container']}`}>
                         <div className={styles.header}>
-                            <h3>2. 그래서 검색 프로그램을 만들어 보기로 했죠</h3>
+                            <h3>2. 그래서 코딩으로 문제를 해결해보기로 했죠</h3>
                         </div>
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide2 : slideImg2}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide2 : slideImg2}
                                     alt=''
                                 />
 
@@ -253,7 +260,7 @@ const About = () => {
                         <div className={styles.contents}>
                             <div className={styles['img-container']}>
                                 <img
-                                    src={currentWidth <= 500 ? mobileSlide3 : slideImg3}
+                                    src={currentWidth <= 500 || currentHeight < 750 ? mobileSlide3 : slideImg3}
                                     alt=''
                                 />
                                 <div className={styles['text-top']}>
@@ -292,6 +299,25 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            {/* contact section */}
+            <div className={`wrapper ${styles['contact-container']}`}>
+                <h2>Contact Us</h2>
+                <div className={styles['contact-divider']}>
+                    <div className={styles['contact-info']}>
+                        <div className={styles['contact-intro']}>
+                            {/* <p>코뿔소팀은 앞으로 토론토 한인 사회에 필요한 IT 서비스를 제공하는 팀으로 성장해 나갈 예정입니다! 많은 관심과 애정으로 지켜봐주세요.</p>
+                            <p>We’d love to hear from you! We love discussing potential projects, intriguing ideas, and new opportunities. Complete the form below or drop us a line at koppulso.toronto@gmail.com. </p> */}
+                            <p>
+                                앞으로 코뿔소팀이 해결했으면 하는 좋은 아이디어가 있으신가요? 아래 상자에 원하시는 서비스를 적어주세요! 저희 팀이 해결해드릴게요! (메일로 보내주셔도 좋습니다 ^^ koppulso.toronto@gmail.com)
+                            </p>
+                        </div>
+                        <ContactForm />
+                    </div>
+                    <div className={styles['contact-img-container']}>
+                        <div className={styles['contact-img']}></div>
                     </div>
                 </div>
             </div>

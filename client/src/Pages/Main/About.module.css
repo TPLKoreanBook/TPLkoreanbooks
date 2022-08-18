@@ -13,8 +13,7 @@ Fonts
   align-items: flex-end;
 }
 
-.about-container h2,
-.profile-container h2 {
+.about-container h2 {
   color: var(--color-white);
   font-size: 2rem;
   font-weight: 400;
@@ -26,18 +25,20 @@ Fonts
 
 .about-container p {
   font-size: 1rem;
-  color: var(--color-black);
-}
-
-.about-container p {
   margin-top: 1rem;
   line-height: 1.5;
+  color: var(--color-black);
 }
 
 .intro-header p {
   color: var(--color-white);
   font-size: 0.8rem;
   margin-top: 0.2rem;
+}
+
+.contact-container p {
+  color: var(--color-white);
+  font-size: 0.9rem;
 }
 
 .scrollDown-animation p {
@@ -68,7 +69,7 @@ title
 }
 
 .title-bg {
-  background-image: url('../../images/main-bg2.png');
+  background-image: url("../../images/main-bg2.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 700px;
@@ -99,6 +100,7 @@ Story
   overflow: hidden;
   will-change: transform;
 }
+
 /* =====
 intro
 ======== */
@@ -323,15 +325,15 @@ profiles
 }
 
 .pic-minki {
-  background-image: url('../../images/minki.jpeg');
+  background-image: url("../../images/minki.jpeg");
 }
 .pic-seung,
 .pic-woong {
-  background-image: url('../../images/profile-sample.jpg');
+  background-image: url("../../images/profile-sample.jpg");
 }
 
 .pic-hwa {
-  background-image: url('../../images/seunghwa.jpeg');
+  background-image: url("../../images/seunghwa.jpeg");
 }
 
 .profile-links {
@@ -358,7 +360,35 @@ profiles
   transform: translateY(-5px);
 }
 
-@media (min-width: 500px) {
+/* =====
+Contact 
+======= */
+
+.contact-container {
+  margin-top: 3rem;
+}
+.contact-divider {
+  display: grid;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+/* .contact-img-container {
+  grid-row: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* .contact-img {
+  margin-top: 6rem;
+  background-image: url("../../images/contactForm-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 474px;
+  height: 392px;
+} */
+
+@media (min-width: 500px) and (min-height: 750px) {
   /* =======
   first slide
   ========== */
@@ -467,6 +497,28 @@ profiles
   .profile-img-container-minki {
     width: 250px;
     height: 250px;
+  }
+}
+
+@media (min-width: 1007px) {
+  .contact-container {
+    height: 92vh;
+  }
+  .contact-divider {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3rem;
+  }
+  .contact-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-img {
+    background-image: url("../../images/contactForm-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 474px;
+    height: 392px;
   }
 }
 

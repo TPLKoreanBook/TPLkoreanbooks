@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './BookList.module.css';
 import axios from 'axios';
 import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
-import { HiChevronDown, HiChevronUp, } from 'react-icons/hi';
-import { BsSearch } from 'react-icons/bs'
+import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
+import { GiInfo } from 'react-icons/gi';
+import { BsSearch } from 'react-icons/bs';
 
-import Loading from './Loading';
+import Loading from '../Pages/LoadingPage/Loading';
+import Modal from './Modal';
 
 async function getBooks(category, userInput) {
   const response = await axios.get(
@@ -23,6 +25,10 @@ const BookList = ({ category, userInput }) => {
   const [visible, setVisible] = useState(24);
   const [showToTop, setShowToTop] = useState(false);
   const [positionAbsolute, setPositionAbsolite] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const wrapperRef = useRef(null);
+  useOutsideClickHandler(wrapperRef);
 
   const toTopBtnHandler = () => {
     setShowToTop(window.pageYOffset > 50);
@@ -30,6 +36,19 @@ const BookList = ({ category, userInput }) => {
       document.body.offsetHeight - 95 <= window.pageYOffset + window.innerHeight
     );
   };
+  function useOutsideClickHandler(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setShowModal(false);
+        }
+      }
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', toTopBtnHandler);
@@ -54,7 +73,6 @@ const BookList = ({ category, userInput }) => {
       );
       return setFilteredData(filtered);
     }
-    // console.log(userInput);
   }, [data, userInput]);
 
   const showMoreBooks = () => {
@@ -67,6 +85,10 @@ const BookList = ({ category, userInput }) => {
       top: 0,
       behavior: 'smooth',
     });
+  };
+
+  const infoBtnHandler = () => {
+    setShowModal((prev) => !prev);
   };
 
   // Error handling.
@@ -88,19 +110,39 @@ const BookList = ({ category, userInput }) => {
         {filteredData.length > 0 && (
           <>
             <div className={styles['status-container']}>
-              <h2>
-                Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
-                손쉽게 찾으세요.
-              </h2>
 
-              {/* <p>1 - {filteredData.length} of {data.length} results</p> */}
-              <p>{filteredData.length} results in {category}</p>
+              <div className={styles['status-header']}>
+                <h3>
+                  토론토 공립도서관에 소장중인 4천여 권의 한국어 책을 손쉽게 찾아보세요!
+                  <div
+                    ref={wrapperRef}
+                    className={styles['status-header-modal']}
+                  >
+                    <button
+                      onClick={infoBtnHandler}
+                      className={styles['info-btn']}
+                    >
+                      <GiInfo />
+                    </button>
+                    <div
+                      className={`${showModal ? styles['modal-visible'] : ''} ${styles['info-modal']
+                        }`}
+                    >
+                      {showModal && <Modal setShowModal={setShowModal} />}
+                    </div>
+                  </div>
+                </h3>
+              </div>
+              <p>
+                {filteredData.length} results in {category}
+              </p>
             </div>
             <ul className={styles['list-container']}>
               {filteredData.slice(0, visible).map((book, index) => (
                 <Book
                   key={book.id}
-                  cover={book.cover}
+                  // cover={book.cover_kakao ? book.cover_kakao : book.cover}
+                  cover={book.cover_kakao}
                   title={book.title}
                   author={book.author}
                   address={book.link}
