@@ -6,27 +6,32 @@ import { IconContext } from 'react-icons';
 import NoBookImg from '../images/NoBookImg.png';
 import styles from './Book.module.css';
 
-const NO_IMG_URL = 'https://image.aladin.co.kr/img/shop/2018/img_no.jpg';
+// const NO_IMG_URL = 'https://image.aladin.co.kr/img/shop/2018/img_no.jpg';
 
 function Book({ cover, title, address, author }) {
+
   return (
     <li className={styles['book-container']}>
       <div className={styles['img-container']}>
-        {/* <img src={cover} alt={title} /> */}
         <LazyLoadImage
           width={'100%'}
           height={'100%'}
-          src={cover === NO_IMG_URL ? NoBookImg : cover}
+          // src={cover === NO_IMG_URL ? NoBookImg : cover}
+          src={cover ? cover : NoBookImg}
+
           alt={title}
           placeholderSrc={process.env.PUBLIC_URL + '/Spinner-1s-200px.svg'}
         />
       </div>
       <div className={styles['description']}>
         <div
-          className={`${cover === NO_IMG_URL && styles['no-img']} ${
-            styles['visible']
-          }`}
+          className={`${!cover && styles['no-img']} ${styles['visible']
+            }`}
         >
+          {/* <div
+          className={`${cover === NO_IMG_URL && styles['no-img']} ${styles['visible']
+            }`}
+        ></div> */}
           <h3 title={title} className={styles['booktitle']}>
             {title}
           </h3>
