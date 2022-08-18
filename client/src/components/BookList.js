@@ -8,7 +8,7 @@ import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 import { GiInfo } from 'react-icons/gi';
 import { BsSearch } from 'react-icons/bs';
 
-import Loading from './Loading';
+import Loading from '../Pages/LoadingPage/Loading';
 import Modal from './Modal';
 
 async function getBooks(category, userInput) {
@@ -73,7 +73,6 @@ const BookList = ({ category, userInput }) => {
       );
       return setFilteredData(filtered);
     }
-    // console.log(userInput);
   }, [data, userInput]);
 
   const showMoreBooks = () => {
@@ -111,15 +110,10 @@ const BookList = ({ category, userInput }) => {
         {filteredData.length > 0 && (
           <>
             <div className={styles['status-container']}>
-              {/* <div
-                className={`${showModal ? styles['modal-visible'] : ''} ${
-                  styles['info-modal']
-                }`}
-              > */}
+
               <div className={styles['status-header']}>
                 <h3>
-                  Toronto Public Library 에 존재하는 한국 책들을 한국어 검색으로
-                  손쉽게 찾으세요.
+                  토론토 공립도서관에 소장중인 4천여 권의 한국어 책을 손쉽게 찾아보세요!
                   <div
                     ref={wrapperRef}
                     className={styles['status-header-modal']}
@@ -131,26 +125,14 @@ const BookList = ({ category, userInput }) => {
                       <GiInfo />
                     </button>
                     <div
-                      className={`${showModal ? styles['modal-visible'] : ''} ${
-                        styles['info-modal']
-                      }`}
+                      className={`${showModal ? styles['modal-visible'] : ''} ${styles['info-modal']
+                        }`}
                     >
                       {showModal && <Modal setShowModal={setShowModal} />}
                     </div>
                   </div>
                 </h3>
               </div>
-              {/* <p>
-                토론토 공립도서관에 한국어 책이 4천권📚이나 있다는 사실 알고 계셨나요? <br />
-                하지만 표지가 없고 제목이 영어로 변환돼 있어서 검색하기가 쉽지 않았죠😅 <br />
-                이제 코뿔소🦏 라이브러리 기능을 통해 쉽고 간편하게 검색해보세요~🥰<br />
-              </p>
-              <p>
-                자세한 이용 방법이 궁금하시다면 아래 유튜브 영상을 참고해주세요
-              </p> */}
-              {/* <a href="/">youtube link</a> */}
-
-              {/* <p>1 - {filteredData.length} of {data.length} results</p> */}
               <p>
                 {filteredData.length} results in {category}
               </p>
@@ -159,7 +141,8 @@ const BookList = ({ category, userInput }) => {
               {filteredData.slice(0, visible).map((book, index) => (
                 <Book
                   key={book.id}
-                  cover={book.cover}
+                  // cover={book.cover_kakao ? book.cover_kakao : book.cover}
+                  cover={book.cover_kakao}
                   title={book.title}
                   author={book.author}
                   address={book.link}
@@ -188,9 +171,8 @@ const BookList = ({ category, userInput }) => {
 
         <button
           onClick={scrollToTop}
-          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${
-            positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
-          } ${styles['toTop-btn']}`}
+          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
+            } ${styles['toTop-btn']}`}
         >
           <HiChevronUp className={styles['topTop-btn-svg']} size='30' />
         </button>
