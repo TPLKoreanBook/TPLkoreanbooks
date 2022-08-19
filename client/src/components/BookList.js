@@ -5,7 +5,6 @@ import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
-import { GiInfo } from 'react-icons/gi';
 import infoIcon from '../images/information.png';
 import { BsSearch } from 'react-icons/bs';
 
