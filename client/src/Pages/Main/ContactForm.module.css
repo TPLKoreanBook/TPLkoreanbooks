@@ -35,6 +35,7 @@
   width: 156px;
   height: 40px;
   cursor: pointer;
+  justify-content: center;
 }
 
 .grid-col-span {

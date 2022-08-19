@@ -117,7 +117,9 @@
   color: #0000ee;
   cursor: pointer;
 }
-
+.info-btn img {
+  width: 17px;
+}
 .info-modal {
   position: absolute;
   background-color: #d9d9d9;
@@ -131,6 +133,17 @@
   visibility: hidden;
   width: 300px;
 }
+.info-modal::before {
+  content: '';
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #d9d9d9;
+  border-left: 20px solid transparent;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .modal-visible {
   opacity: 1;
   visibility: visible;
@@ -141,6 +154,7 @@
 }
 .status-header-modal {
   display: inline-block;
+  vertical-align: middle;
 }
 
 @media (min-width: 638px) {
