@@ -69,12 +69,10 @@ const About = () => {
           '-webkit-transform'
         ] = `translate3d(-50%, ${-contentVh}%, 0)`;
       } else {
-        item.style.transform = `translate3d(-50%, ${
-          ((window.scrollY - s) / (unit - 100)) * -contentVh
-        }%, 0)`;
-        item.style['-webkit-transform'] = `translate3d(-50%, ${
-          ((window.scrollY - s) / (unit - 100)) * -contentVh
-        }%, 0)`;
+        item.style.transform = `translate3d(-50%, ${((window.scrollY - s) / (unit - 100)) * -contentVh
+          }%, 0)`;
+        item.style['-webkit-transform'] = `translate3d(-50%, ${((window.scrollY - s) / (unit - 100)) * -contentVh
+          }%, 0)`;
       }
     });
   }, []);
@@ -177,7 +175,7 @@ const About = () => {
           </div>
           <div ref={addToRefs} className={`${styles['row-container']}`}>
             <div className={styles.header}>
-              <h3>1. 코뿔소는 하나의 생각에서 출발했어요</h3>
+              <h3>1. 코뿔소는 하나의 불편함에서 출발했어요</h3>
             </div>
             <div className={styles.contents}>
               <div className={styles['img-container']}>
@@ -192,7 +190,7 @@ const About = () => {
                 <div className={styles['text-top']}>
                   <p>
                     토론토 공립 도서관에는 <br />
-                    한국어 책이 5천권이나 있는데
+                    한국어 책이 4천권이나 있는데
                     <br />
                     제목이 영어로 되어 있어서
                     <br />
@@ -201,13 +199,13 @@ const About = () => {
                 </div>
                 <div className={styles['text-bottom']}>
                   <p>
-                    예를 들어,
+                    예를 들면,
                     <br />
-                    라면을 끓이며란 책은
+                    &#60;라면을 끓이며란&#62; 책은
                     <br />
                     “Ramyonul kkurimyo”로
                     <br />
-                    검색해야하는 식이었어요..😂
+                    검색해야했지...😂
                   </p>
                 </div>
               </div>
@@ -321,13 +319,19 @@ const About = () => {
         <div className={styles['contact-divider']}>
           <div className={styles['contact-info']}>
             <div className={styles['contact-intro']}>
-              {/* <p>코뿔소팀은 앞으로 토론토 한인 사회에 필요한 IT 서비스를 제공하는 팀으로 성장해 나갈 예정입니다! 많은 관심과 애정으로 지켜봐주세요.</p>
-                            <p>We’d love to hear from you! We love discussing potential projects, intriguing ideas, and new opportunities. Complete the form below or drop us a line at koppulso.toronto@gmail.com. </p> */}
+              {
+                /* 
+                <p>
+                코뿔소팀은 앞으로 토론토 한인 사회에 필요한 IT 서비스를 제공하는 팀으로 성장해 나갈 예정입니다! 많은 관심과 애정으로 지켜봐주세요.
+                </p>
+                <p>
+                We’d love to hear from you! We love discussing potential projects, intriguing ideas, and new opportunities. Complete the form below or drop us a line at koppulso.toronto@gmail.com. 
+                </p> */
+              }
               <p>
-                앞으로 코뿔소팀이 해결했으면 하는 좋은 아이디어가 있으신가요?
-                아래 상자에 원하시는 서비스를 적어주세요!
-                <br /> (메일로 보내주셔도 좋습니다 ^^
-                koppulso.toronto@gmail.com)
+                앞으로 코뿔소팀이 해결했으면 하는 좋은 아이디어가 있으신가요?<br />
+                아래 상자에 원하시는 서비스를 적어주세요!<br />
+                koppulso.toronto@gmail.com 로 보내주셔도 좋습니다.
               </p>
             </div>
             <ContactForm />
