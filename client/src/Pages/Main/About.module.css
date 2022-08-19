@@ -210,7 +210,7 @@ First slide
 }
 
 .row-container:nth-child(2) .text-bottom {
-  right: 20px;
+  right: 43px;
   bottom: 69px;
 }
 
@@ -356,8 +356,7 @@ profiles
 
 .profile-links a:hover,
 .profile-links a:focus {
-  color: var(--color-red);
-  transform: translateY(-5px);
+  color: var(--color-yellow);
 }
 
 /* =====
@@ -519,6 +518,8 @@ Contact
     background-repeat: no-repeat;
     width: 474px;
     height: 392px;
+    align-self: flex-start;
+    margin-top: 140px;
   }
 }
 

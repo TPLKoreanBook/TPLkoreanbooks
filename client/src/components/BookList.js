@@ -5,7 +5,7 @@ import useAsync from '../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
-import { GiInfo } from 'react-icons/gi';
+import infoIcon from '../images/information.png';
 import { BsSearch } from 'react-icons/bs';
 
 import Loading from '../Pages/LoadingPage/Loading';
@@ -110,10 +110,10 @@ const BookList = ({ category, userInput }) => {
         {filteredData.length > 0 && (
           <>
             <div className={styles['status-container']}>
-
               <div className={styles['status-header']}>
                 <h3>
-                  토론토 공립도서관에 소장중인 4천여 권의 한국어 책을 손쉽게 찾아보세요!
+                  토론토 공립도서관에 소장중인 4천여 권의 한국어 책을 손쉽게
+                  찾아보세요!
                   <div
                     ref={wrapperRef}
                     className={styles['status-header-modal']}
@@ -122,7 +122,7 @@ const BookList = ({ category, userInput }) => {
                       onClick={infoBtnHandler}
                       className={styles['info-btn']}
                     >
-                      <GiInfo />
+                      <img src={infoIcon} alt='' />
                     </button>
                     <div
                       className={`${showModal ? styles['modal-visible'] : ''} ${styles['info-modal']
@@ -133,15 +133,14 @@ const BookList = ({ category, userInput }) => {
                   </div>
                 </h3>
               </div>
-              <p>
-                {filteredData.length} results in {category}
-              </p>
+              <p>{filteredData.length} results</p>
             </div>
             <ul className={styles['list-container']}>
               {filteredData.slice(0, visible).map((book, index) => (
                 <Book
                   key={book.id}
                   // cover={book.cover_kakao ? book.cover_kakao : book.cover}
+                  // cover={book.cover_kakao}
                   cover={book.cover_kakao}
                   title={book.title}
                   author={book.author}
