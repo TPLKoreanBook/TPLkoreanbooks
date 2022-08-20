@@ -6,17 +6,7 @@ import { IconContext } from 'react-icons';
 import NoBookImg from '../images/NoBookImg.png';
 import styles from './Book.module.css';
 
-// const NO_IMG_URL = 'https://image.aladin.co.kr/img/shop/2018/img_no.jpg';
-
 function Book({ cover, title, address, author }) {
-  // if (cover === NO_IMG_URL || !cover || cover === '' || cover.length === 0) { console.log(title); }
-  // function shorten(text, maxLength) {
-  //   var ret = text;
-  //   if (ret.length > maxLength) {
-  //   ret = ret.substr(0,maxLength-3) + “…”;
-  //   }
-  //   return ret;
-  //   }
   const ellipsis = (title, maxLength) => {
     let shortenTitle = title;
     if (shortenTitle.length > maxLength) {
