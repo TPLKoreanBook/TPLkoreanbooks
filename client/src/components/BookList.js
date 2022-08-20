@@ -122,6 +122,7 @@ const BookList = ({ category, userInput }) => {
                       onClick={infoBtnHandler}
                       className={styles['info-btn']}
                     >
+                      <p className='sr-only'>Info button</p>
                       <img src={infoIcon} alt='' />
                     </button>
                     <div

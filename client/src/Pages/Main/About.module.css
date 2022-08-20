@@ -371,21 +371,6 @@ Contact
   height: 100%;
   /* border: 1px solid red; */
 }
-/* .contact-img-container {
-  grid-row: 1;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* .contact-img {
-  margin-top: 6rem;
-  background-image: url("../../images/contactForm-img.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 474px;
-  height: 392px;
-} */
 
 @media (min-width: 500px) and (min-height: 750px) {
   /* =======

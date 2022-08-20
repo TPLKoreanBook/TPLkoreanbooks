@@ -181,7 +181,7 @@ const About = () => {
               <div className={styles['img-container']}>
                 <img
                   src={
-                    currentWidth <= 500 || currentHeight < 750
+                    currentWidth < 500 || currentHeight < 750
                       ? mobileSlide1
                       : slideImg1
                   }
@@ -220,7 +220,7 @@ const About = () => {
               <div className={styles['img-container']}>
                 <img
                   src={
-                    currentWidth <= 500 || currentHeight < 750
+                    currentWidth < 500 || currentHeight < 750
                       ? mobileSlide2
                       : slideImg2
                   }
@@ -268,7 +268,7 @@ const About = () => {
               <div className={styles['img-container']}>
                 <img
                   src={
-                    currentWidth <= 500 || currentHeight < 750
+                    currentWidth < 500 || currentHeight < 750
                       ? mobileSlide3
                       : slideImg3
                   }
