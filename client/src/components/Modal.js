@@ -21,7 +21,7 @@ const Modal = ({ setShowModal }) => {
         <br />
         <a href='https://youtu.be/eQxYM85Px6E'
           target='_blank'
-          rel='noopener noreferrer'>youtube link</a> 바로가기
+          rel='noopener noreferrer'>YouTube link</a> 바로가기
       </p>
     </div>
   );
