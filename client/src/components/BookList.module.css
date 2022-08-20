@@ -112,11 +112,13 @@
 }
 
 .info-btn {
+  display: inline-block;
   border: none;
   background: none;
   cursor: pointer;
 }
 .info-btn img {
+  display: inline-block;
   width: 17px;
 }
 .info-modal {
