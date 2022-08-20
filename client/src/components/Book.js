@@ -10,7 +10,20 @@ import styles from './Book.module.css';
 
 function Book({ cover, title, address, author }) {
   // if (cover === NO_IMG_URL || !cover || cover === '' || cover.length === 0) { console.log(title); }
-
+  // function shorten(text, maxLength) {
+  //   var ret = text;
+  //   if (ret.length > maxLength) {
+  //   ret = ret.substr(0,maxLength-3) + “…”;
+  //   }
+  //   return ret;
+  //   }
+  const ellipsis = (title, maxLength) => {
+    let shortenTitle = title;
+    if (shortenTitle.length > maxLength) {
+      shortenTitle = shortenTitle.substr(0, maxLength - 3) + '...';
+    }
+    return shortenTitle;
+  };
   return (
     <li className={styles['book-container']}>
       <div className={styles['img-container']}>
@@ -33,7 +46,7 @@ function Book({ cover, title, address, author }) {
             }`}
         ></div> */}
         <h3 title={title} className={styles['booktitle']}>
-          {title}
+          {ellipsis(title, 50)}
         </h3>
         <h4>{author}</h4>
 
