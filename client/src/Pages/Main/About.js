@@ -319,15 +319,6 @@ const About = () => {
         <div className={styles['contact-divider']}>
           <div className={styles['contact-info']}>
             <div className={styles['contact-intro']}>
-              {
-                /* 
-                <p>
-                코뿔소팀은 앞으로 토론토 한인 사회에 필요한 IT 서비스를 제공하는 팀으로 성장해 나갈 예정입니다! 많은 관심과 애정으로 지켜봐주세요.
-                </p>
-                <p>
-                We’d love to hear from you! We love discussing potential projects, intriguing ideas, and new opportunities. Complete the form below or drop us a line at koppulso.toronto@gmail.com. 
-                </p> */
-              }
               <p>
                 앞으로 코뿔소팀이 해결했으면 하는 좋은 아이디어가 있으신가요?<br />
                 아래 상자에 원하시는 서비스를 적어주세요!<br />
