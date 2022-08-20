@@ -114,8 +114,8 @@
 .info-btn {
   border: none;
   background: none;
-  color: #0000ee;
   cursor: pointer;
+  padding-left: 0.3rem;
 }
 .info-btn img {
   width: 17px;
@@ -152,6 +152,10 @@
 .status-header {
   display: flex;
 }
+.status-header h3 {
+  line-height: 120%;
+}
+
 .status-header-modal {
   display: inline-block;
   vertical-align: middle;

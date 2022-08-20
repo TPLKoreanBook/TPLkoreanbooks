@@ -8,6 +8,8 @@
   background: none;
   align-self: flex-end;
   cursor: pointer;
+
+  color: black;
 }
 
 .modal-content {
