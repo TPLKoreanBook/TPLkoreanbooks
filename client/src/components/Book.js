@@ -19,14 +19,15 @@ function Book({ cover, title, address, author }) {
           height={'100%'}
           // src={cover === NO_IMG_URL ? NoBookImg : cover}
           src={cover ? cover : NoBookImg}
-
           alt={title}
           placeholderSrc={process.env.PUBLIC_URL + '/Spinner-1s-200px.svg'}
         />
       </div>
-      <div className={`${styles['description']} ${styles['visible']
-        }`}>
-
+      <div
+        className={`${styles['description']} ${cover || styles['no-img']} ${
+          styles['visible']
+        }`}
+      >
         {/* <div
           className={`${cover === NO_IMG_URL && styles['no-img']} ${styles['visible']
             }`}

@@ -106,7 +106,9 @@
 .visible {
   opacity: 0;
 }
-
+.no-img {
+  opacity: 1;
+}
 .book-container:hover .visible,
 .book-container:focus .visible,
 .book-container:hover .link-btn,
