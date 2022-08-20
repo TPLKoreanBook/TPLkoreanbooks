@@ -114,7 +114,6 @@
 .info-btn {
   border: none;
   background: none;
-  color: #0000ee;
   cursor: pointer;
 }
 .info-btn img {
@@ -133,7 +132,8 @@
   visibility: hidden;
   width: 300px;
 }
-.info-modal::before {
+
+/* .info-modal::before {
   content: '';
   position: absolute;
   border-top: 20px solid transparent;
@@ -143,7 +143,8 @@
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
+
 .modal-visible {
   opacity: 1;
   visibility: visible;

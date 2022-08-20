@@ -55,13 +55,13 @@ const Header = ({ categoryName, onSearch, onCategory }) => {
                                     replace>Library
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink
                                     className={({ isActive }) => isActive ? styles['link-active'] : styles['link']}
                                     to="/yyy"
                                     replace>Club
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
 
                     </nav>
