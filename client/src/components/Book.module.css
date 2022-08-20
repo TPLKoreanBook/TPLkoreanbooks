@@ -116,6 +116,11 @@
   opacity: 1;
 }
 
+/* .booktitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
 @media (min-width: 500px) {
   .book-container {
     width: 200px;
