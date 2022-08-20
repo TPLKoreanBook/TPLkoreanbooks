@@ -19,7 +19,9 @@ const Modal = ({ setShowModal }) => {
         <br />
         자세한 이용 방법이 궁금하시다면 아래 유튜브 영상을 참고해주세요
         <br />
-        <a href='/'>youtube link</a> 바로가기
+        <a href='https://youtu.be/eQxYM85Px6E'
+          target='_blank'
+          rel='noopener noreferrer'>youtube link</a> 바로가기
       </p>
     </div>
   );
