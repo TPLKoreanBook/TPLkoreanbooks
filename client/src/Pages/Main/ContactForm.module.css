@@ -36,12 +36,35 @@
   height: 40px;
   cursor: pointer;
   justify-content: center;
+  transition: 0.5s all;
+}
+.form-btn:hover {
+  background-color: var(--color-white);
 }
 
 .grid-col-span {
   grid-column: 0;
 }
-
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.form-footer-textbox {
+  display: flex;
+  align-items: center;
+}
+.form-textbox-submit,
+.form-textbox-error {
+  display: flex;
+  align-items: center;
+}
+.form-textbox-error {
+  color: var(--color-yellow) !important;
+}
+.form-textbox-img {
+  width: 25px !important;
+  margin-right: 0.5rem;
+}
 @media (min-width: 1007px) {
   .grid-container {
     margin-top: 1rem;

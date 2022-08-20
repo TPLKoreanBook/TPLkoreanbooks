@@ -106,13 +106,20 @@
 .visible {
   opacity: 0;
 }
-
+.no-img {
+  opacity: 1;
+}
 .book-container:hover .visible,
 .book-container:focus .visible,
 .book-container:hover .link-btn,
 .book-container:focus .link-btn {
   opacity: 1;
 }
+
+/* .booktitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
 
 @media (min-width: 500px) {
   .book-container {
