@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from './Pages/Header/Header';
-import Main from './Pages/Main/Main.js';
-import About from './Pages/Main/About';
-import BookList from './components/BookList.js';
-import Footer from './Pages/Footer/Footer';
+import Header from './pages/Header/Header';
+import Main from './pages/Main/Main.js';
+import About from './pages/Main/About/About';
+import BookList from './pages/Main/LibraryPage/BookList';
+import Footer from './pages/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

@@ -1,31 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation, } from 'react-router-dom'
-import SearchForm from '../../components/SearchForm';
+import SearchForm from './SearchForm';
 import styles from './Header.module.css';
 
 const Header = ({ categoryName, onSearch, onCategory }) => {
     const url = useLocation();
     const [navExpanded, setNavExpanded] = useState(false);
 
-    useEffect(() => {
-        setNavExpanded(false);
-    }, [url])
-
     const navHandler = () => {
         setNavExpanded((prev) => !prev);
     }
     useEffect(() => {
-        //Reset search input when user move to another page
+        // Reset search input when user move to another page
+        // Close burger nav bar when user move to another page.
         onSearch('');
+        setNavExpanded(false);
+
+        // Close expanded nav if user screen over 840px
 
         const resetBurgerMenu = () => {
             if (window.innerWidth > 840) {
                 setNavExpanded(false);
             }
         }
-
         window.addEventListener('resize', resetBurgerMenu);
-
         return () => {
             window.removeEventListener('resize', resetBurgerMenu)
         }
