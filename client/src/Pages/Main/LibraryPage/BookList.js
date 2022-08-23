@@ -53,6 +53,10 @@ const BookList = ({ category, userInput }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', toTopBtnHandler);
+
+    return () => {
+      window.removeEventListener('scroll', toTopBtnHandler);
+    }
   }, []);
 
   useEffect(() => {
