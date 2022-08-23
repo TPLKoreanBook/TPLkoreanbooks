@@ -1,5 +1,5 @@
-@import "./vars.css";
-@import "./normalize.css";
+@import "./assets/vars.css";
+@import "./assets/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@500&family=Roboto:wght@400;900&display=swap");
 html {
   font-family: "Nanum Gothic", sans-serif;

@@ -3,58 +3,41 @@ import { useEffect, useCallback, useRef, useState } from 'react';
 import ContactForm from './ContactForm';
 import styles from './About.module.css';
 
-import slideImg1 from '../../images/slide3-1.png';
-import slideImg2 from '../../images/slide3-2.png';
-import slideImg3 from '../../images/slide4-3.png';
-import mobileSlide1 from '../../images/mobile-first-slide.png';
-import mobileSlide2 from '../../images/mobile-second-slide.png';
-import mobileSlide3 from '../../images/mobile-third-slide.png';
-// import mainImg from '../../images/main-bg.png';
+import slideImg1 from '../../../images/slide3-1.png';
+import slideImg2 from '../../../images/slide3-2.png';
+import slideImg3 from '../../../images/slide4-3.png';
+import mobileSlide1 from '../../../images/mobile-first-slide.png';
+import mobileSlide2 from '../../../images/mobile-second-slide.png';
+import mobileSlide3 from '../../../images/mobile-third-slide.png';
 
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-// import Loading from '../../components/Loading';
-// import { IconContext } from 'react-icons';
 
-//LOADING
-// const imageList = [
-//   { id: 1, hasLoaded: false },
-//   { id: 2, hasLoaded: false },
-//   { id: 3, hasLoaded: false },
-//   { id: 4, hasLoaded: false },
-// ];
 
 const About = () => {
-  //LOAD
-  //const [images, setImages] = useState(imageList);
-  //   const [imgLoaded, setImgLoaded] = useState(false);
+
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
   const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
   const mainContent = useRef();
   const sticky = useRef();
   const children = useRef([]);
-  //LOADING
-  //const loading = images.some((img) => img.hasLoaded === false);
 
-  //   useEffect(() => {
-  //     const body = document.querySelector('body');
+  const initializeSlide = (main, children) => {
+    const headerVh = 6;
+    const length = children.length;
+    const contentVh = 82 - headerVh * length;
+    const scrollStart = main.offsetTop + 100;
+    const scrollEnd = main.offsetTop + main.offsetHeight - window.innerHeight - 100;
 
-  //     // window.scrollTo(0, 0);
-  //     body.style.overflow = loading ? 'hidden' : 'auto';
-  //   }, [loading]);
+    children.forEach((item, i) => {
+      item.style.bottom = -(100 - headerVh * (length - i)) + 'vh';
+      item.children[0].style.height = headerVh + 'vh';
+      item.children[1].style.height = contentVh + 'vh';
+    });
 
-  //   const imageLoadHandler = (id) => {
-  //     setImages((prevState) => {
-  //       const index = prevState.findIndex((img) => img.id === id);
-  //       const newState = [...prevState];
-  //       const newImage = { ...newState[index] };
-  //       newImage.hasLoaded = true;
-  //       newState[index] = newImage;
-  //       return newState;
-  //     });
-  //   };
+    return [length, contentVh, scrollStart, scrollEnd];
+  }
 
   const animate = useCallback((start, end, contentVh, length) => {
-    // console.log('rebuild');
     children.current.forEach((item, i) => {
       const unit = (end - start) / length;
       const s = start + unit * i + 100;
@@ -77,39 +60,25 @@ const About = () => {
     });
   }, []);
 
+  const addToRefs = (el) => {
+    if (el && !children.current.includes(el)) {
+      children.current.push(el);
+    }
+  };
+
+
+
   useEffect(() => {
-    const headerVh = 6;
-    const length = children.current.length;
-    const contentVh = 82 - headerVh * length;
-    let scrollStart = mainContent.current.offsetTop + 100;
-    let scrollEnd =
-      mainContent.current.offsetTop +
-      mainContent.current.offsetHeight -
-      window.innerHeight -
-      100;
+    // initial scroll status
+    // those will keep updating when the user resize the screen.
+    const [length, contentVh, scrollStart, scrollEnd] = initializeSlide(mainContent.current, children.current);
 
-    // resetting initial position
-    const resetInitPos = () => {
-      scrollStart = mainContent.current.offsetTop + 100;
-      scrollEnd =
-        mainContent.current.offsetTop +
-        mainContent.current.offsetHeight -
-        window.innerHeight -
-        100;
-    };
-
-    children.current.forEach((item, i) => {
-      item.style.bottom = -(100 - headerVh * (length - i)) + 'vh';
-      item.children[0].style.height = headerVh + 'vh';
-      item.children[1].style.height = contentVh + 'vh';
-    });
 
     window.addEventListener('scroll', () => {
       animate(scrollStart, scrollEnd, contentVh, length);
     });
 
-    window.addEventListener('resize', resetInitPos);
-
+    // this part also update the scrollStart and scrollEnd position.
     window.addEventListener('resize', () => {
       setCurrentWidth(window.innerWidth);
       setCurrentHeight(window.innerHeight);
@@ -120,7 +89,6 @@ const About = () => {
         animate(scrollStart, scrollEnd, contentVh, length);
       });
 
-      window.removeEventListener('resize', resetInitPos);
       window.removeEventListener('resize', () => {
         setCurrentWidth(window.innerWidth);
         setCurrentHeight(window.innerHeight);
@@ -128,11 +96,7 @@ const About = () => {
     };
   }, [animate, currentWidth, currentHeight]);
 
-  const addToRefs = (el) => {
-    if (el && !children.current.includes(el)) {
-      children.current.push(el);
-    }
-  };
+
 
   return (
     <section className={styles['about-container']}>

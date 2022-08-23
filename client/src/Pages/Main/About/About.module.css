@@ -69,7 +69,7 @@ title
 }
 
 .title-bg {
-  background-image: url("../../images/main-bg2.png");
+  background-image: url("../../../images/main-bg2.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 700px;
@@ -325,15 +325,15 @@ profiles
 }
 
 .pic-minki {
-  background-image: url("../../images/minki.jpeg");
+  background-image: url("../../../images/minki.jpeg");
 }
 .pic-seung,
 .pic-woong {
-  background-image: url("../../images/profile-sample.jpg");
+  background-image: url("../../../images/profile-sample.jpg");
 }
 
 .pic-hwa {
-  background-image: url("../../images/seunghwa.jpeg");
+  background-image: url("../../../images/seunghwa.jpeg");
 }
 
 .profile-links {
@@ -498,7 +498,7 @@ Contact
     align-items: center;
   }
   .contact-img {
-    background-image: url("../../images/contactForm-img.png");
+    background-image: url("../../../images/contactForm-img.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 474px;
