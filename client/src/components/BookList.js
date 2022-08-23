@@ -125,8 +125,9 @@ const BookList = ({ category, userInput }) => {
                       <img src={infoIcon} alt='' />
                     </button>
                     <div
-                      className={`${showModal ? styles['modal-visible'] : ''} ${styles['info-modal']
-                        }`}
+                      className={`${showModal ? styles['modal-visible'] : ''} ${
+                        styles['info-modal']
+                      }`}
                     >
                       {showModal && <Modal setShowModal={setShowModal} />}
                     </div>
@@ -170,8 +171,9 @@ const BookList = ({ category, userInput }) => {
 
         <button
           onClick={scrollToTop}
-          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
-            } ${styles['toTop-btn']}`}
+          className={`${showToTop ? styles['toTop-btn-visible'] : ''} ${
+            positionAbsolute ? styles['toTop-btn-positionAbsolute'] : ''
+          } ${styles['toTop-btn']}`}
         >
           <HiChevronUp className={styles['topTop-btn-svg']} size='30' />
         </button>
@@ -181,3 +183,4 @@ const BookList = ({ category, userInput }) => {
 };
 
 export default BookList;
+//
