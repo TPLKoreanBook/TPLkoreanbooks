@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IconContext } from 'react-icons';
-import NoBookImg from '../images/NoBookImg.png';
+import NoBookImg from '../../../images/NoBookImg.png';
 import styles from './Book.module.css';
 
 function Book({ cover, title, address, author }) {
@@ -27,14 +27,9 @@ function Book({ cover, title, address, author }) {
         />
       </div>
       <div
-        className={`${styles['description']} ${cover || styles['no-img']} ${
-          styles['visible']
-        }`}
+        className={`${styles['description']} ${cover || styles['no-img']} ${styles['visible']
+          }`}
       >
-        {/* <div
-          className={`${cover === NO_IMG_URL && styles['no-img']} ${styles['visible']
-            }`}
-        ></div> */}
         <h3 title={title} className={styles['booktitle']}>
           {ellipsis(title, 50)}
         </h3>

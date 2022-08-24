@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
-import Error from '../../images/error.png';
-import Submit from '../../images/check.png';
+import Error from '../../../images/error.png';
+import Submit from '../../../images/check.png';
 
 const ContactForm = () => {
   const serverId = process.env.REACT_APP_SERVICE_ID;

@@ -1,20 +1,21 @@
 import React, { useState, useRef } from 'react';
 import styles from './BookList.module.css';
 import axios from 'axios';
-import useAsync from '../hooks/useAsync';
+import useAsync from '../../../hooks/useAsync';
 import Book from './Book.js';
 import { useEffect } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
-import infoIcon from '../images/information.png';
+import infoIcon from '../../../images/information.png';
 import { BsSearch } from 'react-icons/bs';
 
-import Loading from '../Pages/LoadingPage/Loading';
+import Loading from '../../LoadingPage/Loading';
 import Modal from './Modal';
 
 async function getBooks(category, userInput) {
   const response = await axios.get(
     `https://tpl-server-heroku.herokuapp.com/${category}`
   );
+  // return only if there is a title
   return response.data.filter((book) => book.title);
 }
 
@@ -52,6 +53,10 @@ const BookList = ({ category, userInput }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', toTopBtnHandler);
+
+    return () => {
+      window.removeEventListener('scroll', toTopBtnHandler);
+    }
   }, []);
 
   useEffect(() => {
@@ -99,6 +104,7 @@ const BookList = ({ category, userInput }) => {
   return (
     <section className={styles['book-list']}>
       <div className={`wrapper ${styles['list-wrapper']}`}>
+
         {!filteredData.length && (
           <div className={styles['no-results']}>
             <BsSearch className={styles['no-search-icon']} />
@@ -140,8 +146,6 @@ const BookList = ({ category, userInput }) => {
               {filteredData.slice(0, visible).map((book, index) => (
                 <Book
                   key={book.id}
-                  // cover={book.cover_kakao ? book.cover_kakao : book.cover}
-                  // cover={book.cover_kakao}
                   cover={book.cover_kakao}
                   title={book.title}
                   author={book.author}
